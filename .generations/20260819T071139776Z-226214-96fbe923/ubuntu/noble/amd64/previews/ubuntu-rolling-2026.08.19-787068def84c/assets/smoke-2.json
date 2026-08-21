@@ -1,0 +1,52 @@
+[
+  {
+    "target_os": "ubuntu-noble",
+    "validation": {
+      "run_id": "20260819070652969-3fee9f22",
+      "generated": "2026-08-19T07:11:38.910Z",
+      "package_format": "deb",
+      "repository_integrity": {
+        "status": "not-tested",
+        "detail": "verified by the conductor after publication"
+      },
+      "provenance_verification": {
+        "status": "not-tested",
+        "detail": "generated and verified by the conductor after publication"
+      },
+      "checks": {
+        "install": {
+          "status": "passed"
+        },
+        "service_start": {
+          "status": "passed"
+        },
+        "volume_create_mount": {
+          "status": "passed"
+        },
+        "file_lifecycle": {
+          "status": "passed"
+        },
+        "volume_unmount_delete": {
+          "status": "passed"
+        },
+        "service_shutdown": {
+          "status": "passed"
+        }
+      },
+      "distributions": [
+        {
+          "id": "ubuntu-noble",
+          "label": "Ubuntu 24.04 (noble)",
+          "image": "ubuntu:24.04",
+          "package_format": "deb",
+          "package_core": {
+            "status": "passed"
+          }
+        }
+      ],
+      "metadata_version": "0.1.0"
+    },
+    "workflow": "local-docker",
+    "run_id": "20260819070652969-3fee9f22"
+  }
+]

@@ -1,0 +1,99 @@
+Eliware GlusterFS Repository
+============================
+
+This file describes the licensing of the repository as a collection. It does
+not replace, modify, or supersede the license notices shipped with any
+individual package or other third-party work.
+
+1. Eliware-authored repository material
+---------------------------------------
+
+Unless a file contains a different notice, original Eliware-authored
+repository infrastructure, repository metadata schemas, generated reports,
+documentation, and configuration in this repository are licensed under the
+Apache License, Version 2.0 (the "License"). You may not use these files
+except in compliance with the License.
+
+Copyright (c) Eliware
+
+SPDX-License-Identifier: Apache-2.0
+
+The full License is available at:
+https://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, this material is
+distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied. See the License for the specific language
+governing permissions and limitations under the License.
+
+2. GlusterFS packages and source-derived artifacts
+---------------------------------------------------
+
+RPMs, DEBs, source packages, debug packages, and other artifacts containing
+GlusterFS or code derived from GlusterFS retain the licenses under which
+their upstream components were released. GlusterFS is generally distributed
+under the GNU General Public License, version 2 (GPL-2.0), and the GNU Lesser
+General Public License, version 3 or later (LGPL-3.0-or-later), as specified
+by the applicable upstream files.
+
+Upstream project:
+https://github.com/gluster/glusterfs
+
+The applicable upstream license and copyright notices are authoritative for
+each package. Do not treat this collection-level file as a relicensing of
+those artifacts. Package metadata, installed license files, source RPMs, and
+the upstream source repository should be consulted for the exact licensing
+of each component.
+
+3. Third-party components
+-------------------------
+
+This repository may contain packages or metadata incorporating third-party
+components. Each component remains under its original license. Copyright,
+license, attribution, and notice information included in package contents,
+source archives, package metadata, or provenance records must be preserved.
+
+The repository maintainers make no representation that every artifact in
+this collection is covered by Apache-2.0. Users are responsible for reviewing
+the license information for the particular artifact they obtain.
+
+4. Corresponding source and redistribution
+-------------------------------------------
+
+When distributing an artifact whose license requires corresponding source,
+the distributor must comply with that license. For GPL-covered binaries,
+corresponding source includes the source and build materials required by the
+applicable license, including applicable scripts and license notices. This
+repository's source packages and provenance records are provided where
+available; their presence does not limit any recipient's rights or relieve a
+distributor of its obligations under the applicable license.
+
+5. Repository metadata, provenance, and logs
+---------------------------------------------
+
+Checksums, package indexes, provenance records, validation results, release
+reports, and build logs are distributable repository records. They describe
+the artifacts and their production history and do not change the license of
+the artifacts they describe. Any copyright or license notices appearing in
+those records must be retained.
+
+6. RPM signing key
+------------------
+
+keys/RPM-GPG-KEY-ELIWARE-GLUSTER is a public verification key. It is not a
+private signing key or a secret. Its distribution is permitted for the
+purpose of verifying packages signed by the corresponding Eliware key.
+
+7. No trademark grant
+---------------------
+
+This file grants no trademark rights. GlusterFS and related names and marks
+remain subject to their owners' rights.
+
+8. Contact and updates
+----------------------
+
+For a package-specific licensing question, consult the package's embedded
+license and source metadata first. For corrections to this collection-level
+notice, use the issue or contact mechanism for the Eliware repository.
+

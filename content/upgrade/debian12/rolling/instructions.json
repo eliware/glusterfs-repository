@@ -1,0 +1,7 @@
+{
+  "schemaVersion": 1,
+  "title": "Upgrade rolling Debian packages",
+  "steps": [
+    "Select the desired preview, verify its signatures, then run sudo apt update && sudo apt upgrade."
+  ]
+}

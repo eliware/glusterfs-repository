@@ -1,0 +1,21 @@
+Architectures: amd64
+Codename: stable
+Components: main
+Date: Wed, 19 Aug 2026 07:14:11 +0000
+Suite: stable
+MD5Sum:
+ a4a1efc8a51292256dbef1e0f90cea03            21363 main/binary-amd64/Packages
+ df41b16e884fb55497cc149bdb881f1e             5268 main/binary-amd64/Packages.gz
+ 351e04b09be0f6fbb8277a4fd0b72674             4800 main/binary-amd64/Packages.xz
+SHA1:
+ 8630aa29d717ea1df9a641a787f8cbec39624e07            21363 main/binary-amd64/Packages
+ 6efba2d4b1cd79052e4ac0dbb801cb27adb94952             5268 main/binary-amd64/Packages.gz
+ 9940649db264454203714e9c985e1d7d3396e736             4800 main/binary-amd64/Packages.xz
+SHA256:
+ 88178760d8acca0f3d8fc8f14085391889954d9608ec65ae2b339023a653c989            21363 main/binary-amd64/Packages
+ 4219579b27b6e5b2b2c4a5a33fa10626ab94c0f0ee03f9c17a2bbb560d19f345             5268 main/binary-amd64/Packages.gz
+ b4f23bd35aa02292b291d47b4f5e748bac7eee75fd822230414bcac1300f9c3e             4800 main/binary-amd64/Packages.xz
+SHA512:
+ 1f27fce37aaf6a182971f5a40289b2eb2e8710019fdf4d0e0bf0a2f40eb134c58a4a4a13897eae56571f5a2ebfa7760596210c598217763c641fe8f12eb0383d            21363 main/binary-amd64/Packages
+ 1d2cc7020bc2ee3066e65d0fc44132e9f9f3413bc5a565ffa0897d0f0b250343170846bf83e614686782ce87b56edd465d841ac35dc0291f1b141683690b947f             5268 main/binary-amd64/Packages.gz
+ 4bb2b5689212876593068297dfc76331c68dcce22639857ecadb75aea3b1ac404e113bf6d16910b9680961d604f3b44a4e66ac69cc75584117fa62219214cab0             4800 main/binary-amd64/Packages.xz

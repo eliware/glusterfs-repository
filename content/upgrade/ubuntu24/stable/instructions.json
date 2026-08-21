@@ -1,0 +1,7 @@
+{
+  "schemaVersion": 1,
+  "title": "Upgrade Ubuntu packages",
+  "steps": [
+    "sudo apt update && sudo apt upgrade glusterfs-server glusterfs-client"
+  ]
+}

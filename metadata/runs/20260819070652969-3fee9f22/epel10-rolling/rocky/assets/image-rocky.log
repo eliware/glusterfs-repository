@@ -1,0 +1,646 @@
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from centos10-gluster.Dockerfile
+#1 transferring dockerfile: 3.19kB done
+#1 WARN: SecretsUsedInArgOrEnv: Do not use ARG or ENV instructions for sensitive data (ARG "RPM_GPG_KEY_URL") (line 15)
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/rockylinux/rockylinux:10@sha256:827d37bc128288ccf160ee318bb3cb92d591164cb217e92f8bc61e3982ae1834
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [1/5] FROM docker.io/rockylinux/rockylinux:10@sha256:827d37bc128288ccf160ee318bb3cb92d591164cb217e92f8bc61e3982ae1834
+#4 resolve docker.io/rockylinux/rockylinux:10@sha256:827d37bc128288ccf160ee318bb3cb92d591164cb217e92f8bc61e3982ae1834 0.0s done
+#4 CACHED
+
+#5 [internal] load build context
+#5 transferring context: 84B done
+#5 DONE 0.0s
+
+#6 [2/5] RUN test -n "https://glusterfs.eliware.org/el10/x86_64/previews/epel10-rolling-2026.08.19-787068def84c/"     && test -n "e9b9873a37d667e5b0aa50e6b02d955b2185e25d913d62d41185f5dda65e4980"     && dnf -y install dnf-plugins-core     && dnf -y install epel-release     && dnf config-manager --set-enabled crb     && curl --fail --silent --show-error --location --retry 6 --retry-all-errors --retry-delay 2 --connect-timeout 15 --max-time 60 "https://glusterfs.eliware.org/keys/RPM-GPG-KEY-ELIWARE-GLUSTER" --output /tmp/eliware-gluster-key     && rpm --import /tmp/eliware-gluster-key     && printf '[eliware-glusterfs]\nname=Eliware GlusterFS\nbaseurl=%s\nenabled=1\ngpgcheck=1\nrepo_gpgcheck=1\ngpgkey=%s\n' "https://glusterfs.eliware.org/el10/x86_64/previews/epel10-rolling-2026.08.19-787068def84c/" "https://glusterfs.eliware.org/keys/RPM-GPG-KEY-ELIWARE-GLUSTER" > /etc/yum.repos.d/eliware-glusterfs.repo     && curl --fail --silent --show-error --location --retry 6 --retry-all-errors --retry-delay 2 --connect-timeout 15 --max-time 60 "https://glusterfs.eliware.org/el10/x86_64/previews/epel10-rolling-2026.08.19-787068def84c/repodata/repomd.xml" --output /tmp/repomd.xml     && printf '%s  /tmp/repomd.xml\n' "e9b9873a37d667e5b0aa50e6b02d955b2185e25d913d62d41185f5dda65e4980" | sha256sum --check --status     && dnf -y --enablerepo=eliware-glusterfs install          glusterfs glusterfs-server glusterfs-selinux glusterfs-cli          glusterfs-client-xlators glusterfs-fuse glusterfs-gnfs          libgfapi0 libgfchangelog0 libgfrpc0 libgfxdr0 libglusterfs0          python3-gluster nodejs     && dnf clean all     && rm -f /tmp/eliware-gluster-key /tmp/repomd.xml     && rm -rf /var/cache/dnf
+#6 0.987 Rocky Linux 10 - BaseOS                          33 MB/s |  20 MB     00:00    
+#6 15.46 Rocky Linux 10 - AppStream                      202 kB/s | 2.5 MB     00:12    
+#6 15.91 Rocky Linux 10 - Extras                          40 kB/s | 5.8 kB     00:00    
+#6 16.18 Dependencies resolved.
+#6 16.18 ================================================================================
+#6 16.18  Package                    Arch     Version                     Repo      Size
+#6 16.18 ================================================================================
+#6 16.18 Installing:
+#6 16.18  dnf-plugins-core           noarch   4.7.0-10.el10               baseos    41 k
+#6 16.18 Installing dependencies:
+#6 16.18  dbus-libs                  x86_64   1:1.14.10-5.el10            baseos   155 k
+#6 16.18  python3-dateutil           noarch   1:2.9.0.post0-1.el10_0      baseos   341 k
+#6 16.18  python3-dbus               x86_64   1.3.2-8.el10                baseos   159 k
+#6 16.18  python3-dnf-plugins-core   noarch   4.7.0-10.el10               baseos   313 k
+#6 16.18  python3-six                noarch   1.16.0-16.el10              baseos    41 k
+#6 16.18  python3-systemd            x86_64   235-11.el10                 baseos   108 k
+#6 16.18 
+#6 16.18 Transaction Summary
+#6 16.18 ================================================================================
+#6 16.18 Install  7 Packages
+#6 16.18 
+#6 16.18 Total download size: 1.1 M
+#6 16.18 Installed size: 3.4 M
+#6 16.18 Downloading Packages:
+#6 16.25 (1/7): dnf-plugins-core-4.7.0-10.el10.noarch.rp 1.5 MB/s |  41 kB     00:00    
+#6 16.27 (2/7): dbus-libs-1.14.10-5.el10.x86_64.rpm      3.5 MB/s | 155 kB     00:00    
+#6 16.30 (3/7): python3-dateutil-2.9.0.post0-1.el10_0.no 4.3 MB/s | 341 kB     00:00    
+#6 16.31 (4/7): python3-dbus-1.3.2-8.el10.x86_64.rpm     2.5 MB/s | 159 kB     00:00    
+#6 16.32 (5/7): python3-six-1.16.0-16.el10.noarch.rpm    2.7 MB/s |  41 kB     00:00    
+#6 16.32 (6/7): python3-dnf-plugins-core-4.7.0-10.el10.n 5.9 MB/s | 313 kB     00:00    
+#6 16.36 (7/7): python3-systemd-235-11.el10.x86_64.rpm   2.1 MB/s | 108 kB     00:00    
+#6 16.37 --------------------------------------------------------------------------------
+#6 16.37 Total                                           6.1 MB/s | 1.1 MB     00:00     
+#6 16.42 Running transaction check
+#6 16.43 Transaction check succeeded.
+#6 16.43 Running transaction test
+#6 16.46 Transaction test succeeded.
+#6 16.46 Running transaction
+#6 16.49   Preparing        :                                                        1/1 
+#6 16.53   Installing       : python3-systemd-235-11.el10.x86_64                     1/7 
+#6 16.54   Installing       : python3-six-1.16.0-16.el10.noarch                      2/7 
+#6 16.55   Installing       : python3-dateutil-1:2.9.0.post0-1.el10_0.noarch         3/7 
+#6 16.56   Installing       : dbus-libs-1:1.14.10-5.el10.x86_64                      4/7 
+#6 16.57   Installing       : python3-dbus-1.3.2-8.el10.x86_64                       5/7 
+#6 16.58   Installing       : python3-dnf-plugins-core-4.7.0-10.el10.noarch          6/7 
+#6 16.58   Installing       : dnf-plugins-core-4.7.0-10.el10.noarch                  7/7 
+#6 16.59   Running scriptlet: dnf-plugins-core-4.7.0-10.el10.noarch                  7/7 
+#6 16.67 
+#6 16.67 Installed:
+#6 16.67   dbus-libs-1:1.14.10-5.el10.x86_64                                             
+#6 16.67   dnf-plugins-core-4.7.0-10.el10.noarch                                         
+#6 16.67   python3-dateutil-1:2.9.0.post0-1.el10_0.noarch                                
+#6 16.67   python3-dbus-1.3.2-8.el10.x86_64                                              
+#6 16.67   python3-dnf-plugins-core-4.7.0-10.el10.noarch                                 
+#6 16.67   python3-six-1.16.0-16.el10.noarch                                             
+#6 16.67   python3-systemd-235-11.el10.x86_64                                            
+#6 16.67 
+#6 16.67 Complete!
+#6 16.88 Last metadata expiration check: 0:00:01 ago on Wed Aug 19 07:18:28 2026.
+#6 16.95 Dependencies resolved.
+#6 16.95 ================================================================================
+#6 16.95  Package              Architecture   Version               Repository      Size
+#6 16.95 ================================================================================
+#6 16.95 Installing:
+#6 16.95  epel-release         noarch         10-7.el10_1           extras          19 k
+#6 16.95 
+#6 16.95 Transaction Summary
+#6 16.95 ================================================================================
+#6 16.95 Install  1 Package
+#6 16.95 
+#6 16.95 Total download size: 19 k
+#6 16.95 Installed size: 25 k
+#6 16.95 Downloading Packages:
+#6 17.05 epel-release-10-7.el10_1.noarch.rpm             387 kB/s |  19 kB     00:00    
+#6 17.05 --------------------------------------------------------------------------------
+#6 17.05 Total                                           189 kB/s |  19 kB     00:00     
+#6 17.06 Running transaction check
+#6 17.06 Transaction check succeeded.
+#6 17.06 Running transaction test
+#6 17.06 Transaction test succeeded.
+#6 17.06 Running transaction
+#6 17.06   Preparing        :                                                        1/1 
+#6 17.07   Installing       : epel-release-10-7.el10_1.noarch                        1/1 
+#6 17.07   Running scriptlet: epel-release-10-7.el10_1.noarch                        1/1 
+#6 17.07 Many EPEL packages require the CodeReady Builder (CRB) repository.
+#6 17.07 It is recommended that you run /usr/bin/crb enable to enable the CRB repository.
+#6 17.07 
+#6 17.12 
+#6 17.12 Installed:
+#6 17.12   epel-release-10-7.el10_1.noarch                                               
+#6 17.12 
+#6 17.12 Complete!
+#6 17.60 Eliware GlusterFS                               4.6 kB/s | 228  B     00:00    
+#6 17.61 Eliware GlusterFS                                54 kB/s | 847  B     00:00    
+#6 17.61 Importing GPG key 0x79687D60:
+#6 17.61  Userid     : "Eliware GlusterFS Release <gluster-release@eliware.org>"
+#6 17.61  Fingerprint: 82EC A351 E170 E834 0B53 B476 EDCB 5E07 7968 7D60
+#6 17.61  From       : https://glusterfs.eliware.org/keys/RPM-GPG-KEY-ELIWARE-GLUSTER
+#6 17.66 Eliware GlusterFS                               211 kB/s |  10 kB     00:00    
+#6 18.14 Extra Packages for Enterprise Linux 10 - x86_64  14 MB/s | 6.6 MB     00:00    
+#6 19.49 Rocky Linux 10 - BaseOS                          46 kB/s | 4.3 kB     00:00    
+#6 19.61 Rocky Linux 10 - AppStream                       46 kB/s | 4.4 kB     00:00    
+#6 19.79 Rocky Linux 10 - CRB                            3.3 MB/s | 530 kB     00:00    
+#6 20.73 Dependencies resolved.
+#6 20.73 =====================================================================================================
+#6 20.73  Package                         Arch    Version                             Repository          Size
+#6 20.73 =====================================================================================================
+#6 20.73 Installing:
+#6 20.73  glusterfs                       x86_64  2026.08.19-0.0.git787068def84c.el10 eliware-glusterfs  594 k
+#6 20.73  glusterfs-cli                   x86_64  2026.08.19-0.0.git787068def84c.el10 eliware-glusterfs  185 k
+#6 20.73  glusterfs-client-xlators        x86_64  2026.08.19-0.0.git787068def84c.el10 eliware-glusterfs  785 k
+#6 20.73  glusterfs-fuse                  x86_64  2026.08.19-0.0.git787068def84c.el10 eliware-glusterfs  137 k
+#6 20.73  glusterfs-gnfs                  x86_64  2026.08.19-0.0.git787068def84c.el10 eliware-glusterfs  145 k
+#6 20.73  glusterfs-selinux               noarch  2.0.1-1.el10                        eliware-glusterfs   25 k
+#6 20.73  glusterfs-server                x86_64  2026.08.19-0.0.git787068def84c.el10 eliware-glusterfs  1.2 M
+#6 20.73  libgfapi0                       x86_64  2026.08.19-0.0.git787068def84c.el10 eliware-glusterfs   95 k
+#6 20.73  libgfchangelog0                 x86_64  2026.08.19-0.0.git787068def84c.el10 eliware-glusterfs   34 k
+#6 20.73  libgfrpc0                       x86_64  2026.08.19-0.0.git787068def84c.el10 eliware-glusterfs   53 k
+#6 20.73  libgfxdr0                       x86_64  2026.08.19-0.0.git787068def84c.el10 eliware-glusterfs   31 k
+#6 20.73  libglusterfs0                   x86_64  2026.08.19-0.0.git787068def84c.el10 eliware-glusterfs  289 k
+#6 20.73  nodejs                          x86_64  1:22.23.1-6.el10_2                  appstream           52 k
+#6 20.73  python3-gluster                 x86_64  2026.08.19-0.0.git787068def84c.el10 eliware-glusterfs   17 k
+#6 20.73 Installing dependencies:
+#6 20.73  c-ares                          x86_64  1.34.6-2.el10_2                     baseos             117 k
+#6 20.73  checkpolicy                     x86_64  3.10-1.el10                         appstream          370 k
+#6 20.73  dbus                            x86_64  1:1.14.10-5.el10                    baseos             7.4 k
+#6 20.73  dbus-broker                     x86_64  36-4.el10                           baseos             174 k
+#6 20.73  dbus-common                     noarch  1:1.14.10-5.el10                    baseos              14 k
+#6 20.73  device-mapper                   x86_64  10:1.02.210-2.el10                  baseos             142 k
+#6 20.73  device-mapper-event             x86_64  10:1.02.210-2.el10                  baseos              36 k
+#6 20.73  device-mapper-event-libs        x86_64  10:1.02.210-2.el10                  baseos              31 k
+#6 20.73  device-mapper-libs              x86_64  10:1.02.210-2.el10                  baseos             181 k
+#6 20.73  device-mapper-persistent-data   x86_64  1.3.0-1.el10                        baseos             1.2 M
+#6 20.73  diffutils                       x86_64  3.10-8.el10                         baseos             411 k
+#6 20.73  e2fsprogs-libs                  x86_64  1.47.1-5.el10                       baseos             225 k
+#6 20.73  gperftools-libs                 x86_64  2.15-4.el10_0                       epel               303 k
+#6 20.73  gssproxy                        x86_64  0.9.2-10.el10                       baseos             111 k
+#6 20.73  kmod                            x86_64  31-13.el10                          baseos             137 k
+#6 20.73  libaio                          x86_64  0.3.111-22.el10                     baseos              24 k
+#6 20.73  libbasicobjects                 x86_64  0.1.1-58.el10                       baseos              26 k
+#6 20.73  libbrotli                       x86_64  1.1.0-7.el10_1                      baseos             345 k
+#6 20.73  libcollection                   x86_64  0.7.0-58.el10                       baseos              44 k
+#6 20.73  libedit                         x86_64  3.1-52.20230828cvs.el10             baseos             105 k
+#6 20.73  libev                           x86_64  4.33-15.el10                        baseos              52 k
+#6 20.73  libini_config                   x86_64  1.3.1-58.el10                       baseos              67 k
+#6 20.73  libnfsidmap                     x86_64  1:2.8.3-5.el10                      baseos              61 k
+#6 20.73  libnl3                          x86_64  3.11.0-1.el10                       baseos             357 k
+#6 20.73  libnvme                         x86_64  1.16.1-3.el10_2                     baseos             120 k
+#6 20.73  libpath_utils                   x86_64  0.2.1-58.el10                       baseos              29 k
+#6 20.73  libref_array                    x86_64  0.1.5-58.el10                       baseos              27 k
+#6 20.73  libseccomp                      x86_64  2.5.6-1.el10                        baseos              70 k
+#6 20.73  libselinux-utils                x86_64  3.10-1.el10                         baseos             122 k
+#6 20.73  libtirpc                        x86_64  1.3.5-1.el10                        baseos              94 k
+#6 20.73  libunwind                       x86_64  1.8.0-4.el10_0                      epel                73 k
+#6 20.73  liburing                        x86_64  2.12-1.el10                         baseos              43 k
+#6 20.73  libuv                           x86_64  1:1.52.1-1.el10_2                   appstream          265 k
+#6 20.73  libverto-libev                  x86_64  0.3.2-10.el10                       baseos              13 k
+#6 20.73  lvm2                            x86_64  10:2.03.36-2.el10                   baseos             1.6 M
+#6 20.73  lvm2-libs                       x86_64  10:2.03.36-2.el10                   baseos             1.0 M
+#6 20.73  nfs-utils                       x86_64  1:2.8.3-5.el10                      baseos             478 k
+#6 20.73  nodejs-libs                     x86_64  1:22.23.1-6.el10_2                  appstream           20 M
+#6 20.73  openssl                         x86_64  1:3.5.5-2.el10_2                    baseos             1.2 M
+#6 20.73  policycoreutils                 x86_64  3.10-2.el10_2                       baseos             233 k
+#6 20.73  policycoreutils-python-utils    noarch  3.10-2.el10_2                       appstream           45 k
+#6 20.73  psmisc                          x86_64  23.6-8.el10                         baseos             320 k
+#6 20.73  python3-audit                   x86_64  4.0.3-5.el10                        appstream           69 k
+#6 20.73  python3-distro                  noarch  1.9.0-5.el10                        appstream           50 k
+#6 20.73  python3-libselinux              x86_64  3.10-1.el10                         appstream          202 k
+#6 20.73  python3-libsemanage             x86_64  3.10-1.el10                         appstream           80 k
+#6 20.73  python3-policycoreutils         noarch  3.10-2.el10_2                       appstream          2.1 M
+#6 20.73  python3-pyxattr                 x86_64  0.7.2-14.el10                       crb                 34 k
+#6 20.73  python3-setools                 x86_64  4.6.0-3.el10                        baseos             776 k
+#6 20.73  quota                           x86_64  1:4.09-10.el10                      baseos             195 k
+#6 20.73  quota-nls                       noarch  1:4.09-10.el10                      baseos              77 k
+#6 20.73  rpcbind                         x86_64  1.2.7-3.el10                        baseos              57 k
+#6 20.73  rpm-plugin-selinux              x86_64  4.19.1.1-23.el10                    baseos              17 k
+#6 20.73  selinux-policy                  noarch  42.1.18-4.el10_2.3                  baseos              55 k
+#6 20.73  selinux-policy-targeted         noarch  42.1.18-4.el10_2.3                  baseos             5.9 M
+#6 20.73  systemd                         x86_64  257-23.el10_2.1.rocky.0.1           baseos             5.6 M
+#6 20.73  systemd-pam                     x86_64  257-23.el10_2.1.rocky.0.1           baseos             322 k
+#6 20.73  userspace-rcu                   x86_64  0.14.0-7.el10                       baseos             109 k
+#6 20.73  xkeyboard-config                noarch  2.41-3.el10                         appstream          998 k
+#6 20.73 Installing weak dependencies:
+#6 20.73  cryptsetup-libs                 x86_64  2.8.1-2.el10                        baseos             581 k
+#6 20.73  kmod-libs                       x86_64  31-13.el10                          baseos              69 k
+#6 20.73  libbpf                          x86_64  2:1.7.0-1.el10                      baseos             193 k
+#6 20.73  libxkbcommon                    x86_64  1.7.0-4.el10                        appstream          144 k
+#6 20.73  nodejs-docs                     noarch  1:22.23.1-6.el10_2                  appstream          9.1 M
+#6 20.73  nodejs-full-i18n                x86_64  1:22.23.1-6.el10_2                  appstream          8.9 M
+#6 20.73  nodejs-npm                      x86_64  1:10.9.8-1.22.23.1.6.el10_2         appstream          2.0 M
+#6 20.73  selinux-policy-targeted-extra   noarch  42.1.18-4.el10_2.3                  crb                720 k
+#6 20.73 
+#6 20.73 Transaction Summary
+#6 20.73 =====================================================================================================
+#6 20.73 Install  81 Packages
+#6 20.73 
+#6 20.73 Total download size: 72 M
+#6 20.73 Installed size: 315 M
+#6 20.73 Downloading Packages:
+#6 21.04 (1/81): glusterfs-cli-2026.08.19-0.0.git787068d 5.0 MB/s | 185 kB     00:00    
+#6 21.05 (2/81): glusterfs-2026.08.19-0.0.git787068def84  13 MB/s | 594 kB     00:00    
+#6 21.05 (3/81): glusterfs-client-xlators-2026.08.19-0.0  15 MB/s | 785 kB     00:00    
+#6 21.06 (4/81): glusterfs-fuse-2026.08.19-0.0.git787068 9.0 MB/s | 137 kB     00:00    
+#6 21.07 (5/81): glusterfs-selinux-2.0.1-1.el10.noarch.r 1.4 MB/s |  25 kB     00:00    
+#6 21.08 (6/81): glusterfs-server-2026.08.19-0.0.git7870  48 MB/s | 1.2 MB     00:00    
+#6 21.08 (7/81): libgfapi0-2026.08.19-0.0.git787068def84 9.6 MB/s |  95 kB     00:00    
+#6 21.08 (8/81): glusterfs-gnfs-2026.08.19-0.0.git787068 4.0 MB/s | 145 kB     00:00    
+#6 21.09 (9/81): libgfchangelog0-2026.08.19-0.0.git78706 5.5 MB/s |  34 kB     00:00    
+#6 21.09 (10/81): libgfxdr0-2026.08.19-0.0.git787068def8 5.3 MB/s |  31 kB     00:00    
+#6 21.09 (11/81): libgfrpc0-2026.08.19-0.0.git787068def8 6.4 MB/s |  53 kB     00:00    
+#6 21.10 (12/81): python3-gluster-2026.08.19-0.0.git7870 3.8 MB/s |  17 kB     00:00    
+#6 21.10 (13/81): libglusterfs0-2026.08.19-0.0.git787068  25 MB/s | 289 kB     00:00    
+#6 21.17 (14/81): c-ares-1.34.6-2.el10_2.x86_64.rpm      1.7 MB/s | 117 kB     00:00    
+#6 21.22 (15/81): cryptsetup-libs-2.8.1-2.el10.x86_64.rp  11 MB/s | 581 kB     00:00    
+#6 21.25 (16/81): dbus-1.14.10-5.el10.x86_64.rpm         292 kB/s | 7.4 kB     00:00    
+#6 21.28 (17/81): dbus-broker-36-4.el10.x86_64.rpm       5.2 MB/s | 174 kB     00:00    
+#6 21.30 (18/81): dbus-common-1.14.10-5.el10.noarch.rpm  634 kB/s |  14 kB     00:00    
+#6 21.33 (19/81): device-mapper-1.02.210-2.el10.x86_64.r 4.4 MB/s | 142 kB     00:00    
+#6 21.36 (20/81): device-mapper-event-1.02.210-2.el10.x8 1.4 MB/s |  36 kB     00:00    
+#6 21.38 (21/81): device-mapper-event-libs-1.02.210-2.el 1.3 MB/s |  31 kB     00:00    
+#6 21.42 (22/81): device-mapper-libs-1.02.210-2.el10.x86 5.0 MB/s | 181 kB     00:00    
+#6 21.45 (23/81): libunwind-1.8.0-4.el10_0.x86_64.rpm    205 kB/s |  73 kB     00:00    
+#6 21.47 (24/81): device-mapper-persistent-data-1.3.0-1.  26 MB/s | 1.2 MB     00:00    
+#6 21.48 (25/81): diffutils-3.10-8.el10.x86_64.rpm        12 MB/s | 411 kB     00:00    
+#6 21.50 (26/81): e2fsprogs-libs-1.47.1-5.el10.x86_64.rp 6.6 MB/s | 225 kB     00:00    
+#6 21.52 (27/81): gssproxy-0.9.2-10.el10.x86_64.rpm      3.2 MB/s | 111 kB     00:00    
+#6 21.53 (28/81): kmod-31-13.el10.x86_64.rpm             4.2 MB/s | 137 kB     00:00    
+#6 21.55 (29/81): kmod-libs-31-13.el10.x86_64.rpm        2.0 MB/s |  69 kB     00:00    
+#6 21.56 (30/81): gperftools-libs-2.15-4.el10_0.x86_64.r 647 kB/s | 303 kB     00:00    
+#6 21.58 (31/81): libbasicobjects-0.1.1-58.el10.x86_64.r 1.1 MB/s |  26 kB     00:00    
+#6 21.59 (32/81): libbpf-1.7.0-1.el10.x86_64.rpm         6.3 MB/s | 193 kB     00:00    
+#6 21.61 (33/81): libbrotli-1.1.0-7.el10_1.x86_64.rpm     10 MB/s | 345 kB     00:00    
+#6 21.62 (34/81): libcollection-0.7.0-58.el10.x86_64.rpm 1.8 MB/s |  44 kB     00:00    
+#6 21.64 (35/81): libev-4.33-15.el10.x86_64.rpm          2.2 MB/s |  52 kB     00:00    
+#6 21.64 (36/81): libedit-3.1-52.20230828cvs.el10.x86_64 3.3 MB/s | 105 kB     00:00    
+#6 21.66 (37/81): libnfsidmap-2.8.3-5.el10.x86_64.rpm    2.7 MB/s |  61 kB     00:00    
+#6 21.67 (38/81): libini_config-1.3.1-58.el10.x86_64.rpm 2.0 MB/s |  67 kB     00:00    
+#6 21.70 (39/81): libnl3-3.11.0-1.el10.x86_64.rpm         11 MB/s | 357 kB     00:00    
+#6 21.70 (40/81): libnvme-1.16.1-3.el10_2.x86_64.rpm     3.9 MB/s | 120 kB     00:00    
+#6 21.72 (41/81): libpath_utils-0.2.1-58.el10.x86_64.rpm 1.2 MB/s |  29 kB     00:00    
+#6 21.72 (42/81): libref_array-0.1.5-58.el10.x86_64.rpm  1.2 MB/s |  27 kB     00:00    
+#6 21.75 (43/81): libseccomp-2.5.6-1.el10.x86_64.rpm     2.2 MB/s |  70 kB     00:00    
+#6 21.75 (44/81): libselinux-utils-3.10-1.el10.x86_64.rp 4.1 MB/s | 122 kB     00:00    
+#6 21.78 (45/81): liburing-2.12-1.el10.x86_64.rpm        2.0 MB/s |  43 kB     00:00    
+#6 21.78 (46/81): libaio-0.3.111-22.el10.x86_64.rpm       96 kB/s |  24 kB     00:00    
+#6 21.79 (47/81): libtirpc-1.3.5-1.el10.x86_64.rpm       2.7 MB/s |  94 kB     00:00    
+#6 21.80 (48/81): libverto-libev-0.3.2-10.el10.x86_64.rp 519 kB/s |  13 kB     00:00    
+#6 21.82 (49/81): lvm2-2.03.36-2.el10.x86_64.rpm          37 MB/s | 1.6 MB     00:00    
+#6 21.83 (50/81): lvm2-libs-2.03.36-2.el10.x86_64.rpm     23 MB/s | 1.0 MB     00:00    
+#6 21.84 (51/81): nfs-utils-2.8.3-5.el10.x86_64.rpm       14 MB/s | 478 kB     00:00    
+#6 21.86 (52/81): policycoreutils-3.10-2.el10_2.x86_64.r 7.4 MB/s | 233 kB     00:00    
+#6 21.87 (53/81): openssl-3.5.5-2.el10_2.x86_64.rpm       24 MB/s | 1.2 MB     00:00    
+#6 21.88 (54/81): psmisc-23.6-8.el10.x86_64.rpm          7.9 MB/s | 320 kB     00:00    
+#6 21.90 (55/81): python3-setools-4.6.0-3.el10.x86_64.rp  19 MB/s | 776 kB     00:00    
+#6 21.91 (56/81): quota-4.09-10.el10.x86_64.rpm          5.8 MB/s | 195 kB     00:00    
+#6 21.91 (57/81): quota-nls-4.09-10.el10.noarch.rpm      2.3 MB/s |  77 kB     00:00    
+#6 21.92 (58/81): rpcbind-1.2.7-3.el10.x86_64.rpm        2.4 MB/s |  57 kB     00:00    
+#6 21.93 (59/81): rpm-plugin-selinux-4.19.1.1-23.el10.x8 773 kB/s |  17 kB     00:00    
+#6 21.93 (60/81): selinux-policy-42.1.18-4.el10_2.3.noar 2.2 MB/s |  55 kB     00:00    
+#6 21.98 (61/81): systemd-pam-257-23.el10_2.1.rocky.0.1. 6.7 MB/s | 322 kB     00:00    
+#6 22.01 (62/81): selinux-policy-targeted-42.1.18-4.el10  67 MB/s | 5.9 MB     00:00    
+#6 22.04 (63/81): systemd-257-23.el10_2.1.rocky.0.1.x86_  49 MB/s | 5.6 MB     00:00    
+#6 22.04 (64/81): userspace-rcu-0.14.0-7.el10.x86_64.rpm 1.7 MB/s | 109 kB     00:00    
+#6 22.09 (65/81): checkpolicy-3.10-1.el10.x86_64.rpm     4.7 MB/s | 370 kB     00:00    
+#6 22.10 (66/81): libuv-1.52.1-1.el10_2.x86_64.rpm       4.8 MB/s | 265 kB     00:00    
+#6 22.11 (67/81): libxkbcommon-1.7.0-4.el10.x86_64.rpm   2.2 MB/s | 144 kB     00:00    
+#6 22.11 [MIRROR] nodejs-22.23.1-6.el10_2.x86_64.rpm: Status code: 404 for https://rocky-linux-northamerica-northeast2.production.gcp.mirrors.ctrliq.cloud/pub/rocky//10.2/AppStream/x86_64/os/Packages/n/nodejs-22.23.1-6.el10_2.x86_64.rpm (IP: 34.49.213.234)
+#6 22.11 [MIRROR] nodejs-docs-22.23.1-6.el10_2.noarch.rpm: Status code: 404 for https://rocky-linux-northamerica-northeast2.production.gcp.mirrors.ctrliq.cloud/pub/rocky//10.2/AppStream/x86_64/os/Packages/n/nodejs-docs-22.23.1-6.el10_2.noarch.rpm (IP: 34.49.213.234)
+#6 22.13 [MIRROR] nodejs-full-i18n-22.23.1-6.el10_2.x86_64.rpm: Status code: 404 for https://rocky-linux-northamerica-northeast2.production.gcp.mirrors.ctrliq.cloud/pub/rocky//10.2/AppStream/x86_64/os/Packages/n/nodejs-full-i18n-22.23.1-6.el10_2.x86_64.rpm (IP: 34.49.213.234)
+#6 22.16 [MIRROR] nodejs-docs-22.23.1-6.el10_2.noarch.rpm: Status code: 404 for https://rocky-linux-northamerica-northeast1.production.gcp.mirrors.ctrliq.cloud/pub/rocky//10.2/AppStream/x86_64/os/Packages/n/nodejs-docs-22.23.1-6.el10_2.noarch.rpm (IP: 34.49.186.154)
+#6 22.20 [MIRROR] nodejs-22.23.1-6.el10_2.x86_64.rpm: Status code: 404 for https://rocky-linux-northamerica-northeast1.production.gcp.mirrors.ctrliq.cloud/pub/rocky//10.2/AppStream/x86_64/os/Packages/n/nodejs-22.23.1-6.el10_2.x86_64.rpm (IP: 34.49.186.154)
+#6 22.96 (68/81): nodejs-full-i18n-22.23.1-6.el10_2.x86_  10 MB/s | 8.9 MB     00:00    
+#6 22.97 [MIRROR] nodejs-libs-22.23.1-6.el10_2.x86_64.rpm: Status code: 404 for https://rocky-linux-northamerica-northeast1.production.gcp.mirrors.ctrliq.cloud/pub/rocky//10.2/AppStream/x86_64/os/Packages/n/nodejs-libs-22.23.1-6.el10_2.x86_64.rpm (IP: 34.49.186.154)
+#6 25.10 (69/81): nodejs-22.23.1-6.el10_2.x86_64.rpm      17 kB/s |  52 kB     00:03    
+#6 28.40 (70/81): nodejs-npm-10.9.8-1.22.23.1.6.el10_2.x 617 kB/s | 2.0 MB     00:03    
+#6 28.72 (71/81): nodejs-docs-22.23.1-6.el10_2.noarch.rp 1.4 MB/s | 9.1 MB     00:06    
+#6 28.72 (72/81): policycoreutils-python-utils-3.10-2.el 140 kB/s |  45 kB     00:00    
+#6 29.15 (73/81): python3-audit-4.0.3-5.el10.x86_64.rpm  160 kB/s |  69 kB     00:00    
+#6 29.27 (74/81): python3-distro-1.9.0-5.el10.noarch.rpm  91 kB/s |  50 kB     00:00    
+#6 29.97 (75/81): nodejs-libs-22.23.1-6.el10_2.x86_64.rp 2.8 MB/s |  20 MB     00:07    
+#6 30.08 (76/81): python3-libselinux-3.10-1.el10.x86_64. 218 kB/s | 202 kB     00:00    
+#6 30.26 (77/81): python3-libsemanage-3.10-1.el10.x86_64  82 kB/s |  80 kB     00:00    
+#6 30.28 (78/81): python3-pyxattr-0.7.2-14.el10.x86_64.r 1.4 MB/s |  34 kB     00:00    
+#6 30.32 (79/81): selinux-policy-targeted-extra-42.1.18-  18 MB/s | 720 kB     00:00    
+#6 30.46 (80/81): python3-policycoreutils-3.10-2.el10_2. 4.3 MB/s | 2.1 MB     00:00    
+#6 31.67 (81/81): xkeyboard-config-2.41-3.el10.noarch.rp 626 kB/s | 998 kB     00:01    
+#6 31.67 --------------------------------------------------------------------------------
+#6 31.67 Total                                           6.6 MB/s |  72 MB     00:10     
+#6 31.79 Extra Packages for Enterprise Linux 10 - x86_64 1.6 MB/s | 1.6 kB     00:00    
+#6 31.80 Importing GPG key 0xE37ED158:
+#6 31.80  Userid     : "Fedora (epel10) <epel@fedoraproject.org>"
+#6 31.80  Fingerprint: 7D8D 15CB FC4E 6268 8591 FB26 33D9 8517 E37E D158
+#6 31.80  From       : /etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-10
+#6 31.80 Key imported successfully
+#6 32.62 Running transaction check
+#6 32.68 Transaction check succeeded.
+#6 32.68 Running transaction test
+#6 33.42 Transaction test succeeded.
+#6 33.42 Running transaction
+#6 34.13   Running scriptlet: selinux-policy-targeted-42.1.18-4.el10_2.3.noarch      1/1 
+#6 34.14   Running scriptlet: nodejs-1:22.23.1-6.el10_2.x86_64                       1/1 
+#6 34.20   Preparing        :                                                        1/1 
+#6 34.23   Installing       : libtirpc-1.3.5-1.el10.x86_64                          1/81 
+#6 34.23   Installing       : userspace-rcu-0.14.0-7.el10.x86_64                    2/81 
+#6 34.24   Installing       : libaio-0.3.111-22.el10.x86_64                         3/81 
+#6 34.24   Installing       : python3-libselinux-3.10-1.el10.x86_64                 4/81 
+#6 34.31   Installing       : nodejs-docs-1:22.23.1-6.el10_2.noarch                 5/81 
+#6 34.32   Installing       : libuv-1:1.52.1-1.el10_2.x86_64                        6/81 
+#6 34.33   Installing       : libselinux-utils-3.10-1.el10.x86_64                   7/81 
+#6 34.34   Installing       : libref_array-0.1.5-58.el10.x86_64                     8/81 
+#6 34.34   Installing       : libnvme-1.16.1-3.el10_2.x86_64                        9/81 
+#6 34.35   Installing       : kmod-31-13.el10.x86_64                               10/81 
+#6 34.35   Installing       : diffutils-3.10-8.el10.x86_64                         11/81 
+#6 34.37   Installing       : policycoreutils-3.10-2.el10_2.x86_64                 12/81 
+#6 34.37   Running scriptlet: policycoreutils-3.10-2.el10_2.x86_64                 12/81 
+#6 34.38   Installing       : selinux-policy-42.1.18-4.el10_2.3.noarch             13/81 
+#6 34.38   Running scriptlet: selinux-policy-42.1.18-4.el10_2.3.noarch             13/81 
+#6 34.40   Running scriptlet: selinux-policy-targeted-extra-42.1.18-4.el10_2.3.n   14/81 
+#6 34.43   Installing       : selinux-policy-targeted-extra-42.1.18-4.el10_2.3.n   14/81 
+#6 34.44   Running scriptlet: selinux-policy-targeted-42.1.18-4.el10_2.3.noarch    15/81 
+#6 34.65   Installing       : selinux-policy-targeted-42.1.18-4.el10_2.3.noarch    15/81 
+#6 34.66   Running scriptlet: selinux-policy-targeted-42.1.18-4.el10_2.3.noarch    15/81 
+#6 34.67   Installing       : python3-libsemanage-3.10-1.el10.x86_64               16/81 
+#6 34.67   Installing       : python3-pyxattr-0.7.2-14.el10.x86_64                 17/81 
+#6 34.72   Installing       : xkeyboard-config-2.41-3.el10.noarch                  18/81 
+#6 34.73   Installing       : libxkbcommon-1.7.0-4.el10.x86_64                     19/81 
+#6 34.73   Installing       : python3-distro-1.9.0-5.el10.noarch                   20/81 
+#6 34.73   Installing       : python3-audit-4.0.3-5.el10.x86_64                    21/81 
+#6 34.74   Installing       : checkpolicy-3.10-1.el10.x86_64                       22/81 
+#6 34.75   Installing       : quota-nls-1:4.09-10.el10.noarch                      23/81 
+#6 34.78   Installing       : python3-setools-4.6.0-3.el10.x86_64                  24/81 
+#6 34.81   Installing       : python3-policycoreutils-3.10-2.el10_2.noarch         25/81 
+#6 34.82   Installing       : policycoreutils-python-utils-3.10-2.el10_2.noarch    26/81 
+#6 34.82   Running scriptlet: glusterfs-selinux-2.0.1-1.el10.noarch                27/81 
+#6 34.83   Installing       : glusterfs-selinux-2.0.1-1.el10.noarch                27/81 
+#6 34.83   Running scriptlet: glusterfs-selinux-2.0.1-1.el10.noarch                27/81 
+#6 37.43 Failed to resolve typeattributeset statement at /var/lib/selinux/targeted/tmp/modules/200/glusterd/cil:81
+#6 37.43 Failed to resolve AST
+#6 37.43 semodule:  Failed!
+#6 37.43 libsemanage.semanage_direct_install_info: Overriding glusterd module at lower priority 100 with module at priority 200.
+#6 37.43 
+#6 37.45   Installing       : psmisc-23.6-8.el10.x86_64                            28/81 
+#6 37.46   Installing       : openssl-1:3.5.5-2.el10_2.x86_64                      29/81 
+#6 37.46   Installing       : liburing-2.12-1.el10.x86_64                          30/81 
+#6 37.47   Installing       : libseccomp-2.5.6-1.el10.x86_64                       31/81 
+#6 37.47   Installing       : libpath_utils-0.2.1-58.el10.x86_64                   32/81 
+#6 37.48   Installing       : libnl3-3.11.0-1.el10.x86_64                          33/81 
+#6 37.49   Installing       : libnfsidmap-1:2.8.3-5.el10.x86_64                    34/81 
+#6 37.49   Installing       : libev-4.33-15.el10.x86_64                            35/81 
+#6 37.49   Installing       : libverto-libev-0.3.2-10.el10.x86_64                  36/81 
+#6 37.49   Installing       : libedit-3.1-52.20230828cvs.el10.x86_64               37/81 
+#6 37.50   Installing       : libcollection-0.7.0-58.el10.x86_64                   38/81 
+#6 37.50   Installing       : libbrotli-1.1.0-7.el10_1.x86_64                      39/81 
+#6 37.51   Installing       : libbpf-2:1.7.0-1.el10.x86_64                         40/81 
+#6 37.51   Installing       : libbasicobjects-0.1.1-58.el10.x86_64                 41/81 
+#6 37.51   Installing       : libini_config-1.3.1-58.el10.x86_64                   42/81 
+#6 37.51   Installing       : kmod-libs-31-13.el10.x86_64                          43/81 
+#6 37.52   Installing       : e2fsprogs-libs-1.47.1-5.el10.x86_64                  44/81 
+#6 37.53   Installing       : quota-1:4.09-10.el10.x86_64                          45/81 
+#6 37.56   Installing       : device-mapper-persistent-data-1.3.0-1.el10.x86_64    46/81 
+#6 37.56   Installing       : dbus-common-1:1.14.10-5.el10.noarch                  47/81 
+#6 37.56   Running scriptlet: dbus-common-1:1.14.10-5.el10.noarch                  47/81 
+#6 37.57   Installing       : dbus-broker-36-4.el10.x86_64                         48/81 
+#6 37.58   Running scriptlet: dbus-broker-36-4.el10.x86_64                         48/81 
+#6 37.58   Installing       : dbus-1:1.14.10-5.el10.x86_64                         49/81 
+#6 37.59   Installing       : device-mapper-libs-10:1.02.210-2.el10.x86_64         50/81 
+#6 37.60   Installing       : cryptsetup-libs-2.8.1-2.el10.x86_64                  51/81 
+#6 37.61   Installing       : device-mapper-10:1.02.210-2.el10.x86_64              52/81 
+#6 37.62   Installing       : systemd-pam-257-23.el10_2.1.rocky.0.1.x86_64         53/81 
+#6 37.63   Running scriptlet: systemd-257-23.el10_2.1.rocky.0.1.x86_64             54/81 
+#6 37.78   Installing       : systemd-257-23.el10_2.1.rocky.0.1.x86_64             54/81 
+#6 37.79   Running scriptlet: systemd-257-23.el10_2.1.rocky.0.1.x86_64             54/81 
+#6 37.94 Creating group 'input' with GID 104.
+#6 37.94 Creating group 'kvm' with GID 36.
+#6 37.94 Creating group 'render' with GID 105.
+#6 37.94 Creating group 'sgx' with GID 106.
+#6 37.94 Creating group 'systemd-journal' with GID 190.
+#6 37.94 Creating group 'dbus' with GID 81.
+#6 37.94 Creating user 'dbus' (System Message Bus) with UID 81 and GID 81.
+#6 37.94 
+#6 37.94   Installing       : device-mapper-event-libs-10:1.02.210-2.el10.x86_64   55/81 
+#6 37.95   Running scriptlet: rpcbind-1.2.7-3.el10.x86_64                          56/81 
+#6 37.97   Installing       : rpcbind-1.2.7-3.el10.x86_64                          56/81 
+#6 37.97   Running scriptlet: rpcbind-1.2.7-3.el10.x86_64                          56/81 
+#6 38.01   Installing       : device-mapper-event-10:1.02.210-2.el10.x86_64        57/81 
+#6 38.01   Running scriptlet: device-mapper-event-10:1.02.210-2.el10.x86_64        57/81 
+#6 38.03 Created symlink '/etc/systemd/system/sockets.target.wants/dm-event.socket' → '/usr/lib/systemd/system/dm-event.socket'.
+#6 38.03 
+#6 38.04   Installing       : lvm2-libs-10:2.03.36-2.el10.x86_64                   58/81 
+#6 38.07   Installing       : lvm2-10:2.03.36-2.el10.x86_64                        59/81 
+#6 38.08   Running scriptlet: lvm2-10:2.03.36-2.el10.x86_64                        59/81 
+#6 38.11 Created symlink '/etc/systemd/system/sysinit.target.wants/lvm2-monitor.service' → '/usr/lib/systemd/system/lvm2-monitor.service'.
+#6 38.11 Created symlink '/etc/systemd/system/sysinit.target.wants/lvm2-lvmpolld.socket' → '/usr/lib/systemd/system/lvm2-lvmpolld.socket'.
+#6 38.11 
+#6 38.11   Running scriptlet: gssproxy-0.9.2-10.el10.x86_64                        60/81 
+#6 38.12   Installing       : gssproxy-0.9.2-10.el10.x86_64                        60/81 
+#6 38.13   Running scriptlet: gssproxy-0.9.2-10.el10.x86_64                        60/81 
+#6 38.14   Running scriptlet: nfs-utils-1:2.8.3-5.el10.x86_64                      61/81 
+#6 38.18   Installing       : nfs-utils-1:2.8.3-5.el10.x86_64                      61/81 
+#6 38.18   Running scriptlet: nfs-utils-1:2.8.3-5.el10.x86_64                      61/81 
+#6 38.20 Created symlink '/etc/systemd/system/multi-user.target.wants/nfs-client.target' → '/usr/lib/systemd/system/nfs-client.target'.
+#6 38.20 Created symlink '/etc/systemd/system/remote-fs.target.wants/nfs-client.target' → '/usr/lib/systemd/system/nfs-client.target'.
+#6 38.20 
+#6 38.21 System has not been booted with systemd as init system (PID 1). Can't operate.
+#6 38.21 Failed to connect to system scope bus via local transport: Host is down
+#6 38.21 
+#6 38.22 System has not been booted with systemd as init system (PID 1). Can't operate.
+#6 38.22 Failed to connect to system scope bus via local transport: Host is down
+#6 38.22 
+#6 38.22   Installing       : c-ares-1.34.6-2.el10_2.x86_64                        62/81 
+#6 38.52   Installing       : nodejs-libs-1:22.23.1-6.el10_2.x86_64                63/81 
+#6 38.66   Installing       : nodejs-full-i18n-1:22.23.1-6.el10_2.x86_64           64/81 
+#6 38.92   Installing       : nodejs-npm-1:10.9.8-1.22.23.1.6.el10_2.x86_64        65/81 
+#6 38.93   Installing       : nodejs-1:22.23.1-6.el10_2.x86_64                     66/81 
+#6 38.94   Installing       : libunwind-1.8.0-4.el10_0.x86_64                      67/81 
+#6 38.95   Installing       : gperftools-libs-2.15-4.el10_0.x86_64                 68/81 
+#6 38.96   Installing       : libgfxdr0-2026.08.19-0.0.git787068def84c.el10.x86_   69/81 
+#6 38.97   Running scriptlet: libgfxdr0-2026.08.19-0.0.git787068def84c.el10.x86_   69/81 
+#6 38.99   Installing       : libglusterfs0-2026.08.19-0.0.git787068def84c.el10.   70/81 
+#6 38.99   Running scriptlet: libglusterfs0-2026.08.19-0.0.git787068def84c.el10.   70/81 
+#6 39.00   Installing       : libgfrpc0-2026.08.19-0.0.git787068def84c.el10.x86_   71/81 
+#6 39.00   Running scriptlet: libgfrpc0-2026.08.19-0.0.git787068def84c.el10.x86_   71/81 
+#6 39.03   Installing       : glusterfs-client-xlators-2026.08.19-0.0.git787068d   72/81 
+#6 39.03   Running scriptlet: glusterfs-2026.08.19-0.0.git787068def84c.el10.x86_   73/81 
+#6 39.08   Installing       : glusterfs-2026.08.19-0.0.git787068def84c.el10.x86_   73/81 
+#6 39.08   Running scriptlet: glusterfs-2026.08.19-0.0.git787068def84c.el10.x86_   73/81 
+#6 39.10   Installing       : libgfapi0-2026.08.19-0.0.git787068def84c.el10.x86_   74/81 
+#6 39.10   Running scriptlet: libgfapi0-2026.08.19-0.0.git787068def84c.el10.x86_   74/81 
+#6 39.12   Installing       : glusterfs-fuse-2026.08.19-0.0.git787068def84c.el10   75/81 
+#6 39.13   Installing       : glusterfs-cli-2026.08.19-0.0.git787068def84c.el10.   76/81 
+#6 39.13   Installing       : libgfchangelog0-2026.08.19-0.0.git787068def84c.el1   77/81 
+#6 39.14   Running scriptlet: libgfchangelog0-2026.08.19-0.0.git787068def84c.el1   77/81 
+#6 39.19   Installing       : glusterfs-server-2026.08.19-0.0.git787068def84c.el   78/81 
+#6 39.19   Running scriptlet: glusterfs-server-2026.08.19-0.0.git787068def84c.el   78/81 
+#6 39.22   Installing       : glusterfs-gnfs-2026.08.19-0.0.git787068def84c.el10   79/81 
+#6 39.23   Installing       : rpm-plugin-selinux-4.19.1.1-23.el10.x86_64           80/81 
+#6 39.24   Installing       : python3-gluster-2026.08.19-0.0.git787068def84c.el1   81/81 
+#6 39.24   Running scriptlet: selinux-policy-targeted-extra-42.1.18-4.el10_2.3.n   81/81 
+#6 45.23   Running scriptlet: selinux-policy-targeted-42.1.18-4.el10_2.3.noarch    81/81 
+#6 50.93   Running scriptlet: glusterfs-selinux-2.0.1-1.el10.noarch                81/81 
+#6 50.95   Running scriptlet: python3-gluster-2026.08.19-0.0.git787068def84c.el1   81/81 
+#6 51.16 
+#6 51.16 Installed:
+#6 51.16   c-ares-1.34.6-2.el10_2.x86_64                                                 
+#6 51.16   checkpolicy-3.10-1.el10.x86_64                                                
+#6 51.16   cryptsetup-libs-2.8.1-2.el10.x86_64                                           
+#6 51.16   dbus-1:1.14.10-5.el10.x86_64                                                  
+#6 51.16   dbus-broker-36-4.el10.x86_64                                                  
+#6 51.16   dbus-common-1:1.14.10-5.el10.noarch                                           
+#6 51.16   device-mapper-10:1.02.210-2.el10.x86_64                                       
+#6 51.16   device-mapper-event-10:1.02.210-2.el10.x86_64                                 
+#6 51.16   device-mapper-event-libs-10:1.02.210-2.el10.x86_64                            
+#6 51.16   device-mapper-libs-10:1.02.210-2.el10.x86_64                                  
+#6 51.16   device-mapper-persistent-data-1.3.0-1.el10.x86_64                             
+#6 51.16   diffutils-3.10-8.el10.x86_64                                                  
+#6 51.16   e2fsprogs-libs-1.47.1-5.el10.x86_64                                           
+#6 51.16   glusterfs-2026.08.19-0.0.git787068def84c.el10.x86_64                          
+#6 51.16   glusterfs-cli-2026.08.19-0.0.git787068def84c.el10.x86_64                      
+#6 51.16   glusterfs-client-xlators-2026.08.19-0.0.git787068def84c.el10.x86_64           
+#6 51.16   glusterfs-fuse-2026.08.19-0.0.git787068def84c.el10.x86_64                     
+#6 51.16   glusterfs-gnfs-2026.08.19-0.0.git787068def84c.el10.x86_64                     
+#6 51.16   glusterfs-selinux-2.0.1-1.el10.noarch                                         
+#6 51.16   glusterfs-server-2026.08.19-0.0.git787068def84c.el10.x86_64                   
+#6 51.16   gperftools-libs-2.15-4.el10_0.x86_64                                          
+#6 51.16   gssproxy-0.9.2-10.el10.x86_64                                                 
+#6 51.16   kmod-31-13.el10.x86_64                                                        
+#6 51.16   kmod-libs-31-13.el10.x86_64                                                   
+#6 51.16   libaio-0.3.111-22.el10.x86_64                                                 
+#6 51.16   libbasicobjects-0.1.1-58.el10.x86_64                                          
+#6 51.16   libbpf-2:1.7.0-1.el10.x86_64                                                  
+#6 51.16   libbrotli-1.1.0-7.el10_1.x86_64                                               
+#6 51.16   libcollection-0.7.0-58.el10.x86_64                                            
+#6 51.16   libedit-3.1-52.20230828cvs.el10.x86_64                                        
+#6 51.16   libev-4.33-15.el10.x86_64                                                     
+#6 51.16   libgfapi0-2026.08.19-0.0.git787068def84c.el10.x86_64                          
+#6 51.16   libgfchangelog0-2026.08.19-0.0.git787068def84c.el10.x86_64                    
+#6 51.16   libgfrpc0-2026.08.19-0.0.git787068def84c.el10.x86_64                          
+#6 51.16   libgfxdr0-2026.08.19-0.0.git787068def84c.el10.x86_64                          
+#6 51.16   libglusterfs0-2026.08.19-0.0.git787068def84c.el10.x86_64                      
+#6 51.16   libini_config-1.3.1-58.el10.x86_64                                            
+#6 51.16   libnfsidmap-1:2.8.3-5.el10.x86_64                                             
+#6 51.16   libnl3-3.11.0-1.el10.x86_64                                                   
+#6 51.16   libnvme-1.16.1-3.el10_2.x86_64                                                
+#6 51.16   libpath_utils-0.2.1-58.el10.x86_64                                            
+#6 51.16   libref_array-0.1.5-58.el10.x86_64                                             
+#6 51.16   libseccomp-2.5.6-1.el10.x86_64                                                
+#6 51.16   libselinux-utils-3.10-1.el10.x86_64                                           
+#6 51.16   libtirpc-1.3.5-1.el10.x86_64                                                  
+#6 51.16   libunwind-1.8.0-4.el10_0.x86_64                                               
+#6 51.16   liburing-2.12-1.el10.x86_64                                                   
+#6 51.16   libuv-1:1.52.1-1.el10_2.x86_64                                                
+#6 51.16   libverto-libev-0.3.2-10.el10.x86_64                                           
+#6 51.16   libxkbcommon-1.7.0-4.el10.x86_64                                              
+#6 51.16   lvm2-10:2.03.36-2.el10.x86_64                                                 
+#6 51.16   lvm2-libs-10:2.03.36-2.el10.x86_64                                            
+#6 51.16   nfs-utils-1:2.8.3-5.el10.x86_64                                               
+#6 51.16   nodejs-1:22.23.1-6.el10_2.x86_64                                              
+#6 51.16   nodejs-docs-1:22.23.1-6.el10_2.noarch                                         
+#6 51.16   nodejs-full-i18n-1:22.23.1-6.el10_2.x86_64                                    
+#6 51.16   nodejs-libs-1:22.23.1-6.el10_2.x86_64                                         
+#6 51.16   nodejs-npm-1:10.9.8-1.22.23.1.6.el10_2.x86_64                                 
+#6 51.16   openssl-1:3.5.5-2.el10_2.x86_64                                               
+#6 51.16   policycoreutils-3.10-2.el10_2.x86_64                                          
+#6 51.16   policycoreutils-python-utils-3.10-2.el10_2.noarch                             
+#6 51.16   psmisc-23.6-8.el10.x86_64                                                     
+#6 51.16   python3-audit-4.0.3-5.el10.x86_64                                             
+#6 51.16   python3-distro-1.9.0-5.el10.noarch                                            
+#6 51.16   python3-gluster-2026.08.19-0.0.git787068def84c.el10.x86_64                    
+#6 51.16   python3-libselinux-3.10-1.el10.x86_64                                         
+#6 51.16   python3-libsemanage-3.10-1.el10.x86_64                                        
+#6 51.16   python3-policycoreutils-3.10-2.el10_2.noarch                                  
+#6 51.16   python3-pyxattr-0.7.2-14.el10.x86_64                                          
+#6 51.16   python3-setools-4.6.0-3.el10.x86_64                                           
+#6 51.16   quota-1:4.09-10.el10.x86_64                                                   
+#6 51.16   quota-nls-1:4.09-10.el10.noarch                                               
+#6 51.16   rpcbind-1.2.7-3.el10.x86_64                                                   
+#6 51.16   rpm-plugin-selinux-4.19.1.1-23.el10.x86_64                                    
+#6 51.16   selinux-policy-42.1.18-4.el10_2.3.noarch                                      
+#6 51.16   selinux-policy-targeted-42.1.18-4.el10_2.3.noarch                             
+#6 51.16   selinux-policy-targeted-extra-42.1.18-4.el10_2.3.noarch                       
+#6 51.16   systemd-257-23.el10_2.1.rocky.0.1.x86_64                                      
+#6 51.16   systemd-pam-257-23.el10_2.1.rocky.0.1.x86_64                                  
+#6 51.16   userspace-rcu-0.14.0-7.el10.x86_64                                            
+#6 51.16   xkeyboard-config-2.41-3.el10.noarch                                           
+#6 51.16 
+#6 51.16 Complete!
+#6 51.40 36 files removed
+#6 DONE 51.5s
+
+#7 [3/5] COPY containers/gluster-bootstrap.mjs /usr/local/bin/gluster-bootstrap.mjs
+#7 DONE 0.1s
+
+#8 [4/5] RUN chmod 0755 /usr/local/bin/gluster-bootstrap.mjs
+#8 DONE 0.2s
+
+#9 [5/5] WORKDIR /app
+#9 DONE 0.0s
+
+#10 exporting to image
+#10 exporting layers
+#10 exporting layers 8.4s done
+#10 exporting manifest sha256:423b4b462f2d019751ff6686bef802eee90ebb6fb60bce6578bf89596aef72a1 0.0s done
+#10 exporting config sha256:61a58918f0e98e2a701333e52a610cd49fe0ef4c83ad90276c17f957fed89580 done
+#10 exporting attestation manifest sha256:715fdc430b7eee08715359ccf8c867d6fb18e8e05c993591a6f4da8abc79cb60 done
+#10 exporting manifest list sha256:ecbd7c72b5195912e4c9b890c3e7cd4328fb8f7a3e925694b405e08845e9fbbb done
+#10 naming to ghcr.io/eliware/rocky10-gluster:2026.08.19-787068def84c done
+#10 unpacking to ghcr.io/eliware/rocky10-gluster:2026.08.19-787068def84c
+#10 unpacking to ghcr.io/eliware/rocky10-gluster:2026.08.19-787068def84c 1.6s done
+#10 DONE 10.1s
+
+ [33m1 warning found (use docker --debug to expand):
+[0m - SecretsUsedInArgOrEnv: Do not use ARG or ENV instructions for sensitive data (ARG "RPM_GPG_KEY_URL") (line 15)
+{
+  "run_id": "20260819070652969-3fee9f22",
+  "generated": "2026-08-19T07:19:19Z",
+  "repository_integrity": {
+    "status": "not-tested",
+    "detail": "verified by the conductor against the package repository"
+  },
+  "provenance_verification": {
+    "status": "not-tested",
+    "detail": "generated and verified by the conductor after image publication"
+  },
+  "checks": {
+    "install": {
+      "status": "passed"
+    },
+    "cli_available": {
+      "status": "passed"
+    },
+    "volume_create_mount": {
+      "status": "passed"
+    },
+    "file_lifecycle": {
+      "status": "passed"
+    },
+    "volume_unmount_delete": {
+      "status": "passed"
+    },
+    "service_shutdown": {
+      "status": "passed"
+    }
+  },
+  "distributions": [
+    {
+      "id": "rocky-10",
+      "label": "Rocky Linux 10",
+      "container_core": {
+        "status": "passed",
+        "detail": "updated; volume stop: smoke: success; volume delete: smoke: success"
+      }
+    }
+  ],
+  "metadata_version": "0.1.0"
+}
+Validated 11 image labels
+Login Succeeded
+The push refers to repository [ghcr.io/eliware/rocky10-gluster]
+efb5fa01673b: Waiting
+44136fa355b3: Waiting
+83dd3d9271aa: Waiting
+530d6b37ba46: Waiting
+44136fa355b3: Waiting
+83dd3d9271aa: Waiting
+530d6b37ba46: Waiting
+efb5fa01673b: Waiting
+44136fa355b3: Already exists
+83dd3d9271aa: Waiting
+530d6b37ba46: Layer already exists
+5b558be40c6b: Waiting
+f6072dee2382: Waiting
+efb5fa01673b: Waiting
+5b558be40c6b: Waiting
+f6072dee2382: Waiting
+efb5fa01673b: Pushed
+2e4ac34c74f7: Waiting
+5b558be40c6b: Pushed
+f6072dee2382: Pushed
+2e4ac34c74f7: Waiting
+2e4ac34c74f7: Pushed
+83dd3d9271aa: Pushed
+2026.08.19-787068def84c: digest: sha256:ecbd7c72b5195912e4c9b890c3e7cd4328fb8f7a3e925694b405e08845e9fbbb size: 856
+sha256:ecbd7c72b5195912e4c9b890c3e7cd4328fb8f7a3e925694b405e08845e9fbbb

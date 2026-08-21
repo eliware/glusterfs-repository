@@ -1,0 +1,7 @@
+{
+  "schemaVersion": 1,
+  "title": "Upgrade EL10 packages",
+  "steps": [
+    "sudo dnf clean metadata && sudo dnf upgrade glusterfs-server glusterfs-client"
+  ]
+}

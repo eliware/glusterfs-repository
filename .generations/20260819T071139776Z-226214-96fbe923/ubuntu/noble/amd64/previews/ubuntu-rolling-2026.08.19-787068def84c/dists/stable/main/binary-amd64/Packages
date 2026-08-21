@@ -1,0 +1,277 @@
+Package: glusterfs-cli
+Source: glusterfs
+Version: 2026.08.19~rolling.g787068def84c-1
+Architecture: amd64
+Maintainer: Patrick Matthäi <pmatthaei@debian.org>
+Installed-Size: 495
+Depends: libc6 (>= 2.38), libgfrpc0 (>= 2026.08.19~rolling.g787068def84c), libgfxdr0 (>= 2026.08.19~rolling.g787068def84c), libglusterfs0 (>= 2026.08.19~rolling.g787068def84c), libreadline8t64 (>= 6.0), libtirpc3t64 (>= 1.1.4), libxml2 (>= 2.7.4)
+Breaks: glusterfs-server (<< 9.3-2)
+Replaces: glusterfs-server (<< 9.3-2)
+Filename: pool/main/g/glusterfs/glusterfs-cli_2026.08.19~rolling.g787068def84c-1_amd64.deb
+Size: 179346
+MD5sum: f2d9c7eff0571343cd63946f1f76a606
+SHA1: fbffd7b177e5833e454a520dd1740f0089c5cac2
+SHA256: 12c017d5229599fd1a15f51a6df10216f2306cbe7a9b503e1f02d7e98b143cd6
+Section: admin
+Multi-Arch: foreign
+Homepage: https://www.gluster.org/
+Description: clustered file-system (cli package)
+ GlusterFS is a clustered file-system capable of scaling to several
+ peta-bytes. It aggregates various storage bricks over Infiniband RDMA
+ or TCP/IP interconnect into one large parallel network file
+ system. GlusterFS is one of the most sophisticated file system in
+ terms of features and extensibility. It borrows a powerful concept
+ called Translators from GNU Hurd kernel. Much of the code in GlusterFS
+ is in userspace and easily manageable.
+ .
+ This package provides the gluster command line tool.
+
+Package: glusterfs-client
+Source: glusterfs
+Version: 2026.08.19~rolling.g787068def84c-1
+Architecture: amd64
+Maintainer: Patrick Matthäi <pmatthaei@debian.org>
+Installed-Size: 93
+Depends: libc6 (>= 2.38), python3:any, glusterfs-common (>= 2026.08.19~rolling.g787068def84c-1), procps
+Filename: pool/main/g/glusterfs/glusterfs-client_2026.08.19~rolling.g787068def84c-1_amd64.deb
+Size: 30376
+MD5sum: d54e9969319b98dae6c0938ccbfc1871
+SHA1: be81f8923f9a10550930ea5ccdbe555049eeff18
+SHA256: 3c9ecf745bf0f7e36b51cc04fdcbcd9c10b6cbdc2ba02977bd2ca1dc5e597432
+Section: admin
+Multi-Arch: foreign
+Homepage: https://www.gluster.org/
+Description: clustered file-system (client package)
+ GlusterFS is a clustered file-system capable of scaling to several
+ peta-bytes. It aggregates various storage bricks over Infiniband RDMA
+ or TCP/IP interconnect into one large parallel network file
+ system. GlusterFS is one of the most sophisticated file system in
+ terms of features and extensibility. It borrows a powerful concept
+ called Translators from GNU Hurd kernel. Much of the code in GlusterFS
+ is in userspace and easily manageable.
+ .
+ This package provides the GlusterFS client tool.
+
+Package: glusterfs-common
+Source: glusterfs
+Version: 2026.08.19~rolling.g787068def84c-1
+Architecture: amd64
+Maintainer: Patrick Matthäi <pmatthaei@debian.org>
+Installed-Size: 12531
+Depends: libacl1 (>= 2.2.23), libaio1t64 (>= 0.3.93), libc6 (>= 2.38), libgfapi0 (>= 2026.08.19~rolling.g787068def84c), libgfchangelog0 (>= 2026.08.19~rolling.g787068def84c), libgfrpc0 (>= 2026.08.19~rolling.g787068def84c), libgfxdr0 (>= 2026.08.19~rolling.g787068def84c), libglusterfs0 (>= 2026.08.19~rolling.g787068def84c), libssl3t64 (>= 3.0.0), libtirpc3t64 (>= 1.1.4), liburcu8t64 (>= 0.13.0), libuuid1 (>= 2.16), libxml2 (>= 2.7.4), zlib1g (>= 1:1.1.4), python3:any, python3-prettytable, python3-requests, python3-jwt, attr, adduser, xfsprogs, e2fsprogs, psmisc
+Breaks: glusterfs-server (<< 3.4.0~qa5)
+Replaces: glusterfs-server (<< 3.4.0~qa5)
+Filename: pool/main/g/glusterfs/glusterfs-common_2026.08.19~rolling.g787068def84c-1_amd64.deb
+Size: 2555712
+MD5sum: 89b4df92226f352db690e7218a5e77ca
+SHA1: 246d411d85bc3c58d18e262038da0a81f24ad16e
+SHA256: 7e6469608de1cb6cbbc3110b33d24c072d59a02000eac73306618fcd90c1d834
+Section: admin
+Multi-Arch: foreign
+Homepage: https://www.gluster.org/
+Description: GlusterFS common libraries and translator modules
+ GlusterFS is a clustered file-system capable of scaling to several
+ petabytes. It aggregates various storage bricks over Infiniband RDMA
+ or TCP/IP interconnect into one large parallel network file
+ system. GlusterFS is one of the most sophisticated file system in
+ terms of features and extensibility. It borrows a powerful concept
+ called Translators from GNU Hurd kernel. Much of the code in GlusterFS
+ is in userspace and easily manageable.
+ .
+ This package includes libglusterfs and glusterfs translator modules
+ common to both GlusterFS server and client framework.
+
+Package: glusterfs-server
+Source: glusterfs
+Version: 2026.08.19~rolling.g787068def84c-1
+Architecture: amd64
+Maintainer: Patrick Matthäi <pmatthaei@debian.org>
+Installed-Size: 162
+Depends: glusterfs-cli (>= 2026.08.19~rolling.g787068def84c-1), glusterfs-common (>= 2026.08.19~rolling.g787068def84c-1), glusterfs-client (>= 2026.08.19~rolling.g787068def84c-1), procps
+Recommends: nfs-common
+Filename: pool/main/g/glusterfs/glusterfs-server_2026.08.19~rolling.g787068def84c-1_amd64.deb
+Size: 26898
+MD5sum: fe4aab1723333363cded73ce30ab47fb
+SHA1: 8300ccf47d71b91733c213e3c673596856a9992a
+SHA256: 10861862d0f5404273e19b96e52b2ad5a7f75f98360405590a0f6daf23628ef3
+Section: admin
+Multi-Arch: foreign
+Homepage: https://www.gluster.org/
+Description: clustered file-system (server package)
+ GlusterFS is a clustered file-system capable of scaling to several
+ peta-bytes. It aggregates various storage bricks over Infiniband RDMA
+ or TCP/IP interconnect into one large parallel network file
+ system. GlusterFS is one of the most sophisticated file system in
+ terms of features and extensibility. It borrows a powerful concept
+ called Translators from GNU Hurd kernel. Much of the code in GlusterFS
+ is in userspace and easily manageable.
+ .
+ This package installs the gluster server binaries, scripts and configuration
+ files to turn GlusterFS into a fully fledged file server.
+
+Package: libgfapi0
+Source: glusterfs
+Version: 2026.08.19~rolling.g787068def84c-1
+Architecture: amd64
+Maintainer: Patrick Matthäi <pmatthaei@debian.org>
+Installed-Size: 239
+Depends: libacl1 (>= 2.2.23), libc6 (>= 2.14), libgfrpc0 (>= 2026.08.19~rolling.g787068def84c), libgfxdr0 (>= 2026.08.19~rolling.g787068def84c), libglusterfs0 (>= 2026.08.19~rolling.g787068def84c), libtirpc3t64 (>= 1.1.4)
+Breaks: glusterfs-common (<< 5.2-2)
+Replaces: glusterfs-common (<< 5.2-2)
+Filename: pool/main/g/glusterfs/libgfapi0_2026.08.19~rolling.g787068def84c-1_amd64.deb
+Size: 83818
+MD5sum: e32f23be101690e0f4cd36b8a0c60adc
+SHA1: 05a609e46cf45dab15d0f3f1b964e6c5e9243dac
+SHA256: 9604a3a9b9e4b7e46078fb19469f073aae633cdb1cbb412301ba3c453e37f29b
+Section: libs
+Multi-Arch: same
+Homepage: https://www.gluster.org/
+Description: GlusterFS gfapi shared library
+ GlusterFS is a clustered file-system capable of scaling to several
+ petabytes. It aggregates various storage bricks over Infiniband RDMA
+ or TCP/IP interconnect into one large parallel network file
+ system. GlusterFS is one of the most sophisticated file system in
+ terms of features and extensibility. It borrows a powerful concept
+ called Translators from GNU Hurd kernel. Much of the code in GlusterFS
+ is in userspace and easily manageable.
+ .
+ This package contains libgfapi.
+
+Package: libgfchangelog0
+Source: glusterfs
+Version: 2026.08.19~rolling.g787068def84c-1
+Architecture: amd64
+Maintainer: Patrick Matthäi <pmatthaei@debian.org>
+Installed-Size: 216
+Depends: libc6 (>= 2.38), libgfrpc0 (>= 2026.08.19~rolling.g787068def84c), libgfxdr0 (>= 2026.08.19~rolling.g787068def84c), libglusterfs0 (>= 2026.08.19~rolling.g787068def84c), libtirpc3t64 (>= 1.1.4)
+Breaks: glusterfs-common (<< 5.2-2)
+Replaces: glusterfs-common (<< 5.2-2)
+Filename: pool/main/g/glusterfs/libgfchangelog0_2026.08.19~rolling.g787068def84c-1_amd64.deb
+Size: 29718
+MD5sum: 0825ead0b61c98614b59efc3e469788d
+SHA1: 7e8e33cf7a9fc4860859e0e95081a06713843c66
+SHA256: 99e535be169401b728c542c624c01806d3b96c73c1f29b2eaa35ddbd4d45879a
+Section: libs
+Multi-Arch: same
+Homepage: https://www.gluster.org/
+Description: GlusterFS gfchangelog shared library
+ GlusterFS is a clustered file-system capable of scaling to several
+ petabytes. It aggregates various storage bricks over Infiniband RDMA
+ or TCP/IP interconnect into one large parallel network file
+ system. GlusterFS is one of the most sophisticated file system in
+ terms of features and extensibility. It borrows a powerful concept
+ called Translators from GNU Hurd kernel. Much of the code in GlusterFS
+ is in userspace and easily manageable.
+ .
+ This package contains libgfchangelog.
+
+Package: libgfrpc0
+Source: glusterfs
+Version: 2026.08.19~rolling.g787068def84c-1
+Architecture: amd64
+Maintainer: Patrick Matthäi <pmatthaei@debian.org>
+Installed-Size: 248
+Depends: libc6 (>= 2.34), libgfxdr0 (>= 2026.08.19~rolling.g787068def84c), libglusterfs0 (>= 2026.08.19~rolling.g787068def84c), libtirpc3t64 (>= 1.1.4)
+Breaks: glusterfs-common (<< 5.2-2)
+Replaces: glusterfs-common (<< 5.2-2)
+Filename: pool/main/g/glusterfs/libgfrpc0_2026.08.19~rolling.g787068def84c-1_amd64.deb
+Size: 44792
+MD5sum: 8e43a69ddf8eb5ccc326fc800a7a495c
+SHA1: ad041293efc53f10361b6faf2a5124ad09e0302e
+SHA256: 8a6add5ebc051952e1681b70912422bd08e25d91dfb32a664edaf3a47a0932c0
+Section: libs
+Multi-Arch: same
+Homepage: https://www.gluster.org/
+Description: GlusterFS libgfrpc shared library
+ GlusterFS is a clustered file-system capable of scaling to several
+ petabytes. It aggregates various storage bricks over Infiniband RDMA
+ or TCP/IP interconnect into one large parallel network file
+ system. GlusterFS is one of the most sophisticated file system in
+ terms of features and extensibility. It borrows a powerful concept
+ called Translators from GNU Hurd kernel. Much of the code in GlusterFS
+ is in userspace and easily manageable.
+ .
+ This package contains libgfrpc.
+
+Package: libgfxdr0
+Source: glusterfs
+Version: 2026.08.19~rolling.g787068def84c-1
+Architecture: amd64
+Maintainer: Patrick Matthäi <pmatthaei@debian.org>
+Installed-Size: 78
+Depends: libc6 (>= 2.4), libtirpc3t64 (>= 1.1.4)
+Breaks: glusterfs-common (<< 5.2-2)
+Replaces: glusterfs-common (<< 5.2-2)
+Filename: pool/main/g/glusterfs/libgfxdr0_2026.08.19~rolling.g787068def84c-1_amd64.deb
+Size: 20172
+MD5sum: 775a3f827fb5479c9b29456f2ce58545
+SHA1: abfba9892b3473f790f8e9e011a6479c655aaf91
+SHA256: fd5ffa2fd4391c9e06266b5472c073bf434cf02c0dc494d49f096a8d84f9ac20
+Section: libs
+Multi-Arch: same
+Homepage: https://www.gluster.org/
+Description: GlusterFS libgfxdr shared library
+ GlusterFS is a clustered file-system capable of scaling to several
+ petabytes. It aggregates various storage bricks over Infiniband RDMA
+ or TCP/IP interconnect into one large parallel network file
+ system. GlusterFS is one of the most sophisticated file system in
+ terms of features and extensibility. It borrows a powerful concept
+ called Translators from GNU Hurd kernel. Much of the code in GlusterFS
+ is in userspace and easily manageable.
+ .
+ This package contains libgfxdr.
+
+Package: libglusterfs-dev
+Source: glusterfs
+Version: 2026.08.19~rolling.g787068def84c-1
+Architecture: amd64
+Maintainer: Patrick Matthäi <pmatthaei@debian.org>
+Installed-Size: 887
+Depends: libgfapi0 (= 2026.08.19~rolling.g787068def84c-1), libgfchangelog0 (= 2026.08.19~rolling.g787068def84c-1), libgfrpc0 (= 2026.08.19~rolling.g787068def84c-1), libgfxdr0 (= 2026.08.19~rolling.g787068def84c-1), libglusterfs0 (= 2026.08.19~rolling.g787068def84c-1), libacl1-dev
+Replaces: gluster-common (<< 5.2-2)
+Filename: pool/main/g/glusterfs/libglusterfs-dev_2026.08.19~rolling.g787068def84c-1_amd64.deb
+Size: 146924
+MD5sum: 939d79a2646978fdb4d7663a0659f86f
+SHA1: b29f6b49e365b91cb7488bf10de8367339507e83
+SHA256: a36e891c0b5b8ff246e652816c35dc3edb49e94c3d883fd0883d8205f3c0ca7f
+Section: libdevel
+Homepage: https://www.gluster.org/
+Description: Development files for GlusterFS libraries
+ GlusterFS is a clustered file-system capable of scaling to several
+ petabytes. It aggregates various storage bricks over Infiniband RDMA
+ or TCP/IP interconnect into one large parallel network file
+ system. GlusterFS is one of the most sophisticated file system in
+ terms of features and extensibility. It borrows a powerful concept
+ called Translators from GNU Hurd kernel. Much of the code in GlusterFS
+ is in userspace and easily manageable.
+ .
+ This package contains the development files.
+
+Package: libglusterfs0
+Source: glusterfs
+Version: 2026.08.19~rolling.g787068def84c-1
+Architecture: amd64
+Maintainer: Patrick Matthäi <pmatthaei@debian.org>
+Installed-Size: 866
+Depends: libc6 (>= 2.38), libssl3t64 (>= 3.0.0), libuuid1 (>= 2.16), zlib1g (>= 1:1.1.4)
+Breaks: glusterfs-common (<< 5.2-2)
+Replaces: glusterfs-common (<< 5.2-2)
+Filename: pool/main/g/glusterfs/libglusterfs0_2026.08.19~rolling.g787068def84c-1_amd64.deb
+Size: 264340
+MD5sum: 62add66801a9e7814004e37541be58c1
+SHA1: b0bbb3a3cf55445421cbfbdd62117caf70dc10ba
+SHA256: 7f04218dd477e9d8a20429980dff0b7173ce273197891534a1d4236b79170503
+Section: libs
+Multi-Arch: same
+Homepage: https://www.gluster.org/
+Description: GlusterFS shared library
+ GlusterFS is a clustered file-system capable of scaling to several
+ petabytes. It aggregates various storage bricks over Infiniband RDMA
+ or TCP/IP interconnect into one large parallel network file
+ system. GlusterFS is one of the most sophisticated file system in
+ terms of features and extensibility. It borrows a powerful concept
+ called Translators from GNU Hurd kernel. Much of the code in GlusterFS
+ is in userspace and easily manageable.
+ .
+ This package contains libglusterfs.
+

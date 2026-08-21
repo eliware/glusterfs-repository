@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "title": "Install the rolling EL10 build",
+  "steps": [
+    "sudo rpm --import https://glusterfs.eliware.org/keys/RPM-GPG-KEY-ELIWARE-GLUSTER",
+    "sudo dnf config-manager --add-repo https://glusterfs.eliware.org/glusterfs-el10.repo",
+    "sudo dnf --enablerepo=eliware-gluster-preview install glusterfs-server glusterfs-client"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "schema": 1,
+  "generation": "20260818T055833642Z-332556-ab650380",
+  "mode": "stable",
+  "candidate": "epel10-stable-11.2",
+  "version": "11.2",
+  "created": "2026-08-18T05:58:37Z",
+  "metadata_version": "0.1.0"
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "generated": "2026-08-19T07:07:32Z",
+  "record": {
+    "kind": "image",
+    "run_id": "20260819070652969-3fee9f22",
+    "lane": "ubuntu-stable",
+    "channel": "stable",
+    "version": "11.2",
+    "distribution": "ubuntu",
+    "image": "ghcr.io/eliware/ubuntu24-gluster:11.2",
+    "digest": "sha256:64a438828f77be393cfc9bf94286b4ca85e51ac1d4183d60a1fd1f4eaf0ba857",
+    "package_provenance": "https://glusterfs.eliware.org/ubuntu/noble/amd64/stable/provenance.json",
+    "package_repository": "https://glusterfs.eliware.org/ubuntu/noble/amd64/stable/",
+    "package_metadata_sha256": null,
+    "source": {
+      "ref": "v11.2",
+      "commit": "15d3c0f8435814fdb7242a8a82fa5db140013d0a"
+    },
+    "packaging_commit": "efcfbd3a9e38ba1adee65432fccdacce5f147aba",
+    "base_image_digest": "sha256:d78ab76437b1afc5f01e223d6bf0172763f404bb166441328845adbef44518cb",
+    "workflow": null,
+    "workflow_run_id": "20260819070652969-3fee9f22",
+    "build_log": "/mnt/pvc/gluster-build-workspaces/conductor/20260819070652969-3fee9f22/ubuntu-stable/logs/image-ubuntu.log",
+    "workflow_url": "https://github.com/eliware/glusterfs-packaging/actions/runs/20260819070652969-3fee9f22"
+  },
+  "files": [
+    {
+      "label": "container-validation",
+      "path": "assets/container-validation.json",
+      "sha256": "2f565df82fdb607bf1ffb9cf1bcf59e08ab807f06843207171c816fb99942a6c",
+      "size": 1871
+    },
+    {
+      "label": "image-build-log",
+      "path": "assets/image-ubuntu.log",
+      "sha256": "3980ae4673bc3ab6f22a572c2b5f2273876992b9b5bc3e5942a88e27830a50f5",
+      "size": 50713
+    }
+  ],
+  "checksums_sha256": "24e59d2fc1033203b1fffac3cdc87c133239a7f16d12197a66e65e46d30390f8",
+  "metadata_version": "0.1.0"
+}

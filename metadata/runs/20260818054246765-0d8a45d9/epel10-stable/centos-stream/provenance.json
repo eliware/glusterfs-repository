@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "generated": "2026-08-18T05:59:56Z",
+  "record": {
+    "kind": "image",
+    "run_id": "20260818054246765-0d8a45d9",
+    "lane": "epel10-stable",
+    "channel": "stable",
+    "version": "11.2",
+    "distribution": "centos-stream",
+    "image": "ghcr.io/eliware/centos10-gluster:11.2",
+    "digest": "sha256:b5cdfa0e51211f7d38ff92e3436745b34da468a4b679405ad6b7dd2a18c6bdc3",
+    "package_provenance": "https://glusterfs.eliware.org/el10/x86_64/stable/provenance.json",
+    "package_repository": "https://glusterfs.eliware.org/el10/x86_64/stable/",
+    "package_metadata_sha256": "001e6475818c779587723f1dca5c5019eea728b8d431b11185991c533222832e",
+    "source": {
+      "ref": "v11.2",
+      "commit": "15d3c0f8435814fdb7242a8a82fa5db140013d0a"
+    },
+    "packaging_commit": "d43ca27561f1e9a633210ddffed6c4c6509d7aea",
+    "base_image_digest": "sha256:b7f85bb8be4c471bc62842156a51bbf224b15243943733bd54e86ba5fd79b1fc",
+    "workflow": null,
+    "workflow_run_id": "20260818054246765-0d8a45d9",
+    "build_log": "/mnt/pvc/gluster-build-workspaces/conductor/20260818054246765-0d8a45d9/epel10-stable/logs/image-centos-stream.log",
+    "workflow_url": "https://github.com/eliware/glusterfs-packaging/actions/runs/20260818054246765-0d8a45d9"
+  },
+  "files": [
+    {
+      "label": "container-validation",
+      "path": "assets/container-validation.json",
+      "sha256": "1e44f018c945069d83637663afc48cce61f7cb8d5b1f36d245dc7c74ef167f11",
+      "size": 1899
+    },
+    {
+      "label": "image-build-log",
+      "path": "assets/image-centos-stream.log",
+      "sha256": "8c5f50169ec4eea3eba54d50c70ba6ca9804c46c9f1c4927bf49ea016729f68f",
+      "size": 45414
+    }
+  ],
+  "checksums_sha256": "c42923a118fae67781a65464206fa2562c6b00921708f520109bcf4b0b274fa7",
+  "metadata_version": "0.1.0"
+}

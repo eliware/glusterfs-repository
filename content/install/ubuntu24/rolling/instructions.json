@@ -1,0 +1,8 @@
+{
+  "schemaVersion": 1,
+  "title": "Install the rolling Ubuntu build",
+  "steps": [
+    "Use the latest Ubuntu noble preview repository under /ubuntu/noble/amd64/previews/.",
+    "Verify Release, signatures, and checksums before installing."
+  ]
+}

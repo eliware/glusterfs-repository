@@ -1,0 +1,7 @@
+{
+  "schemaVersion": 1,
+  "title": "Upgrade rolling EL10 packages",
+  "steps": [
+    "sudo dnf clean metadata && sudo dnf --enablerepo=eliware-gluster-preview upgrade glusterfs-server glusterfs-client"
+  ]
+}

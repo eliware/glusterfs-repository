@@ -1,0 +1,179 @@
+{
+  "channel": "preview",
+  "distribution": "ubuntu",
+  "version": "2026.08.19-787068def84c",
+  "built": "2026-08-19T07:12:13.934Z",
+  "candidate": "ubuntu-rolling-2026.08.19-787068def84c",
+  "source": {
+    "ref": "devel",
+    "commit": "787068def84cb7b995ed69f1cd702ea05784aa8b"
+  },
+  "validation": {
+    "run_id": "20260819070652969-3fee9f22",
+    "generated": "2026-08-19T07:11:38Z",
+    "package_format": "deb",
+    "repository_integrity": {
+      "status": "passed",
+      "detail": "candidate package metadata, checksums, and signatures verified"
+    },
+    "provenance_verification": {
+      "status": "passed",
+      "detail": "provenance generated, signed, and independently verified"
+    },
+    "checks": {
+      "install": {
+        "status": "passed"
+      },
+      "service_start": {
+        "status": "passed"
+      },
+      "volume_create_mount": {
+        "status": "passed"
+      },
+      "file_lifecycle": {
+        "status": "passed"
+      },
+      "volume_unmount_delete": {
+        "status": "passed"
+      },
+      "service_shutdown": {
+        "status": "passed"
+      }
+    },
+    "distributions": [
+      {
+        "id": "ubuntu-noble",
+        "label": "Ubuntu 24.04 (noble)",
+        "image": "ubuntu:24.04",
+        "package_format": "deb",
+        "package_core": {
+          "status": "passed"
+        },
+        "repository_integrity": {
+          "status": "passed",
+          "detail": "candidate package metadata, checksums, and signatures verified"
+        },
+        "provenance_verification": {
+          "status": "passed",
+          "detail": "provenance generated, signed, and independently verified"
+        }
+      }
+    ],
+    "metadata_version": "0.1.0",
+    "smoke_stages": {
+      "smoke1": {
+        "status": "passed"
+      },
+      "smoke2": {
+        "status": "passed",
+        "targets": [
+          "ubuntu-noble"
+        ]
+      }
+    }
+  },
+  "container_validation": {
+    "run_id": "20260819070652969-3fee9f22",
+    "generated": "2026-08-19T07:12:10Z",
+    "repository_integrity": {
+      "status": "passed",
+      "detail": "published package metadata and image inputs verified"
+    },
+    "provenance_verification": {
+      "status": "passed",
+      "detail": "provenance generated, signed, and independently verified"
+    },
+    "checks": {
+      "install": {
+        "status": "passed"
+      },
+      "cli_available": {
+        "status": "passed"
+      },
+      "volume_create_mount": {
+        "status": "passed"
+      },
+      "file_lifecycle": {
+        "status": "passed"
+      },
+      "volume_unmount_delete": {
+        "status": "passed"
+      },
+      "service_shutdown": {
+        "status": "passed"
+      },
+      "image_labels": {
+        "status": "passed"
+      }
+    },
+    "distributions": [
+      {
+        "id": "ubuntu-noble",
+        "label": "Ubuntu 24.04 (noble)",
+        "container_core": {
+          "status": "passed",
+          "detail": "volume start: smoke: success; volume stop: smoke: success; volume delete: smoke: success"
+        },
+        "repository_integrity": {
+          "status": "passed",
+          "detail": "published package metadata and image inputs verified"
+        },
+        "provenance_verification": {
+          "status": "passed",
+          "detail": "provenance generated, signed, and independently verified"
+        }
+      }
+    ],
+    "metadata_version": "0.1.0",
+    "image_labels": {
+      "status": "passed",
+      "fields": [
+        "org.opencontainers.image.version",
+        "org.opencontainers.image.revision",
+        "org.eliware.gluster.base-image.digest",
+        "org.eliware.gluster.base-image.reference",
+        "org.eliware.gluster.source-ref",
+        "org.eliware.gluster.source-commit",
+        "org.eliware.gluster.distribution",
+        "org.eliware.gluster.package-candidate",
+        "org.eliware.gluster.package-provenance",
+        "org.eliware.gluster.deb-repository"
+      ]
+    }
+  },
+  "repository_integrity": {
+    "status": "passed",
+    "detail": "candidate package metadata, checksums, and signatures verified"
+  },
+  "provenance_verification": {
+    "status": "passed",
+    "detail": "provenance generated, signed, and independently verified"
+  },
+  "provenance": {
+    "url": "/metadata/runs/20260819070652969-3fee9f22/ubuntu-rolling/ubuntu/provenance.json"
+  },
+  "deb_repos": {
+    "ubuntu": "/ubuntu/noble/amd64/previews/ubuntu-rolling-2026.08.19-787068def84c/"
+  },
+  "image": {
+    "repository": "ghcr.io/eliware/ubuntu24-gluster",
+    "distribution": "ubuntu",
+    "package_candidate": "ubuntu-rolling-2026.08.19-787068def84c",
+    "base_image": "ubuntu:24.04@sha256:d78ab76437b1afc5f01e223d6bf0172763f404bb166441328845adbef44518cb",
+    "exact_tag": "2026.08.19-787068def84c",
+    "reference": "ghcr.io/eliware/ubuntu24-gluster:2026.08.19-787068def84c",
+    "digest": "sha256:e86a3a120f6d9bb6f8b47670c8c5833f0e656849cd76dd0b2d67256afbd5ac30",
+    "aliases": [],
+    "base": {
+      "digest": "sha256:d78ab76437b1afc5f01e223d6bf0172763f404bb166441328845adbef44518cb",
+      "short": "d78ab764"
+    },
+    "provenance": {
+      "url": "/metadata/runs/20260819070652969-3fee9f22/ubuntu-rolling/ubuntu/provenance.json"
+    },
+    "package_provenance": {
+      "url": "https://glusterfs.eliware.org/ubuntu/noble/amd64/previews/ubuntu-rolling-2026.08.19-787068def84c/provenance.json"
+    }
+  },
+  "metadata_version": "0.1.0"
+}

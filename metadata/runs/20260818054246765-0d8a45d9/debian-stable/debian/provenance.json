@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "generated": "2026-08-18T05:57:01Z",
+  "record": {
+    "kind": "image",
+    "run_id": "20260818054246765-0d8a45d9",
+    "lane": "debian-stable",
+    "channel": "stable",
+    "version": "11.2",
+    "distribution": "debian",
+    "image": "ghcr.io/eliware/debian12-gluster:11.2",
+    "digest": "sha256:4eb051ab937f50b5d6a88734b78f3fa9acb27d8a8644844c75f763c4a91115e8",
+    "package_provenance": "https://glusterfs.eliware.org/debian/bookworm/amd64/stable/provenance.json",
+    "package_repository": "https://glusterfs.eliware.org/debian/bookworm/amd64/stable/",
+    "package_metadata_sha256": null,
+    "source": {
+      "ref": "v11.2",
+      "commit": "15d3c0f8435814fdb7242a8a82fa5db140013d0a"
+    },
+    "packaging_commit": "d43ca27561f1e9a633210ddffed6c4c6509d7aea",
+    "base_image_digest": "sha256:abd67ffcfa541b485a3dff59865ab629aa048a6c613e639d36e7456b0b229241",
+    "workflow": null,
+    "workflow_run_id": "20260818054246765-0d8a45d9",
+    "build_log": "/mnt/pvc/gluster-build-workspaces/conductor/20260818054246765-0d8a45d9/debian-stable/logs/image-debian.log",
+    "workflow_url": "https://github.com/eliware/glusterfs-packaging/actions/runs/20260818054246765-0d8a45d9"
+  },
+  "files": [
+    {
+      "label": "container-validation",
+      "path": "assets/container-validation.json",
+      "sha256": "2019ef5a478e5799c303ba4ace25c491b961073b970cd27ff26eb7a6cbdd51e4",
+      "size": 1874
+    },
+    {
+      "label": "image-build-log",
+      "path": "assets/image-debian.log",
+      "sha256": "b5fcc6692f01cbc7d7d2a84d064d8346e428c2f928b58ec8768a87f6d9e6c0cc",
+      "size": 45885
+    }
+  ],
+  "checksums_sha256": "377351556cd1e2ab35b0813cf13fbf9e391f3f8a29ff72128d80bf9968fbbce8",
+  "metadata_version": "0.1.0"
+}

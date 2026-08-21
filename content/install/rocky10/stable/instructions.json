@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "title": "Install on EL10-compatible systems",
+  "steps": [
+    "sudo rpm --import https://glusterfs.eliware.org/keys/RPM-GPG-KEY-ELIWARE-GLUSTER",
+    "sudo dnf config-manager --add-repo https://glusterfs.eliware.org/glusterfs-el10.repo",
+    "sudo dnf install glusterfs-server glusterfs-client"
+  ]
+}

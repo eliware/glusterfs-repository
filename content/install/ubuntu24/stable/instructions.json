@@ -1,0 +1,8 @@
+{
+  "schemaVersion": 1,
+  "title": "Install on Ubuntu 24.04",
+  "steps": [
+    "Use the signed Ubuntu noble stable repository under /ubuntu/noble/amd64/stable/.",
+    "Verify Release, signatures, and checksums, then run sudo apt update && sudo apt install glusterfs-server glusterfs-client."
+  ]
+}

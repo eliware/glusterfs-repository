@@ -1,0 +1,8 @@
+{
+  "schemaVersion": 1,
+  "title": "Install the rolling Debian build",
+  "steps": [
+    "Use the latest Debian preview repository under /debian/bookworm/amd64/previews/.",
+    "Verify Release, signatures, and checksums before installing."
+  ]
+}

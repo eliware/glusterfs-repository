@@ -1,0 +1,69 @@
+{
+  "run_id": "20260818054246765-0d8a45d9",
+  "generated": "2026-08-18T05:56:57Z",
+  "repository_integrity": {
+    "status": "passed",
+    "detail": "published package metadata and image inputs verified"
+  },
+  "provenance_verification": {
+    "status": "passed",
+    "detail": "provenance generated, signed, and independently verified"
+  },
+  "checks": {
+    "install": {
+      "status": "passed"
+    },
+    "cli_available": {
+      "status": "passed"
+    },
+    "volume_create_mount": {
+      "status": "passed"
+    },
+    "file_lifecycle": {
+      "status": "passed"
+    },
+    "volume_unmount_delete": {
+      "status": "passed"
+    },
+    "service_shutdown": {
+      "status": "passed"
+    },
+    "image_labels": {
+      "status": "passed"
+    }
+  },
+  "distributions": [
+    {
+      "id": "debian-bookworm",
+      "label": "Debian 12 (bookworm)",
+      "container_core": {
+        "status": "passed",
+        "detail": "volume start: smoke: success; volume stop: smoke: success; volume delete: smoke: success"
+      },
+      "repository_integrity": {
+        "status": "passed",
+        "detail": "published package metadata and image inputs verified"
+      },
+      "provenance_verification": {
+        "status": "passed",
+        "detail": "provenance generated, signed, and independently verified"
+      }
+    }
+  ],
+  "metadata_version": "0.1.0",
+  "image_labels": {
+    "status": "passed",
+    "fields": [
+      "org.opencontainers.image.version",
+      "org.opencontainers.image.revision",
+      "org.eliware.gluster.base-image.digest",
+      "org.eliware.gluster.base-image.reference",
+      "org.eliware.gluster.source-ref",
+      "org.eliware.gluster.source-commit",
+      "org.eliware.gluster.distribution",
+      "org.eliware.gluster.package-candidate",
+      "org.eliware.gluster.package-provenance",
+      "org.eliware.gluster.deb-repository"
+    ]
+  }
+}

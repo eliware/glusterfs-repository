@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "title": "Install on Debian 12",
+  "steps": [
+    "curl -fsSL https://glusterfs.eliware.org/keys/RPM-GPG-KEY-ELIWARE-GLUSTER | sudo tee /etc/apt/trusted.gpg.d/eliware-gluster.asc >/dev/null",
+    "echo 'deb [arch=amd64] https://glusterfs.eliware.org/debian/bookworm/amd64/stable stable main' | sudo tee /etc/apt/sources.list.d/eliware-gluster.list",
+    "sudo apt update && sudo apt install glusterfs-server glusterfs-client"
+  ]
+}

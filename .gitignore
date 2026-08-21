@@ -1,0 +1,21 @@
+# Local environment and credentials
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.pfx
+id_rsa*
+kubeconfig*
+credentials*
+secrets*
+
+# Local runtime state
+*.lock
+*.pid
+*.sock
+
+# Operating-system metadata
+.DS_Store
+Thumbs.db
