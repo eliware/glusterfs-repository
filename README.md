@@ -80,6 +80,11 @@ service reads these files from the mounted volume, so editing blog content does
 not require rebuilding the image. The schema and authoring rules are documented
 in [`content/BLOGS.md`](content/BLOGS.md).
 
+The legacy `blogs` compatibility path currently points to `blogs-legacy` while
+older HTTP images that validate blog schema 1 remain deployed. After the HTTP
+schema-2 image is released, this compatibility copy can be removed and
+`BLOG_DIR` can use `content/blogs` directly.
+
 ## Release ownership
 
 The packaging repository is the source of truth for build configuration,
