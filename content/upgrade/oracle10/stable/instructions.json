@@ -1,7 +1,115 @@
 {
-  "schemaVersion": 1,
-  "title": "Upgrade EL10 packages",
-  "steps": [
-    "sudo dnf clean metadata && sudo dnf upgrade glusterfs-server glusterfs-client"
+  "schemaVersion": 2,
+  "title": "Upgrade GlusterFS on Oracle Linux 10 (stable)",
+  "summary": "A step-by-step upgrade tutorial for Oracle Linux 10. Use the stable Eliware repository, verify package and service state at every checkpoint, and replace angle-bracket placeholders with values from your environment.",
+  "platform": "rpm",
+  "channel": "stable",
+  "source": {
+    "repository": "https://glusterfs.eliware.org/",
+    "upstream": "https://docs.gluster.org/en/main/Upgrade-Guide/generic-upgrade-procedure/"
+  },
+  "sections": [
+    {
+      "title": "Pre-upgrade safety",
+      "steps": [
+        {
+          "title": "Read the release notes",
+          "text": "Confirm the supported source-to-target path and read the target release warnings before changing a production cluster.",
+          "commands": [
+            "Open https://docs.gluster.org/en/main/Upgrade-Guide/generic-upgrade-procedure/",
+            "gluster --version",
+            "gluster volume info"
+          ],
+          "verify": "The target version and upgrade path are documented."
+        },
+        {
+          "title": "Choose online or offline mode",
+          "text": "Online upgrades are for replicated or distributed-replicate volumes. Use offline mode for dispersed layouts. Do not change volume configuration during the upgrade; upgrade geo-replication slaves before the master and servers before clients.",
+          "commands": [
+            "gluster volume list",
+            "gluster volume status",
+            "gluster volume heal <volname> info"
+          ],
+          "verify": "The mode, maintenance window, and current heal state are recorded."
+        },
+        {
+          "title": "Check removed options and deprecated features",
+          "text": "For older source releases, inspect the target-version warnings. In particular check features.lock-heal, features.grace-timeout, and deprecated translators listed by the target release.",
+          "commands": [
+            "gluster volume info",
+            "gluster volume get <volname> all"
+          ],
+          "verify": "Removed settings are unset or have an approved migration plan."
+        }
+      ]
+    },
+    {
+      "title": "Upgrade the servers",
+      "steps": [
+        {
+          "title": "Refresh the signed Eliware source",
+          "text": "Verify the stable candidate before stopping services.",
+          "commands": [
+            "sudo rpm --import https://glusterfs.eliware.org/keys/RPM-GPG-KEY-ELIWARE-GLUSTER",
+            "sudo dnf clean all",
+            "sudo dnf makecache",
+            "dnf info glusterfs-server"
+          ],
+          "verify": "The candidate comes from the intended signed channel."
+        },
+        {
+          "title": "Upgrade one server",
+          "text": "For online mode, stop one server's Gluster services and GFAPI applications, update it, then start it before touching another server. Never take multiple members of one replica set down together.",
+          "commands": [
+            "sudo systemctl stop glusterd glustereventsd 2>/dev/null || true",
+            "sudo systemctl stop <gfapi-dependent-services> 2>/dev/null || true",
+            "sudo dnf upgrade -y glusterfs-server glusterfs-client",
+            "gluster --version",
+            "sudo systemctl start glusterd",
+            "gluster volume status"
+          ],
+          "verify": "The upgraded server is healthy and all expected processes are online."
+        },
+        {
+          "title": "Heal before continuing",
+          "text": "Invoke self-heal and wait for the backlog to clear or reach an approved steady state before upgrading the next server.",
+          "commands": [
+            "for volume in $(gluster volume list); do gluster volume heal \"$volume\"; done",
+            "gluster volume heal <volname> info",
+            "gluster peer status",
+            "gluster volume status"
+          ],
+          "verify": "Peers are connected, volumes are online, and no unexpected backlog remains."
+        }
+      ]
+    },
+    {
+      "title": "Upgrade clients and finish",
+      "steps": [
+        {
+          "title": "Upgrade every remaining server and client",
+          "text": "Repeat the server sequence for every pool member. Then unmount client filesystems, stop GFAPI applications, update client packages, remount, and restart applications.",
+          "commands": [
+            "sudo umount <gluster-mount>",
+            "sudo systemctl stop <client-gfapi-services> 2>/dev/null || true",
+            "sudo dnf upgrade -y glusterfs-fuse glusterfs-client",
+            "sudo mount -a",
+            "gluster --version"
+          ],
+          "verify": "All servers and clients report the target version and mounts are healthy."
+        },
+        {
+          "title": "Complete post-upgrade checks",
+          "text": "After the entire pool is upgraded, update op-version when appropriate, verify volume health, and document application tests. Follow the upstream reboot guidance for pre-7 clusters that ever used quota.",
+          "commands": [
+            "gluster volume status",
+            "gluster volume heal <volname> info",
+            "gluster volume get <volname> cluster.op-version",
+            "gluster volume set <volname> fips-mode-rchecksum on"
+          ],
+          "verify": "The cluster is healthy and the op-version decision is recorded."
+        }
+      ]
+    }
   ]
 }

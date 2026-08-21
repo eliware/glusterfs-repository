@@ -1,9 +1,97 @@
 {
-  "schemaVersion": 1,
-  "title": "Install on Debian 12",
-  "steps": [
-    "curl -fsSL https://glusterfs.eliware.org/keys/RPM-GPG-KEY-ELIWARE-GLUSTER | sudo tee /etc/apt/trusted.gpg.d/eliware-gluster.asc >/dev/null",
-    "echo 'deb [arch=amd64] https://glusterfs.eliware.org/debian/bookworm/amd64/stable stable main' | sudo tee /etc/apt/sources.list.d/eliware-gluster.list",
-    "sudo apt update && sudo apt install glusterfs-server glusterfs-client"
+  "schemaVersion": 2,
+  "title": "Install GlusterFS on Debian 12 (Bookworm) (stable)",
+  "summary": "A step-by-step install tutorial for Debian 12 (Bookworm). Use the stable Eliware repository, verify package and service state at every checkpoint, and replace angle-bracket placeholders with values from your environment.",
+  "platform": "debian",
+  "channel": "stable",
+  "source": {
+    "repository": "https://glusterfs.eliware.org/",
+    "upstream": "https://docs.gluster.org/en/main/Install-Guide/Install/"
+  },
+  "sections": [
+    {
+      "title": "Prepare and install",
+      "steps": [
+        {
+          "title": "Prepare the host",
+          "text": "Update APT and install tools for a signed external repository.",
+          "commands": [
+            "sudo apt update",
+            "sudo apt install -y ca-certificates curl gnupg"
+          ],
+          "verify": "APT completes without errors."
+        },
+        {
+          "title": "Install the Eliware key",
+          "text": "Use a dedicated keyring and a signed-by source entry.",
+          "commands": [
+            "sudo install -d -m 0755 /etc/apt/keyrings",
+            "curl -fsSL https://glusterfs.eliware.org/keys/RPM-GPG-KEY-ELIWARE-GLUSTER | sudo gpg --dearmor --yes -o /etc/apt/keyrings/eliware-gluster.gpg",
+            "sudo chmod 0644 /etc/apt/keyrings/eliware-gluster.gpg"
+          ],
+          "verify": "The keyring is readable by APT."
+        },
+        {
+          "title": "Configure the repository",
+          "text": "Use the stable channel for Debian 12 (Bookworm) and verify the suite and architecture.",
+          "commands": [
+            "echo 'deb [arch=amd64 signed-by=/etc/apt/keyrings/eliware-gluster.gpg] https://glusterfs.eliware.org/debian/bookworm/amd64/stable/ bookworm main' | sudo tee /etc/apt/sources.list.d/eliware-gluster.list",
+            "sudo apt update",
+            "apt-cache policy glusterfs-server"
+          ],
+          "verify": "The Eliware candidate is visible and no unsigned source is used."
+        },
+        {
+          "title": "Install and start GlusterFS",
+          "text": "Install the server and client packages, then enable glusterd.",
+          "commands": [
+            "sudo apt install -y glusterfs-server glusterfs-client",
+            "sudo systemctl enable --now glusterd",
+            "sudo systemctl status glusterd --no-pager",
+            "gluster --version"
+          ],
+          "verify": "The daemon is active and the expected version is installed."
+        }
+      ]
+    },
+    {
+      "title": "Configure and verify the cluster",
+      "steps": [
+        {
+          "title": "Validate the node",
+          "text": "Check identity, time, storage mounts, and firewall policy. Bricks must use node-local storage with extended attributes.",
+          "commands": [
+            "gluster peer status",
+            "timedatectl status",
+            "findmnt",
+            "sudo firewall-cmd --list-all 2>/dev/null || sudo ufw status verbose"
+          ],
+          "verify": "Name resolution, time, storage, and firewall policy are intentional."
+        },
+        {
+          "title": "Build the trusted pool",
+          "text": "From one trusted node, probe each new node and verify the pool.",
+          "commands": [
+            "gluster peer probe <new-node>",
+            "gluster peer status"
+          ],
+          "verify": "Every intended peer is Connected."
+        },
+        {
+          "title": "Create and test a replica-3 volume",
+          "text": "Prepare one local brick directory on every node, create and start the volume, then test a client mount.",
+          "commands": [
+            "sudo mkdir -p /data/brick1/gv0",
+            "gluster volume create gv0 replica 3 <node1>:/data/brick1/gv0 <node2>:/data/brick1/gv0 <node3>:/data/brick1/gv0",
+            "gluster volume start gv0",
+            "gluster volume info",
+            "sudo mkdir -p /mnt/gluster-test",
+            "sudo mount -t glusterfs <node1>:/gv0 /mnt/gluster-test",
+            "touch /mnt/gluster-test/installation-test && ls -l /mnt/gluster-test/installation-test"
+          ],
+          "verify": "The volume is Started and the test file is visible through the mount."
+        }
+      ]
+    }
   ]
 }

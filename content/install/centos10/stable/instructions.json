@@ -1,9 +1,93 @@
 {
-  "schemaVersion": 1,
-  "title": "Install on EL10-compatible systems",
-  "steps": [
-    "sudo rpm --import https://glusterfs.eliware.org/keys/RPM-GPG-KEY-ELIWARE-GLUSTER",
-    "sudo dnf config-manager --add-repo https://glusterfs.eliware.org/glusterfs-el10.repo",
-    "sudo dnf install glusterfs-server glusterfs-client"
+  "schemaVersion": 2,
+  "title": "Install GlusterFS on CentOS Stream 10 (stable)",
+  "summary": "A step-by-step install tutorial for CentOS Stream 10. Use the stable Eliware repository, verify package and service state at every checkpoint, and replace angle-bracket placeholders with values from your environment.",
+  "platform": "rpm",
+  "channel": "stable",
+  "source": {
+    "repository": "https://glusterfs.eliware.org/",
+    "upstream": "https://docs.gluster.org/en/main/Install-Guide/Install/"
+  },
+  "sections": [
+    {
+      "title": "Prepare and install",
+      "steps": [
+        {
+          "title": "Prepare the host",
+          "text": "Update the host and install EPEL for supplemental Enterprise Linux dependencies. GlusterFS itself comes from the signed Eliware repository.",
+          "commands": [
+            "sudo dnf upgrade --refresh",
+            "sudo dnf install -y epel-release dnf-plugins-core ca-certificates"
+          ],
+          "verify": "dnf completes without repository or signature errors."
+        },
+        {
+          "title": "Enable the Eliware source",
+          "text": "Import the signing key and add the EL10 repository. Rolling is opt-in and intended for evaluation.",
+          "commands": [
+            "sudo rpm --import https://glusterfs.eliware.org/keys/RPM-GPG-KEY-ELIWARE-GLUSTER",
+            "sudo dnf config-manager --add-repo https://glusterfs.eliware.org/glusterfs-el10.repo"
+          ],
+          "verify": "rpm and dnf show a trusted Eliware repository."
+        },
+        {
+          "title": "Install GlusterFS",
+          "text": "Install server and client packages. Add RDMA packages only when using InfiniBand.",
+          "commands": [
+            "sudo dnf install -y glusterfs-server glusterfs-client",
+            "gluster --version"
+          ],
+          "verify": "The version and package signatures are correct."
+        },
+        {
+          "title": "Start glusterd",
+          "text": "Enable the management daemon at boot and start it.",
+          "commands": [
+            "sudo systemctl enable --now glusterd",
+            "sudo systemctl status glusterd --no-pager"
+          ],
+          "verify": "glusterd is active (running)."
+        }
+      ]
+    },
+    {
+      "title": "Configure and verify the cluster",
+      "steps": [
+        {
+          "title": "Validate the node",
+          "text": "Check identity, time, storage mounts, and firewall policy. Bricks must use node-local storage with extended attributes.",
+          "commands": [
+            "gluster peer status",
+            "timedatectl status",
+            "findmnt",
+            "sudo firewall-cmd --list-all 2>/dev/null || sudo ufw status verbose"
+          ],
+          "verify": "Name resolution, time, storage, and firewall policy are intentional."
+        },
+        {
+          "title": "Build the trusted pool",
+          "text": "From one trusted node, probe each new node and verify the pool.",
+          "commands": [
+            "gluster peer probe <new-node>",
+            "gluster peer status"
+          ],
+          "verify": "Every intended peer is Connected."
+        },
+        {
+          "title": "Create and test a replica-3 volume",
+          "text": "Prepare one local brick directory on every node, create and start the volume, then test a client mount.",
+          "commands": [
+            "sudo mkdir -p /data/brick1/gv0",
+            "gluster volume create gv0 replica 3 <node1>:/data/brick1/gv0 <node2>:/data/brick1/gv0 <node3>:/data/brick1/gv0",
+            "gluster volume start gv0",
+            "gluster volume info",
+            "sudo mkdir -p /mnt/gluster-test",
+            "sudo mount -t glusterfs <node1>:/gv0 /mnt/gluster-test",
+            "touch /mnt/gluster-test/installation-test && ls -l /mnt/gluster-test/installation-test"
+          ],
+          "verify": "The volume is Started and the test file is visible through the mount."
+        }
+      ]
+    }
   ]
 }
