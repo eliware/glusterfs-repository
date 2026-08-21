@@ -73,6 +73,13 @@ Choose a repository matching the target distribution and architecture. Do not
 mix EL10, Debian, and Ubuntu packages or use a rolling preview in production
 without deliberate validation.
 
+### Website content
+
+`content/blogs/` contains independently editable blog JSON documents. The HTTP
+service reads these files from the mounted volume, so editing blog content does
+not require rebuilding the image. The schema and authoring rules are documented
+in [`content/BLOGS.md`](content/BLOGS.md).
+
 ## Release ownership
 
 The packaging repository is the source of truth for build configuration,
@@ -102,4 +109,3 @@ license notices accompany the applicable source and binary packages.
 - [GlusterFS test cluster](https://github.com/eliware/glusterfs-test-cluster)
 - [Official GlusterFS project](https://www.gluster.org/)
 - [GlusterFS documentation](https://docs.gluster.org/)
-
