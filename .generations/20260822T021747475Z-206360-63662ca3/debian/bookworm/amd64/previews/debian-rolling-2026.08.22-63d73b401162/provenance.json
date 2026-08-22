@@ -1,0 +1,306 @@
+{
+  "schema": 1,
+  "generated": "2026-08-22T02:17:47Z",
+  "record": {
+    "kind": "package",
+    "run_id": "20260822020018048-f367e390",
+    "lane": "debian-rolling",
+    "channel": "preview",
+    "version": "2026.08.22-63d73b401162",
+    "package_version": "2026.08.22~rolling.g63d73b401162-1",
+    "candidate": "/mnt/pvc/gluster-build-workspaces/conductor/20260822020018048-f367e390/debian-rolling",
+    "candidate_id": "debian-rolling-2026.08.22-63d73b401162",
+    "repository": "/debian/bookworm/amd64/previews/debian-rolling-2026.08.22-63d73b401162/",
+    "provenance": "/debian/bookworm/amd64/previews/debian-rolling-2026.08.22-63d73b401162/provenance.json",
+    "source": {
+      "ref": "devel",
+      "commit": "63d73b401162b2dd5e03a88ab2a5886e12b0d2be"
+    },
+    "packaging_commit": "a46bf4096a9f362aee4d513a4182dad7b4f8778c",
+    "workflow": "deb-package-build.yml",
+    "workflow_run_id": 32545044936,
+    "workflow_url": "https://github.com/eliware/glusterfs-packaging/actions/runs/32545044936",
+    "validation": {
+      "run_id": "20260822020018048-f367e390",
+      "generated": "2026-08-22T02:17:46Z",
+      "package_format": "deb",
+      "repository_integrity": {
+        "status": "passed",
+        "detail": "candidate package metadata, checksums, and signatures verified"
+      },
+      "provenance_verification": {
+        "status": "passed",
+        "detail": "provenance generated, signed, and independently verified"
+      },
+      "checks": {
+        "install": {
+          "status": "passed"
+        },
+        "service_start": {
+          "status": "passed"
+        },
+        "volume_create_mount": {
+          "status": "passed"
+        },
+        "file_lifecycle": {
+          "status": "passed"
+        },
+        "volume_unmount_delete": {
+          "status": "passed"
+        },
+        "service_shutdown": {
+          "status": "passed"
+        }
+      },
+      "distributions": [
+        {
+          "id": "debian-bookworm",
+          "label": "Debian 12 (bookworm)",
+          "image": "debian:12-slim",
+          "package_format": "deb",
+          "package_core": {
+            "status": "passed"
+          },
+          "repository_integrity": {
+            "status": "passed",
+            "detail": "candidate package metadata, checksums, and signatures verified"
+          },
+          "provenance_verification": {
+            "status": "passed",
+            "detail": "provenance generated, signed, and independently verified"
+          }
+        }
+      ],
+      "metadata_version": "0.1.0",
+      "smoke_stages": {
+        "smoke1": {
+          "status": "passed"
+        },
+        "smoke2": {
+          "status": "passed",
+          "targets": [
+            "debian-bookworm"
+          ]
+        }
+      }
+    },
+    "smoke2": [
+      {
+        "target_os": "debian-bookworm",
+        "validation": {
+          "run_id": "20260822020018048-f367e390",
+          "generated": "2026-08-22T02:17:46.514Z",
+          "package_format": "deb",
+          "repository_integrity": {
+            "status": "not-tested",
+            "detail": "verified by the conductor after publication"
+          },
+          "provenance_verification": {
+            "status": "not-tested",
+            "detail": "generated and verified by the conductor after publication"
+          },
+          "checks": {
+            "install": {
+              "status": "passed"
+            },
+            "service_start": {
+              "status": "passed"
+            },
+            "volume_create_mount": {
+              "status": "passed"
+            },
+            "file_lifecycle": {
+              "status": "passed"
+            },
+            "volume_unmount_delete": {
+              "status": "passed"
+            },
+            "service_shutdown": {
+              "status": "passed"
+            }
+          },
+          "distributions": [
+            {
+              "id": "debian-bookworm",
+              "label": "Debian 12 (bookworm)",
+              "image": "debian:12-slim",
+              "package_format": "deb",
+              "package_core": {
+                "status": "passed"
+              }
+            }
+          ],
+          "metadata_version": "0.1.0"
+        },
+        "workflow": "local-docker",
+        "run_id": "20260822020018048-f367e390"
+      }
+    ]
+  },
+  "files": [
+    {
+      "label": "build-log",
+      "path": "assets/32545044936-1-debian-rolling-2026.08.22-63d73b401162.log",
+      "sha256": "b9c4e1ef484113cafa6354e0a8f6907fbfd538a4dc1198cfe1e523268427349c",
+      "size": 1483096
+    },
+    {
+      "label": "package-smoke-2",
+      "path": "assets/smoke-2.json",
+      "sha256": "cc919f7d03c83aaa5b792143060c01b88ac21147c33af3192d1da8c03512859d",
+      "size": 1314
+    },
+    {
+      "label": "package-validation",
+      "path": "assets/validation.json",
+      "sha256": "26c8cdeff57febd2edd8f470cbf470d9f64fa0b7a2cf22c827bd73cc31f92d0e",
+      "size": 1477
+    },
+    {
+      "label": "dists/stable/InRelease",
+      "path": "dists/stable/InRelease",
+      "sha256": "341878b0061fbd9d919775147c5214846167fdb3f4d18289fe63a7015484029b",
+      "size": 1782
+    },
+    {
+      "label": "dists/stable/main/binary-amd64/Packages",
+      "path": "dists/stable/main/binary-amd64/Packages",
+      "sha256": "f30c310076c53b39a7f20ec04414c4bc83a0e6ce5285e2ab0f02f5863c7e6982",
+      "size": 21363
+    },
+    {
+      "label": "dists/stable/main/binary-amd64/Packages.gz",
+      "path": "dists/stable/main/binary-amd64/Packages.gz",
+      "sha256": "53c7404ee05df45071bbeb0e5a06097571a09a2d0309743be3c8a4bc5348e5aa",
+      "size": 5257
+    },
+    {
+      "label": "dists/stable/main/binary-amd64/Packages.xz",
+      "path": "dists/stable/main/binary-amd64/Packages.xz",
+      "sha256": "a4d0fdbddf923649085f5b16deb214ed47733dfb62084268df512b0fd0578d59",
+      "size": 4804
+    },
+    {
+      "label": "dists/stable/Release",
+      "path": "dists/stable/Release",
+      "sha256": "09eeaeac3066ca6e8a9a213587acaa98c8a6a91397fb4ce2a46d3365251f5520",
+      "size": 1505
+    },
+    {
+      "label": "dists/stable/Release.gpg",
+      "path": "dists/stable/Release.gpg",
+      "sha256": "0814645e4910bc2209b6ebacfc18566e7212f051ecb3c5b7c31d176539f10415",
+      "size": 228
+    },
+    {
+      "label": "pool/main/g/glusterfs/glusterfs-cli_2026.08.22~rolling.g63d73b401162-1_amd64.deb",
+      "path": "pool/main/g/glusterfs/glusterfs-cli_2026.08.22~rolling.g63d73b401162-1_amd64.deb",
+      "sha256": "e5b3dfdcaf55adf6428d301a6306d4d22b10e0d0462757c1faf1e5e8f27cfe9c",
+      "size": 173084
+    },
+    {
+      "label": "pool/main/g/glusterfs/glusterfs-cli-dbgsym_2026.08.22~rolling.g63d73b401162-1_amd64.deb",
+      "path": "pool/main/g/glusterfs/glusterfs-cli-dbgsym_2026.08.22~rolling.g63d73b401162-1_amd64.deb",
+      "sha256": "0c10293a82cc2a01c5b78769e9be2100e98c2fd294d67cf2e9b5ef0ee7cc9c34",
+      "size": 449700
+    },
+    {
+      "label": "pool/main/g/glusterfs/glusterfs-client_2026.08.22~rolling.g63d73b401162-1_amd64.deb",
+      "path": "pool/main/g/glusterfs/glusterfs-client_2026.08.22~rolling.g63d73b401162-1_amd64.deb",
+      "sha256": "fcadbd783614b64b8e227bdaba2cecb5f4681c361317a38b00250c4ec9468eff",
+      "size": 29380
+    },
+    {
+      "label": "pool/main/g/glusterfs/glusterfs-client-dbgsym_2026.08.22~rolling.g63d73b401162-1_amd64.deb",
+      "path": "pool/main/g/glusterfs/glusterfs-client-dbgsym_2026.08.22~rolling.g63d73b401162-1_amd64.deb",
+      "sha256": "cc8e80ef332b018d41f2193f78f637bdeb014e4f5994c2bdced4356378518c08",
+      "size": 36980
+    },
+    {
+      "label": "pool/main/g/glusterfs/glusterfs-common_2026.08.22~rolling.g63d73b401162-1_amd64.deb",
+      "path": "pool/main/g/glusterfs/glusterfs-common_2026.08.22~rolling.g63d73b401162-1_amd64.deb",
+      "sha256": "5173925dcdc52fbc1f88f3b31d8b7649d7116bcec4392ce1ea2fdecd2b15546f",
+      "size": 2498804
+    },
+    {
+      "label": "pool/main/g/glusterfs/glusterfs-common-dbgsym_2026.08.22~rolling.g63d73b401162-1_amd64.deb",
+      "path": "pool/main/g/glusterfs/glusterfs-common-dbgsym_2026.08.22~rolling.g63d73b401162-1_amd64.deb",
+      "sha256": "47aeb52f3429258cab2935b0ae89d44612d9a255b13ece3ceffb51ff1b2da79b",
+      "size": 10182916
+    },
+    {
+      "label": "pool/main/g/glusterfs/glusterfs-server_2026.08.22~rolling.g63d73b401162-1_amd64.deb",
+      "path": "pool/main/g/glusterfs/glusterfs-server_2026.08.22~rolling.g63d73b401162-1_amd64.deb",
+      "sha256": "3851b8394f2722e9a89b65ce47abedc95307453c5c3ab35dde66b04d6bbfd8d0",
+      "size": 26532
+    },
+    {
+      "label": "pool/main/g/glusterfs/libgfapi0_2026.08.22~rolling.g63d73b401162-1_amd64.deb",
+      "path": "pool/main/g/glusterfs/libgfapi0_2026.08.22~rolling.g63d73b401162-1_amd64.deb",
+      "sha256": "ad070aae587ffb475a60c7b9d34a414d8cf929f519a78a26d10b91e3d9c65581",
+      "size": 80044
+    },
+    {
+      "label": "pool/main/g/glusterfs/libgfapi0-dbgsym_2026.08.22~rolling.g63d73b401162-1_amd64.deb",
+      "path": "pool/main/g/glusterfs/libgfapi0-dbgsym_2026.08.22~rolling.g63d73b401162-1_amd64.deb",
+      "sha256": "0b2940bb7668fe6168345911e9fe7fd5a8473a9f9f95c85ab29b06628aceb09e",
+      "size": 277204
+    },
+    {
+      "label": "pool/main/g/glusterfs/libgfchangelog0_2026.08.22~rolling.g63d73b401162-1_amd64.deb",
+      "path": "pool/main/g/glusterfs/libgfchangelog0_2026.08.22~rolling.g63d73b401162-1_amd64.deb",
+      "sha256": "e6b57c87f970efed5df0667dd3e8b9cb2d9b44e7a5ebb81ace86fdaaf6dff0ca",
+      "size": 29600
+    },
+    {
+      "label": "pool/main/g/glusterfs/libgfchangelog0-dbgsym_2026.08.22~rolling.g63d73b401162-1_amd64.deb",
+      "path": "pool/main/g/glusterfs/libgfchangelog0-dbgsym_2026.08.22~rolling.g63d73b401162-1_amd64.deb",
+      "sha256": "87cbb826c5826f5e5a1539f62fe3e7bf2cf3a63c10c9c361597ebd71d120c485",
+      "size": 109876
+    },
+    {
+      "label": "pool/main/g/glusterfs/libgfrpc0_2026.08.22~rolling.g63d73b401162-1_amd64.deb",
+      "path": "pool/main/g/glusterfs/libgfrpc0_2026.08.22~rolling.g63d73b401162-1_amd64.deb",
+      "sha256": "4fcc48d0cc8ea98accec7e3d21ab159e8f091ed8e20bcd6796cd90531b74ba2c",
+      "size": 43672
+    },
+    {
+      "label": "pool/main/g/glusterfs/libgfrpc0-dbgsym_2026.08.22~rolling.g63d73b401162-1_amd64.deb",
+      "path": "pool/main/g/glusterfs/libgfrpc0-dbgsym_2026.08.22~rolling.g63d73b401162-1_amd64.deb",
+      "sha256": "936341b01d93245d9bdc2d7c4a7ce59a71880f1a910f4e6702802ecf97e63f3c",
+      "size": 155696
+    },
+    {
+      "label": "pool/main/g/glusterfs/libgfxdr0_2026.08.22~rolling.g63d73b401162-1_amd64.deb",
+      "path": "pool/main/g/glusterfs/libgfxdr0_2026.08.22~rolling.g63d73b401162-1_amd64.deb",
+      "sha256": "2bce5eefd0e6400777b8541dac7f5e30f12beb5063540bef9bad5c72917718bb",
+      "size": 18860
+    },
+    {
+      "label": "pool/main/g/glusterfs/libgfxdr0-dbgsym_2026.08.22~rolling.g63d73b401162-1_amd64.deb",
+      "path": "pool/main/g/glusterfs/libgfxdr0-dbgsym_2026.08.22~rolling.g63d73b401162-1_amd64.deb",
+      "sha256": "992c7cea746ac51b6a5050d97e67079d38480d466f6d4b5c6c00f27073d6e23b",
+      "size": 56720
+    },
+    {
+      "label": "pool/main/g/glusterfs/libglusterfs-dev_2026.08.22~rolling.g63d73b401162-1_amd64.deb",
+      "path": "pool/main/g/glusterfs/libglusterfs-dev_2026.08.22~rolling.g63d73b401162-1_amd64.deb",
+      "sha256": "35b7cce1ec5c982ddddb5cd56bcbf69385d37fb1cd463b400ce88ce77a23336d",
+      "size": 143104
+    },
+    {
+      "label": "pool/main/g/glusterfs/libglusterfs0_2026.08.22~rolling.g63d73b401162-1_amd64.deb",
+      "path": "pool/main/g/glusterfs/libglusterfs0_2026.08.22~rolling.g63d73b401162-1_amd64.deb",
+      "sha256": "933e53ebab511b8f861416ab2a51b1ac9de3f449b31288fc26856fa48e9d0372",
+      "size": 256860
+    },
+    {
+      "label": "pool/main/g/glusterfs/libglusterfs0-dbgsym_2026.08.22~rolling.g63d73b401162-1_amd64.deb",
+      "path": "pool/main/g/glusterfs/libglusterfs0-dbgsym_2026.08.22~rolling.g63d73b401162-1_amd64.deb",
+      "sha256": "842aadf5b9fea1dbb85ce8526f9e1d22012847600e39a0f33c6c69fe0479f5ae",
+      "size": 980436
+    }
+  ],
+  "checksums_sha256": "e3a7619779b583b823758d76070ae33f0424826291df0efbdcfbe1fd3b3b14fa",
+  "metadata_version": "0.1.0"
+}
