@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "generated": "2026-08-23T17:37:48Z",
+  "record": {
+    "kind": "image",
+    "run_id": "20260823172545303-a7111e4a",
+    "lane": "epel10-rolling",
+    "channel": "preview",
+    "version": "2026.08.23-b9354d26afe5",
+    "distribution": "rocky",
+    "image": "ghcr.io/eliware/rocky10-gluster:2026.08.23-b9354d26afe5",
+    "digest": "sha256:871f997dfe56681d87aabeff857cf34da33de4e09183f86ee3f38682146fb830",
+    "package_provenance": "https://glusterfs.eliware.org/el10/x86_64/previews/epel10-rolling-2026.08.23-b9354d26afe5/provenance.json",
+    "package_repository": "https://glusterfs.eliware.org/el10/x86_64/previews/epel10-rolling-2026.08.23-b9354d26afe5/",
+    "package_metadata_sha256": "45457fed3bfafa78aaf2e438cf8154be69e7581d3b4b4ee450e44bb35f16071d",
+    "source": {
+      "ref": "devel",
+      "commit": "b9354d26afe58c89b2c68792e3d4677bdb636995"
+    },
+    "packaging_commit": "5071213c54ebe5b0fff5d9334b38a8b680591b96",
+    "base_image_digest": "sha256:827d37bc128288ccf160ee318bb3cb92d591164cb217e92f8bc61e3982ae1834",
+    "workflow": null,
+    "workflow_run_id": "20260823172545303-a7111e4a",
+    "build_log": "/mnt/pvc/gluster-build-workspaces/conductor/20260823172545303-a7111e4a/epel10-rolling/logs/image-rocky.log",
+    "workflow_url": "https://github.com/eliware/glusterfs-packaging/actions/runs/20260823172545303-a7111e4a"
+  },
+  "files": [
+    {
+      "label": "container-validation",
+      "path": "assets/container-validation.json",
+      "sha256": "23b24df3eb92f859686ab4a06736ff63bec226d379fe172dba095a2b697f06d2",
+      "size": 1889
+    },
+    {
+      "label": "image-build-log",
+      "path": "assets/image-rocky.log",
+      "sha256": "31075602c69129c934269f816e360637d87ee6011e83fe56dd796b95b7782a05",
+      "size": 49304
+    }
+  ],
+  "checksums_sha256": "c2abb384b142aa1e47287a7bb0e646d6fa28336181ce7e2ba8622e02beb986a7",
+  "metadata_version": "0.1.0"
+}

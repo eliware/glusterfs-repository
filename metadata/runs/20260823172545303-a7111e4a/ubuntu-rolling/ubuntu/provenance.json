@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "generated": "2026-08-23T17:32:07Z",
+  "record": {
+    "kind": "image",
+    "run_id": "20260823172545303-a7111e4a",
+    "lane": "ubuntu-rolling",
+    "channel": "preview",
+    "version": "2026.08.23-b9354d26afe5",
+    "distribution": "ubuntu",
+    "image": "ghcr.io/eliware/ubuntu24-gluster:2026.08.23-b9354d26afe5",
+    "digest": "sha256:9339c99249b2d132dcfcaf6f9b494294fc3c505e07250d6bf4e56ff2c60b5c50",
+    "package_provenance": "https://glusterfs.eliware.org/ubuntu/noble/amd64/previews/ubuntu-rolling-2026.08.23-b9354d26afe5/provenance.json",
+    "package_repository": "https://glusterfs.eliware.org/ubuntu/noble/amd64/previews/ubuntu-rolling-2026.08.23-b9354d26afe5/",
+    "package_metadata_sha256": null,
+    "source": {
+      "ref": "devel",
+      "commit": "b9354d26afe58c89b2c68792e3d4677bdb636995"
+    },
+    "packaging_commit": "5071213c54ebe5b0fff5d9334b38a8b680591b96",
+    "base_image_digest": "sha256:33ceb71981b602c1a7443a53469e4dba065f7503eab3078a2d7a57a2ab987517",
+    "workflow": null,
+    "workflow_run_id": "20260823172545303-a7111e4a",
+    "build_log": "/mnt/pvc/gluster-build-workspaces/conductor/20260823172545303-a7111e4a/ubuntu-rolling/logs/image-ubuntu.log",
+    "workflow_url": "https://github.com/eliware/glusterfs-packaging/actions/runs/20260823172545303-a7111e4a"
+  },
+  "files": [
+    {
+      "label": "container-validation",
+      "path": "assets/container-validation.json",
+      "sha256": "5d638443268767d5b8cd2707f916d0024788b341a692f1400794aa211a594084",
+      "size": 1871
+    },
+    {
+      "label": "image-build-log",
+      "path": "assets/image-ubuntu.log",
+      "sha256": "361e3564bb8d35cab2b127362fd7da1f021ff45beee61afc2203e13d795e8f9d",
+      "size": 51450
+    }
+  ],
+  "checksums_sha256": "d3bece70263024c71b331695e8a18c3d20ec017e731e0f77d5912bdc61f86383",
+  "metadata_version": "0.1.0"
+}
