@@ -1,0 +1,290 @@
+{
+  "run_id": "20260825020017730-50da2b6b",
+  "generated": "2026-08-25T02:00:27.598Z",
+  "status": "certified",
+  "lanes_successful": 6,
+  "lanes_total": 6,
+  "package_lanes": 6,
+  "image_count": 12,
+  "platforms": [
+    {
+      "id": "centos-stream",
+      "label": "CentOS Stream 10",
+      "packages": [
+        {
+          "format": "RPM",
+          "channel": "stable",
+          "version": "11.2",
+          "commit": "15d3c0f84358",
+          "provenance": "/el10/x86_64/stable/provenance.json"
+        },
+        {
+          "format": "RPM",
+          "channel": "rolling",
+          "version": "2026.08.23-b9354d26afe5",
+          "commit": "b9354d26afe5",
+          "provenance": "/el10/x86_64/previews/epel10-rolling-2026.08.23-b9354d26afe5/provenance.json"
+        }
+      ],
+      "images": [
+        {
+          "image": "ghcr.io/eliware/centos10-gluster:11.2",
+          "digest": "sha256:b5cdfa0e51211f7d38ff92e3436745b34da468a4b679405ad6b7dd2a18c6bdc3",
+          "package_candidate": "epel10-stable-11.2",
+          "base_image": "quay.io/centos/centos:stream10@sha256:b7f85bb8be4c471bc62842156a51bbf224b15243943733bd54e86ba5fd79b1fc",
+          "base_image_digest": "sha256:b7f85bb8be4c471bc62842156a51bbf224b15243943733bd54e86ba5fd79b1fc",
+          "version": "11.2",
+          "channel": "stable",
+          "url": "https://github.com/eliware/glusterfs-packaging/pkgs/container/centos10-gluster"
+        },
+        {
+          "image": "ghcr.io/eliware/centos10-gluster:2026.08.23-b9354d26afe5",
+          "digest": "sha256:125fcd4b6647297b7a4fcd6ccb56567ba8c923e5ffb4662a5a7c7821bee646bd",
+          "package_candidate": "epel10-rolling-2026.08.23-b9354d26afe5",
+          "base_image": "quay.io/centos/centos:stream10@sha256:b7f85bb8be4c471bc62842156a51bbf224b15243943733bd54e86ba5fd79b1fc",
+          "base_image_digest": "sha256:b7f85bb8be4c471bc62842156a51bbf224b15243943733bd54e86ba5fd79b1fc",
+          "version": "2026.08.23-b9354d26afe5",
+          "channel": "rolling",
+          "url": "https://github.com/eliware/glusterfs-packaging/pkgs/container/centos10-gluster"
+        }
+      ],
+      "failures": []
+    },
+    {
+      "id": "rocky",
+      "label": "Rocky Linux 10",
+      "packages": [
+        {
+          "format": "RPM",
+          "channel": "stable",
+          "version": "11.2",
+          "commit": "15d3c0f84358",
+          "provenance": "/el10/x86_64/stable/provenance.json"
+        },
+        {
+          "format": "RPM",
+          "channel": "rolling",
+          "version": "2026.08.23-b9354d26afe5",
+          "commit": "b9354d26afe5",
+          "provenance": "/el10/x86_64/previews/epel10-rolling-2026.08.23-b9354d26afe5/provenance.json"
+        }
+      ],
+      "images": [
+        {
+          "image": "ghcr.io/eliware/rocky10-gluster:11.2",
+          "digest": "sha256:fa51401b805a65c2eece3572fcfb2dd12d3d9b06eb26d5d4b6dcdabce61f2bfc",
+          "package_candidate": "epel10-stable-11.2",
+          "base_image": "rockylinux/rockylinux:10@sha256:827d37bc128288ccf160ee318bb3cb92d591164cb217e92f8bc61e3982ae1834",
+          "base_image_digest": "sha256:827d37bc128288ccf160ee318bb3cb92d591164cb217e92f8bc61e3982ae1834",
+          "version": "11.2",
+          "channel": "stable",
+          "url": "https://github.com/eliware/glusterfs-packaging/pkgs/container/rocky10-gluster"
+        },
+        {
+          "image": "ghcr.io/eliware/rocky10-gluster:2026.08.23-b9354d26afe5",
+          "digest": "sha256:871f997dfe56681d87aabeff857cf34da33de4e09183f86ee3f38682146fb830",
+          "package_candidate": "epel10-rolling-2026.08.23-b9354d26afe5",
+          "base_image": "rockylinux/rockylinux:10@sha256:827d37bc128288ccf160ee318bb3cb92d591164cb217e92f8bc61e3982ae1834",
+          "base_image_digest": "sha256:827d37bc128288ccf160ee318bb3cb92d591164cb217e92f8bc61e3982ae1834",
+          "version": "2026.08.23-b9354d26afe5",
+          "channel": "rolling",
+          "url": "https://github.com/eliware/glusterfs-packaging/pkgs/container/rocky10-gluster"
+        }
+      ],
+      "failures": []
+    },
+    {
+      "id": "alma",
+      "label": "AlmaLinux 10",
+      "packages": [
+        {
+          "format": "RPM",
+          "channel": "stable",
+          "version": "11.2",
+          "commit": "15d3c0f84358",
+          "provenance": "/el10/x86_64/stable/provenance.json"
+        },
+        {
+          "format": "RPM",
+          "channel": "rolling",
+          "version": "2026.08.23-b9354d26afe5",
+          "commit": "b9354d26afe5",
+          "provenance": "/el10/x86_64/previews/epel10-rolling-2026.08.23-b9354d26afe5/provenance.json"
+        }
+      ],
+      "images": [
+        {
+          "image": "ghcr.io/eliware/alma10-gluster:11.2",
+          "digest": "sha256:d7807b7397744cc910aa0aee3be24816782196b973c3b29624903b11c5c2d50c",
+          "package_candidate": "epel10-stable-11.2",
+          "base_image": "almalinux:10@sha256:cc24bc5b6ac7e284f2f62a07bdaa1b15d3319fdcf46413c6b8fe9fa245068ddd",
+          "base_image_digest": "sha256:cc24bc5b6ac7e284f2f62a07bdaa1b15d3319fdcf46413c6b8fe9fa245068ddd",
+          "version": "11.2",
+          "channel": "stable",
+          "url": "https://github.com/eliware/glusterfs-packaging/pkgs/container/alma10-gluster"
+        },
+        {
+          "image": "ghcr.io/eliware/alma10-gluster:2026.08.23-b9354d26afe5",
+          "digest": "sha256:5e4e18cecf3cd0e2e7bef6fac6abeb0dcad0132865fb313d6bddccbd27cdefe9",
+          "package_candidate": "epel10-rolling-2026.08.23-b9354d26afe5",
+          "base_image": "almalinux:10@sha256:cc24bc5b6ac7e284f2f62a07bdaa1b15d3319fdcf46413c6b8fe9fa245068ddd",
+          "base_image_digest": "sha256:cc24bc5b6ac7e284f2f62a07bdaa1b15d3319fdcf46413c6b8fe9fa245068ddd",
+          "version": "2026.08.23-b9354d26afe5",
+          "channel": "rolling",
+          "url": "https://github.com/eliware/glusterfs-packaging/pkgs/container/alma10-gluster"
+        }
+      ],
+      "failures": []
+    },
+    {
+      "id": "oracle",
+      "label": "Oracle Linux 10",
+      "packages": [
+        {
+          "format": "RPM",
+          "channel": "stable",
+          "version": "11.2",
+          "commit": "15d3c0f84358",
+          "provenance": "/el10/x86_64/stable/provenance.json"
+        },
+        {
+          "format": "RPM",
+          "channel": "rolling",
+          "version": "2026.08.23-b9354d26afe5",
+          "commit": "b9354d26afe5",
+          "provenance": "/el10/x86_64/previews/epel10-rolling-2026.08.23-b9354d26afe5/provenance.json"
+        }
+      ],
+      "images": [
+        {
+          "image": "ghcr.io/eliware/oracle10-gluster:11.2",
+          "digest": "sha256:0adbe3b179771b0c64b35a7f62ac01659eed617b2727328953826bdd814c1625",
+          "package_candidate": "epel10-stable-11.2",
+          "base_image": "oraclelinux:10@sha256:2f145af52abf6ee5be815b35751c65dc1531a4c709904c4fd7f72b23fdbc5015",
+          "base_image_digest": "sha256:2f145af52abf6ee5be815b35751c65dc1531a4c709904c4fd7f72b23fdbc5015",
+          "version": "11.2",
+          "channel": "stable",
+          "url": "https://github.com/eliware/glusterfs-packaging/pkgs/container/oracle10-gluster"
+        },
+        {
+          "image": "ghcr.io/eliware/oracle10-gluster:2026.08.23-b9354d26afe5",
+          "digest": "sha256:2e3bf46099697b3d9ea0eec724816d0a0b4b810141f4fa8f310ab7f1fa8c82d1",
+          "package_candidate": "epel10-rolling-2026.08.23-b9354d26afe5",
+          "base_image": "oraclelinux:10@sha256:2f145af52abf6ee5be815b35751c65dc1531a4c709904c4fd7f72b23fdbc5015",
+          "base_image_digest": "sha256:2f145af52abf6ee5be815b35751c65dc1531a4c709904c4fd7f72b23fdbc5015",
+          "version": "2026.08.23-b9354d26afe5",
+          "channel": "rolling",
+          "url": "https://github.com/eliware/glusterfs-packaging/pkgs/container/oracle10-gluster"
+        }
+      ],
+      "failures": []
+    },
+    {
+      "id": "debian",
+      "label": "Debian 12",
+      "packages": [
+        {
+          "format": "DEB",
+          "channel": "stable",
+          "version": "11.2",
+          "commit": "15d3c0f84358",
+          "provenance": "/debian/bookworm/amd64/stable/provenance.json"
+        },
+        {
+          "format": "DEB",
+          "channel": "rolling",
+          "version": "2026.08.23-b9354d26afe5",
+          "commit": "b9354d26afe5",
+          "provenance": "/debian/bookworm/amd64/previews/debian-rolling-2026.08.23-b9354d26afe5/provenance.json"
+        }
+      ],
+      "images": [
+        {
+          "image": "ghcr.io/eliware/debian12-gluster:11.2",
+          "digest": "sha256:4eb051ab937f50b5d6a88734b78f3fa9acb27d8a8644844c75f763c4a91115e8",
+          "package_candidate": "debian-stable-11.2",
+          "base_image": "debian:12-slim@sha256:abd67ffcfa541b485a3dff59865ab629aa048a6c613e639d36e7456b0b229241",
+          "base_image_digest": "sha256:abd67ffcfa541b485a3dff59865ab629aa048a6c613e639d36e7456b0b229241",
+          "version": "11.2",
+          "channel": "stable",
+          "url": "https://github.com/eliware/glusterfs-packaging/pkgs/container/debian12-gluster"
+        },
+        {
+          "image": "ghcr.io/eliware/debian12-gluster:2026.08.23-b9354d26afe5",
+          "digest": "sha256:68c48aaa15a3dd39b47ba2ac7a7e2c847ce1c93f150b49f0256a406362b27835",
+          "package_candidate": "debian-rolling-2026.08.23-b9354d26afe5",
+          "base_image": "debian:12-slim@sha256:abd67ffcfa541b485a3dff59865ab629aa048a6c613e639d36e7456b0b229241",
+          "base_image_digest": "sha256:abd67ffcfa541b485a3dff59865ab629aa048a6c613e639d36e7456b0b229241",
+          "version": "2026.08.23-b9354d26afe5",
+          "channel": "rolling",
+          "url": "https://github.com/eliware/glusterfs-packaging/pkgs/container/debian12-gluster"
+        }
+      ],
+      "failures": []
+    },
+    {
+      "id": "ubuntu",
+      "label": "Ubuntu 24.04",
+      "packages": [
+        {
+          "format": "DEB",
+          "channel": "stable",
+          "version": "11.2",
+          "commit": "15d3c0f84358",
+          "provenance": "/ubuntu/noble/amd64/stable/provenance.json"
+        },
+        {
+          "format": "DEB",
+          "channel": "rolling",
+          "version": "2026.08.23-b9354d26afe5",
+          "commit": "b9354d26afe5",
+          "provenance": "/ubuntu/noble/amd64/previews/ubuntu-rolling-2026.08.23-b9354d26afe5/provenance.json"
+        }
+      ],
+      "images": [
+        {
+          "image": "ghcr.io/eliware/ubuntu24-gluster:11.2",
+          "digest": "sha256:e3ee038d888e8db8749e835467e70a17d565c3a94bd385878cae2148133eaa33",
+          "package_candidate": "ubuntu-stable-11.2",
+          "base_image": "ubuntu:24.04@sha256:33ceb71981b602c1a7443a53469e4dba065f7503eab3078a2d7a57a2ab987517",
+          "base_image_digest": "sha256:33ceb71981b602c1a7443a53469e4dba065f7503eab3078a2d7a57a2ab987517",
+          "version": "11.2",
+          "channel": "stable",
+          "url": "https://github.com/eliware/glusterfs-packaging/pkgs/container/ubuntu24-gluster"
+        },
+        {
+          "image": "ghcr.io/eliware/ubuntu24-gluster:2026.08.23-b9354d26afe5",
+          "digest": "sha256:9339c99249b2d132dcfcaf6f9b494294fc3c505e07250d6bf4e56ff2c60b5c50",
+          "package_candidate": "ubuntu-rolling-2026.08.23-b9354d26afe5",
+          "base_image": "ubuntu:24.04@sha256:33ceb71981b602c1a7443a53469e4dba065f7503eab3078a2d7a57a2ab987517",
+          "base_image_digest": "sha256:33ceb71981b602c1a7443a53469e4dba065f7503eab3078a2d7a57a2ab987517",
+          "version": "2026.08.23-b9354d26afe5",
+          "channel": "rolling",
+          "url": "https://github.com/eliware/glusterfs-packaging/pkgs/container/ubuntu24-gluster"
+        }
+      ],
+      "failures": []
+    }
+  ],
+  "versions": [
+    "stable 11.2",
+    "rolling 2026.08.23-b9354d26afe5"
+  ],
+  "source_commits": [
+    "15d3c0f84358",
+    "b9354d26afe5"
+  ],
+  "validation": {
+    "passed": 120,
+    "total": 120
+  },
+  "card": {
+    "png": "https://glusterfs.eliware.org/metadata/runs/20260825020017730-50da2b6b/release-card.png",
+    "latest": "https://glusterfs.eliware.org/metadata/latest-release-card.png",
+    "report": "https://glusterfs.eliware.org/metadata/runs/20260825020017730-50da2b6b/release-report.json",
+    "width": 1200,
+    "height": 630,
+    "type": "image/png"
+  },
+  "metadata_version": "0.1.0"
+}
