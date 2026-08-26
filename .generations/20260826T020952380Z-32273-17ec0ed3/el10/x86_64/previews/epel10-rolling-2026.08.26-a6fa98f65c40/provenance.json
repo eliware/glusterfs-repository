@@ -1,0 +1,664 @@
+{
+  "schema": 1,
+  "generated": "2026-08-26T02:09:52Z",
+  "record": {
+    "kind": "package",
+    "run_id": "20260826020017027-00cd4a1c",
+    "lane": "epel10-rolling",
+    "channel": "preview",
+    "version": "2026.08.26-a6fa98f65c40",
+    "package_version": "2026.08.26-0.gita6fa98f65c40",
+    "candidate": "/mnt/pvc/gluster-build-workspaces/conductor/20260826020017027-00cd4a1c/epel10-rolling",
+    "candidate_id": "epel10-rolling-2026.08.26-a6fa98f65c40",
+    "repository": "/el10/x86_64/previews/epel10-rolling-2026.08.26-a6fa98f65c40/",
+    "provenance": "/el10/x86_64/previews/epel10-rolling-2026.08.26-a6fa98f65c40/provenance.json",
+    "source": {
+      "ref": "devel",
+      "commit": "a6fa98f65c40385ebda0ec3a9f6dd578edc8f9b5"
+    },
+    "packaging_commit": "6049846096d4474f645b64ed671ec77e387981be",
+    "workflow": "rpm-package-build.yml",
+    "workflow_run_id": 32921097028,
+    "workflow_url": "https://github.com/eliware/glusterfs-packaging/actions/runs/32921097028",
+    "validation": {
+      "run_id": "20260826020017027-00cd4a1c",
+      "generated": "2026-08-26T02:09:44Z",
+      "package_format": "rpm",
+      "repository_integrity": {
+        "status": "passed",
+        "detail": "candidate package metadata, checksums, and signatures verified"
+      },
+      "provenance_verification": {
+        "status": "passed",
+        "detail": "provenance generated, signed, and independently verified"
+      },
+      "checks": {
+        "install": {
+          "status": "passed"
+        },
+        "service_start": {
+          "status": "passed"
+        },
+        "volume_create_mount": {
+          "status": "passed"
+        },
+        "file_lifecycle": {
+          "status": "passed"
+        },
+        "volume_unmount_delete": {
+          "status": "passed"
+        },
+        "service_shutdown": {
+          "status": "passed"
+        }
+      },
+      "distributions": [
+        {
+          "id": "centos-stream-10",
+          "label": "CentOS Stream 10",
+          "image": "quay.io/centos/centos:stream10",
+          "package_core": {
+            "status": "passed"
+          },
+          "selinux": {
+            "status": "passed",
+            "detail": "module loaded; mode Disabled"
+          },
+          "repository_integrity": {
+            "status": "passed",
+            "detail": "candidate package metadata, checksums, and signatures verified"
+          },
+          "provenance_verification": {
+            "status": "passed",
+            "detail": "provenance generated, signed, and independently verified"
+          }
+        },
+        {
+          "id": "rocky-10",
+          "label": "Rocky Linux 10",
+          "image": "rockylinux/rockylinux:10",
+          "package_core": {
+            "status": "passed"
+          },
+          "selinux": {
+            "status": "passed",
+            "detail": "module loaded; mode Disabled"
+          },
+          "repository_integrity": {
+            "status": "passed",
+            "detail": "candidate package metadata, checksums, and signatures verified"
+          },
+          "provenance_verification": {
+            "status": "passed",
+            "detail": "provenance generated, signed, and independently verified"
+          }
+        },
+        {
+          "id": "almalinux-10",
+          "label": "AlmaLinux 10",
+          "image": "almalinux:10",
+          "package_core": {
+            "status": "passed"
+          },
+          "selinux": {
+            "status": "passed",
+            "detail": "module loaded; mode Disabled"
+          },
+          "repository_integrity": {
+            "status": "passed",
+            "detail": "candidate package metadata, checksums, and signatures verified"
+          },
+          "provenance_verification": {
+            "status": "passed",
+            "detail": "provenance generated, signed, and independently verified"
+          }
+        },
+        {
+          "id": "oracle-linux-10",
+          "label": "Oracle Linux 10",
+          "image": "oraclelinux:10",
+          "package_core": {
+            "status": "passed"
+          },
+          "selinux": {
+            "status": "passed",
+            "detail": "module loaded; mode Disabled"
+          },
+          "repository_integrity": {
+            "status": "passed",
+            "detail": "candidate package metadata, checksums, and signatures verified"
+          },
+          "provenance_verification": {
+            "status": "passed",
+            "detail": "provenance generated, signed, and independently verified"
+          }
+        }
+      ],
+      "metadata_version": "0.1.0",
+      "smoke_stages": {
+        "smoke1": {
+          "status": "passed"
+        },
+        "smoke2": {
+          "status": "passed",
+          "targets": [
+            "centos-stream-10",
+            "rocky-10",
+            "almalinux-10",
+            "oracle-linux-10"
+          ]
+        }
+      }
+    },
+    "smoke2": [
+      {
+        "target_os": "centos-stream-10",
+        "validation": {
+          "run_id": "20260826020017027-00cd4a1c",
+          "generated": "2026-08-26T02:07:51Z",
+          "required_baseline": "centos-stream-10",
+          "checks": {
+            "install": {
+              "status": "passed"
+            },
+            "service_start": {
+              "status": "passed"
+            },
+            "volume_create_mount": {
+              "status": "passed"
+            },
+            "file_lifecycle": {
+              "status": "passed"
+            },
+            "volume_unmount_delete": {
+              "status": "passed"
+            },
+            "service_shutdown": {
+              "status": "passed"
+            }
+          },
+          "distributions": [
+            {
+              "id": "centos-stream-10",
+              "label": "CentOS Stream 10",
+              "image": "quay.io/centos/centos:stream10",
+              "package_core": {
+                "status": "passed"
+              },
+              "selinux": {
+                "status": "passed",
+                "detail": "module loaded; mode Disabled"
+              }
+            }
+          ],
+          "metadata_version": "0.1.0"
+        },
+        "workflow": "local-docker",
+        "run_id": "20260826020017027-00cd4a1c"
+      },
+      {
+        "target_os": "rocky-10",
+        "validation": {
+          "run_id": "20260826020017027-00cd4a1c",
+          "generated": "2026-08-26T02:08:28Z",
+          "required_baseline": "centos-stream-10",
+          "checks": {
+            "install": {
+              "status": "passed"
+            },
+            "service_start": {
+              "status": "passed"
+            },
+            "volume_create_mount": {
+              "status": "passed"
+            },
+            "file_lifecycle": {
+              "status": "passed"
+            },
+            "volume_unmount_delete": {
+              "status": "passed"
+            },
+            "service_shutdown": {
+              "status": "passed"
+            }
+          },
+          "distributions": [
+            {
+              "id": "rocky-10",
+              "label": "Rocky Linux 10",
+              "image": "rockylinux/rockylinux:10",
+              "package_core": {
+                "status": "passed"
+              },
+              "selinux": {
+                "status": "passed",
+                "detail": "module loaded; mode Disabled"
+              }
+            }
+          ],
+          "metadata_version": "0.1.0"
+        },
+        "workflow": "local-docker",
+        "run_id": "20260826020017027-00cd4a1c"
+      },
+      {
+        "target_os": "almalinux-10",
+        "validation": {
+          "run_id": "20260826020017027-00cd4a1c",
+          "generated": "2026-08-26T02:09:05Z",
+          "required_baseline": "centos-stream-10",
+          "checks": {
+            "install": {
+              "status": "passed"
+            },
+            "service_start": {
+              "status": "passed"
+            },
+            "volume_create_mount": {
+              "status": "passed"
+            },
+            "file_lifecycle": {
+              "status": "passed"
+            },
+            "volume_unmount_delete": {
+              "status": "passed"
+            },
+            "service_shutdown": {
+              "status": "passed"
+            }
+          },
+          "distributions": [
+            {
+              "id": "almalinux-10",
+              "label": "AlmaLinux 10",
+              "image": "almalinux:10",
+              "package_core": {
+                "status": "passed"
+              },
+              "selinux": {
+                "status": "passed",
+                "detail": "module loaded; mode Disabled"
+              }
+            }
+          ],
+          "metadata_version": "0.1.0"
+        },
+        "workflow": "local-docker",
+        "run_id": "20260826020017027-00cd4a1c"
+      },
+      {
+        "target_os": "oracle-linux-10",
+        "validation": {
+          "run_id": "20260826020017027-00cd4a1c",
+          "generated": "2026-08-26T02:09:44Z",
+          "required_baseline": "centos-stream-10",
+          "checks": {
+            "install": {
+              "status": "passed"
+            },
+            "service_start": {
+              "status": "passed"
+            },
+            "volume_create_mount": {
+              "status": "passed"
+            },
+            "file_lifecycle": {
+              "status": "passed"
+            },
+            "volume_unmount_delete": {
+              "status": "passed"
+            },
+            "service_shutdown": {
+              "status": "passed"
+            }
+          },
+          "distributions": [
+            {
+              "id": "oracle-linux-10",
+              "label": "Oracle Linux 10",
+              "image": "oraclelinux:10",
+              "package_core": {
+                "status": "passed"
+              },
+              "selinux": {
+                "status": "passed",
+                "detail": "module loaded; mode Disabled"
+              }
+            }
+          ],
+          "metadata_version": "0.1.0"
+        },
+        "workflow": "local-docker",
+        "run_id": "20260826020017027-00cd4a1c"
+      }
+    ]
+  },
+  "files": [
+    {
+      "label": "build-log",
+      "path": "assets/32921097028-1-epel10-rolling-2026.08.26-a6fa98f65c40.log",
+      "sha256": "810ef868f4b96b5c312faca815d7b16a2c9f6c6908dbc81aa061e3a774377fcf",
+      "size": 1116779
+    },
+    {
+      "label": "package-smoke-2",
+      "path": "assets/smoke-2.json",
+      "sha256": "729d660b7f6d702e0ae7b9acbb922a74f6e03b8a83ffaa0685819bfc063a43f4",
+      "size": 4458
+    },
+    {
+      "label": "package-validation",
+      "path": "assets/validation.json",
+      "sha256": "c480cbe80385afd7f7bee8d07d19cf4c76fccfc62895aad84e82d1253268dc46",
+      "size": 3358
+    },
+    {
+      "label": "glusterfs-2026.08.26-0.0.gita6fa98f65c40.el10.src.rpm",
+      "path": "glusterfs-2026.08.26-0.0.gita6fa98f65c40.el10.src.rpm",
+      "sha256": "00986b8db6c4de06d50de89947391e0dec5e8b805a406697372f46e5bbe48467",
+      "size": 5380894
+    },
+    {
+      "label": "glusterfs-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "path": "glusterfs-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "sha256": "2b0f65c8c96710f33a8bb91ade5f143c39e7e68348766055a43dc1edf410809c",
+      "size": 608073
+    },
+    {
+      "label": "glusterfs-cli-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "path": "glusterfs-cli-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "sha256": "957d5346cb9464d139df6680d21ca94e2a33cf4ed158e262199ce2f7330cb9d4",
+      "size": 189038
+    },
+    {
+      "label": "glusterfs-cli-debuginfo-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "path": "glusterfs-cli-debuginfo-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "sha256": "253e003879a045303cf6438e77b936c962609395758d52000414d8a55b64dc44",
+      "size": 429837
+    },
+    {
+      "label": "glusterfs-client-xlators-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "path": "glusterfs-client-xlators-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "sha256": "66832582022f25c302d377d9dd961c819b15c0cc170a02c9378b13fed166aa5c",
+      "size": 804013
+    },
+    {
+      "label": "glusterfs-client-xlators-debuginfo-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "path": "glusterfs-client-xlators-debuginfo-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "sha256": "0e78eb22999265fc0c17ac75b3f0889bed766c5513f7898c0b852b4c9508e1a8",
+      "size": 2815518
+    },
+    {
+      "label": "glusterfs-cloudsync-plugins-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "path": "glusterfs-cloudsync-plugins-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "sha256": "a381edb962e2b49542e5d8c68e4fa5d107725e98cb4ff8d2ace522fe6cec05c8",
+      "size": 25280
+    },
+    {
+      "label": "glusterfs-cloudsync-plugins-debuginfo-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "path": "glusterfs-cloudsync-plugins-debuginfo-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "sha256": "cd5aca08f7adbdc968ead4ca34be041a475523cfb74a7adabe2045ff555987c5",
+      "size": 93536
+    },
+    {
+      "label": "glusterfs-debuginfo-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "path": "glusterfs-debuginfo-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "sha256": "15f09f3f1e2ed48fa420c4142c54e506d46e17962aa65de287b56728fb9e7202",
+      "size": 2067946
+    },
+    {
+      "label": "glusterfs-debugsource-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "path": "glusterfs-debugsource-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "sha256": "7ea0218ea977f7645af1a292ded1ad18d5248342c034010d542b3b98f179a423",
+      "size": 339911
+    },
+    {
+      "label": "glusterfs-events-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "path": "glusterfs-events-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "sha256": "3371f716b623300ef7569d5e25e3aa2af7823303f935afe4f3aad583dc0a91d2",
+      "size": 38767
+    },
+    {
+      "label": "glusterfs-extra-xlators-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "path": "glusterfs-extra-xlators-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "sha256": "8b5d9a9f27c95f577a312add43fe3e2e38a5d5027b06dc597919e335cbac1696",
+      "size": 36256
+    },
+    {
+      "label": "glusterfs-extra-xlators-debuginfo-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "path": "glusterfs-extra-xlators-debuginfo-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "sha256": "0fd64a28bce2a1619aea67375649630e1f52a84915d1c4d15455692f4231a691",
+      "size": 106221
+    },
+    {
+      "label": "glusterfs-fuse-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "path": "glusterfs-fuse-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "sha256": "e33e133ddaf2e2879d0801b3334ebb2c789c73151971a0ad4e1b121cce644b70",
+      "size": 140751
+    },
+    {
+      "label": "glusterfs-fuse-debuginfo-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "path": "glusterfs-fuse-debuginfo-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "sha256": "48ce9db8aa09d26bb7e11587f80043b2d48309ff2590adcee6dbebf6157cf49c",
+      "size": 340844
+    },
+    {
+      "label": "glusterfs-ganesha-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "path": "glusterfs-ganesha-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "sha256": "2cb475b6a4b9599d33aca02a8bb96027fd448181a6f32332c10e410fdc3182ab",
+      "size": 28037
+    },
+    {
+      "label": "glusterfs-geo-replication-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "path": "glusterfs-geo-replication-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "sha256": "840b70f49988d5b20e4383db34d7f90ee8d9162fb45f3b6ad4e04bf542f200b5",
+      "size": 226850
+    },
+    {
+      "label": "glusterfs-geo-replication-debuginfo-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "path": "glusterfs-geo-replication-debuginfo-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "sha256": "229365720364bacd167302d80b71a30e2266a1b53356039f2a5b6bb6760bb121",
+      "size": 54819
+    },
+    {
+      "label": "glusterfs-gnfs-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "path": "glusterfs-gnfs-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "sha256": "fbd158d100d21a56eaebda1efca1a8c3dd931f436e6a154369c00c9935c4c9e3",
+      "size": 148104
+    },
+    {
+      "label": "glusterfs-gnfs-debuginfo-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "path": "glusterfs-gnfs-debuginfo-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "sha256": "fecd4cc76c8c7dac630e0fc9fd00f52167ebbbc56123cbebc0e61130ee08ef5b",
+      "size": 477002
+    },
+    {
+      "label": "glusterfs-regression-tests-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "path": "glusterfs-regression-tests-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "sha256": "6ec8dad022abdd8f2448c9257c8bedb7eef647602bad7737d0b08aeeb706f9b9",
+      "size": 479307
+    },
+    {
+      "label": "glusterfs-resource-agents-2026.08.26-0.0.gita6fa98f65c40.el10.noarch.rpm",
+      "path": "glusterfs-resource-agents-2026.08.26-0.0.gita6fa98f65c40.el10.noarch.rpm",
+      "sha256": "95719979889fe1f0553cd7ccf2668da8e2a4d6c4bccf0fe8edf5dd3d45222ffa",
+      "size": 11203
+    },
+    {
+      "label": "glusterfs-selinux-2.0.1-1.el10.noarch.rpm",
+      "path": "glusterfs-selinux-2.0.1-1.el10.noarch.rpm",
+      "sha256": "e1c7c9176b915ef8394dc9fcb4d3a0af996efcab8db77a54d58a7f286b2f1604",
+      "size": 25982
+    },
+    {
+      "label": "glusterfs-selinux-2.0.1-1.el10.src.rpm",
+      "path": "glusterfs-selinux-2.0.1-1.el10.src.rpm",
+      "sha256": "3d1463bec0fc40f010ee4a3bade1a044b7fcf8b550bc8ece6931bd0f93ed63f9",
+      "size": 17169
+    },
+    {
+      "label": "glusterfs-server-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "path": "glusterfs-server-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "sha256": "719846c7a86dd9e989c3205e17fb44e69557ee0c2e8f6b74b8ec4bf36b4819a0",
+      "size": 1304645
+    },
+    {
+      "label": "glusterfs-server-debuginfo-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "path": "glusterfs-server-debuginfo-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "sha256": "9bf6a8741f0ee2e2add481e70b5f819f842ec7e476831c9d26e3e06ca57acf2b",
+      "size": 3510439
+    },
+    {
+      "label": "glusterfs-thin-arbiter-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "path": "glusterfs-thin-arbiter-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "sha256": "4168327d2fabef142e68d9f6a0424d88653e631b8eeb8760d4a26589b327dedd",
+      "size": 21490
+    },
+    {
+      "label": "glusterfs-thin-arbiter-debuginfo-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "path": "glusterfs-thin-arbiter-debuginfo-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "sha256": "6b06825a4ea8161c9881cb6d219fdf5e9209f5cc5307dfceb1940c202a50154c",
+      "size": 50950
+    },
+    {
+      "label": "libgfapi-devel-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "path": "libgfapi-devel-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "sha256": "1f6b5304ee18239374a22ab16b386f58ad9f1755362c6af6498d2ef84833f8d3",
+      "size": 23545
+    },
+    {
+      "label": "libgfapi0-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "path": "libgfapi0-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "sha256": "3fb19850aef82f76adca7d1b897a73883dede74ea2ff16d62fa4de63172f0869",
+      "size": 97714
+    },
+    {
+      "label": "libgfapi0-debuginfo-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "path": "libgfapi0-debuginfo-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "sha256": "751bc4cd22c89d652b75c71d9f99d80b5f17c2c892c667b63a9e5005a8a6b4a0",
+      "size": 278635
+    },
+    {
+      "label": "libgfchangelog-devel-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "path": "libgfchangelog-devel-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "sha256": "22a70187dd7cc28e30d6665ad73dae77ac5eab61cc2b18ba3ae96dab5d243ed1",
+      "size": 10047
+    },
+    {
+      "label": "libgfchangelog0-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "path": "libgfchangelog0-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "sha256": "9ea43240c1cff820b3177e3409a39cd29769cedcbe8afa3870e76f59ac2a2089",
+      "size": 35132
+    },
+    {
+      "label": "libgfchangelog0-debuginfo-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "path": "libgfchangelog0-debuginfo-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "sha256": "5d9e575ee7cf4a96158ac03ac35487841a3795edcd3208b5ce7477f74d7483a8",
+      "size": 102686
+    },
+    {
+      "label": "libgfrpc-devel-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "path": "libgfrpc-devel-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "sha256": "e36be2de06cbf91792ecc5377d8363b9191cc12c0b969a8b7053c192dba81006",
+      "size": 46324
+    },
+    {
+      "label": "libgfrpc0-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "path": "libgfrpc0-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "sha256": "518ac9a6c5678e35a057304464de0936b58baceeb45dd9a0777f813519480a13",
+      "size": 54377
+    },
+    {
+      "label": "libgfrpc0-debuginfo-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "path": "libgfrpc0-debuginfo-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "sha256": "1f4f5ad38395d9fd6e3403a5990d912e215a567d018c42ef831b96213ab89e26",
+      "size": 159491
+    },
+    {
+      "label": "libgfxdr-devel-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "path": "libgfxdr-devel-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "sha256": "718ced1e590abf5b69b0fb6bec0b2cc1aa979598cfa54339de55790e6c961fe9",
+      "size": 8181
+    },
+    {
+      "label": "libgfxdr0-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "path": "libgfxdr0-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "sha256": "fa3861f2bc772592e4cfe2c25beaec3609dbd8200223d2980b1aa5809c140c15",
+      "size": 31516
+    },
+    {
+      "label": "libgfxdr0-debuginfo-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "path": "libgfxdr0-debuginfo-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "sha256": "3aa46e4b37f69da9dc19226ed7f6532313aee8e1237ac29547d0bbd24939339c",
+      "size": 108231
+    },
+    {
+      "label": "libglusterfs-devel-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "path": "libglusterfs-devel-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "sha256": "b8547bcaa29006f692e18f09153c77565619344d7ecf8c1aa00342ffbd01574c",
+      "size": 117253
+    },
+    {
+      "label": "libglusterfs0-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "path": "libglusterfs0-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "sha256": "ec62ed3e4cc7e0df2ceed7ba26c1f5da3ab41d81c5b287b56f46cc72d3a148c4",
+      "size": 295596
+    },
+    {
+      "label": "libglusterfs0-debuginfo-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "path": "libglusterfs0-debuginfo-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "sha256": "0a796d2d36052ff31da1b2a0dea3b2c3bd7b7e6af8a1ebf4732eeaf623baa0e5",
+      "size": 912074
+    },
+    {
+      "label": "python3-gluster-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "path": "python3-gluster-2026.08.26-0.0.gita6fa98f65c40.el10.x86_64.rpm",
+      "sha256": "10a0efda4256bf3825c2ba0ceb57a17dc4cd6249c119e011b93526a99e0cd911",
+      "size": 17673
+    },
+    {
+      "label": "repodata/7855175e5024dbf88fcbaf9879d49dcc851440e4ead3b90d6f6ba063648b9af9-filelists.xml.zst",
+      "path": "repodata/7855175e5024dbf88fcbaf9879d49dcc851440e4ead3b90d6f6ba063648b9af9-filelists.xml.zst",
+      "sha256": "7855175e5024dbf88fcbaf9879d49dcc851440e4ead3b90d6f6ba063648b9af9",
+      "size": 19660
+    },
+    {
+      "label": "repodata/c50403b1fa1c56bf8526059f424b670b052e280070164e90ccb95ff8a54f8fe8-primary.xml.zst",
+      "path": "repodata/c50403b1fa1c56bf8526059f424b670b052e280070164e90ccb95ff8a54f8fe8-primary.xml.zst",
+      "sha256": "c50403b1fa1c56bf8526059f424b670b052e280070164e90ccb95ff8a54f8fe8",
+      "size": 10250
+    },
+    {
+      "label": "repodata/ef6ce61e22d603690e2df2931f4c368face4f5fdaa2a7991020f7b4bad95e22d-other.xml.zst",
+      "path": "repodata/ef6ce61e22d603690e2df2931f4c368face4f5fdaa2a7991020f7b4bad95e22d-other.xml.zst",
+      "sha256": "ef6ce61e22d603690e2df2931f4c368face4f5fdaa2a7991020f7b4bad95e22d",
+      "size": 2860
+    },
+    {
+      "label": "repodata/repomd.xml",
+      "path": "repodata/repomd.xml",
+      "sha256": "2a56f9cd53764d4414003b5d883b6ba20af260b5cc34b087a29a5e2d950d5a43",
+      "size": 1561
+    },
+    {
+      "label": "repodata/repomd.xml.asc",
+      "path": "repodata/repomd.xml.asc",
+      "sha256": "b692cd06825971f755078ef13016cb363febebb585e036b7b4cd2647382023fe",
+      "size": 228
+    },
+    {
+      "label": "SHA256SUMS",
+      "path": "SHA256SUMS",
+      "sha256": "c89f350e720119dafbc4d747d260da44e29f273f412334864577500830353514",
+      "size": 5841
+    },
+    {
+      "label": "SHA256SUMS.asc",
+      "path": "SHA256SUMS.asc",
+      "sha256": "1035b553f4aab3af40f0a952c7374f23459a26ef407f2ed4813c889db1e338ae",
+      "size": 228
+    }
+  ],
+  "checksums_sha256": "771840c0d1d713beebe008320100fb3641391c5bda961f458138912e1a5bf1c3",
+  "metadata_version": "0.1.0"
+}
