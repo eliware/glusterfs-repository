@@ -1,0 +1,64 @@
+{
+  "run_id": "20260829183422304-823d876d",
+  "generated": "2026-08-29T18:42:20Z",
+  "package_format": "deb",
+  "repository_integrity": {
+    "status": "passed",
+    "detail": "candidate package metadata, checksums, and signatures verified"
+  },
+  "provenance_verification": {
+    "status": "passed",
+    "detail": "provenance generated, signed, and independently verified"
+  },
+  "checks": {
+    "install": {
+      "status": "passed"
+    },
+    "service_start": {
+      "status": "passed"
+    },
+    "volume_create_mount": {
+      "status": "passed"
+    },
+    "file_lifecycle": {
+      "status": "passed"
+    },
+    "volume_unmount_delete": {
+      "status": "passed"
+    },
+    "service_shutdown": {
+      "status": "passed"
+    }
+  },
+  "distributions": [
+    {
+      "id": "debian-bookworm",
+      "label": "Debian 12 (bookworm)",
+      "image": "debian:12-slim",
+      "package_format": "deb",
+      "package_core": {
+        "status": "passed"
+      },
+      "repository_integrity": {
+        "status": "passed",
+        "detail": "candidate package metadata, checksums, and signatures verified"
+      },
+      "provenance_verification": {
+        "status": "passed",
+        "detail": "provenance generated, signed, and independently verified"
+      }
+    }
+  ],
+  "metadata_version": "0.1.0",
+  "smoke_stages": {
+    "smoke1": {
+      "status": "passed"
+    },
+    "smoke2": {
+      "status": "passed",
+      "targets": [
+        "debian-bookworm"
+      ]
+    }
+  }
+}

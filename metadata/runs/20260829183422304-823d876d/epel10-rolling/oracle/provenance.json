@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "generated": "2026-08-29T18:57:51Z",
+  "record": {
+    "kind": "image",
+    "run_id": "20260829183422304-823d876d",
+    "lane": "epel10-rolling",
+    "channel": "preview",
+    "version": "2026.08.29-7ae71fe605e1",
+    "distribution": "oracle",
+    "image": "ghcr.io/eliware/oracle10-gluster:2026.08.29-7ae71fe605e1",
+    "digest": "sha256:fd69a11b0d6fb3d750086086a408ecd1f1dddc6c4dc84875cbf3a566784db7f8",
+    "package_provenance": "https://glusterfs.eliware.org/el10/x86_64/previews/epel10-rolling-2026.08.29-7ae71fe605e1/provenance.json",
+    "package_repository": "https://glusterfs.eliware.org/el10/x86_64/previews/epel10-rolling-2026.08.29-7ae71fe605e1/",
+    "package_metadata_sha256": "42345a916095570830ffb87a0b276a6331c057265513ba3b9d5eb24e949adda7",
+    "source": {
+      "ref": "devel",
+      "commit": "7ae71fe605e12564eb4c01ce5cd411ff73c98826"
+    },
+    "packaging_commit": "ee5f74196da0b848714da7cad90b5df367bb6d2d",
+    "base_image_digest": "sha256:2f145af52abf6ee5be815b35751c65dc1531a4c709904c4fd7f72b23fdbc5015",
+    "workflow": null,
+    "workflow_run_id": "20260829183422304-823d876d",
+    "build_log": "/mnt/pvc/gluster-build-workspaces/conductor/20260829183422304-823d876d/epel10-rolling/logs/image-oracle.log",
+    "workflow_url": "https://github.com/eliware/glusterfs-packaging/actions/runs/20260829183422304-823d876d"
+  },
+  "files": [
+    {
+      "label": "container-validation",
+      "path": "assets/container-validation.json",
+      "sha256": "3c6d461d7788fcc6401e32f33da95b062e3e3a7b49119425b1cb7b9b5730812e",
+      "size": 1897
+    },
+    {
+      "label": "image-build-log",
+      "path": "assets/image-oracle.log",
+      "sha256": "0bef5082aab581996b42a734b8d028c29a166a8d300085fdd4ab7ab216ffbdf7",
+      "size": 39543
+    }
+  ],
+  "checksums_sha256": "22c28bf786ee86c890c9b15105d9aef27e23e096cba2967412a678916e0cf115",
+  "metadata_version": "0.1.0"
+}
