@@ -1,5 +1,7 @@
 # Eliware GlusterFS package repository
 
+Documentation: [docs](docs/README.md) · [specifications](specs/README.md) · [examples](examples/README.md)
+
 This repository is the complete, published package repository for Eliware's
 GlusterFS builds. It contains RPM and DEB packages together with repository
 indexes, checksums, release metadata, provenance records, validation evidence,
