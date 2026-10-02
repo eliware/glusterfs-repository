@@ -1,0 +1,65 @@
+{
+  "name": "@eliware/glusterfs-repository",
+  "type": "module",
+  "version": "10.0.0",
+  "description": "Published package repository for Eliware's GlusterFS builds.",
+  "scripts": {
+    "test": "eliware-test",
+    "lint": "eliware-test --lint",
+    "audit": "eliware-test --audit",
+    "format": "eliware-test --format",
+    "format:check": "eliware-test --format-check"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eliware/glusterfs-repository.git"
+  },
+  "keywords": [
+    "glusterfs",
+    "packages",
+    "repository",
+    "rpm",
+    "deb"
+  ],
+  "author": "Eliware <eliware@eliware.org>",
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": "26"
+  },
+  "eliware": {
+    "apply": [
+      "general",
+      "infrastructure",
+      "private"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/eliware/glusterfs-repository/issues"
+  },
+  "homepage": "https://github.com/eliware/glusterfs-repository#readme",
+  "devDependencies": {
+    "@eliware/test": "^9.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testMatch": [
+      "**/tests/**/*.test.mjs"
+    ]
+  },
+  "prettier": {
+    "printWidth": 100,
+    "tabWidth": 2,
+    "useTabs": false,
+    "semi": true,
+    "singleQuote": false,
+    "quoteProps": "as-needed",
+    "jsxSingleQuote": false,
+    "trailingComma": "all",
+    "bracketSpacing": true,
+    "bracketSameLine": false,
+    "arrowParens": "always",
+    "proseWrap": "preserve",
+    "endOfLine": "lf"
+  }
+}
