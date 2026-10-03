@@ -28,6 +28,7 @@
     "node": "26"
   },
   "eliware": {
+    "id": "E-7003",
     "apply": ["general", "infrastructure"]
   },
   "bugs": {
