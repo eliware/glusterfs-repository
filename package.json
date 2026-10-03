@@ -28,11 +28,7 @@
     "node": "26"
   },
   "eliware": {
-    "apply": [
-      "general",
-      "infrastructure",
-      "private"
-    ]
+    "apply": ["general", "infrastructure"]
   },
   "bugs": {
     "url": "https://github.com/eliware/glusterfs-repository/issues"
