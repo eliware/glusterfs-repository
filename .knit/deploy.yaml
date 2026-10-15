@@ -3,8 +3,10 @@ on:
   push:
     deployments:
       - target: dev
-        cwd: /mnt/pvc/gluster-repository-http
+        cwd: /eliware/glusterfs-repository
         timeoutMs: 300000
         commands:
-          - git pull --ff-only
+          - git pull --ff-only origin main
+          - npm ci
+          - npm test
           - .knit/validate-publication.sh
