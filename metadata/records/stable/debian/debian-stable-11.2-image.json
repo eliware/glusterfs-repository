@@ -2,7 +2,7 @@
   "channel": "stable",
   "distribution": "debian",
   "version": "11.2",
-  "built": "2026-08-18T05:57:02.052Z",
+  "built": "2026-11-04T19:20:19.466Z",
   "candidate": "debian-stable-11.2",
   "source": {
     "ref": "v11.2",
@@ -10,15 +10,15 @@
   },
   "validation": {
     "run_id": "20260818054246765-0d8a45d9",
-    "generated": "2026-08-18T05:52:37Z",
+    "generated": "2026-11-04T19:18:19Z",
     "package_format": "deb",
     "repository_integrity": {
-      "status": "passed",
-      "detail": "candidate package metadata, checksums, and signatures verified"
+      "status": "not-tested",
+      "detail": "verified by the conductor after publication"
     },
     "provenance_verification": {
-      "status": "passed",
-      "detail": "provenance generated, signed, and independently verified"
+      "status": "not-tested",
+      "detail": "generated and verified by the conductor after publication"
     },
     "checks": {
       "install": {
@@ -48,14 +48,6 @@
         "package_format": "deb",
         "package_core": {
           "status": "passed"
-        },
-        "repository_integrity": {
-          "status": "passed",
-          "detail": "candidate package metadata, checksums, and signatures verified"
-        },
-        "provenance_verification": {
-          "status": "passed",
-          "detail": "provenance generated, signed, and independently verified"
         }
       }
     ],
@@ -73,8 +65,8 @@
     }
   },
   "container_validation": {
-    "run_id": "20260818054246765-0d8a45d9",
-    "generated": "2026-08-18T05:56:57Z",
+    "run_id": "20261104191812523-724605a3",
+    "generated": "2026-11-04T19:20:13Z",
     "repository_integrity": {
       "status": "passed",
       "detail": "published package metadata and image inputs verified"
@@ -142,15 +134,15 @@
     }
   },
   "repository_integrity": {
-    "status": "passed",
-    "detail": "candidate package metadata, checksums, and signatures verified"
+    "status": "not-tested",
+    "detail": "verified by the conductor after publication"
   },
   "provenance_verification": {
-    "status": "passed",
-    "detail": "provenance generated, signed, and independently verified"
+    "status": "not-tested",
+    "detail": "generated and verified by the conductor after publication"
   },
   "provenance": {
-    "url": "/metadata/runs/20260818054246765-0d8a45d9/debian-stable/debian/provenance.json"
+    "url": "/metadata/runs/20261104191812523-724605a3/debian-stable/debian/provenance.json"
   },
   "deb_repos": {
     "debian": "/debian/bookworm/amd64/stable/"
@@ -158,16 +150,18 @@
   "image": {
     "repository": "ghcr.io/eliware/debian12-gluster",
     "distribution": "debian",
+    "package_candidate": "debian-stable-11.2",
+    "base_image": "debian:12-slim",
     "exact_tag": "11.2",
     "reference": "ghcr.io/eliware/debian12-gluster:11.2",
-    "digest": "sha256:4eb051ab937f50b5d6a88734b78f3fa9acb27d8a8644844c75f763c4a91115e8",
+    "digest": "sha256:1ed0ef59e867eb2d14989ec0cf26f71cfbcf0842d26ac27a6461a02480100126",
     "aliases": [],
     "base": {
-      "digest": "sha256:abd67ffcfa541b485a3dff59865ab629aa048a6c613e639d36e7456b0b229241",
-      "short": "abd67ffc"
+      "digest": "sha256:99c0b25c46d0214d5a2091092e7908907dcaecd6a962cde0ac700acee222b6f3",
+      "short": "99c0b25c"
     },
     "provenance": {
-      "url": "/metadata/runs/20260818054246765-0d8a45d9/debian-stable/debian/provenance.json"
+      "url": "/metadata/runs/20261104191812523-724605a3/debian-stable/debian/provenance.json"
     },
     "package_provenance": {
       "url": "https://glusterfs.eliware.org/debian/bookworm/amd64/stable/provenance.json"
