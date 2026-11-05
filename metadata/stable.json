@@ -1,16 +1,16 @@
 {
   "channel": "stable",
-  "distribution": "oracle",
+  "distribution": "debian",
   "version": "11.2",
-  "built": "2026-11-04T19:30:26.372Z",
-  "candidate": "epel10-stable-11.2",
+  "built": "2026-11-05T19:31:23.052Z",
+  "candidate": "debian-stable-11.2",
   "source": {
     "ref": "v11.2",
     "commit": "15d3c0f8435814fdb7242a8a82fa5db140013d0a"
   },
   "validation": {
     "metadata_version": "0.1.0",
-    "generated": "2026-11-04T19:38:47.623Z",
+    "generated": "2026-11-05T19:32:07.197Z",
     "package_format": "multi-platform",
     "repository_integrity": {
       "status": "passed",
@@ -138,8 +138,8 @@
     ]
   },
   "container_validation": {
-    "run_id": "20261104191812523-724605a3",
-    "generated": "2026-11-04T19:29:42Z",
+    "run_id": "20261105193040774-bd6c1549",
+    "generated": "2026-11-05T19:31:18Z",
     "repository_integrity": {
       "status": "passed",
       "detail": "published package metadata and image inputs verified"
@@ -173,11 +173,11 @@
     },
     "distributions": [
       {
-        "id": "oracle-linux-10",
-        "label": "Oracle Linux 10",
+        "id": "debian-bookworm",
+        "label": "Debian 12 (bookworm)",
         "container_core": {
           "status": "passed",
-          "detail": "updated; volume stop: smoke: success; volume delete: smoke: success"
+          "detail": "volume start: smoke: success; volume stop: smoke: success; volume delete: smoke: success"
         },
         "repository_integrity": {
           "status": "passed",
@@ -202,8 +202,7 @@
         "org.eliware.gluster.distribution",
         "org.eliware.gluster.package-candidate",
         "org.eliware.gluster.package-provenance",
-        "org.eliware.gluster.rpm-repository",
-        "org.eliware.gluster.rpm-metadata-sha256"
+        "org.eliware.gluster.deb-repository"
       ]
     }
   },
@@ -216,27 +215,29 @@
     "detail": "stable RPM and DEB provenance validations reconciled"
   },
   "provenance": {
-    "url": "/metadata/runs/20261104191812523-724605a3/epel10-stable/oracle/provenance.json"
+    "url": "/metadata/runs/20261105193040774-bd6c1549/debian-stable/debian/provenance.json"
   },
-  "rpm_repo": "/el10/x86_64/stable/",
+  "deb_repos": {
+    "debian": "/debian/bookworm/amd64/stable/"
+  },
   "image": {
-    "repository": "ghcr.io/eliware/oracle10-gluster",
-    "distribution": "oracle",
-    "package_candidate": "epel10-stable-11.2",
-    "base_image": "oraclelinux:10",
+    "repository": "ghcr.io/eliware/debian12-gluster",
+    "distribution": "debian",
+    "package_candidate": "debian-stable-11.2",
+    "base_image": "debian:12-slim",
     "exact_tag": "11.2",
-    "reference": "ghcr.io/eliware/oracle10-gluster:11.2",
-    "digest": "sha256:8c9255abe50ee75a4bdefe112f801987c0556ff0b8e3f91f858beab4e40159e5",
+    "reference": "ghcr.io/eliware/debian12-gluster:11.2",
+    "digest": "sha256:2856c2e2dee59558c59ffbeb9a7d25e1583c1bd521e25caaa2a57c352f5f88db",
     "aliases": [],
     "base": {
-      "digest": "sha256:c45341d07ee8d2397656d34e3e17306bc60c92ac4243da2ecfe8cdee8f25c01e",
-      "short": "c45341d0"
+      "digest": "sha256:734a72b3d6142a71993b4bc580ca01d8ca687f77a2c422d96a961d3376b179bc",
+      "short": "734a72b3"
     },
     "provenance": {
-      "url": "/metadata/runs/20261104191812523-724605a3/epel10-stable/oracle/provenance.json"
+      "url": "/metadata/runs/20261105193040774-bd6c1549/debian-stable/debian/provenance.json"
     },
     "package_provenance": {
-      "url": "https://glusterfs.eliware.org/el10/x86_64/stable/provenance.json"
+      "url": "https://glusterfs.eliware.org/debian/bookworm/amd64/stable/provenance.json"
     }
   },
   "metadata_version": "0.1.0"

@@ -2,7 +2,7 @@
   "channel": "stable",
   "distribution": "debian",
   "version": "11.2",
-  "built": "2026-11-04T19:20:19.466Z",
+  "built": "2026-11-05T19:31:23.052Z",
   "candidate": "debian-stable-11.2",
   "source": {
     "ref": "v11.2",
@@ -10,7 +10,7 @@
   },
   "validation": {
     "run_id": "20260818054246765-0d8a45d9",
-    "generated": "2026-11-04T19:18:19Z",
+    "generated": "2026-11-05T19:30:46Z",
     "package_format": "deb",
     "repository_integrity": {
       "status": "not-tested",
@@ -65,8 +65,8 @@
     }
   },
   "container_validation": {
-    "run_id": "20261104191812523-724605a3",
-    "generated": "2026-11-04T19:20:13Z",
+    "run_id": "20261105193040774-bd6c1549",
+    "generated": "2026-11-05T19:31:18Z",
     "repository_integrity": {
       "status": "passed",
       "detail": "published package metadata and image inputs verified"
@@ -142,7 +142,7 @@
     "detail": "generated and verified by the conductor after publication"
   },
   "provenance": {
-    "url": "/metadata/runs/20261104191812523-724605a3/debian-stable/debian/provenance.json"
+    "url": "/metadata/runs/20261105193040774-bd6c1549/debian-stable/debian/provenance.json"
   },
   "deb_repos": {
     "debian": "/debian/bookworm/amd64/stable/"
@@ -154,14 +154,14 @@
     "base_image": "debian:12-slim",
     "exact_tag": "11.2",
     "reference": "ghcr.io/eliware/debian12-gluster:11.2",
-    "digest": "sha256:1ed0ef59e867eb2d14989ec0cf26f71cfbcf0842d26ac27a6461a02480100126",
+    "digest": "sha256:2856c2e2dee59558c59ffbeb9a7d25e1583c1bd521e25caaa2a57c352f5f88db",
     "aliases": [],
     "base": {
-      "digest": "sha256:99c0b25c46d0214d5a2091092e7908907dcaecd6a962cde0ac700acee222b6f3",
-      "short": "99c0b25c"
+      "digest": "sha256:734a72b3d6142a71993b4bc580ca01d8ca687f77a2c422d96a961d3376b179bc",
+      "short": "734a72b3"
     },
     "provenance": {
-      "url": "/metadata/runs/20261104191812523-724605a3/debian-stable/debian/provenance.json"
+      "url": "/metadata/runs/20261105193040774-bd6c1549/debian-stable/debian/provenance.json"
     },
     "package_provenance": {
       "url": "https://glusterfs.eliware.org/debian/bookworm/amd64/stable/provenance.json"

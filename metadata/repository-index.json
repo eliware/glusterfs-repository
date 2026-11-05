@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generated": "2026-11-04T19:38:46Z",
+  "generated": "2026-11-05T19:32:06Z",
   "directories": {
     "/": {
       "path": "/",
@@ -44,7 +44,7 @@
           "name": "metadata",
           "type": "directory",
           "size": null,
-          "modified": "2026-11-04T19:38:36.592Z",
+          "modified": "2026-11-05T19:31:58.156Z",
           "href": "/metadata/"
         },
         {
@@ -883,7 +883,7 @@
           "name": "previews",
           "type": "directory",
           "size": null,
-          "modified": "2026-11-04T19:30:44.185Z",
+          "modified": "2026-11-05T19:31:58.024Z",
           "href": "/debian/bookworm/amd64/previews/"
         },
         {
@@ -1831,9 +1831,16 @@
           "size": null,
           "modified": "2026-11-04T19:30:44.293Z",
           "href": "/debian/bookworm/amd64/previews/debian-rolling-2026.11.04-eb618e54c8d4/"
+        },
+        {
+          "name": "debian-rolling-2026.11.05-eb618e54c8d4",
+          "type": "directory",
+          "size": null,
+          "modified": "2026-11-05T19:31:58.026Z",
+          "href": "/debian/bookworm/amd64/previews/debian-rolling-2026.11.05-eb618e54c8d4/"
         }
       ],
-      "total": 8
+      "total": 9
     },
     "/debian/bookworm/amd64/previews/debian-rolling-2026.08.18-ae1d69672fe0/": {
       "path": "/debian/bookworm/amd64/previews/debian-rolling-2026.08.18-ae1d69672fe0/",
@@ -9598,6 +9605,191 @@
         }
       ],
       "total": 18
+    },
+    "/debian/bookworm/amd64/previews/debian-rolling-2026.11.05-eb618e54c8d4/": {
+      "path": "/debian/bookworm/amd64/previews/debian-rolling-2026.11.05-eb618e54c8d4/",
+      "entries": [
+        {
+          "name": "metadata.json",
+          "type": "file",
+          "size": 4992,
+          "modified": "2026-11-05T19:31:58.028Z",
+          "href": "/debian/bookworm/amd64/previews/debian-rolling-2026.11.05-eb618e54c8d4/metadata.json",
+          "sha256": "209533c7f615af7e0be3499c0fa5bb82ac57adc925e8051802eec3c5c7879c19"
+        }
+      ],
+      "total": 1,
+      "metadata": {
+        "channel": "preview",
+        "distribution": "debian",
+        "version": "2026.11.05-eb618e54c8d4",
+        "built": "2026-11-05T19:31:57.972Z",
+        "candidate": "debian-rolling-2026.11.05-eb618e54c8d4",
+        "source": {
+          "ref": "devel",
+          "commit": "eb618e54c8d4ef34a581f692e074353ffd75babe"
+        },
+        "validation": {
+          "run_id": "20261104191812523-724605a3",
+          "generated": "2026-11-05T19:30:46Z",
+          "package_format": "deb",
+          "repository_integrity": {
+            "status": "not-tested",
+            "detail": "verified by the conductor after publication"
+          },
+          "provenance_verification": {
+            "status": "not-tested",
+            "detail": "generated and verified by the conductor after publication"
+          },
+          "checks": {
+            "install": {
+              "status": "passed"
+            },
+            "service_start": {
+              "status": "passed"
+            },
+            "volume_create_mount": {
+              "status": "passed"
+            },
+            "file_lifecycle": {
+              "status": "passed"
+            },
+            "volume_unmount_delete": {
+              "status": "passed"
+            },
+            "service_shutdown": {
+              "status": "passed"
+            }
+          },
+          "distributions": [
+            {
+              "id": "debian-bookworm",
+              "label": "Debian 12 (bookworm)",
+              "image": "debian:12-slim",
+              "package_format": "deb",
+              "package_core": {
+                "status": "passed"
+              }
+            }
+          ],
+          "metadata_version": "0.1.0",
+          "smoke_stages": {
+            "smoke1": {
+              "status": "passed"
+            },
+            "smoke2": {
+              "status": "passed",
+              "targets": [
+                "debian-bookworm"
+              ]
+            }
+          }
+        },
+        "container_validation": {
+          "run_id": "20261105193040774-bd6c1549",
+          "generated": "2026-11-05T19:31:54Z",
+          "repository_integrity": {
+            "status": "passed",
+            "detail": "published package metadata and image inputs verified"
+          },
+          "provenance_verification": {
+            "status": "passed",
+            "detail": "provenance generated, signed, and independently verified"
+          },
+          "checks": {
+            "install": {
+              "status": "passed"
+            },
+            "cli_available": {
+              "status": "passed"
+            },
+            "volume_create_mount": {
+              "status": "passed"
+            },
+            "file_lifecycle": {
+              "status": "passed"
+            },
+            "volume_unmount_delete": {
+              "status": "passed"
+            },
+            "service_shutdown": {
+              "status": "passed"
+            },
+            "image_labels": {
+              "status": "passed"
+            }
+          },
+          "distributions": [
+            {
+              "id": "debian-bookworm",
+              "label": "Debian 12 (bookworm)",
+              "container_core": {
+                "status": "passed",
+                "detail": "volume start: smoke: success; volume stop: smoke: success; volume delete: smoke: success"
+              },
+              "repository_integrity": {
+                "status": "passed",
+                "detail": "published package metadata and image inputs verified"
+              },
+              "provenance_verification": {
+                "status": "passed",
+                "detail": "provenance generated, signed, and independently verified"
+              }
+            }
+          ],
+          "metadata_version": "0.1.0",
+          "image_labels": {
+            "status": "passed",
+            "fields": [
+              "org.opencontainers.image.version",
+              "org.opencontainers.image.revision",
+              "org.eliware.gluster.base-image.digest",
+              "org.eliware.gluster.base-image.reference",
+              "org.eliware.gluster.source-ref",
+              "org.eliware.gluster.source-commit",
+              "org.eliware.gluster.distribution",
+              "org.eliware.gluster.package-candidate",
+              "org.eliware.gluster.package-provenance",
+              "org.eliware.gluster.deb-repository"
+            ]
+          }
+        },
+        "repository_integrity": {
+          "status": "not-tested",
+          "detail": "verified by the conductor after publication"
+        },
+        "provenance_verification": {
+          "status": "not-tested",
+          "detail": "generated and verified by the conductor after publication"
+        },
+        "provenance": {
+          "url": "/metadata/runs/20261105193040774-bd6c1549/debian-rolling/debian/provenance.json"
+        },
+        "deb_repos": {
+          "debian": "/debian/bookworm/amd64/previews/debian-rolling-2026.11.05-eb618e54c8d4/"
+        },
+        "image": {
+          "repository": "ghcr.io/eliware/debian12-gluster",
+          "distribution": "debian",
+          "package_candidate": "debian-rolling-2026.11.05-eb618e54c8d4",
+          "base_image": "debian:12-slim",
+          "exact_tag": "2026.11.05-eb618e54c8d4",
+          "reference": "ghcr.io/eliware/debian12-gluster:2026.11.05-eb618e54c8d4",
+          "digest": "sha256:231c5c31e476481ec43a62be65eada721ecb0b8f38d7f942024f2b5af51c2137",
+          "aliases": [],
+          "base": {
+            "digest": "sha256:734a72b3d6142a71993b4bc580ca01d8ca687f77a2c422d96a961d3376b179bc",
+            "short": "734a72b3"
+          },
+          "provenance": {
+            "url": "/metadata/runs/20261105193040774-bd6c1549/debian-rolling/debian/provenance.json"
+          },
+          "package_provenance": {
+            "url": "https://glusterfs.eliware.org/debian/bookworm/amd64/previews/debian-rolling-2026.11.04-eb618e54c8d4/provenance.json"
+          }
+        },
+        "metadata_version": "0.1.0"
+      }
     },
     "/debian/bookworm/amd64/stable/": {
       "path": "/debian/bookworm/amd64/stable/",
@@ -28580,7 +28772,7 @@
           "name": "runs",
           "type": "directory",
           "size": null,
-          "modified": "2026-11-04T19:19:22.458Z",
+          "modified": "2026-11-05T19:31:22.741Z",
           "href": "/metadata/runs/"
         },
         {
@@ -28594,50 +28786,50 @@
         {
           "name": "catalog.json",
           "type": "file",
-          "size": 675084,
-          "modified": "2026-11-04T19:38:36.569Z",
+          "size": 650143,
+          "modified": "2026-11-05T19:31:58.142Z",
           "href": "/metadata/catalog.json",
-          "sha256": "553b0fc99ff1a3374dca05422fd563c6f3f796f74f5a75c4beb0565e32791777"
+          "sha256": "958adf155ce72dedb82fa3dd861944e62bbb850daf5418dc0ee885019e76739a"
         },
         {
           "name": "conductor-state.json",
           "type": "file",
-          "size": 2605850,
-          "modified": "2026-11-04T19:38:11.789Z",
+          "size": 2808743,
+          "modified": "2026-11-05T19:31:32.865Z",
           "href": "/metadata/conductor-state.json",
-          "sha256": "acd766c600f05cda0ee313e666f333a4caf6ff1efa4b69ff706f5dd8c88035d8"
+          "sha256": "fb57cbbdf058ef8efce90275a16ee6e17363a3733a940fc58ffa80ae1932cf05"
         },
         {
           "name": "latest-release-card.png",
           "type": "file",
-          "size": 313997,
-          "modified": "2026-11-04T19:16:15.628Z",
+          "size": 313334,
+          "modified": "2026-11-05T19:29:49.238Z",
           "href": "/metadata/latest-release-card.png",
-          "sha256": "c2353ee87ce1e97fe96e93ac51a48de130daf8b45a0fd4fa895cdba97586e951"
+          "sha256": "f5d4ba1a90063fa8ee86f4d13d2775947c8279a670784557a0772c2dc13ea260"
         },
         {
           "name": "latest-release-report.json",
           "type": "file",
           "size": 258,
-          "modified": "2026-11-04T19:16:15.637Z",
+          "modified": "2026-11-05T19:29:49.255Z",
           "href": "/metadata/latest-release-report.json",
-          "sha256": "15faebc032842db5941a14d3dad586b0428d84b3219ca23034c44f0b1a105198"
+          "sha256": "241c011fdf3e4d1606987648ee32d0cd30d3128a7173bcf25c9bb79b2bb65192"
         },
         {
           "name": "packages.json",
           "type": "file",
           "size": 106653,
-          "modified": "2026-11-04T19:38:36.554Z",
+          "modified": "2026-11-05T19:31:58.132Z",
           "href": "/metadata/packages.json",
-          "sha256": "63eda5ea392337816550f76594429e9f9e993e60c5bf0fe04306ea0380159b07"
+          "sha256": "c3db7bf3497d8f8b4992b6bf00d3af60bec7106cc4e545c891e8033837e91a4e"
         },
         {
           "name": "stable.json",
           "type": "file",
-          "size": 5856,
-          "modified": "2026-11-04T19:30:26.513Z",
+          "size": 4810,
+          "modified": "2026-11-05T19:31:23.108Z",
           "href": "/metadata/stable.json",
-          "sha256": "a57d5556f373852c07ced8c4d01594aa8ff83cb9a614a0c617c84db34f681606"
+          "sha256": "74952cef5d30af60ec0344fcbbfc3f5fcbcbfc7a267c0ffd91c5b0627b5b14ab"
         }
       ],
       "total": 9
@@ -28683,7 +28875,7 @@
           "name": "debian",
           "type": "directory",
           "size": null,
-          "modified": "2026-11-04T19:38:36.427Z",
+          "modified": "2026-11-05T19:31:58.017Z",
           "href": "/metadata/records/preview/debian/"
         },
         {
@@ -29044,9 +29236,17 @@
           "modified": "2026-11-04T19:30:44.281Z",
           "href": "/metadata/records/preview/debian/debian-rolling-2026.11.04-eb618e54c8d4-package.json",
           "sha256": "ed5e1a3a81cc3b431abe6d3dca1d2754ad6bee9fe55fe8147718a30d316f6315"
+        },
+        {
+          "name": "debian-rolling-2026.11.05-eb618e54c8d4-image.json",
+          "type": "file",
+          "size": 4992,
+          "modified": "2026-11-05T19:31:58.018Z",
+          "href": "/metadata/records/preview/debian/debian-rolling-2026.11.05-eb618e54c8d4-image.json",
+          "sha256": "209533c7f615af7e0be3499c0fa5bb82ac57adc925e8051802eec3c5c7879c19"
         }
       ],
-      "total": 16
+      "total": 17
     },
     "/metadata/records/preview/oracle/": {
       "path": "/metadata/records/preview/oracle/",
@@ -29351,7 +29551,7 @@
           "name": "debian",
           "type": "directory",
           "size": null,
-          "modified": "2026-11-04T19:16:15.669Z",
+          "modified": "2026-11-05T19:29:49.275Z",
           "href": "/metadata/records/stable/debian/"
         },
         {
@@ -29421,9 +29621,9 @@
           "name": "debian-stable-11.2-image.json",
           "type": "file",
           "size": 4810,
-          "modified": "2026-11-04T19:20:19.558Z",
+          "modified": "2026-11-05T19:31:23.103Z",
           "href": "/metadata/records/stable/debian/debian-stable-11.2-image.json",
-          "sha256": "740ceaaaff396626867611230055a52dd444c7e6a1d7c381ed94fa0e244abbb6"
+          "sha256": "74952cef5d30af60ec0344fcbbfc3f5fcbcbfc7a267c0ffd91c5b0627b5b14ab"
         },
         {
           "name": "debian-stable-11.2-package.json",
@@ -29535,11 +29735,25 @@
           "name": "20261104191812523-724605a3",
           "type": "directory",
           "size": null,
-          "modified": "2026-11-04T19:38:35.986Z",
+          "modified": "2026-11-04T19:38:49.289Z",
           "href": "/metadata/runs/20261104191812523-724605a3/"
+        },
+        {
+          "name": "20261105140017192-eab67bb2",
+          "type": "directory",
+          "size": null,
+          "modified": "2026-11-05T14:01:49.828Z",
+          "href": "/metadata/runs/20261105140017192-eab67bb2/"
+        },
+        {
+          "name": "20261105193040774-bd6c1549",
+          "type": "directory",
+          "size": null,
+          "modified": "2026-11-05T19:31:57.678Z",
+          "href": "/metadata/runs/20261105193040774-bd6c1549/"
         }
       ],
-      "total": 7
+      "total": 9
     },
     "/metadata/runs/20261102234907061-b471536f/": {
       "path": "/metadata/runs/20261102234907061-b471536f/",
@@ -36536,9 +36750,33 @@
           "size": null,
           "modified": "2026-11-04T19:19:22.474Z",
           "href": "/metadata/runs/20261104191812523-724605a3/ubuntu-stable/"
+        },
+        {
+          "name": "release-card.html",
+          "type": "file",
+          "size": 6491,
+          "modified": "2026-11-04T19:38:47.799Z",
+          "href": "/metadata/runs/20261104191812523-724605a3/release-card.html",
+          "sha256": "7c9bedb83968ac45e5dce120018ff7317db3a9458f14bc22e6b5f1b70d0be307"
+        },
+        {
+          "name": "release-card.png",
+          "type": "file",
+          "size": 313334,
+          "modified": "2026-11-04T19:38:49.192Z",
+          "href": "/metadata/runs/20261104191812523-724605a3/release-card.png",
+          "sha256": "f5d4ba1a90063fa8ee86f4d13d2775947c8279a670784557a0772c2dc13ea260"
+        },
+        {
+          "name": "release-report.json",
+          "type": "file",
+          "size": 11359,
+          "modified": "2026-11-04T19:38:49.291Z",
+          "href": "/metadata/runs/20261104191812523-724605a3/release-report.json",
+          "sha256": "8ac45020151a33bdc7df525ef44dab5fbd6d8be8e65ebc2da28d5c2fb4d6ab08"
         }
       ],
-      "total": 6
+      "total": 9
     },
     "/metadata/runs/20261104191812523-724605a3/debian-rolling/": {
       "path": "/metadata/runs/20261104191812523-724605a3/debian-rolling/",
@@ -38700,6 +38938,713 @@
           {
             "id": "ubuntu-noble",
             "label": "Ubuntu 24.04 (noble)",
+            "container_core": {
+              "status": "passed",
+              "detail": "volume start: smoke: success; volume stop: smoke: success; volume delete: smoke: success"
+            },
+            "repository_integrity": {
+              "status": "passed",
+              "detail": "published package metadata and image inputs verified"
+            },
+            "provenance_verification": {
+              "status": "passed",
+              "detail": "provenance generated, signed, and independently verified"
+            }
+          }
+        ],
+        "metadata_version": "0.1.0",
+        "image_labels": {
+          "status": "passed",
+          "fields": [
+            "org.opencontainers.image.version",
+            "org.opencontainers.image.revision",
+            "org.eliware.gluster.base-image.digest",
+            "org.eliware.gluster.base-image.reference",
+            "org.eliware.gluster.source-ref",
+            "org.eliware.gluster.source-commit",
+            "org.eliware.gluster.distribution",
+            "org.eliware.gluster.package-candidate",
+            "org.eliware.gluster.package-provenance",
+            "org.eliware.gluster.deb-repository"
+          ]
+        }
+      }
+    },
+    "/metadata/runs/20261105140017192-eab67bb2/": {
+      "path": "/metadata/runs/20261105140017192-eab67bb2/",
+      "entries": [
+        {
+          "name": "debian-rolling",
+          "type": "directory",
+          "size": null,
+          "modified": "2026-11-05T14:01:47.307Z",
+          "href": "/metadata/runs/20261105140017192-eab67bb2/debian-rolling/"
+        },
+        {
+          "name": "debian-stable",
+          "type": "directory",
+          "size": null,
+          "modified": "2026-11-05T14:01:33.294Z",
+          "href": "/metadata/runs/20261105140017192-eab67bb2/debian-stable/"
+        },
+        {
+          "name": "release-card.html",
+          "type": "file",
+          "size": 6486,
+          "modified": "2026-11-05T14:01:48.195Z",
+          "href": "/metadata/runs/20261105140017192-eab67bb2/release-card.html",
+          "sha256": "cada05dda00e330778c8e8e37dfea2ccdfc2d7b1efc271dc41ebdcd14fc89191"
+        },
+        {
+          "name": "release-card.png",
+          "type": "file",
+          "size": 311330,
+          "modified": "2026-11-05T14:01:49.742Z",
+          "href": "/metadata/runs/20261105140017192-eab67bb2/release-card.png",
+          "sha256": "6e0b19cde0d13fc46f0df7f7ef41a977424de06d76aa035f360411879506c45b"
+        },
+        {
+          "name": "release-report.json",
+          "type": "file",
+          "size": 12210,
+          "modified": "2026-11-05T14:01:49.830Z",
+          "href": "/metadata/runs/20261105140017192-eab67bb2/release-report.json",
+          "sha256": "742751dd00b23a34933eaec2cfc7b476186ea2c91d962d5791a807d68c79798c"
+        }
+      ],
+      "total": 5
+    },
+    "/metadata/runs/20261105140017192-eab67bb2/debian-rolling/": {
+      "path": "/metadata/runs/20261105140017192-eab67bb2/debian-rolling/",
+      "entries": [
+        {
+          "name": "debian",
+          "type": "directory",
+          "size": null,
+          "modified": "2026-11-05T14:01:47.310Z",
+          "href": "/metadata/runs/20261105140017192-eab67bb2/debian-rolling/debian/"
+        }
+      ],
+      "total": 1
+    },
+    "/metadata/runs/20261105140017192-eab67bb2/debian-rolling/debian/": {
+      "path": "/metadata/runs/20261105140017192-eab67bb2/debian-rolling/debian/",
+      "entries": [
+        {
+          "name": "failure",
+          "type": "directory",
+          "size": null,
+          "modified": "2026-11-05T14:01:47.384Z",
+          "href": "/metadata/runs/20261105140017192-eab67bb2/debian-rolling/debian/failure/"
+        }
+      ],
+      "total": 1
+    },
+    "/metadata/runs/20261105140017192-eab67bb2/debian-rolling/debian/failure/": {
+      "path": "/metadata/runs/20261105140017192-eab67bb2/debian-rolling/debian/failure/",
+      "entries": [
+        {
+          "name": "checksums.sha256",
+          "type": "file",
+          "size": 1,
+          "modified": "2026-11-05T14:01:47.367Z",
+          "href": "/metadata/runs/20261105140017192-eab67bb2/debian-rolling/debian/failure/checksums.sha256",
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        {
+          "name": "failure-record.json",
+          "type": "file",
+          "size": 1301,
+          "modified": "2026-11-05T14:01:47.314Z",
+          "href": "/metadata/runs/20261105140017192-eab67bb2/debian-rolling/debian/failure/failure-record.json",
+          "sha256": "e5d9f33b9f336b9429c6ab32e657f956901132690aafd3294233a45a7d77a3cd"
+        },
+        {
+          "name": "provenance.json",
+          "type": "file",
+          "size": 1539,
+          "modified": "2026-11-05T14:01:47.373Z",
+          "href": "/metadata/runs/20261105140017192-eab67bb2/debian-rolling/debian/failure/provenance.json",
+          "sha256": "db95810ea23763828db8046f742590470b7bc2893b162be2571672a3dfd32477"
+        },
+        {
+          "name": "provenance.json.asc",
+          "type": "file",
+          "size": 228,
+          "modified": "2026-11-05T14:01:47.463Z",
+          "href": "/metadata/runs/20261105140017192-eab67bb2/debian-rolling/debian/failure/provenance.json.asc",
+          "sha256": "065f93ffe27ccbc3ad5e80cba5a5746747ac71148107e5a5f7fd12ef0627c19a"
+        }
+      ],
+      "total": 4,
+      "provenance": {
+        "schema": 1,
+        "generated": "2026-11-05T14:01:47Z",
+        "record": {
+          "kind": "image-failure",
+          "status": "failed",
+          "run_id": "20261105140017192-eab67bb2",
+          "lane": "debian-rolling",
+          "distribution": "debian",
+          "source": {
+            "ref": "devel",
+            "commit": "eb618e54c8d4ef34a581f692e074353ffd75babe"
+          },
+          "package_candidate": "debian-rolling-2026.11.04-eb618e54c8d4",
+          "base_image": "debian:12-slim",
+          "base_image_digest": "sha256:734a72b3d6142a71993b4bc580ca01d8ca687f77a2c422d96a961d3376b179bc",
+          "error": "Command failed: node /var/eliware/glusterfs-packaging/scripts/build-publish-image-local.mjs\nfile:///var/eliware/glusterfs-packaging/scripts/lib.mjs:114\n            const error = new Error(\n                          ^\n\nError: docker exited with 100\n    at Array.finish (file:///var/eliware/glusterfs-packaging/scripts/lib.mjs:114:27)\n    at callFinishedCallbacks (node:internal/streams/writable:1021:25)\n    at finish (node:internal/streams/writable:992:3)\n    at node:internal/streams/writable:975:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {\n  code: 100,\n  signal: null,\n  stdout: '',\n  stderr: ''\n}\n\nNode.js v26.13.0\n",
+          "failed_at": "2026-11-05T14:01:47.300Z",
+          "log": "/mnt/pvc/gluster-build-workspaces/conductor/20261105140017192-eab67bb2/debian-rolling/logs/image-debian.log"
+        },
+        "files": [],
+        "checksums_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "metadata_version": "0.1.0"
+      }
+    },
+    "/metadata/runs/20261105140017192-eab67bb2/debian-stable/": {
+      "path": "/metadata/runs/20261105140017192-eab67bb2/debian-stable/",
+      "entries": [
+        {
+          "name": "debian",
+          "type": "directory",
+          "size": null,
+          "modified": "2026-11-05T14:01:33.596Z",
+          "href": "/metadata/runs/20261105140017192-eab67bb2/debian-stable/debian/"
+        }
+      ],
+      "total": 1
+    },
+    "/metadata/runs/20261105140017192-eab67bb2/debian-stable/debian/": {
+      "path": "/metadata/runs/20261105140017192-eab67bb2/debian-stable/debian/",
+      "entries": [
+        {
+          "name": "assets",
+          "type": "directory",
+          "size": null,
+          "modified": "2026-11-05T14:01:33.376Z",
+          "href": "/metadata/runs/20261105140017192-eab67bb2/debian-stable/debian/assets/"
+        },
+        {
+          "name": "checksums.sha256",
+          "type": "file",
+          "size": 189,
+          "modified": "2026-11-05T14:01:33.402Z",
+          "href": "/metadata/runs/20261105140017192-eab67bb2/debian-stable/debian/checksums.sha256",
+          "sha256": "f5191125ccb4c997746e3343a99fd9b835b2afdb1c546d9ba12a09b1873a3141"
+        },
+        {
+          "name": "provenance.json",
+          "type": "file",
+          "size": 1775,
+          "modified": "2026-11-05T14:01:33.411Z",
+          "href": "/metadata/runs/20261105140017192-eab67bb2/debian-stable/debian/provenance.json",
+          "sha256": "10c6928a8f1c4c2c604ef36398057da5e41c71e102463255ae533bc542e4afcd"
+        },
+        {
+          "name": "provenance.json.asc",
+          "type": "file",
+          "size": 228,
+          "modified": "2026-11-05T14:01:33.516Z",
+          "href": "/metadata/runs/20261105140017192-eab67bb2/debian-stable/debian/provenance.json.asc",
+          "sha256": "a97c42cc5fdb6772ce29775cd5fef0241026a0aa757476ba35c2a8d407be79d9"
+        }
+      ],
+      "total": 4,
+      "provenance": {
+        "schema": 1,
+        "generated": "2026-11-05T14:01:33Z",
+        "record": {
+          "kind": "image",
+          "run_id": "20261105140017192-eab67bb2",
+          "lane": "debian-stable",
+          "channel": "stable",
+          "version": "11.2",
+          "distribution": "debian",
+          "image": "ghcr.io/eliware/debian12-gluster:11.2",
+          "digest": "sha256:9a646c7d898a2eec225a932a950c58a6206d53c00af59d7b197141f81a4c906a",
+          "package_provenance": "https://glusterfs.eliware.org/debian/bookworm/amd64/stable/provenance.json",
+          "package_repository": "https://glusterfs.eliware.org/debian/bookworm/amd64/stable/",
+          "package_metadata_sha256": null,
+          "source": {
+            "ref": "v11.2",
+            "commit": "15d3c0f8435814fdb7242a8a82fa5db140013d0a"
+          },
+          "packaging_commit": "6e8b9a54aeb0e40bcbbc29c2b7a47f9899e67529",
+          "base_image": "debian:12-slim",
+          "base_image_digest": "sha256:734a72b3d6142a71993b4bc580ca01d8ca687f77a2c422d96a961d3376b179bc",
+          "workflow": null,
+          "workflow_run_id": "20261105140017192-eab67bb2",
+          "build_log": "/mnt/pvc/gluster-build-workspaces/conductor/20261105140017192-eab67bb2/debian-stable/logs/image-debian.log",
+          "workflow_url": "https://github.com/eliware/glusterfs-packaging/actions/runs/20261105140017192-eab67bb2"
+        },
+        "files": [
+          {
+            "label": "container-validation",
+            "path": "assets/container-validation.json",
+            "sha256": "a88e591a8dc301f8c6a9f5184d24d8b3588cfa426353110d805768356b0bd527",
+            "size": 1874
+          },
+          {
+            "label": "image-build-log",
+            "path": "assets/image-debian.log",
+            "sha256": "6aac81e6bab54d4234659dbd0214b3eb80479a3ec691707b16ac8534d7938d1a",
+            "size": 42930
+          }
+        ],
+        "checksums_sha256": "f5191125ccb4c997746e3343a99fd9b835b2afdb1c546d9ba12a09b1873a3141",
+        "metadata_version": "0.1.0"
+      }
+    },
+    "/metadata/runs/20261105140017192-eab67bb2/debian-stable/debian/assets/": {
+      "path": "/metadata/runs/20261105140017192-eab67bb2/debian-stable/debian/assets/",
+      "entries": [
+        {
+          "name": "container-validation.json",
+          "type": "file",
+          "size": 1874,
+          "modified": "2026-11-05T14:01:33.368Z",
+          "href": "/metadata/runs/20261105140017192-eab67bb2/debian-stable/debian/assets/container-validation.json",
+          "sha256": "a88e591a8dc301f8c6a9f5184d24d8b3588cfa426353110d805768356b0bd527"
+        },
+        {
+          "name": "image-debian.log",
+          "type": "file",
+          "size": 42930,
+          "modified": "2026-11-05T14:01:33.386Z",
+          "href": "/metadata/runs/20261105140017192-eab67bb2/debian-stable/debian/assets/image-debian.log",
+          "sha256": "6aac81e6bab54d4234659dbd0214b3eb80479a3ec691707b16ac8534d7938d1a"
+        }
+      ],
+      "total": 2,
+      "container-validation": {
+        "run_id": "20261105140017192-eab67bb2",
+        "generated": "2026-11-05T14:01:28Z",
+        "repository_integrity": {
+          "status": "passed",
+          "detail": "published package metadata and image inputs verified"
+        },
+        "provenance_verification": {
+          "status": "passed",
+          "detail": "provenance generated, signed, and independently verified"
+        },
+        "checks": {
+          "install": {
+            "status": "passed"
+          },
+          "cli_available": {
+            "status": "passed"
+          },
+          "volume_create_mount": {
+            "status": "passed"
+          },
+          "file_lifecycle": {
+            "status": "passed"
+          },
+          "volume_unmount_delete": {
+            "status": "passed"
+          },
+          "service_shutdown": {
+            "status": "passed"
+          },
+          "image_labels": {
+            "status": "passed"
+          }
+        },
+        "distributions": [
+          {
+            "id": "debian-bookworm",
+            "label": "Debian 12 (bookworm)",
+            "container_core": {
+              "status": "passed",
+              "detail": "volume start: smoke: success; volume stop: smoke: success; volume delete: smoke: success"
+            },
+            "repository_integrity": {
+              "status": "passed",
+              "detail": "published package metadata and image inputs verified"
+            },
+            "provenance_verification": {
+              "status": "passed",
+              "detail": "provenance generated, signed, and independently verified"
+            }
+          }
+        ],
+        "metadata_version": "0.1.0",
+        "image_labels": {
+          "status": "passed",
+          "fields": [
+            "org.opencontainers.image.version",
+            "org.opencontainers.image.revision",
+            "org.eliware.gluster.base-image.digest",
+            "org.eliware.gluster.base-image.reference",
+            "org.eliware.gluster.source-ref",
+            "org.eliware.gluster.source-commit",
+            "org.eliware.gluster.distribution",
+            "org.eliware.gluster.package-candidate",
+            "org.eliware.gluster.package-provenance",
+            "org.eliware.gluster.deb-repository"
+          ]
+        }
+      }
+    },
+    "/metadata/runs/20261105193040774-bd6c1549/": {
+      "path": "/metadata/runs/20261105193040774-bd6c1549/",
+      "entries": [
+        {
+          "name": "debian-rolling",
+          "type": "directory",
+          "size": null,
+          "modified": "2026-11-05T19:31:57.679Z",
+          "href": "/metadata/runs/20261105193040774-bd6c1549/debian-rolling/"
+        },
+        {
+          "name": "debian-stable",
+          "type": "directory",
+          "size": null,
+          "modified": "2026-11-05T19:31:22.745Z",
+          "href": "/metadata/runs/20261105193040774-bd6c1549/debian-stable/"
+        }
+      ],
+      "total": 2
+    },
+    "/metadata/runs/20261105193040774-bd6c1549/debian-rolling/": {
+      "path": "/metadata/runs/20261105193040774-bd6c1549/debian-rolling/",
+      "entries": [
+        {
+          "name": "debian",
+          "type": "directory",
+          "size": null,
+          "modified": "2026-11-05T19:31:57.970Z",
+          "href": "/metadata/runs/20261105193040774-bd6c1549/debian-rolling/debian/"
+        }
+      ],
+      "total": 1
+    },
+    "/metadata/runs/20261105193040774-bd6c1549/debian-rolling/debian/": {
+      "path": "/metadata/runs/20261105193040774-bd6c1549/debian-rolling/debian/",
+      "entries": [
+        {
+          "name": "assets",
+          "type": "directory",
+          "size": null,
+          "modified": "2026-11-05T19:31:57.758Z",
+          "href": "/metadata/runs/20261105193040774-bd6c1549/debian-rolling/debian/assets/"
+        },
+        {
+          "name": "checksums.sha256",
+          "type": "file",
+          "size": 189,
+          "modified": "2026-11-05T19:31:57.786Z",
+          "href": "/metadata/runs/20261105193040774-bd6c1549/debian-rolling/debian/checksums.sha256",
+          "sha256": "df2349cf80beb655505b5f256bef45466db4d8707d28a176f69ba6016525a69d"
+        },
+        {
+          "name": "provenance.json",
+          "type": "file",
+          "size": 1898,
+          "modified": "2026-11-05T19:31:57.790Z",
+          "href": "/metadata/runs/20261105193040774-bd6c1549/debian-rolling/debian/provenance.json",
+          "sha256": "99a252d29424db85ced110575a25c1e9c80a034fb46396d3546979fd8744d014"
+        },
+        {
+          "name": "provenance.json.asc",
+          "type": "file",
+          "size": 228,
+          "modified": "2026-11-05T19:31:57.886Z",
+          "href": "/metadata/runs/20261105193040774-bd6c1549/debian-rolling/debian/provenance.json.asc",
+          "sha256": "560e995baf8bd5ac2c37d0f5db2f891e4bdd950a19fafbf2029063dd723cebb7"
+        }
+      ],
+      "total": 4,
+      "provenance": {
+        "schema": 1,
+        "generated": "2026-11-05T19:31:57Z",
+        "record": {
+          "kind": "image",
+          "run_id": "20261105193040774-bd6c1549",
+          "lane": "debian-rolling",
+          "channel": "preview",
+          "version": "2026.11.05-eb618e54c8d4",
+          "distribution": "debian",
+          "image": "ghcr.io/eliware/debian12-gluster:2026.11.05-eb618e54c8d4",
+          "digest": "sha256:231c5c31e476481ec43a62be65eada721ecb0b8f38d7f942024f2b5af51c2137",
+          "package_provenance": "https://glusterfs.eliware.org/debian/bookworm/amd64/previews/debian-rolling-2026.11.04-eb618e54c8d4/provenance.json",
+          "package_repository": "https://glusterfs.eliware.org/debian/bookworm/amd64/previews/debian-rolling-2026.11.04-eb618e54c8d4/",
+          "package_metadata_sha256": null,
+          "source": {
+            "ref": "devel",
+            "commit": "eb618e54c8d4ef34a581f692e074353ffd75babe"
+          },
+          "packaging_commit": "349508abbaa1bdc466fc508ed708c3d07e6d5dc9",
+          "base_image": "debian:12-slim",
+          "base_image_digest": "sha256:734a72b3d6142a71993b4bc580ca01d8ca687f77a2c422d96a961d3376b179bc",
+          "workflow": null,
+          "workflow_run_id": "20261105193040774-bd6c1549",
+          "build_log": "/mnt/pvc/gluster-build-workspaces/conductor/20261105193040774-bd6c1549/debian-rolling/logs/image-debian.log",
+          "workflow_url": "https://github.com/eliware/glusterfs-packaging/actions/runs/20261105193040774-bd6c1549"
+        },
+        "files": [
+          {
+            "label": "container-validation",
+            "path": "assets/container-validation.json",
+            "sha256": "8b6f013bcf57c82e0ac72e90b775668a6dd048ce44a3e4637163237080b80887",
+            "size": 1874
+          },
+          {
+            "label": "image-build-log",
+            "path": "assets/image-debian.log",
+            "sha256": "ab75a1be1c97575a63eb9e84370b479a04676dd114745eb713942232a3e7caf2",
+            "size": 42884
+          }
+        ],
+        "checksums_sha256": "df2349cf80beb655505b5f256bef45466db4d8707d28a176f69ba6016525a69d",
+        "metadata_version": "0.1.0"
+      }
+    },
+    "/metadata/runs/20261105193040774-bd6c1549/debian-rolling/debian/assets/": {
+      "path": "/metadata/runs/20261105193040774-bd6c1549/debian-rolling/debian/assets/",
+      "entries": [
+        {
+          "name": "container-validation.json",
+          "type": "file",
+          "size": 1874,
+          "modified": "2026-11-05T19:31:57.751Z",
+          "href": "/metadata/runs/20261105193040774-bd6c1549/debian-rolling/debian/assets/container-validation.json",
+          "sha256": "8b6f013bcf57c82e0ac72e90b775668a6dd048ce44a3e4637163237080b80887"
+        },
+        {
+          "name": "image-debian.log",
+          "type": "file",
+          "size": 42884,
+          "modified": "2026-11-05T19:31:57.770Z",
+          "href": "/metadata/runs/20261105193040774-bd6c1549/debian-rolling/debian/assets/image-debian.log",
+          "sha256": "ab75a1be1c97575a63eb9e84370b479a04676dd114745eb713942232a3e7caf2"
+        }
+      ],
+      "total": 2,
+      "container-validation": {
+        "run_id": "20261105193040774-bd6c1549",
+        "generated": "2026-11-05T19:31:54Z",
+        "repository_integrity": {
+          "status": "passed",
+          "detail": "published package metadata and image inputs verified"
+        },
+        "provenance_verification": {
+          "status": "passed",
+          "detail": "provenance generated, signed, and independently verified"
+        },
+        "checks": {
+          "install": {
+            "status": "passed"
+          },
+          "cli_available": {
+            "status": "passed"
+          },
+          "volume_create_mount": {
+            "status": "passed"
+          },
+          "file_lifecycle": {
+            "status": "passed"
+          },
+          "volume_unmount_delete": {
+            "status": "passed"
+          },
+          "service_shutdown": {
+            "status": "passed"
+          },
+          "image_labels": {
+            "status": "passed"
+          }
+        },
+        "distributions": [
+          {
+            "id": "debian-bookworm",
+            "label": "Debian 12 (bookworm)",
+            "container_core": {
+              "status": "passed",
+              "detail": "volume start: smoke: success; volume stop: smoke: success; volume delete: smoke: success"
+            },
+            "repository_integrity": {
+              "status": "passed",
+              "detail": "published package metadata and image inputs verified"
+            },
+            "provenance_verification": {
+              "status": "passed",
+              "detail": "provenance generated, signed, and independently verified"
+            }
+          }
+        ],
+        "metadata_version": "0.1.0",
+        "image_labels": {
+          "status": "passed",
+          "fields": [
+            "org.opencontainers.image.version",
+            "org.opencontainers.image.revision",
+            "org.eliware.gluster.base-image.digest",
+            "org.eliware.gluster.base-image.reference",
+            "org.eliware.gluster.source-ref",
+            "org.eliware.gluster.source-commit",
+            "org.eliware.gluster.distribution",
+            "org.eliware.gluster.package-candidate",
+            "org.eliware.gluster.package-provenance",
+            "org.eliware.gluster.deb-repository"
+          ]
+        }
+      }
+    },
+    "/metadata/runs/20261105193040774-bd6c1549/debian-stable/": {
+      "path": "/metadata/runs/20261105193040774-bd6c1549/debian-stable/",
+      "entries": [
+        {
+          "name": "debian",
+          "type": "directory",
+          "size": null,
+          "modified": "2026-11-05T19:31:23.043Z",
+          "href": "/metadata/runs/20261105193040774-bd6c1549/debian-stable/debian/"
+        }
+      ],
+      "total": 1
+    },
+    "/metadata/runs/20261105193040774-bd6c1549/debian-stable/debian/": {
+      "path": "/metadata/runs/20261105193040774-bd6c1549/debian-stable/debian/",
+      "entries": [
+        {
+          "name": "assets",
+          "type": "directory",
+          "size": null,
+          "modified": "2026-11-05T19:31:22.825Z",
+          "href": "/metadata/runs/20261105193040774-bd6c1549/debian-stable/debian/assets/"
+        },
+        {
+          "name": "checksums.sha256",
+          "type": "file",
+          "size": 189,
+          "modified": "2026-11-05T19:31:22.848Z",
+          "href": "/metadata/runs/20261105193040774-bd6c1549/debian-stable/debian/checksums.sha256",
+          "sha256": "031dcb1a26460e02db4ec6d8601a875688b3399838fdbd2cc29ce0b3ecef9376"
+        },
+        {
+          "name": "provenance.json",
+          "type": "file",
+          "size": 1775,
+          "modified": "2026-11-05T19:31:22.852Z",
+          "href": "/metadata/runs/20261105193040774-bd6c1549/debian-stable/debian/provenance.json",
+          "sha256": "4047e3842b7511f5f406cb4dfc851455341ec0d4933df4e9913869ef001cddba"
+        },
+        {
+          "name": "provenance.json.asc",
+          "type": "file",
+          "size": 228,
+          "modified": "2026-11-05T19:31:22.958Z",
+          "href": "/metadata/runs/20261105193040774-bd6c1549/debian-stable/debian/provenance.json.asc",
+          "sha256": "97f61dcdccfbb617e1931825535fc90b038cc398eb5af70ded9eff24160c3872"
+        }
+      ],
+      "total": 4,
+      "provenance": {
+        "schema": 1,
+        "generated": "2026-11-05T19:31:22Z",
+        "record": {
+          "kind": "image",
+          "run_id": "20261105193040774-bd6c1549",
+          "lane": "debian-stable",
+          "channel": "stable",
+          "version": "11.2",
+          "distribution": "debian",
+          "image": "ghcr.io/eliware/debian12-gluster:11.2",
+          "digest": "sha256:2856c2e2dee59558c59ffbeb9a7d25e1583c1bd521e25caaa2a57c352f5f88db",
+          "package_provenance": "https://glusterfs.eliware.org/debian/bookworm/amd64/stable/provenance.json",
+          "package_repository": "https://glusterfs.eliware.org/debian/bookworm/amd64/stable/",
+          "package_metadata_sha256": null,
+          "source": {
+            "ref": "v11.2",
+            "commit": "15d3c0f8435814fdb7242a8a82fa5db140013d0a"
+          },
+          "packaging_commit": "349508abbaa1bdc466fc508ed708c3d07e6d5dc9",
+          "base_image": "debian:12-slim",
+          "base_image_digest": "sha256:734a72b3d6142a71993b4bc580ca01d8ca687f77a2c422d96a961d3376b179bc",
+          "workflow": null,
+          "workflow_run_id": "20261105193040774-bd6c1549",
+          "build_log": "/mnt/pvc/gluster-build-workspaces/conductor/20261105193040774-bd6c1549/debian-stable/logs/image-debian.log",
+          "workflow_url": "https://github.com/eliware/glusterfs-packaging/actions/runs/20261105193040774-bd6c1549"
+        },
+        "files": [
+          {
+            "label": "container-validation",
+            "path": "assets/container-validation.json",
+            "sha256": "37a0023b9a6e47292537b931397604fbb542869bf6bcdae4fe78dbab5af83676",
+            "size": 1874
+          },
+          {
+            "label": "image-build-log",
+            "path": "assets/image-debian.log",
+            "sha256": "e0239bd1436df66a857719fae401847e9e5c93451c4b27aee486b64c99d8ca1c",
+            "size": 42135
+          }
+        ],
+        "checksums_sha256": "031dcb1a26460e02db4ec6d8601a875688b3399838fdbd2cc29ce0b3ecef9376",
+        "metadata_version": "0.1.0"
+      }
+    },
+    "/metadata/runs/20261105193040774-bd6c1549/debian-stable/debian/assets/": {
+      "path": "/metadata/runs/20261105193040774-bd6c1549/debian-stable/debian/assets/",
+      "entries": [
+        {
+          "name": "container-validation.json",
+          "type": "file",
+          "size": 1874,
+          "modified": "2026-11-05T19:31:22.815Z",
+          "href": "/metadata/runs/20261105193040774-bd6c1549/debian-stable/debian/assets/container-validation.json",
+          "sha256": "37a0023b9a6e47292537b931397604fbb542869bf6bcdae4fe78dbab5af83676"
+        },
+        {
+          "name": "image-debian.log",
+          "type": "file",
+          "size": 42135,
+          "modified": "2026-11-05T19:31:22.832Z",
+          "href": "/metadata/runs/20261105193040774-bd6c1549/debian-stable/debian/assets/image-debian.log",
+          "sha256": "e0239bd1436df66a857719fae401847e9e5c93451c4b27aee486b64c99d8ca1c"
+        }
+      ],
+      "total": 2,
+      "container-validation": {
+        "run_id": "20261105193040774-bd6c1549",
+        "generated": "2026-11-05T19:31:18Z",
+        "repository_integrity": {
+          "status": "passed",
+          "detail": "published package metadata and image inputs verified"
+        },
+        "provenance_verification": {
+          "status": "passed",
+          "detail": "provenance generated, signed, and independently verified"
+        },
+        "checks": {
+          "install": {
+            "status": "passed"
+          },
+          "cli_available": {
+            "status": "passed"
+          },
+          "volume_create_mount": {
+            "status": "passed"
+          },
+          "file_lifecycle": {
+            "status": "passed"
+          },
+          "volume_unmount_delete": {
+            "status": "passed"
+          },
+          "service_shutdown": {
+            "status": "passed"
+          },
+          "image_labels": {
+            "status": "passed"
+          }
+        },
+        "distributions": [
+          {
+            "id": "debian-bookworm",
+            "label": "Debian 12 (bookworm)",
             "container_core": {
               "status": "passed",
               "detail": "volume start: smoke: success; volume stop: smoke: success; volume delete: smoke: success"

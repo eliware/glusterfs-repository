@@ -1,9 +1,9 @@
 {
   "schema": 1,
   "generation": "20261104T193042842Z-151798-43ef70ec",
-  "generated": "2026-11-04T19:38:46Z",
-  "catalog_sha256": "553b0fc99ff1a3374dca05422fd563c6f3f796f74f5a75c4beb0565e32791777",
-  "repository_index_sha256": "78d6ba204a34680a04450c7cd57e809d234a47f670342b1f10e1ffe66320071b",
+  "generated": "2026-11-05T19:32:06Z",
+  "catalog_sha256": "958adf155ce72dedb82fa3dd861944e62bbb850daf5418dc0ee885019e76739a",
+  "repository_index_sha256": "da0abb028d444b2366489b8649c549167eee595dfca93aab4e288c9ea7a646ee",
   "artifacts": [
     {
       "path": "/glusterfs-el10.repo",
@@ -2560,6 +2560,12 @@
         "format": "deb",
         "filename": "libglusterfs0-dbgsym_2026.11.04~rolling.geb618e54c8d4-1_amd64.deb"
       }
+    },
+    {
+      "path": "/debian/bookworm/amd64/previews/debian-rolling-2026.11.05-eb618e54c8d4/metadata.json",
+      "size": 4992,
+      "modified": "2026-11-05T19:31:58.028Z",
+      "sha256": "209533c7f615af7e0be3499c0fa5bb82ac57adc925e8051802eec3c5c7879c19"
     },
     {
       "path": "/debian/bookworm/amd64/stable/checksums.sha256",
@@ -8121,39 +8127,39 @@
     },
     {
       "path": "/metadata/catalog.json",
-      "size": 675084,
-      "modified": "2026-11-04T19:38:36.569Z",
-      "sha256": "553b0fc99ff1a3374dca05422fd563c6f3f796f74f5a75c4beb0565e32791777"
+      "size": 650143,
+      "modified": "2026-11-05T19:31:58.142Z",
+      "sha256": "958adf155ce72dedb82fa3dd861944e62bbb850daf5418dc0ee885019e76739a"
     },
     {
       "path": "/metadata/conductor-state.json",
-      "size": 2605850,
-      "modified": "2026-11-04T19:38:11.789Z",
-      "sha256": "acd766c600f05cda0ee313e666f333a4caf6ff1efa4b69ff706f5dd8c88035d8"
+      "size": 2808743,
+      "modified": "2026-11-05T19:31:32.865Z",
+      "sha256": "fb57cbbdf058ef8efce90275a16ee6e17363a3733a940fc58ffa80ae1932cf05"
     },
     {
       "path": "/metadata/latest-release-card.png",
-      "size": 313997,
-      "modified": "2026-11-04T19:16:15.628Z",
-      "sha256": "c2353ee87ce1e97fe96e93ac51a48de130daf8b45a0fd4fa895cdba97586e951"
+      "size": 313334,
+      "modified": "2026-11-05T19:29:49.238Z",
+      "sha256": "f5d4ba1a90063fa8ee86f4d13d2775947c8279a670784557a0772c2dc13ea260"
     },
     {
       "path": "/metadata/latest-release-report.json",
       "size": 258,
-      "modified": "2026-11-04T19:16:15.637Z",
-      "sha256": "15faebc032842db5941a14d3dad586b0428d84b3219ca23034c44f0b1a105198"
+      "modified": "2026-11-05T19:29:49.255Z",
+      "sha256": "241c011fdf3e4d1606987648ee32d0cd30d3128a7173bcf25c9bb79b2bb65192"
     },
     {
       "path": "/metadata/packages.json",
       "size": 106653,
-      "modified": "2026-11-04T19:38:36.554Z",
-      "sha256": "63eda5ea392337816550f76594429e9f9e993e60c5bf0fe04306ea0380159b07"
+      "modified": "2026-11-05T19:31:58.132Z",
+      "sha256": "c3db7bf3497d8f8b4992b6bf00d3af60bec7106cc4e545c891e8033837e91a4e"
     },
     {
       "path": "/metadata/stable.json",
-      "size": 5856,
-      "modified": "2026-11-04T19:30:26.513Z",
-      "sha256": "a57d5556f373852c07ced8c4d01594aa8ff83cb9a614a0c617c84db34f681606"
+      "size": 4810,
+      "modified": "2026-11-05T19:31:23.108Z",
+      "sha256": "74952cef5d30af60ec0344fcbbfc3f5fcbcbfc7a267c0ffd91c5b0627b5b14ab"
     },
     {
       "path": "/metadata/records/preview/alma/epel10-rolling-2026.08.18-ae1d69672fe0-image.json",
@@ -8396,6 +8402,12 @@
       "sha256": "ed5e1a3a81cc3b431abe6d3dca1d2754ad6bee9fe55fe8147718a30d316f6315"
     },
     {
+      "path": "/metadata/records/preview/debian/debian-rolling-2026.11.05-eb618e54c8d4-image.json",
+      "size": 4992,
+      "modified": "2026-11-05T19:31:58.018Z",
+      "sha256": "209533c7f615af7e0be3499c0fa5bb82ac57adc925e8051802eec3c5c7879c19"
+    },
+    {
       "path": "/metadata/records/preview/oracle/epel10-rolling-2026.08.18-ae1d69672fe0-image.json",
       "size": 7223,
       "modified": "2026-08-18T05:56:31.812Z",
@@ -8614,8 +8626,8 @@
     {
       "path": "/metadata/records/stable/debian/debian-stable-11.2-image.json",
       "size": 4810,
-      "modified": "2026-11-04T19:20:19.558Z",
-      "sha256": "740ceaaaff396626867611230055a52dd444c7e6a1d7c381ed94fa0e244abbb6"
+      "modified": "2026-11-05T19:31:23.103Z",
+      "sha256": "74952cef5d30af60ec0344fcbbfc3f5fcbcbfc7a267c0ffd91c5b0627b5b14ab"
     },
     {
       "path": "/metadata/records/stable/debian/debian-stable-11.2-package.json",
@@ -9794,6 +9806,24 @@
       "sha256": "13c0c5957094609d4967dfe237a1fb549d0a52c4d90ccaa721d963c7d91559bf"
     },
     {
+      "path": "/metadata/runs/20261104191812523-724605a3/release-card.html",
+      "size": 6491,
+      "modified": "2026-11-04T19:38:47.799Z",
+      "sha256": "7c9bedb83968ac45e5dce120018ff7317db3a9458f14bc22e6b5f1b70d0be307"
+    },
+    {
+      "path": "/metadata/runs/20261104191812523-724605a3/release-card.png",
+      "size": 313334,
+      "modified": "2026-11-04T19:38:49.192Z",
+      "sha256": "f5d4ba1a90063fa8ee86f4d13d2775947c8279a670784557a0772c2dc13ea260"
+    },
+    {
+      "path": "/metadata/runs/20261104191812523-724605a3/release-report.json",
+      "size": 11359,
+      "modified": "2026-11-04T19:38:49.291Z",
+      "sha256": "8ac45020151a33bdc7df525ef44dab5fbd6d8be8e65ebc2da28d5c2fb4d6ab08"
+    },
+    {
       "path": "/metadata/runs/20261104191812523-724605a3/debian-rolling/debian/checksums.sha256",
       "size": 189,
       "modified": "2026-11-04T19:38:36.120Z",
@@ -10152,6 +10182,138 @@
       "size": 46655,
       "modified": "2026-11-04T19:19:22.676Z",
       "sha256": "95a92c54221b462cf9035eebbd71339d208022dc84015389626d2e176d040eed"
+    },
+    {
+      "path": "/metadata/runs/20261105140017192-eab67bb2/release-card.html",
+      "size": 6486,
+      "modified": "2026-11-05T14:01:48.195Z",
+      "sha256": "cada05dda00e330778c8e8e37dfea2ccdfc2d7b1efc271dc41ebdcd14fc89191"
+    },
+    {
+      "path": "/metadata/runs/20261105140017192-eab67bb2/release-card.png",
+      "size": 311330,
+      "modified": "2026-11-05T14:01:49.742Z",
+      "sha256": "6e0b19cde0d13fc46f0df7f7ef41a977424de06d76aa035f360411879506c45b"
+    },
+    {
+      "path": "/metadata/runs/20261105140017192-eab67bb2/release-report.json",
+      "size": 12210,
+      "modified": "2026-11-05T14:01:49.830Z",
+      "sha256": "742751dd00b23a34933eaec2cfc7b476186ea2c91d962d5791a807d68c79798c"
+    },
+    {
+      "path": "/metadata/runs/20261105140017192-eab67bb2/debian-rolling/debian/failure/checksums.sha256",
+      "size": 1,
+      "modified": "2026-11-05T14:01:47.367Z",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "/metadata/runs/20261105140017192-eab67bb2/debian-rolling/debian/failure/failure-record.json",
+      "size": 1301,
+      "modified": "2026-11-05T14:01:47.314Z",
+      "sha256": "e5d9f33b9f336b9429c6ab32e657f956901132690aafd3294233a45a7d77a3cd"
+    },
+    {
+      "path": "/metadata/runs/20261105140017192-eab67bb2/debian-rolling/debian/failure/provenance.json",
+      "size": 1539,
+      "modified": "2026-11-05T14:01:47.373Z",
+      "sha256": "db95810ea23763828db8046f742590470b7bc2893b162be2571672a3dfd32477"
+    },
+    {
+      "path": "/metadata/runs/20261105140017192-eab67bb2/debian-rolling/debian/failure/provenance.json.asc",
+      "size": 228,
+      "modified": "2026-11-05T14:01:47.463Z",
+      "sha256": "065f93ffe27ccbc3ad5e80cba5a5746747ac71148107e5a5f7fd12ef0627c19a"
+    },
+    {
+      "path": "/metadata/runs/20261105140017192-eab67bb2/debian-stable/debian/checksums.sha256",
+      "size": 189,
+      "modified": "2026-11-05T14:01:33.402Z",
+      "sha256": "f5191125ccb4c997746e3343a99fd9b835b2afdb1c546d9ba12a09b1873a3141"
+    },
+    {
+      "path": "/metadata/runs/20261105140017192-eab67bb2/debian-stable/debian/provenance.json",
+      "size": 1775,
+      "modified": "2026-11-05T14:01:33.411Z",
+      "sha256": "10c6928a8f1c4c2c604ef36398057da5e41c71e102463255ae533bc542e4afcd"
+    },
+    {
+      "path": "/metadata/runs/20261105140017192-eab67bb2/debian-stable/debian/provenance.json.asc",
+      "size": 228,
+      "modified": "2026-11-05T14:01:33.516Z",
+      "sha256": "a97c42cc5fdb6772ce29775cd5fef0241026a0aa757476ba35c2a8d407be79d9"
+    },
+    {
+      "path": "/metadata/runs/20261105140017192-eab67bb2/debian-stable/debian/assets/container-validation.json",
+      "size": 1874,
+      "modified": "2026-11-05T14:01:33.368Z",
+      "sha256": "a88e591a8dc301f8c6a9f5184d24d8b3588cfa426353110d805768356b0bd527"
+    },
+    {
+      "path": "/metadata/runs/20261105140017192-eab67bb2/debian-stable/debian/assets/image-debian.log",
+      "size": 42930,
+      "modified": "2026-11-05T14:01:33.386Z",
+      "sha256": "6aac81e6bab54d4234659dbd0214b3eb80479a3ec691707b16ac8534d7938d1a"
+    },
+    {
+      "path": "/metadata/runs/20261105193040774-bd6c1549/debian-rolling/debian/checksums.sha256",
+      "size": 189,
+      "modified": "2026-11-05T19:31:57.786Z",
+      "sha256": "df2349cf80beb655505b5f256bef45466db4d8707d28a176f69ba6016525a69d"
+    },
+    {
+      "path": "/metadata/runs/20261105193040774-bd6c1549/debian-rolling/debian/provenance.json",
+      "size": 1898,
+      "modified": "2026-11-05T19:31:57.790Z",
+      "sha256": "99a252d29424db85ced110575a25c1e9c80a034fb46396d3546979fd8744d014"
+    },
+    {
+      "path": "/metadata/runs/20261105193040774-bd6c1549/debian-rolling/debian/provenance.json.asc",
+      "size": 228,
+      "modified": "2026-11-05T19:31:57.886Z",
+      "sha256": "560e995baf8bd5ac2c37d0f5db2f891e4bdd950a19fafbf2029063dd723cebb7"
+    },
+    {
+      "path": "/metadata/runs/20261105193040774-bd6c1549/debian-rolling/debian/assets/container-validation.json",
+      "size": 1874,
+      "modified": "2026-11-05T19:31:57.751Z",
+      "sha256": "8b6f013bcf57c82e0ac72e90b775668a6dd048ce44a3e4637163237080b80887"
+    },
+    {
+      "path": "/metadata/runs/20261105193040774-bd6c1549/debian-rolling/debian/assets/image-debian.log",
+      "size": 42884,
+      "modified": "2026-11-05T19:31:57.770Z",
+      "sha256": "ab75a1be1c97575a63eb9e84370b479a04676dd114745eb713942232a3e7caf2"
+    },
+    {
+      "path": "/metadata/runs/20261105193040774-bd6c1549/debian-stable/debian/checksums.sha256",
+      "size": 189,
+      "modified": "2026-11-05T19:31:22.848Z",
+      "sha256": "031dcb1a26460e02db4ec6d8601a875688b3399838fdbd2cc29ce0b3ecef9376"
+    },
+    {
+      "path": "/metadata/runs/20261105193040774-bd6c1549/debian-stable/debian/provenance.json",
+      "size": 1775,
+      "modified": "2026-11-05T19:31:22.852Z",
+      "sha256": "4047e3842b7511f5f406cb4dfc851455341ec0d4933df4e9913869ef001cddba"
+    },
+    {
+      "path": "/metadata/runs/20261105193040774-bd6c1549/debian-stable/debian/provenance.json.asc",
+      "size": 228,
+      "modified": "2026-11-05T19:31:22.958Z",
+      "sha256": "97f61dcdccfbb617e1931825535fc90b038cc398eb5af70ded9eff24160c3872"
+    },
+    {
+      "path": "/metadata/runs/20261105193040774-bd6c1549/debian-stable/debian/assets/container-validation.json",
+      "size": 1874,
+      "modified": "2026-11-05T19:31:22.815Z",
+      "sha256": "37a0023b9a6e47292537b931397604fbb542869bf6bcdae4fe78dbab5af83676"
+    },
+    {
+      "path": "/metadata/runs/20261105193040774-bd6c1549/debian-stable/debian/assets/image-debian.log",
+      "size": 42135,
+      "modified": "2026-11-05T19:31:22.832Z",
+      "sha256": "e0239bd1436df66a857719fae401847e9e5c93451c4b27aee486b64c99d8ca1c"
     },
     {
       "path": "/ubuntu/noble/amd64/11.2/checksums.sha256",
@@ -11959,6 +12121,348 @@
     }
   ],
   "images": [
+    {
+      "channel": "preview",
+      "distribution": "debian",
+      "version": "2026.11.05-eb618e54c8d4",
+      "built": "2026-11-05T19:31:57.972Z",
+      "candidate": "debian-rolling-2026.11.05-eb618e54c8d4",
+      "source": {
+        "ref": "devel",
+        "commit": "eb618e54c8d4ef34a581f692e074353ffd75babe"
+      },
+      "validation": {
+        "run_id": "20261104191812523-724605a3",
+        "generated": "2026-11-05T19:30:46Z",
+        "package_format": "deb",
+        "repository_integrity": {
+          "status": "not-tested",
+          "detail": "verified by the conductor after publication"
+        },
+        "provenance_verification": {
+          "status": "not-tested",
+          "detail": "generated and verified by the conductor after publication"
+        },
+        "checks": {
+          "install": {
+            "status": "passed"
+          },
+          "service_start": {
+            "status": "passed"
+          },
+          "volume_create_mount": {
+            "status": "passed"
+          },
+          "file_lifecycle": {
+            "status": "passed"
+          },
+          "volume_unmount_delete": {
+            "status": "passed"
+          },
+          "service_shutdown": {
+            "status": "passed"
+          }
+        },
+        "distributions": [
+          {
+            "id": "debian-bookworm",
+            "label": "Debian 12 (bookworm)",
+            "image": "debian:12-slim",
+            "package_format": "deb",
+            "package_core": {
+              "status": "passed"
+            }
+          }
+        ],
+        "metadata_version": "0.1.0",
+        "smoke_stages": {
+          "smoke1": {
+            "status": "passed"
+          },
+          "smoke2": {
+            "status": "passed",
+            "targets": [
+              "debian-bookworm"
+            ]
+          }
+        }
+      },
+      "container_validation": {
+        "run_id": "20261105193040774-bd6c1549",
+        "generated": "2026-11-05T19:31:54Z",
+        "repository_integrity": {
+          "status": "passed",
+          "detail": "published package metadata and image inputs verified"
+        },
+        "provenance_verification": {
+          "status": "passed",
+          "detail": "provenance generated, signed, and independently verified"
+        },
+        "checks": {
+          "install": {
+            "status": "passed"
+          },
+          "cli_available": {
+            "status": "passed"
+          },
+          "volume_create_mount": {
+            "status": "passed"
+          },
+          "file_lifecycle": {
+            "status": "passed"
+          },
+          "volume_unmount_delete": {
+            "status": "passed"
+          },
+          "service_shutdown": {
+            "status": "passed"
+          },
+          "image_labels": {
+            "status": "passed"
+          }
+        },
+        "distributions": [
+          {
+            "id": "debian-bookworm",
+            "label": "Debian 12 (bookworm)",
+            "container_core": {
+              "status": "passed",
+              "detail": "volume start: smoke: success; volume stop: smoke: success; volume delete: smoke: success"
+            },
+            "repository_integrity": {
+              "status": "passed",
+              "detail": "published package metadata and image inputs verified"
+            },
+            "provenance_verification": {
+              "status": "passed",
+              "detail": "provenance generated, signed, and independently verified"
+            }
+          }
+        ],
+        "metadata_version": "0.1.0",
+        "image_labels": {
+          "status": "passed",
+          "fields": [
+            "org.opencontainers.image.version",
+            "org.opencontainers.image.revision",
+            "org.eliware.gluster.base-image.digest",
+            "org.eliware.gluster.base-image.reference",
+            "org.eliware.gluster.source-ref",
+            "org.eliware.gluster.source-commit",
+            "org.eliware.gluster.distribution",
+            "org.eliware.gluster.package-candidate",
+            "org.eliware.gluster.package-provenance",
+            "org.eliware.gluster.deb-repository"
+          ]
+        }
+      },
+      "repository_integrity": {
+        "status": "not-tested",
+        "detail": "verified by the conductor after publication"
+      },
+      "provenance_verification": {
+        "status": "not-tested",
+        "detail": "generated and verified by the conductor after publication"
+      },
+      "provenance": {
+        "url": "/metadata/runs/20261105193040774-bd6c1549/debian-rolling/debian/provenance.json"
+      },
+      "deb_repos": {
+        "debian": "/debian/bookworm/amd64/previews/debian-rolling-2026.11.05-eb618e54c8d4/"
+      },
+      "image": {
+        "repository": "ghcr.io/eliware/debian12-gluster",
+        "distribution": "debian",
+        "package_candidate": "debian-rolling-2026.11.05-eb618e54c8d4",
+        "base_image": "debian:12-slim",
+        "exact_tag": "2026.11.05-eb618e54c8d4",
+        "reference": "ghcr.io/eliware/debian12-gluster:2026.11.05-eb618e54c8d4",
+        "digest": "sha256:231c5c31e476481ec43a62be65eada721ecb0b8f38d7f942024f2b5af51c2137",
+        "aliases": [],
+        "base": {
+          "digest": "sha256:734a72b3d6142a71993b4bc580ca01d8ca687f77a2c422d96a961d3376b179bc",
+          "short": "734a72b3"
+        },
+        "provenance": {
+          "url": "/metadata/runs/20261105193040774-bd6c1549/debian-rolling/debian/provenance.json"
+        },
+        "package_provenance": {
+          "url": "https://glusterfs.eliware.org/debian/bookworm/amd64/previews/debian-rolling-2026.11.04-eb618e54c8d4/provenance.json"
+        }
+      },
+      "metadata_version": "0.1.0"
+    },
+    {
+      "channel": "stable",
+      "distribution": "debian",
+      "version": "11.2",
+      "built": "2026-11-05T19:31:23.052Z",
+      "candidate": "debian-stable-11.2",
+      "source": {
+        "ref": "v11.2",
+        "commit": "15d3c0f8435814fdb7242a8a82fa5db140013d0a"
+      },
+      "validation": {
+        "run_id": "20260818054246765-0d8a45d9",
+        "generated": "2026-11-05T19:30:46Z",
+        "package_format": "deb",
+        "repository_integrity": {
+          "status": "not-tested",
+          "detail": "verified by the conductor after publication"
+        },
+        "provenance_verification": {
+          "status": "not-tested",
+          "detail": "generated and verified by the conductor after publication"
+        },
+        "checks": {
+          "install": {
+            "status": "passed"
+          },
+          "service_start": {
+            "status": "passed"
+          },
+          "volume_create_mount": {
+            "status": "passed"
+          },
+          "file_lifecycle": {
+            "status": "passed"
+          },
+          "volume_unmount_delete": {
+            "status": "passed"
+          },
+          "service_shutdown": {
+            "status": "passed"
+          }
+        },
+        "distributions": [
+          {
+            "id": "debian-bookworm",
+            "label": "Debian 12 (bookworm)",
+            "image": "debian:12-slim",
+            "package_format": "deb",
+            "package_core": {
+              "status": "passed"
+            }
+          }
+        ],
+        "metadata_version": "0.1.0",
+        "smoke_stages": {
+          "smoke1": {
+            "status": "passed"
+          },
+          "smoke2": {
+            "status": "passed",
+            "targets": [
+              "debian-bookworm"
+            ]
+          }
+        }
+      },
+      "container_validation": {
+        "run_id": "20261105193040774-bd6c1549",
+        "generated": "2026-11-05T19:31:18Z",
+        "repository_integrity": {
+          "status": "passed",
+          "detail": "published package metadata and image inputs verified"
+        },
+        "provenance_verification": {
+          "status": "passed",
+          "detail": "provenance generated, signed, and independently verified"
+        },
+        "checks": {
+          "install": {
+            "status": "passed"
+          },
+          "cli_available": {
+            "status": "passed"
+          },
+          "volume_create_mount": {
+            "status": "passed"
+          },
+          "file_lifecycle": {
+            "status": "passed"
+          },
+          "volume_unmount_delete": {
+            "status": "passed"
+          },
+          "service_shutdown": {
+            "status": "passed"
+          },
+          "image_labels": {
+            "status": "passed"
+          }
+        },
+        "distributions": [
+          {
+            "id": "debian-bookworm",
+            "label": "Debian 12 (bookworm)",
+            "container_core": {
+              "status": "passed",
+              "detail": "volume start: smoke: success; volume stop: smoke: success; volume delete: smoke: success"
+            },
+            "repository_integrity": {
+              "status": "passed",
+              "detail": "published package metadata and image inputs verified"
+            },
+            "provenance_verification": {
+              "status": "passed",
+              "detail": "provenance generated, signed, and independently verified"
+            }
+          }
+        ],
+        "metadata_version": "0.1.0",
+        "image_labels": {
+          "status": "passed",
+          "fields": [
+            "org.opencontainers.image.version",
+            "org.opencontainers.image.revision",
+            "org.eliware.gluster.base-image.digest",
+            "org.eliware.gluster.base-image.reference",
+            "org.eliware.gluster.source-ref",
+            "org.eliware.gluster.source-commit",
+            "org.eliware.gluster.distribution",
+            "org.eliware.gluster.package-candidate",
+            "org.eliware.gluster.package-provenance",
+            "org.eliware.gluster.deb-repository"
+          ]
+        }
+      },
+      "repository_integrity": {
+        "status": "not-tested",
+        "detail": "verified by the conductor after publication"
+      },
+      "provenance_verification": {
+        "status": "not-tested",
+        "detail": "generated and verified by the conductor after publication"
+      },
+      "provenance": {
+        "url": "/metadata/runs/20261105193040774-bd6c1549/debian-stable/debian/provenance.json"
+      },
+      "deb_repos": {
+        "debian": "/debian/bookworm/amd64/stable/"
+      },
+      "image": {
+        "repository": "ghcr.io/eliware/debian12-gluster",
+        "distribution": "debian",
+        "package_candidate": "debian-stable-11.2",
+        "base_image": "debian:12-slim",
+        "exact_tag": "11.2",
+        "reference": "ghcr.io/eliware/debian12-gluster:11.2",
+        "digest": "sha256:2856c2e2dee59558c59ffbeb9a7d25e1583c1bd521e25caaa2a57c352f5f88db",
+        "aliases": [],
+        "base": {
+          "digest": "sha256:734a72b3d6142a71993b4bc580ca01d8ca687f77a2c422d96a961d3376b179bc",
+          "short": "734a72b3"
+        },
+        "provenance": {
+          "url": "/metadata/runs/20261105193040774-bd6c1549/debian-stable/debian/provenance.json"
+        },
+        "package_provenance": {
+          "url": "https://glusterfs.eliware.org/debian/bookworm/amd64/stable/provenance.json"
+        }
+      },
+      "metadata_version": "0.1.0"
+    },
     {
       "channel": "preview",
       "distribution": "debian",
@@ -21325,177 +21829,6 @@
       "metadata_version": "0.1.0"
     },
     {
-      "channel": "stable",
-      "distribution": "ubuntu",
-      "version": "11.2",
-      "built": "2026-08-20T02:59:06.294Z",
-      "candidate": "ubuntu-stable-11.2",
-      "source": {
-        "ref": "v11.2",
-        "commit": "15d3c0f8435814fdb7242a8a82fa5db140013d0a"
-      },
-      "validation": {
-        "run_id": "20260818054246765-0d8a45d9",
-        "generated": "2026-08-20T02:58:28Z",
-        "package_format": "deb",
-        "repository_integrity": {
-          "status": "not-tested",
-          "detail": "verified by the conductor after publication"
-        },
-        "provenance_verification": {
-          "status": "not-tested",
-          "detail": "generated and verified by the conductor after publication"
-        },
-        "checks": {
-          "install": {
-            "status": "passed"
-          },
-          "service_start": {
-            "status": "passed"
-          },
-          "volume_create_mount": {
-            "status": "passed"
-          },
-          "file_lifecycle": {
-            "status": "passed"
-          },
-          "volume_unmount_delete": {
-            "status": "passed"
-          },
-          "service_shutdown": {
-            "status": "passed"
-          }
-        },
-        "distributions": [
-          {
-            "id": "ubuntu-noble",
-            "label": "Ubuntu 24.04 (noble)",
-            "image": "ubuntu:24.04",
-            "package_format": "deb",
-            "package_core": {
-              "status": "passed"
-            }
-          }
-        ],
-        "metadata_version": "0.1.0",
-        "smoke_stages": {
-          "smoke1": {
-            "status": "passed"
-          },
-          "smoke2": {
-            "status": "passed",
-            "targets": [
-              "ubuntu-noble"
-            ]
-          }
-        }
-      },
-      "container_validation": {
-        "run_id": "20260820025824148-a79244fa",
-        "generated": "2026-08-20T02:59:01Z",
-        "repository_integrity": {
-          "status": "passed",
-          "detail": "published package metadata and image inputs verified"
-        },
-        "provenance_verification": {
-          "status": "passed",
-          "detail": "provenance generated, signed, and independently verified"
-        },
-        "checks": {
-          "install": {
-            "status": "passed"
-          },
-          "cli_available": {
-            "status": "passed"
-          },
-          "volume_create_mount": {
-            "status": "passed"
-          },
-          "file_lifecycle": {
-            "status": "passed"
-          },
-          "volume_unmount_delete": {
-            "status": "passed"
-          },
-          "service_shutdown": {
-            "status": "passed"
-          },
-          "image_labels": {
-            "status": "passed"
-          }
-        },
-        "distributions": [
-          {
-            "id": "ubuntu-noble",
-            "label": "Ubuntu 24.04 (noble)",
-            "container_core": {
-              "status": "passed",
-              "detail": "volume start: smoke: success; volume stop: smoke: success; volume delete: smoke: success"
-            },
-            "repository_integrity": {
-              "status": "passed",
-              "detail": "published package metadata and image inputs verified"
-            },
-            "provenance_verification": {
-              "status": "passed",
-              "detail": "provenance generated, signed, and independently verified"
-            }
-          }
-        ],
-        "metadata_version": "0.1.0",
-        "image_labels": {
-          "status": "passed",
-          "fields": [
-            "org.opencontainers.image.version",
-            "org.opencontainers.image.revision",
-            "org.eliware.gluster.base-image.digest",
-            "org.eliware.gluster.base-image.reference",
-            "org.eliware.gluster.source-ref",
-            "org.eliware.gluster.source-commit",
-            "org.eliware.gluster.distribution",
-            "org.eliware.gluster.package-candidate",
-            "org.eliware.gluster.package-provenance",
-            "org.eliware.gluster.deb-repository"
-          ]
-        }
-      },
-      "repository_integrity": {
-        "status": "not-tested",
-        "detail": "verified by the conductor after publication"
-      },
-      "provenance_verification": {
-        "status": "not-tested",
-        "detail": "generated and verified by the conductor after publication"
-      },
-      "provenance": {
-        "url": "/metadata/runs/20260820025824148-a79244fa/ubuntu-stable/ubuntu/provenance.json"
-      },
-      "deb_repos": {
-        "ubuntu": "/ubuntu/noble/amd64/stable/"
-      },
-      "image": {
-        "repository": "ghcr.io/eliware/ubuntu24-gluster",
-        "distribution": "ubuntu",
-        "package_candidate": "ubuntu-stable-11.2",
-        "base_image": "ubuntu:24.04@sha256:33ceb71981b602c1a7443a53469e4dba065f7503eab3078a2d7a57a2ab987517",
-        "exact_tag": "11.2",
-        "reference": "ghcr.io/eliware/ubuntu24-gluster:11.2",
-        "digest": "sha256:e3ee038d888e8db8749e835467e70a17d565c3a94bd385878cae2148133eaa33",
-        "aliases": [],
-        "base": {
-          "digest": "sha256:33ceb71981b602c1a7443a53469e4dba065f7503eab3078a2d7a57a2ab987517",
-          "short": "33ceb719"
-        },
-        "provenance": {
-          "url": "/metadata/runs/20260820025824148-a79244fa/ubuntu-stable/ubuntu/provenance.json"
-        },
-        "package_provenance": {
-          "url": "https://glusterfs.eliware.org/ubuntu/noble/amd64/stable/provenance.json"
-        }
-      },
-      "metadata_version": "0.1.0"
-    },
-    {
       "channel": "preview",
       "distribution": "debian",
       "version": "2026.08.19-787068def84c",
@@ -23007,974 +23340,6 @@
       "metadata_version": "0.1.0"
     },
     {
-      "channel": "stable",
-      "distribution": "oracle",
-      "version": "11.2",
-      "built": "2026-08-18T06:02:50.644Z",
-      "candidate": "epel10-stable-11.2",
-      "source": {
-        "ref": "v11.2",
-        "commit": "15d3c0f8435814fdb7242a8a82fa5db140013d0a"
-      },
-      "validation": {
-        "run_id": "20260818054246765-0d8a45d9",
-        "generated": "2026-08-18T05:58:24Z",
-        "package_format": "rpm",
-        "repository_integrity": {
-          "status": "passed",
-          "detail": "candidate package metadata, checksums, and signatures verified"
-        },
-        "provenance_verification": {
-          "status": "passed",
-          "detail": "provenance generated, signed, and independently verified"
-        },
-        "checks": {
-          "install": {
-            "status": "passed"
-          },
-          "service_start": {
-            "status": "passed"
-          },
-          "volume_create_mount": {
-            "status": "passed"
-          },
-          "file_lifecycle": {
-            "status": "passed"
-          },
-          "volume_unmount_delete": {
-            "status": "passed"
-          },
-          "service_shutdown": {
-            "status": "passed"
-          }
-        },
-        "distributions": [
-          {
-            "id": "centos-stream-10",
-            "label": "CentOS Stream 10",
-            "image": "quay.io/centos/centos:stream10",
-            "package_core": {
-              "status": "passed"
-            },
-            "selinux": {
-              "status": "passed",
-              "detail": "module loaded; mode Disabled"
-            },
-            "repository_integrity": {
-              "status": "passed",
-              "detail": "candidate package metadata, checksums, and signatures verified"
-            },
-            "provenance_verification": {
-              "status": "passed",
-              "detail": "provenance generated, signed, and independently verified"
-            }
-          },
-          {
-            "id": "rocky-10",
-            "label": "Rocky Linux 10",
-            "image": "rockylinux/rockylinux:10",
-            "package_core": {
-              "status": "passed"
-            },
-            "selinux": {
-              "status": "passed",
-              "detail": "module loaded; mode Disabled"
-            },
-            "repository_integrity": {
-              "status": "passed",
-              "detail": "candidate package metadata, checksums, and signatures verified"
-            },
-            "provenance_verification": {
-              "status": "passed",
-              "detail": "provenance generated, signed, and independently verified"
-            }
-          },
-          {
-            "id": "almalinux-10",
-            "label": "AlmaLinux 10",
-            "image": "almalinux:10",
-            "package_core": {
-              "status": "passed"
-            },
-            "selinux": {
-              "status": "passed",
-              "detail": "module loaded; mode Disabled"
-            },
-            "repository_integrity": {
-              "status": "passed",
-              "detail": "candidate package metadata, checksums, and signatures verified"
-            },
-            "provenance_verification": {
-              "status": "passed",
-              "detail": "provenance generated, signed, and independently verified"
-            }
-          },
-          {
-            "id": "oracle-linux-10",
-            "label": "Oracle Linux 10",
-            "image": "oraclelinux:10",
-            "package_core": {
-              "status": "passed"
-            },
-            "selinux": {
-              "status": "passed",
-              "detail": "module loaded; mode Disabled"
-            },
-            "repository_integrity": {
-              "status": "passed",
-              "detail": "candidate package metadata, checksums, and signatures verified"
-            },
-            "provenance_verification": {
-              "status": "passed",
-              "detail": "provenance generated, signed, and independently verified"
-            }
-          }
-        ],
-        "metadata_version": "0.1.0",
-        "smoke_stages": {
-          "smoke1": {
-            "status": "passed"
-          },
-          "smoke2": {
-            "status": "passed",
-            "targets": [
-              "centos-stream-10",
-              "rocky-10",
-              "almalinux-10",
-              "oracle-linux-10"
-            ]
-          }
-        }
-      },
-      "container_validation": {
-        "run_id": "20260818054246765-0d8a45d9",
-        "generated": "2026-08-18T06:02:44Z",
-        "repository_integrity": {
-          "status": "passed",
-          "detail": "published package metadata and image inputs verified"
-        },
-        "provenance_verification": {
-          "status": "passed",
-          "detail": "provenance generated, signed, and independently verified"
-        },
-        "checks": {
-          "install": {
-            "status": "passed"
-          },
-          "cli_available": {
-            "status": "passed"
-          },
-          "volume_create_mount": {
-            "status": "passed"
-          },
-          "file_lifecycle": {
-            "status": "passed"
-          },
-          "volume_unmount_delete": {
-            "status": "passed"
-          },
-          "service_shutdown": {
-            "status": "passed"
-          },
-          "image_labels": {
-            "status": "passed"
-          }
-        },
-        "distributions": [
-          {
-            "id": "oracle-linux-10",
-            "label": "Oracle Linux 10",
-            "container_core": {
-              "status": "passed",
-              "detail": "updated; volume stop: smoke: success; volume delete: smoke: success"
-            },
-            "repository_integrity": {
-              "status": "passed",
-              "detail": "published package metadata and image inputs verified"
-            },
-            "provenance_verification": {
-              "status": "passed",
-              "detail": "provenance generated, signed, and independently verified"
-            }
-          }
-        ],
-        "metadata_version": "0.1.0",
-        "image_labels": {
-          "status": "passed",
-          "fields": [
-            "org.opencontainers.image.version",
-            "org.opencontainers.image.revision",
-            "org.eliware.gluster.base-image.digest",
-            "org.eliware.gluster.base-image.reference",
-            "org.eliware.gluster.source-ref",
-            "org.eliware.gluster.source-commit",
-            "org.eliware.gluster.distribution",
-            "org.eliware.gluster.package-candidate",
-            "org.eliware.gluster.package-provenance",
-            "org.eliware.gluster.rpm-repository",
-            "org.eliware.gluster.rpm-metadata-sha256"
-          ]
-        }
-      },
-      "repository_integrity": {
-        "status": "passed",
-        "detail": "candidate package metadata, checksums, and signatures verified"
-      },
-      "provenance_verification": {
-        "status": "passed",
-        "detail": "provenance generated, signed, and independently verified"
-      },
-      "provenance": {
-        "url": "/metadata/runs/20260818054246765-0d8a45d9/epel10-stable/oracle/provenance.json"
-      },
-      "rpm_repo": "/el10/x86_64/stable/",
-      "image": {
-        "repository": "ghcr.io/eliware/oracle10-gluster",
-        "distribution": "oracle",
-        "exact_tag": "11.2",
-        "reference": "ghcr.io/eliware/oracle10-gluster:11.2",
-        "digest": "sha256:0adbe3b179771b0c64b35a7f62ac01659eed617b2727328953826bdd814c1625",
-        "aliases": [],
-        "base": {
-          "digest": "sha256:2f145af52abf6ee5be815b35751c65dc1531a4c709904c4fd7f72b23fdbc5015",
-          "short": "2f145af5"
-        },
-        "provenance": {
-          "url": "/metadata/runs/20260818054246765-0d8a45d9/epel10-stable/oracle/provenance.json"
-        },
-        "package_provenance": {
-          "url": "https://glusterfs.eliware.org/el10/x86_64/stable/provenance.json"
-        }
-      },
-      "metadata_version": "0.1.0"
-    },
-    {
-      "channel": "stable",
-      "distribution": "rocky",
-      "version": "11.2",
-      "built": "2026-08-18T06:01:45.667Z",
-      "candidate": "epel10-stable-11.2",
-      "source": {
-        "ref": "v11.2",
-        "commit": "15d3c0f8435814fdb7242a8a82fa5db140013d0a"
-      },
-      "validation": {
-        "run_id": "20260818054246765-0d8a45d9",
-        "generated": "2026-08-18T05:58:24Z",
-        "package_format": "rpm",
-        "repository_integrity": {
-          "status": "passed",
-          "detail": "candidate package metadata, checksums, and signatures verified"
-        },
-        "provenance_verification": {
-          "status": "passed",
-          "detail": "provenance generated, signed, and independently verified"
-        },
-        "checks": {
-          "install": {
-            "status": "passed"
-          },
-          "service_start": {
-            "status": "passed"
-          },
-          "volume_create_mount": {
-            "status": "passed"
-          },
-          "file_lifecycle": {
-            "status": "passed"
-          },
-          "volume_unmount_delete": {
-            "status": "passed"
-          },
-          "service_shutdown": {
-            "status": "passed"
-          }
-        },
-        "distributions": [
-          {
-            "id": "centos-stream-10",
-            "label": "CentOS Stream 10",
-            "image": "quay.io/centos/centos:stream10",
-            "package_core": {
-              "status": "passed"
-            },
-            "selinux": {
-              "status": "passed",
-              "detail": "module loaded; mode Disabled"
-            },
-            "repository_integrity": {
-              "status": "passed",
-              "detail": "candidate package metadata, checksums, and signatures verified"
-            },
-            "provenance_verification": {
-              "status": "passed",
-              "detail": "provenance generated, signed, and independently verified"
-            }
-          },
-          {
-            "id": "rocky-10",
-            "label": "Rocky Linux 10",
-            "image": "rockylinux/rockylinux:10",
-            "package_core": {
-              "status": "passed"
-            },
-            "selinux": {
-              "status": "passed",
-              "detail": "module loaded; mode Disabled"
-            },
-            "repository_integrity": {
-              "status": "passed",
-              "detail": "candidate package metadata, checksums, and signatures verified"
-            },
-            "provenance_verification": {
-              "status": "passed",
-              "detail": "provenance generated, signed, and independently verified"
-            }
-          },
-          {
-            "id": "almalinux-10",
-            "label": "AlmaLinux 10",
-            "image": "almalinux:10",
-            "package_core": {
-              "status": "passed"
-            },
-            "selinux": {
-              "status": "passed",
-              "detail": "module loaded; mode Disabled"
-            },
-            "repository_integrity": {
-              "status": "passed",
-              "detail": "candidate package metadata, checksums, and signatures verified"
-            },
-            "provenance_verification": {
-              "status": "passed",
-              "detail": "provenance generated, signed, and independently verified"
-            }
-          },
-          {
-            "id": "oracle-linux-10",
-            "label": "Oracle Linux 10",
-            "image": "oraclelinux:10",
-            "package_core": {
-              "status": "passed"
-            },
-            "selinux": {
-              "status": "passed",
-              "detail": "module loaded; mode Disabled"
-            },
-            "repository_integrity": {
-              "status": "passed",
-              "detail": "candidate package metadata, checksums, and signatures verified"
-            },
-            "provenance_verification": {
-              "status": "passed",
-              "detail": "provenance generated, signed, and independently verified"
-            }
-          }
-        ],
-        "metadata_version": "0.1.0",
-        "smoke_stages": {
-          "smoke1": {
-            "status": "passed"
-          },
-          "smoke2": {
-            "status": "passed",
-            "targets": [
-              "centos-stream-10",
-              "rocky-10",
-              "almalinux-10",
-              "oracle-linux-10"
-            ]
-          }
-        }
-      },
-      "container_validation": {
-        "run_id": "20260818054246765-0d8a45d9",
-        "generated": "2026-08-18T06:01:39Z",
-        "repository_integrity": {
-          "status": "passed",
-          "detail": "published package metadata and image inputs verified"
-        },
-        "provenance_verification": {
-          "status": "passed",
-          "detail": "provenance generated, signed, and independently verified"
-        },
-        "checks": {
-          "install": {
-            "status": "passed"
-          },
-          "cli_available": {
-            "status": "passed"
-          },
-          "volume_create_mount": {
-            "status": "passed"
-          },
-          "file_lifecycle": {
-            "status": "passed"
-          },
-          "volume_unmount_delete": {
-            "status": "passed"
-          },
-          "service_shutdown": {
-            "status": "passed"
-          },
-          "image_labels": {
-            "status": "passed"
-          }
-        },
-        "distributions": [
-          {
-            "id": "rocky-10",
-            "label": "Rocky Linux 10",
-            "container_core": {
-              "status": "passed",
-              "detail": "updated; volume stop: smoke: success; volume delete: smoke: success"
-            },
-            "repository_integrity": {
-              "status": "passed",
-              "detail": "published package metadata and image inputs verified"
-            },
-            "provenance_verification": {
-              "status": "passed",
-              "detail": "provenance generated, signed, and independently verified"
-            }
-          }
-        ],
-        "metadata_version": "0.1.0",
-        "image_labels": {
-          "status": "passed",
-          "fields": [
-            "org.opencontainers.image.version",
-            "org.opencontainers.image.revision",
-            "org.eliware.gluster.base-image.digest",
-            "org.eliware.gluster.base-image.reference",
-            "org.eliware.gluster.source-ref",
-            "org.eliware.gluster.source-commit",
-            "org.eliware.gluster.distribution",
-            "org.eliware.gluster.package-candidate",
-            "org.eliware.gluster.package-provenance",
-            "org.eliware.gluster.rpm-repository",
-            "org.eliware.gluster.rpm-metadata-sha256"
-          ]
-        }
-      },
-      "repository_integrity": {
-        "status": "passed",
-        "detail": "candidate package metadata, checksums, and signatures verified"
-      },
-      "provenance_verification": {
-        "status": "passed",
-        "detail": "provenance generated, signed, and independently verified"
-      },
-      "provenance": {
-        "url": "/metadata/runs/20260818054246765-0d8a45d9/epel10-stable/rocky/provenance.json"
-      },
-      "rpm_repo": "/el10/x86_64/stable/",
-      "image": {
-        "repository": "ghcr.io/eliware/rocky10-gluster",
-        "distribution": "rocky",
-        "exact_tag": "11.2",
-        "reference": "ghcr.io/eliware/rocky10-gluster:11.2",
-        "digest": "sha256:fa51401b805a65c2eece3572fcfb2dd12d3d9b06eb26d5d4b6dcdabce61f2bfc",
-        "aliases": [],
-        "base": {
-          "digest": "sha256:827d37bc128288ccf160ee318bb3cb92d591164cb217e92f8bc61e3982ae1834",
-          "short": "827d37bc"
-        },
-        "provenance": {
-          "url": "/metadata/runs/20260818054246765-0d8a45d9/epel10-stable/rocky/provenance.json"
-        },
-        "package_provenance": {
-          "url": "https://glusterfs.eliware.org/el10/x86_64/stable/provenance.json"
-        }
-      },
-      "metadata_version": "0.1.0"
-    },
-    {
-      "channel": "stable",
-      "distribution": "alma",
-      "version": "11.2",
-      "built": "2026-08-18T06:00:53.183Z",
-      "candidate": "epel10-stable-11.2",
-      "source": {
-        "ref": "v11.2",
-        "commit": "15d3c0f8435814fdb7242a8a82fa5db140013d0a"
-      },
-      "validation": {
-        "run_id": "20260818054246765-0d8a45d9",
-        "generated": "2026-08-18T05:58:24Z",
-        "package_format": "rpm",
-        "repository_integrity": {
-          "status": "passed",
-          "detail": "candidate package metadata, checksums, and signatures verified"
-        },
-        "provenance_verification": {
-          "status": "passed",
-          "detail": "provenance generated, signed, and independently verified"
-        },
-        "checks": {
-          "install": {
-            "status": "passed"
-          },
-          "service_start": {
-            "status": "passed"
-          },
-          "volume_create_mount": {
-            "status": "passed"
-          },
-          "file_lifecycle": {
-            "status": "passed"
-          },
-          "volume_unmount_delete": {
-            "status": "passed"
-          },
-          "service_shutdown": {
-            "status": "passed"
-          }
-        },
-        "distributions": [
-          {
-            "id": "centos-stream-10",
-            "label": "CentOS Stream 10",
-            "image": "quay.io/centos/centos:stream10",
-            "package_core": {
-              "status": "passed"
-            },
-            "selinux": {
-              "status": "passed",
-              "detail": "module loaded; mode Disabled"
-            },
-            "repository_integrity": {
-              "status": "passed",
-              "detail": "candidate package metadata, checksums, and signatures verified"
-            },
-            "provenance_verification": {
-              "status": "passed",
-              "detail": "provenance generated, signed, and independently verified"
-            }
-          },
-          {
-            "id": "rocky-10",
-            "label": "Rocky Linux 10",
-            "image": "rockylinux/rockylinux:10",
-            "package_core": {
-              "status": "passed"
-            },
-            "selinux": {
-              "status": "passed",
-              "detail": "module loaded; mode Disabled"
-            },
-            "repository_integrity": {
-              "status": "passed",
-              "detail": "candidate package metadata, checksums, and signatures verified"
-            },
-            "provenance_verification": {
-              "status": "passed",
-              "detail": "provenance generated, signed, and independently verified"
-            }
-          },
-          {
-            "id": "almalinux-10",
-            "label": "AlmaLinux 10",
-            "image": "almalinux:10",
-            "package_core": {
-              "status": "passed"
-            },
-            "selinux": {
-              "status": "passed",
-              "detail": "module loaded; mode Disabled"
-            },
-            "repository_integrity": {
-              "status": "passed",
-              "detail": "candidate package metadata, checksums, and signatures verified"
-            },
-            "provenance_verification": {
-              "status": "passed",
-              "detail": "provenance generated, signed, and independently verified"
-            }
-          },
-          {
-            "id": "oracle-linux-10",
-            "label": "Oracle Linux 10",
-            "image": "oraclelinux:10",
-            "package_core": {
-              "status": "passed"
-            },
-            "selinux": {
-              "status": "passed",
-              "detail": "module loaded; mode Disabled"
-            },
-            "repository_integrity": {
-              "status": "passed",
-              "detail": "candidate package metadata, checksums, and signatures verified"
-            },
-            "provenance_verification": {
-              "status": "passed",
-              "detail": "provenance generated, signed, and independently verified"
-            }
-          }
-        ],
-        "metadata_version": "0.1.0",
-        "smoke_stages": {
-          "smoke1": {
-            "status": "passed"
-          },
-          "smoke2": {
-            "status": "passed",
-            "targets": [
-              "centos-stream-10",
-              "rocky-10",
-              "almalinux-10",
-              "oracle-linux-10"
-            ]
-          }
-        }
-      },
-      "container_validation": {
-        "run_id": "20260818054246765-0d8a45d9",
-        "generated": "2026-08-18T06:00:46Z",
-        "repository_integrity": {
-          "status": "passed",
-          "detail": "published package metadata and image inputs verified"
-        },
-        "provenance_verification": {
-          "status": "passed",
-          "detail": "provenance generated, signed, and independently verified"
-        },
-        "checks": {
-          "install": {
-            "status": "passed"
-          },
-          "cli_available": {
-            "status": "passed"
-          },
-          "volume_create_mount": {
-            "status": "passed"
-          },
-          "file_lifecycle": {
-            "status": "passed"
-          },
-          "volume_unmount_delete": {
-            "status": "passed"
-          },
-          "service_shutdown": {
-            "status": "passed"
-          },
-          "image_labels": {
-            "status": "passed"
-          }
-        },
-        "distributions": [
-          {
-            "id": "almalinux-10",
-            "label": "AlmaLinux 10",
-            "container_core": {
-              "status": "passed",
-              "detail": "updated; volume stop: smoke: success; volume delete: smoke: success"
-            },
-            "repository_integrity": {
-              "status": "passed",
-              "detail": "published package metadata and image inputs verified"
-            },
-            "provenance_verification": {
-              "status": "passed",
-              "detail": "provenance generated, signed, and independently verified"
-            }
-          }
-        ],
-        "metadata_version": "0.1.0",
-        "image_labels": {
-          "status": "passed",
-          "fields": [
-            "org.opencontainers.image.version",
-            "org.opencontainers.image.revision",
-            "org.eliware.gluster.base-image.digest",
-            "org.eliware.gluster.base-image.reference",
-            "org.eliware.gluster.source-ref",
-            "org.eliware.gluster.source-commit",
-            "org.eliware.gluster.distribution",
-            "org.eliware.gluster.package-candidate",
-            "org.eliware.gluster.package-provenance",
-            "org.eliware.gluster.rpm-repository",
-            "org.eliware.gluster.rpm-metadata-sha256"
-          ]
-        }
-      },
-      "repository_integrity": {
-        "status": "passed",
-        "detail": "candidate package metadata, checksums, and signatures verified"
-      },
-      "provenance_verification": {
-        "status": "passed",
-        "detail": "provenance generated, signed, and independently verified"
-      },
-      "provenance": {
-        "url": "/metadata/runs/20260818054246765-0d8a45d9/epel10-stable/alma/provenance.json"
-      },
-      "rpm_repo": "/el10/x86_64/stable/",
-      "image": {
-        "repository": "ghcr.io/eliware/alma10-gluster",
-        "distribution": "alma",
-        "exact_tag": "11.2",
-        "reference": "ghcr.io/eliware/alma10-gluster:11.2",
-        "digest": "sha256:d7807b7397744cc910aa0aee3be24816782196b973c3b29624903b11c5c2d50c",
-        "aliases": [],
-        "base": {
-          "digest": "sha256:cc24bc5b6ac7e284f2f62a07bdaa1b15d3319fdcf46413c6b8fe9fa245068ddd",
-          "short": "cc24bc5b"
-        },
-        "provenance": {
-          "url": "/metadata/runs/20260818054246765-0d8a45d9/epel10-stable/alma/provenance.json"
-        },
-        "package_provenance": {
-          "url": "https://glusterfs.eliware.org/el10/x86_64/stable/provenance.json"
-        }
-      },
-      "metadata_version": "0.1.0"
-    },
-    {
-      "channel": "stable",
-      "distribution": "centos-stream",
-      "version": "11.2",
-      "built": "2026-08-18T05:59:56.476Z",
-      "candidate": "epel10-stable-11.2",
-      "source": {
-        "ref": "v11.2",
-        "commit": "15d3c0f8435814fdb7242a8a82fa5db140013d0a"
-      },
-      "validation": {
-        "run_id": "20260818054246765-0d8a45d9",
-        "generated": "2026-08-18T05:58:24Z",
-        "package_format": "rpm",
-        "repository_integrity": {
-          "status": "passed",
-          "detail": "candidate package metadata, checksums, and signatures verified"
-        },
-        "provenance_verification": {
-          "status": "passed",
-          "detail": "provenance generated, signed, and independently verified"
-        },
-        "checks": {
-          "install": {
-            "status": "passed"
-          },
-          "service_start": {
-            "status": "passed"
-          },
-          "volume_create_mount": {
-            "status": "passed"
-          },
-          "file_lifecycle": {
-            "status": "passed"
-          },
-          "volume_unmount_delete": {
-            "status": "passed"
-          },
-          "service_shutdown": {
-            "status": "passed"
-          }
-        },
-        "distributions": [
-          {
-            "id": "centos-stream-10",
-            "label": "CentOS Stream 10",
-            "image": "quay.io/centos/centos:stream10",
-            "package_core": {
-              "status": "passed"
-            },
-            "selinux": {
-              "status": "passed",
-              "detail": "module loaded; mode Disabled"
-            },
-            "repository_integrity": {
-              "status": "passed",
-              "detail": "candidate package metadata, checksums, and signatures verified"
-            },
-            "provenance_verification": {
-              "status": "passed",
-              "detail": "provenance generated, signed, and independently verified"
-            }
-          },
-          {
-            "id": "rocky-10",
-            "label": "Rocky Linux 10",
-            "image": "rockylinux/rockylinux:10",
-            "package_core": {
-              "status": "passed"
-            },
-            "selinux": {
-              "status": "passed",
-              "detail": "module loaded; mode Disabled"
-            },
-            "repository_integrity": {
-              "status": "passed",
-              "detail": "candidate package metadata, checksums, and signatures verified"
-            },
-            "provenance_verification": {
-              "status": "passed",
-              "detail": "provenance generated, signed, and independently verified"
-            }
-          },
-          {
-            "id": "almalinux-10",
-            "label": "AlmaLinux 10",
-            "image": "almalinux:10",
-            "package_core": {
-              "status": "passed"
-            },
-            "selinux": {
-              "status": "passed",
-              "detail": "module loaded; mode Disabled"
-            },
-            "repository_integrity": {
-              "status": "passed",
-              "detail": "candidate package metadata, checksums, and signatures verified"
-            },
-            "provenance_verification": {
-              "status": "passed",
-              "detail": "provenance generated, signed, and independently verified"
-            }
-          },
-          {
-            "id": "oracle-linux-10",
-            "label": "Oracle Linux 10",
-            "image": "oraclelinux:10",
-            "package_core": {
-              "status": "passed"
-            },
-            "selinux": {
-              "status": "passed",
-              "detail": "module loaded; mode Disabled"
-            },
-            "repository_integrity": {
-              "status": "passed",
-              "detail": "candidate package metadata, checksums, and signatures verified"
-            },
-            "provenance_verification": {
-              "status": "passed",
-              "detail": "provenance generated, signed, and independently verified"
-            }
-          }
-        ],
-        "metadata_version": "0.1.0",
-        "smoke_stages": {
-          "smoke1": {
-            "status": "passed"
-          },
-          "smoke2": {
-            "status": "passed",
-            "targets": [
-              "centos-stream-10",
-              "rocky-10",
-              "almalinux-10",
-              "oracle-linux-10"
-            ]
-          }
-        }
-      },
-      "container_validation": {
-        "run_id": "20260818054246765-0d8a45d9",
-        "generated": "2026-08-18T05:59:50Z",
-        "repository_integrity": {
-          "status": "passed",
-          "detail": "published package metadata and image inputs verified"
-        },
-        "provenance_verification": {
-          "status": "passed",
-          "detail": "provenance generated, signed, and independently verified"
-        },
-        "checks": {
-          "install": {
-            "status": "passed"
-          },
-          "cli_available": {
-            "status": "passed"
-          },
-          "volume_create_mount": {
-            "status": "passed"
-          },
-          "file_lifecycle": {
-            "status": "passed"
-          },
-          "volume_unmount_delete": {
-            "status": "passed"
-          },
-          "service_shutdown": {
-            "status": "passed"
-          },
-          "image_labels": {
-            "status": "passed"
-          }
-        },
-        "distributions": [
-          {
-            "id": "centos-stream-10",
-            "label": "CentOS Stream 10",
-            "container_core": {
-              "status": "passed",
-              "detail": "updated; volume stop: smoke: success; volume delete: smoke: success"
-            },
-            "repository_integrity": {
-              "status": "passed",
-              "detail": "published package metadata and image inputs verified"
-            },
-            "provenance_verification": {
-              "status": "passed",
-              "detail": "provenance generated, signed, and independently verified"
-            }
-          }
-        ],
-        "metadata_version": "0.1.0",
-        "image_labels": {
-          "status": "passed",
-          "fields": [
-            "org.opencontainers.image.version",
-            "org.opencontainers.image.revision",
-            "org.eliware.gluster.base-image.digest",
-            "org.eliware.gluster.base-image.reference",
-            "org.eliware.gluster.source-ref",
-            "org.eliware.gluster.source-commit",
-            "org.eliware.gluster.distribution",
-            "org.eliware.gluster.package-candidate",
-            "org.eliware.gluster.package-provenance",
-            "org.eliware.gluster.rpm-repository",
-            "org.eliware.gluster.rpm-metadata-sha256"
-          ]
-        }
-      },
-      "repository_integrity": {
-        "status": "passed",
-        "detail": "candidate package metadata, checksums, and signatures verified"
-      },
-      "provenance_verification": {
-        "status": "passed",
-        "detail": "provenance generated, signed, and independently verified"
-      },
-      "provenance": {
-        "url": "/metadata/runs/20260818054246765-0d8a45d9/epel10-stable/centos-stream/provenance.json"
-      },
-      "rpm_repo": "/el10/x86_64/stable/",
-      "image": {
-        "repository": "ghcr.io/eliware/centos10-gluster",
-        "distribution": "centos-stream",
-        "exact_tag": "11.2",
-        "reference": "ghcr.io/eliware/centos10-gluster:11.2",
-        "digest": "sha256:b5cdfa0e51211f7d38ff92e3436745b34da468a4b679405ad6b7dd2a18c6bdc3",
-        "aliases": [],
-        "base": {
-          "digest": "sha256:b7f85bb8be4c471bc62842156a51bbf224b15243943733bd54e86ba5fd79b1fc",
-          "short": "b7f85bb8"
-        },
-        "provenance": {
-          "url": "/metadata/runs/20260818054246765-0d8a45d9/epel10-stable/centos-stream/provenance.json"
-        },
-        "package_provenance": {
-          "url": "https://glusterfs.eliware.org/el10/x86_64/stable/provenance.json"
-        }
-      },
-      "metadata_version": "0.1.0"
-    },
-    {
       "channel": "preview",
       "distribution": "ubuntu",
       "version": "2026.08.18-ae1d69672fe0",
@@ -24147,183 +23512,6 @@
         },
         "package_provenance": {
           "url": "https://glusterfs.eliware.org/ubuntu/noble/amd64/previews/ubuntu-rolling-2026.08.18-ae1d69672fe0/provenance.json"
-        }
-      },
-      "metadata_version": "0.1.0"
-    },
-    {
-      "channel": "stable",
-      "distribution": "debian",
-      "version": "11.2",
-      "built": "2026-08-18T05:57:02.052Z",
-      "candidate": "debian-stable-11.2",
-      "source": {
-        "ref": "v11.2",
-        "commit": "15d3c0f8435814fdb7242a8a82fa5db140013d0a"
-      },
-      "validation": {
-        "run_id": "20260818054246765-0d8a45d9",
-        "generated": "2026-08-18T05:52:37Z",
-        "package_format": "deb",
-        "repository_integrity": {
-          "status": "passed",
-          "detail": "candidate package metadata, checksums, and signatures verified"
-        },
-        "provenance_verification": {
-          "status": "passed",
-          "detail": "provenance generated, signed, and independently verified"
-        },
-        "checks": {
-          "install": {
-            "status": "passed"
-          },
-          "service_start": {
-            "status": "passed"
-          },
-          "volume_create_mount": {
-            "status": "passed"
-          },
-          "file_lifecycle": {
-            "status": "passed"
-          },
-          "volume_unmount_delete": {
-            "status": "passed"
-          },
-          "service_shutdown": {
-            "status": "passed"
-          }
-        },
-        "distributions": [
-          {
-            "id": "debian-bookworm",
-            "label": "Debian 12 (bookworm)",
-            "image": "debian:12-slim",
-            "package_format": "deb",
-            "package_core": {
-              "status": "passed"
-            },
-            "repository_integrity": {
-              "status": "passed",
-              "detail": "candidate package metadata, checksums, and signatures verified"
-            },
-            "provenance_verification": {
-              "status": "passed",
-              "detail": "provenance generated, signed, and independently verified"
-            }
-          }
-        ],
-        "metadata_version": "0.1.0",
-        "smoke_stages": {
-          "smoke1": {
-            "status": "passed"
-          },
-          "smoke2": {
-            "status": "passed",
-            "targets": [
-              "debian-bookworm"
-            ]
-          }
-        }
-      },
-      "container_validation": {
-        "run_id": "20260818054246765-0d8a45d9",
-        "generated": "2026-08-18T05:56:57Z",
-        "repository_integrity": {
-          "status": "passed",
-          "detail": "published package metadata and image inputs verified"
-        },
-        "provenance_verification": {
-          "status": "passed",
-          "detail": "provenance generated, signed, and independently verified"
-        },
-        "checks": {
-          "install": {
-            "status": "passed"
-          },
-          "cli_available": {
-            "status": "passed"
-          },
-          "volume_create_mount": {
-            "status": "passed"
-          },
-          "file_lifecycle": {
-            "status": "passed"
-          },
-          "volume_unmount_delete": {
-            "status": "passed"
-          },
-          "service_shutdown": {
-            "status": "passed"
-          },
-          "image_labels": {
-            "status": "passed"
-          }
-        },
-        "distributions": [
-          {
-            "id": "debian-bookworm",
-            "label": "Debian 12 (bookworm)",
-            "container_core": {
-              "status": "passed",
-              "detail": "volume start: smoke: success; volume stop: smoke: success; volume delete: smoke: success"
-            },
-            "repository_integrity": {
-              "status": "passed",
-              "detail": "published package metadata and image inputs verified"
-            },
-            "provenance_verification": {
-              "status": "passed",
-              "detail": "provenance generated, signed, and independently verified"
-            }
-          }
-        ],
-        "metadata_version": "0.1.0",
-        "image_labels": {
-          "status": "passed",
-          "fields": [
-            "org.opencontainers.image.version",
-            "org.opencontainers.image.revision",
-            "org.eliware.gluster.base-image.digest",
-            "org.eliware.gluster.base-image.reference",
-            "org.eliware.gluster.source-ref",
-            "org.eliware.gluster.source-commit",
-            "org.eliware.gluster.distribution",
-            "org.eliware.gluster.package-candidate",
-            "org.eliware.gluster.package-provenance",
-            "org.eliware.gluster.deb-repository"
-          ]
-        }
-      },
-      "repository_integrity": {
-        "status": "passed",
-        "detail": "candidate package metadata, checksums, and signatures verified"
-      },
-      "provenance_verification": {
-        "status": "passed",
-        "detail": "provenance generated, signed, and independently verified"
-      },
-      "provenance": {
-        "url": "/metadata/runs/20260818054246765-0d8a45d9/debian-stable/debian/provenance.json"
-      },
-      "deb_repos": {
-        "debian": "/debian/bookworm/amd64/stable/"
-      },
-      "image": {
-        "repository": "ghcr.io/eliware/debian12-gluster",
-        "distribution": "debian",
-        "exact_tag": "11.2",
-        "reference": "ghcr.io/eliware/debian12-gluster:11.2",
-        "digest": "sha256:4eb051ab937f50b5d6a88734b78f3fa9acb27d8a8644844c75f763c4a91115e8",
-        "aliases": [],
-        "base": {
-          "digest": "sha256:abd67ffcfa541b485a3dff59865ab629aa048a6c613e639d36e7456b0b229241",
-          "short": "abd67ffc"
-        },
-        "provenance": {
-          "url": "/metadata/runs/20260818054246765-0d8a45d9/debian-stable/debian/provenance.json"
-        },
-        "package_provenance": {
-          "url": "https://glusterfs.eliware.org/debian/bookworm/amd64/stable/provenance.json"
         }
       },
       "metadata_version": "0.1.0"
