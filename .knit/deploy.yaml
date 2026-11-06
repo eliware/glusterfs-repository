@@ -1,0 +1,9 @@
+version: 1
+on:
+  push:
+    deployments:
+      - target: dev
+        cwd: /eliware/glusterfs-repository
+        timeoutMs: 300000
+        commands:
+          - git pull
