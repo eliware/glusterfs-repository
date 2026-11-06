@@ -1,0 +1,27 @@
+{
+  "metadata_version": "0.1.0",
+  "schema": 2,
+  "slug": "new-glusterfs-install-upgrade-guides",
+  "title": "New Install and Upgrade Guides for Eliware GlusterFS Packages",
+  "summary": "Choose an operating system, release lane, and workflow to get focused installation or upgrade instructions for Eliware GlusterFS packages.",
+  "published_at": "2026-08-21T22:00:00Z",
+  "updated_at": "2026-08-21T22:00:00Z",
+  "author": "Eliware",
+  "tags": [
+    "installation",
+    "upgrades",
+    "documentation",
+    "stable",
+    "rolling"
+  ],
+  "status": "published",
+  "content": "# New Install and Upgrade Guides for Eliware GlusterFS Packages\n\nWe have added a new guided path for installing and upgrading Eliware GlusterFS packages. Instead of searching through a collection of general-purpose documents, start with the workflow you need and select the operating system and release lane that match your environment.\n\n## Choose your workflow\n\nThe [Install guide](https://glusterfs.eliware.org/install) and [Upgrade guide](https://glusterfs.eliware.org/upgrade) use the same interactive page. Each page defaults to its corresponding workflow, while the controls let you switch between installation and upgrade instructions without leaving the page.\n\nThe guide supports these operating systems:\n\n- CentOS Stream 10;\n- AlmaLinux 10;\n- Rocky Linux 10;\n- Oracle Linux 10;\n- Debian 12; and\n- Ubuntu 24.04.\n\nYou can also choose between the stable and rolling package lanes. Stable is the default for operating-system-specific links. Rolling is available when you want to evaluate newer builds or follow active development.\n\n## Direct links for repeatable operations\n\nThe selectors update the browser address as you work, so a selected guide can be bookmarked or shared. You can also start with a direct route such as:\n\n- `/install/centos10` for the CentOS Stream 10 stable installation guide;\n- `/install/centos10/rolling` for rolling CentOS Stream 10 installation instructions;\n- `/upgrade/debian12` for the Debian 12 stable upgrade guide; or\n- `/upgrade/ubuntu24/rolling` for rolling Ubuntu 24.04 upgrade instructions.\n\nEach guide is stored as an independent JSON document in the publication repository. That lets us correct a platform-specific command or add a new build lane without rebuilding the HTTP image. The page loads the selected content at runtime and reports when the instructions were last verified.\n\n## Before installing or upgrading\n\nRead the prerequisites for your platform carefully. Confirm that you have a supported operating system, working repository access, sufficient disk space, a tested backup, and a maintenance plan appropriate to your GlusterFS deployment. Package upgrades do not replace storage planning, volume-health checks, or an application recovery plan.\n\nFor a cluster, verify peer and volume health before changing packages. Schedule the work so that you can observe the cluster after each node and follow the upgrade order required by your environment. Never treat a package update as a substitute for validating heal status, client behavior, and workload recovery.\n\n## Stable and rolling are different choices\n\nThe stable lane is intended for users who want the current published package set with a longer validation window. The rolling lane is for testing newer builds and following active packaging work. Use rolling packages in an environment where you can test, report issues, and recover to a known-good package set.\n\nStart with the [Install guide](https://glusterfs.eliware.org/install), the [Upgrade guide](https://glusterfs.eliware.org/upgrade), and the [repository directory](https://glusterfs.eliware.org/). We will continue refining each platform-specific instruction file as packaging and distribution guidance evolves.",
+  "content_format": "markdown",
+  "created_at": "2026-08-21T22:00:00Z",
+  "category": "installation",
+  "last_verified_at": "2026-08-21T22:00:00Z",
+  "tested_on": [
+    "Install and upgrade guide route review",
+    "Stable and rolling selector review"
+  ]
+}
