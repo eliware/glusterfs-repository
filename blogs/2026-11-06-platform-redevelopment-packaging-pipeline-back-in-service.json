@@ -1,0 +1,28 @@
+{
+  "metadata_version": "0.1.0",
+  "schema": 2,
+  "slug": "platform-redevelopment-packaging-pipeline-back-in-service",
+  "title": "A New Chapter for Eliware GlusterFS Packaging",
+  "summary": "After months of platform redevelopment and a brief pause in packaging, the Eliware GlusterFS pipeline is back in service with refreshed build, validation, publication, and website systems.",
+  "published_at": "2026-11-06T15:00:00Z",
+  "updated_at": "2026-11-06T15:00:00Z",
+  "author": "Eliware",
+  "tags": [
+    "glusterfs",
+    "packaging",
+    "pipeline",
+    "release-engineering",
+    "platform"
+  ],
+  "content_format": "markdown",
+  "created_at": "2026-11-06T15:00:00Z",
+  "category": "releases",
+  "last_verified_at": "2026-11-06T15:00:00Z",
+  "tested_on": [
+    "Packaging pipeline documentation and repository history",
+    "GlusterFS package catalog and publication metadata",
+    "GlusterFS HTTP release notes and repository history"
+  ],
+  "status": "published",
+  "content": "# A New Chapter for Eliware GlusterFS Packaging\n\nOver the past couple of months, we have done major redevelopment work across the Eliware GlusterFS platform. The packaging pipeline was offline for a short time during that work. We know that pause made it harder to tell whether new packages and images were coming. As of a few days ago, the pipeline is back in service, and new repository content is publishing again.\n\nThe latest repository generation was published on November 5. It includes rolling package candidates built on November 4 for CentOS Stream 10, Debian 12, and Ubuntu 24.04. We are glad to have the pipeline moving again, and we want to explain what changed while it was quiet.\n\n## A rebuilt packaging pipeline\n\nThe packaging project has grown from a set of build jobs into a coordinated release system. It now has six package lanes: stable and rolling builds for EL10-compatible RPMs, Debian 12 packages, and Ubuntu 24.04 packages. These lanes publish into separate repositories so operators can choose a released version or evaluate newer upstream work.\n\nA local release conductor coordinates each run. It checks the inputs, resumes work from valid checkpoints, and dispatches package builds to GitHub Actions. Each package candidate receives an in-builder installation and lifecycle check. The conductor then tests candidates in clean containers, signs repository data, and publishes packages that pass.\n\nThe pipeline also builds runtime images for CentOS Stream 10, Rocky Linux 10, AlmaLinux 10, Oracle Linux 10, Debian 12, and Ubuntu 24.04. It checks each image before publication and records the image digest. Package and image results have separate checkpoints, so a successful package build can be reused if a later image step needs attention.\n\nRelease records now connect source revisions, package candidates, test results, repository signatures, image inputs, and published digests. The public catalog and compatibility matrix make those results easier to inspect. The pipeline keeps failures attached to the stage and platform that encountered them, which gives us a clearer path to diagnose and resume work.\n\n## A substantial update to the website\n\nWe also redeveloped the GlusterFS HTTP application that serves the repository. Its server and browser code now follow a clearer layout, and the app uses the shared Eliware common package for logging, paths, errors, and shutdown signals. The app runs on Node.js 26 and uses port 7001 by default.\n\nThe server keeps repository access read-only. Its pages and APIs show package files, release metadata, provenance, blog posts, and installation guidance. We updated the container build and deployment documentation alongside the code, and added checks for routes, content, and generated browser assets.\n\nRecent fixes also restored the homepage links to archive destinations, added a working favicon route, corrected blog footer details, and hardened repository listing and content handling. These are small changes compared with the larger redevelopment, but they make the public site more accurate and dependable.\n\n## Installation and upgrade guides are back\n\nDuring repository cleanup, the installation and upgrade guide content was removed by mistake. We recovered it from Git history and restored all 24 guides: installation and upgrade instructions for six supported operating system targets across stable and rolling channels. The current repository generation publishes that content with the package catalog and release records.\n\nThe guides are available from the [installation page](https://glusterfs.eliware.org/install) and [upgrade page](https://glusterfs.eliware.org/upgrade). The [repository browser](https://glusterfs.eliware.org/browse) provides access to published packages and metadata.\n\n## Back in service\n\nA few days ago, we restored the packaging workflow and completed new rolling runs. The November 5 repository generation includes fresh candidates for all three package families. That is the clearest sign that the pipeline is back to doing its job.\n\nWe appreciate your patience while this work was underway. We will keep improving the build and publication process, and we will keep making its results visible through the repository website. Visit the [Eliware GlusterFS Repository](https://glusterfs.eliware.org/) to review current packages, validation results, and release details.\n"
+}
