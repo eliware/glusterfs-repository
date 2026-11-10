@@ -1,9 +1,9 @@
 {
   "schema": 1,
   "generation": "20261104T193042842Z-151798-43ef70ec",
-  "generated": "2026-11-05T19:32:06Z",
-  "catalog_sha256": "958adf155ce72dedb82fa3dd861944e62bbb850daf5418dc0ee885019e76739a",
-  "repository_index_sha256": "da0abb028d444b2366489b8649c549167eee595dfca93aab4e288c9ea7a646ee",
+  "generated": "2026-11-10T14:03:42Z",
+  "catalog_sha256": "bdc5dff3a8c23e41ad06c74aef1b5a178a820eef3bea5fefa26271a9c548194d",
+  "repository_index_sha256": "e7c99d53904dded64e42ec03726f42e9157a490145ecbebb166cc38b1113fdbf",
   "artifacts": [
     {
       "path": "/glusterfs-el10.repo",
@@ -19,57 +19,69 @@
     },
     {
       "path": "/blogs/2026-08-18-eliware-glusterfs-operator-console.json",
-      "size": 11926,
-      "modified": "2026-08-21T21:21:05.353Z",
-      "sha256": "f8e1cbb216208d2e116672c9bd11b9e1066aefce7ab0f9160a90d70f8c7d5d7a"
+      "size": 12126,
+      "modified": "2026-11-06T18:32:05.651Z",
+      "sha256": "480e324b4365c8865555b0c12c1389dcfb16d7f50655da7f8bafde67d27326ee"
     },
     {
       "path": "/blogs/2026-08-18-glusterfs-el10-first-replica-volume.json",
-      "size": 9705,
-      "modified": "2026-08-21T21:21:05.361Z",
-      "sha256": "055f1d140065221ce9edbaceb0d1a841b115166be73f29be540134ab47a44d90"
+      "size": 9907,
+      "modified": "2026-11-06T18:32:05.665Z",
+      "sha256": "960b06d469e13f9201d95665da760478d110e2b8a443c4c485e67de74239e74b"
     },
     {
       "path": "/blogs/2026-08-18-glusterfs-networking-discovery-bricks.json",
-      "size": 11841,
-      "modified": "2026-08-21T21:21:05.368Z",
-      "sha256": "dbf8ebdcfe70a7c4e041b6fe5d82333fd4c59dbc0eb9de448ac96db242ac4f00"
+      "size": 12041,
+      "modified": "2026-11-06T18:32:05.675Z",
+      "sha256": "69ebc9419ce82a7ece734b85d635c48d7d2119e907111df9b38c5670f0e306e9"
     },
     {
       "path": "/blogs/2026-08-18-glusterfs-replica-3-not-a-backup.json",
-      "size": 9965,
-      "modified": "2026-08-21T21:21:05.374Z",
-      "sha256": "460ee5bcc2856e97b47b49b17c08bad241bf941daec48d99c4c26e4fc9a127e3"
+      "size": 10167,
+      "modified": "2026-11-06T18:32:05.685Z",
+      "sha256": "31c8a9e444b697c57846abb23f07c197a67b95dd62c857983d3f4ad305123a69"
     },
     {
       "path": "/blogs/2026-08-19-glusterfs-kubernetes-node-local-bricks.json",
-      "size": 13879,
-      "modified": "2026-08-21T21:21:05.383Z",
-      "sha256": "6e79a77afe1405b187161d92b195a3ffb56830b7c01a03c820cded64cc79020a"
+      "size": 14079,
+      "modified": "2026-11-06T18:32:05.695Z",
+      "sha256": "db89bdd6cbb211de41b09eefa4c588ff5708026ab84f42b33900c39c944f1df7"
     },
     {
       "path": "/blogs/2026-08-19-glusterfs-rolling-787068def84c.json",
-      "size": 3573,
-      "modified": "2026-08-21T21:21:05.389Z",
-      "sha256": "4afd6a1808c10f95fc501f58b83fc497647fd6d65f7843d522b65a62530799f3"
+      "size": 3771,
+      "modified": "2026-11-06T18:32:05.706Z",
+      "sha256": "91b517652518747546a878680a15afb887a7f4a3447d9a932f537a75883f0f1b"
     },
     {
       "path": "/blogs/2026-08-19-how-eliware-builds-glusterfs.json",
-      "size": 12342,
-      "modified": "2026-08-21T21:21:05.396Z",
-      "sha256": "cf1c6982e548c3ce07c0209f49bfbde0513b5cc5a5cba2da6e1f4e25df7f82d8"
+      "size": 12540,
+      "modified": "2026-11-06T18:32:05.717Z",
+      "sha256": "0216ed80f5d7e09ecb0b9f320bfc355e4617070d0f3ce9d392f01d0d1576399a"
     },
     {
       "path": "/blogs/2026-08-19-how-we-keep-glusterfs-builds-honest.json",
-      "size": 13635,
-      "modified": "2026-08-21T21:21:05.402Z",
-      "sha256": "12f3f8a7554b38e01cb59a42b7d29de13a039d252a05dab73f6fbd7ab8ea6851"
+      "size": 13833,
+      "modified": "2026-11-06T18:32:05.728Z",
+      "sha256": "c5c1efa04a6d17918fd3454f264273904b2142192509025ffc6b86683f27d04f"
     },
     {
       "path": "/blogs/2026-08-19-why-eliware-glusterfs-repository.json",
-      "size": 12164,
-      "modified": "2026-08-21T21:21:05.406Z",
-      "sha256": "62c56de61787ac76a592d59b4df106cda0f48e5b45f7099c1f349a3daf749a2e"
+      "size": 12362,
+      "modified": "2026-11-06T18:32:05.738Z",
+      "sha256": "0ceff6fc0f1208a3a72394da1fad7301382fdc5dc9c0507c67f891e35002803f"
+    },
+    {
+      "path": "/blogs/2026-08-21-new-install-upgrade-guides.json",
+      "size": 4061,
+      "modified": "2026-11-06T18:32:05.750Z",
+      "sha256": "bc84befd2797aca925ec00a2c9597578f2ace3d702c9adc96fcb83b4aa46f39f"
+    },
+    {
+      "path": "/blogs/2026-11-06-platform-redevelopment-packaging-pipeline-back-in-service.json",
+      "size": 5401,
+      "modified": "2026-11-06T18:23:46.268Z",
+      "sha256": "85fabdd5cf30525ba691d077db69486b063b36b6beebb7df15336481cf856e2f"
     },
     {
       "path": "/content/install/alma10/rolling/instructions.json",
@@ -7590,6 +7602,12 @@
       "sha256": "66b0e141898470fd3cf54e608dab2141837ba2eafe65473c43bc909c4b1ec105"
     },
     {
+      "path": "/el10/x86_64/previews/epel10-rolling-2026.11.10-eb618e54c8d4/metadata.json",
+      "size": 6084,
+      "modified": "2026-11-10T14:03:31.778Z",
+      "sha256": "92ad14ddcb13f087b748296e52ce12ae455b3d4c4a180fd475b76e4842e9258a"
+    },
+    {
       "path": "/el10/x86_64/stable/checksums.sha256",
       "size": 6004,
       "modified": "2026-08-18T05:58:34.810Z",
@@ -8127,39 +8145,39 @@
     },
     {
       "path": "/metadata/catalog.json",
-      "size": 650143,
-      "modified": "2026-11-05T19:31:58.142Z",
-      "sha256": "958adf155ce72dedb82fa3dd861944e62bbb850daf5418dc0ee885019e76739a"
+      "size": 668119,
+      "modified": "2026-11-10T14:03:32.117Z",
+      "sha256": "bdc5dff3a8c23e41ad06c74aef1b5a178a820eef3bea5fefa26271a9c548194d"
     },
     {
       "path": "/metadata/conductor-state.json",
-      "size": 2808743,
-      "modified": "2026-11-05T19:31:32.865Z",
-      "sha256": "fb57cbbdf058ef8efce90275a16ee6e17363a3733a940fc58ffa80ae1932cf05"
+      "size": 3009158,
+      "modified": "2026-11-10T14:02:23.323Z",
+      "sha256": "92c01cceb007a624a346d5513881321381b9db767352179ea504cb37ea8c2326"
     },
     {
       "path": "/metadata/latest-release-card.png",
-      "size": 313334,
-      "modified": "2026-11-05T19:29:49.238Z",
-      "sha256": "f5d4ba1a90063fa8ee86f4d13d2775947c8279a670784557a0772c2dc13ea260"
+      "size": 313082,
+      "modified": "2026-11-05T19:32:08.892Z",
+      "sha256": "966dd4622dd6fc921696b0cbe4e3ee31420a8c3961afd28b66416f0eb3aead8c"
     },
     {
       "path": "/metadata/latest-release-report.json",
       "size": 258,
-      "modified": "2026-11-05T19:29:49.255Z",
-      "sha256": "241c011fdf3e4d1606987648ee32d0cd30d3128a7173bcf25c9bb79b2bb65192"
+      "modified": "2026-11-05T19:32:08.902Z",
+      "sha256": "e5817dde32744fcdad19a1776610975dec8c10663d12db03c0b68cbf4c1057da"
     },
     {
       "path": "/metadata/packages.json",
       "size": 106653,
-      "modified": "2026-11-05T19:31:58.132Z",
-      "sha256": "c3db7bf3497d8f8b4992b6bf00d3af60bec7106cc4e545c891e8033837e91a4e"
+      "modified": "2026-11-10T14:03:32.101Z",
+      "sha256": "2f94213c799e113960c9943f78a19af409475c64cfcd53f098c69586632392ac"
     },
     {
       "path": "/metadata/stable.json",
-      "size": 4810,
-      "modified": "2026-11-05T19:31:23.108Z",
-      "sha256": "74952cef5d30af60ec0344fcbbfc3f5fcbcbfc7a267c0ffd91c5b0627b5b14ab"
+      "size": 5902,
+      "modified": "2026-11-10T14:02:07.394Z",
+      "sha256": "9780ebab48fdab8ea6fb95ef47cf7808d06a4fe929d174c58fcd9432ba11c86f"
     },
     {
       "path": "/metadata/records/preview/alma/epel10-rolling-2026.08.18-ae1d69672fe0-image.json",
@@ -8304,6 +8322,12 @@
       "size": 4787,
       "modified": "2026-11-04T19:29:57.595Z",
       "sha256": "d04e1b4208459cbedd7fc7068e3ed98db14f12c210e512bb5073bd3c2dad6144"
+    },
+    {
+      "path": "/metadata/records/preview/centos-stream/epel10-rolling-2026.11.10-eb618e54c8d4-image.json",
+      "size": 6084,
+      "modified": "2026-11-10T14:03:31.766Z",
+      "sha256": "92ad14ddcb13f087b748296e52ce12ae455b3d4c4a180fd475b76e4842e9258a"
     },
     {
       "path": "/metadata/records/preview/debian/debian-rolling-2026.08.18-ae1d69672fe0-image.json",
@@ -8614,8 +8638,8 @@
     {
       "path": "/metadata/records/stable/centos-stream/epel10-stable-11.2-image.json",
       "size": 5902,
-      "modified": "2026-11-04T19:27:38.737Z",
-      "sha256": "436a00f4635005b6f9d368d943462ab8838585d5dc3f457c62f191606f425306"
+      "modified": "2026-11-10T14:02:07.361Z",
+      "sha256": "9780ebab48fdab8ea6fb95ef47cf7808d06a4fe929d174c58fcd9432ba11c86f"
     },
     {
       "path": "/metadata/records/stable/centos-stream/epel10-stable-11.2-package.json",
@@ -10256,6 +10280,24 @@
       "sha256": "6aac81e6bab54d4234659dbd0214b3eb80479a3ec691707b16ac8534d7938d1a"
     },
     {
+      "path": "/metadata/runs/20261105193040774-bd6c1549/release-card.html",
+      "size": 6491,
+      "modified": "2026-11-05T19:32:07.316Z",
+      "sha256": "f1fd685a6a7711c24b7b3f54a8c3e8cb5bd45c921628c7e749b03883e9534676"
+    },
+    {
+      "path": "/metadata/runs/20261105193040774-bd6c1549/release-card.png",
+      "size": 313082,
+      "modified": "2026-11-05T19:32:08.790Z",
+      "sha256": "966dd4622dd6fc921696b0cbe4e3ee31420a8c3961afd28b66416f0eb3aead8c"
+    },
+    {
+      "path": "/metadata/runs/20261105193040774-bd6c1549/release-report.json",
+      "size": 11359,
+      "modified": "2026-11-05T19:32:08.873Z",
+      "sha256": "05fa1f129e6fdac938c08366b0fcb11bbdcd120a578c48bebc7ad66bc3ba2c12"
+    },
+    {
       "path": "/metadata/runs/20261105193040774-bd6c1549/debian-rolling/debian/checksums.sha256",
       "size": 189,
       "modified": "2026-11-05T19:31:57.786Z",
@@ -10314,6 +10356,66 @@
       "size": 42135,
       "modified": "2026-11-05T19:31:22.832Z",
       "sha256": "e0239bd1436df66a857719fae401847e9e5c93451c4b27aee486b64c99d8ca1c"
+    },
+    {
+      "path": "/metadata/runs/20261110140019035-56308af2/epel10-rolling/centos-stream/checksums.sha256",
+      "size": 196,
+      "modified": "2026-11-10T14:03:31.526Z",
+      "sha256": "39833d900307f03369df7c55b882439fc6f6edf99f30f0ab4787069640b0127a"
+    },
+    {
+      "path": "/metadata/runs/20261110140019035-56308af2/epel10-rolling/centos-stream/provenance.json",
+      "size": 1977,
+      "modified": "2026-11-10T14:03:31.535Z",
+      "sha256": "65f80a2b55111af360c28d30019c639abc0bf563d4bc602ec2430c9923e3702a"
+    },
+    {
+      "path": "/metadata/runs/20261110140019035-56308af2/epel10-rolling/centos-stream/provenance.json.asc",
+      "size": 228,
+      "modified": "2026-11-10T14:03:31.630Z",
+      "sha256": "3089a5cd81e0430e0f4512f813e64efc6f48ae5ce35de8ea2d9508ba10de5c93"
+    },
+    {
+      "path": "/metadata/runs/20261110140019035-56308af2/epel10-rolling/centos-stream/assets/container-validation.json",
+      "size": 1899,
+      "modified": "2026-11-10T14:03:31.490Z",
+      "sha256": "6cbef0384b3947396c9d7c00525028814c0f8b083d85c51ac65278f7e4d93f16"
+    },
+    {
+      "path": "/metadata/runs/20261110140019035-56308af2/epel10-rolling/centos-stream/assets/image-centos-stream.log",
+      "size": 48476,
+      "modified": "2026-11-10T14:03:31.509Z",
+      "sha256": "99f40a34f44d9613762fb6ece0e4894a915909fb25a24114a7f74ae9ae7faa14"
+    },
+    {
+      "path": "/metadata/runs/20261110140019035-56308af2/epel10-stable/centos-stream/checksums.sha256",
+      "size": 196,
+      "modified": "2026-11-10T14:02:07.118Z",
+      "sha256": "2ada6959b9cd40b8743e799a875950d6ef2d3064bd075ca3e4691faaefb11975"
+    },
+    {
+      "path": "/metadata/runs/20261110140019035-56308af2/epel10-stable/centos-stream/provenance.json",
+      "size": 1854,
+      "modified": "2026-11-10T14:02:07.123Z",
+      "sha256": "12c03ff55b928c1f68f0676a333801280602f73ef6b61a4dcb6a7907630161e4"
+    },
+    {
+      "path": "/metadata/runs/20261110140019035-56308af2/epel10-stable/centos-stream/provenance.json.asc",
+      "size": 228,
+      "modified": "2026-11-10T14:02:07.231Z",
+      "sha256": "7dd3d2170e3dda3b975eb1e840baf3bfc02a1dae654d84111ffdc3d8e6e466ff"
+    },
+    {
+      "path": "/metadata/runs/20261110140019035-56308af2/epel10-stable/centos-stream/assets/container-validation.json",
+      "size": 1899,
+      "modified": "2026-11-10T14:02:07.076Z",
+      "sha256": "51847e77018dd382ae8fff96a88d85447f26cca76eeb5c10215160ac40570849"
+    },
+    {
+      "path": "/metadata/runs/20261110140019035-56308af2/epel10-stable/centos-stream/assets/image-centos-stream.log",
+      "size": 49267,
+      "modified": "2026-11-10T14:02:07.099Z",
+      "sha256": "728ad05644ad2cdaa66b2e66ee2e9f36291c2dca09b09f21d464c9a648ebb74a"
     },
     {
       "path": "/ubuntu/noble/amd64/11.2/checksums.sha256",
@@ -12121,6 +12223,430 @@
     }
   ],
   "images": [
+    {
+      "channel": "preview",
+      "distribution": "centos-stream",
+      "version": "2026.11.10-eb618e54c8d4",
+      "built": "2026-11-10T14:03:31.717Z",
+      "candidate": "epel10-rolling-2026.11.10-eb618e54c8d4",
+      "source": {
+        "ref": "devel",
+        "commit": "eb618e54c8d4ef34a581f692e074353ffd75babe"
+      },
+      "validation": {
+        "run_id": "20261104191812523-724605a3",
+        "generated": "2026-11-10T14:00:28Z",
+        "package_format": "rpm",
+        "repository_integrity": {
+          "status": "not-tested",
+          "detail": "verified by the conductor after publication"
+        },
+        "provenance_verification": {
+          "status": "not-tested",
+          "detail": "generated and verified by the conductor after publication"
+        },
+        "checks": {
+          "install": {
+            "status": "passed"
+          },
+          "service_start": {
+            "status": "passed"
+          },
+          "volume_create_mount": {
+            "status": "passed"
+          },
+          "file_lifecycle": {
+            "status": "passed"
+          },
+          "volume_unmount_delete": {
+            "status": "passed"
+          },
+          "service_shutdown": {
+            "status": "passed"
+          }
+        },
+        "distributions": [
+          {
+            "id": "centos-stream-10",
+            "label": "CentOS Stream 10",
+            "image": "quay.io/centos/centos:stream10",
+            "package_core": {
+              "status": "passed"
+            },
+            "selinux": {
+              "status": "passed",
+              "detail": "module loaded; mode Disabled"
+            }
+          },
+          {
+            "id": "rocky-10",
+            "label": "Rocky Linux 10",
+            "image": "rockylinux/rockylinux:10",
+            "package_core": {
+              "status": "passed"
+            },
+            "selinux": {
+              "status": "passed",
+              "detail": "module loaded; mode Disabled"
+            }
+          },
+          {
+            "id": "almalinux-10",
+            "label": "AlmaLinux 10",
+            "image": "almalinux:10",
+            "package_core": {
+              "status": "passed"
+            },
+            "selinux": {
+              "status": "passed",
+              "detail": "module loaded; mode Disabled"
+            }
+          },
+          {
+            "id": "oracle-linux-10",
+            "label": "Oracle Linux 10",
+            "image": "oraclelinux:10",
+            "package_core": {
+              "status": "passed"
+            },
+            "selinux": {
+              "status": "passed",
+              "detail": "module loaded; mode Disabled"
+            }
+          }
+        ],
+        "metadata_version": "0.1.0",
+        "smoke_stages": {
+          "smoke1": {
+            "status": "passed"
+          },
+          "smoke2": {
+            "status": "passed",
+            "targets": [
+              "centos-stream-10",
+              "rocky-10",
+              "almalinux-10",
+              "oracle-linux-10"
+            ]
+          }
+        }
+      },
+      "container_validation": {
+        "run_id": "20261110140019035-56308af2",
+        "generated": "2026-11-10T14:03:26Z",
+        "repository_integrity": {
+          "status": "passed",
+          "detail": "published package metadata and image inputs verified"
+        },
+        "provenance_verification": {
+          "status": "passed",
+          "detail": "provenance generated, signed, and independently verified"
+        },
+        "checks": {
+          "install": {
+            "status": "passed"
+          },
+          "cli_available": {
+            "status": "passed"
+          },
+          "volume_create_mount": {
+            "status": "passed"
+          },
+          "file_lifecycle": {
+            "status": "passed"
+          },
+          "volume_unmount_delete": {
+            "status": "passed"
+          },
+          "service_shutdown": {
+            "status": "passed"
+          },
+          "image_labels": {
+            "status": "passed"
+          }
+        },
+        "distributions": [
+          {
+            "id": "centos-stream-10",
+            "label": "CentOS Stream 10",
+            "container_core": {
+              "status": "passed",
+              "detail": "updated; volume stop: smoke: success; volume delete: smoke: success"
+            },
+            "repository_integrity": {
+              "status": "passed",
+              "detail": "published package metadata and image inputs verified"
+            },
+            "provenance_verification": {
+              "status": "passed",
+              "detail": "provenance generated, signed, and independently verified"
+            }
+          }
+        ],
+        "metadata_version": "0.1.0",
+        "image_labels": {
+          "status": "passed",
+          "fields": [
+            "org.opencontainers.image.version",
+            "org.opencontainers.image.revision",
+            "org.eliware.gluster.base-image.digest",
+            "org.eliware.gluster.base-image.reference",
+            "org.eliware.gluster.source-ref",
+            "org.eliware.gluster.source-commit",
+            "org.eliware.gluster.distribution",
+            "org.eliware.gluster.package-candidate",
+            "org.eliware.gluster.package-provenance",
+            "org.eliware.gluster.rpm-repository",
+            "org.eliware.gluster.rpm-metadata-sha256"
+          ]
+        }
+      },
+      "repository_integrity": {
+        "status": "not-tested",
+        "detail": "verified by the conductor after publication"
+      },
+      "provenance_verification": {
+        "status": "not-tested",
+        "detail": "generated and verified by the conductor after publication"
+      },
+      "provenance": {
+        "url": "/metadata/runs/20261110140019035-56308af2/epel10-rolling/centos-stream/provenance.json"
+      },
+      "rpm_repo": "/el10/x86_64/previews/epel10-rolling-2026.11.10-eb618e54c8d4/",
+      "image": {
+        "repository": "ghcr.io/eliware/centos10-gluster",
+        "distribution": "centos-stream",
+        "package_candidate": "epel10-rolling-2026.11.10-eb618e54c8d4",
+        "base_image": "quay.io/centos/centos:stream10",
+        "exact_tag": "2026.11.10-eb618e54c8d4",
+        "reference": "ghcr.io/eliware/centos10-gluster:2026.11.10-eb618e54c8d4",
+        "digest": "sha256:b9744d510cd96af2a325b128b619908ddf71eb5360eecec162d12b1545509d27",
+        "aliases": [],
+        "base": {
+          "digest": "sha256:5eaff839eea6ca355f8122044dcfaefbac5ac991940f223b668dcf80478e3166",
+          "short": "5eaff839"
+        },
+        "provenance": {
+          "url": "/metadata/runs/20261110140019035-56308af2/epel10-rolling/centos-stream/provenance.json"
+        },
+        "package_provenance": {
+          "url": "https://glusterfs.eliware.org/el10/x86_64/previews/epel10-rolling-2026.11.04-eb618e54c8d4/provenance.json"
+        }
+      },
+      "metadata_version": "0.1.0"
+    },
+    {
+      "channel": "stable",
+      "distribution": "centos-stream",
+      "version": "11.2",
+      "built": "2026-11-10T14:02:07.311Z",
+      "candidate": "epel10-stable-11.2",
+      "source": {
+        "ref": "v11.2",
+        "commit": "15d3c0f8435814fdb7242a8a82fa5db140013d0a"
+      },
+      "validation": {
+        "run_id": "20260818054246765-0d8a45d9",
+        "generated": "2026-11-10T14:00:28Z",
+        "package_format": "rpm",
+        "repository_integrity": {
+          "status": "not-tested",
+          "detail": "verified by the conductor after publication"
+        },
+        "provenance_verification": {
+          "status": "not-tested",
+          "detail": "generated and verified by the conductor after publication"
+        },
+        "checks": {
+          "install": {
+            "status": "passed"
+          },
+          "service_start": {
+            "status": "passed"
+          },
+          "volume_create_mount": {
+            "status": "passed"
+          },
+          "file_lifecycle": {
+            "status": "passed"
+          },
+          "volume_unmount_delete": {
+            "status": "passed"
+          },
+          "service_shutdown": {
+            "status": "passed"
+          }
+        },
+        "distributions": [
+          {
+            "id": "centos-stream-10",
+            "label": "CentOS Stream 10",
+            "image": "quay.io/centos/centos:stream10",
+            "package_core": {
+              "status": "passed"
+            },
+            "selinux": {
+              "status": "passed",
+              "detail": "module loaded; mode Disabled"
+            }
+          },
+          {
+            "id": "rocky-10",
+            "label": "Rocky Linux 10",
+            "image": "rockylinux/rockylinux:10",
+            "package_core": {
+              "status": "passed"
+            },
+            "selinux": {
+              "status": "passed",
+              "detail": "module loaded; mode Disabled"
+            }
+          },
+          {
+            "id": "almalinux-10",
+            "label": "AlmaLinux 10",
+            "image": "almalinux:10",
+            "package_core": {
+              "status": "passed"
+            },
+            "selinux": {
+              "status": "passed",
+              "detail": "module loaded; mode Disabled"
+            }
+          },
+          {
+            "id": "oracle-linux-10",
+            "label": "Oracle Linux 10",
+            "image": "oraclelinux:10",
+            "package_core": {
+              "status": "passed"
+            },
+            "selinux": {
+              "status": "passed",
+              "detail": "module loaded; mode Disabled"
+            }
+          }
+        ],
+        "metadata_version": "0.1.0",
+        "smoke_stages": {
+          "smoke1": {
+            "status": "passed"
+          },
+          "smoke2": {
+            "status": "passed",
+            "targets": [
+              "centos-stream-10",
+              "rocky-10",
+              "almalinux-10",
+              "oracle-linux-10"
+            ]
+          }
+        }
+      },
+      "container_validation": {
+        "run_id": "20261110140019035-56308af2",
+        "generated": "2026-11-10T14:01:59Z",
+        "repository_integrity": {
+          "status": "passed",
+          "detail": "published package metadata and image inputs verified"
+        },
+        "provenance_verification": {
+          "status": "passed",
+          "detail": "provenance generated, signed, and independently verified"
+        },
+        "checks": {
+          "install": {
+            "status": "passed"
+          },
+          "cli_available": {
+            "status": "passed"
+          },
+          "volume_create_mount": {
+            "status": "passed"
+          },
+          "file_lifecycle": {
+            "status": "passed"
+          },
+          "volume_unmount_delete": {
+            "status": "passed"
+          },
+          "service_shutdown": {
+            "status": "passed"
+          },
+          "image_labels": {
+            "status": "passed"
+          }
+        },
+        "distributions": [
+          {
+            "id": "centos-stream-10",
+            "label": "CentOS Stream 10",
+            "container_core": {
+              "status": "passed",
+              "detail": "updated; volume stop: smoke: success; volume delete: smoke: success"
+            },
+            "repository_integrity": {
+              "status": "passed",
+              "detail": "published package metadata and image inputs verified"
+            },
+            "provenance_verification": {
+              "status": "passed",
+              "detail": "provenance generated, signed, and independently verified"
+            }
+          }
+        ],
+        "metadata_version": "0.1.0",
+        "image_labels": {
+          "status": "passed",
+          "fields": [
+            "org.opencontainers.image.version",
+            "org.opencontainers.image.revision",
+            "org.eliware.gluster.base-image.digest",
+            "org.eliware.gluster.base-image.reference",
+            "org.eliware.gluster.source-ref",
+            "org.eliware.gluster.source-commit",
+            "org.eliware.gluster.distribution",
+            "org.eliware.gluster.package-candidate",
+            "org.eliware.gluster.package-provenance",
+            "org.eliware.gluster.rpm-repository",
+            "org.eliware.gluster.rpm-metadata-sha256"
+          ]
+        }
+      },
+      "repository_integrity": {
+        "status": "not-tested",
+        "detail": "verified by the conductor after publication"
+      },
+      "provenance_verification": {
+        "status": "not-tested",
+        "detail": "generated and verified by the conductor after publication"
+      },
+      "provenance": {
+        "url": "/metadata/runs/20261110140019035-56308af2/epel10-stable/centos-stream/provenance.json"
+      },
+      "rpm_repo": "/el10/x86_64/stable/",
+      "image": {
+        "repository": "ghcr.io/eliware/centos10-gluster",
+        "distribution": "centos-stream",
+        "package_candidate": "epel10-stable-11.2",
+        "base_image": "quay.io/centos/centos:stream10",
+        "exact_tag": "11.2",
+        "reference": "ghcr.io/eliware/centos10-gluster:11.2",
+        "digest": "sha256:dfeb6afcbe691f9b93bab9e0a4b0adf19443ae930f312edbb7f083aaca1a83bd",
+        "aliases": [],
+        "base": {
+          "digest": "sha256:5eaff839eea6ca355f8122044dcfaefbac5ac991940f223b668dcf80478e3166",
+          "short": "5eaff839"
+        },
+        "provenance": {
+          "url": "/metadata/runs/20261110140019035-56308af2/epel10-stable/centos-stream/provenance.json"
+        },
+        "package_provenance": {
+          "url": "https://glusterfs.eliware.org/el10/x86_64/stable/provenance.json"
+        }
+      },
+      "metadata_version": "0.1.0"
+    },
     {
       "channel": "preview",
       "distribution": "debian",
@@ -14641,177 +15167,6 @@
         },
         "package_provenance": {
           "url": "https://glusterfs.eliware.org/el10/x86_64/stable/provenance.json"
-        }
-      },
-      "metadata_version": "0.1.0"
-    },
-    {
-      "channel": "stable",
-      "distribution": "debian",
-      "version": "11.2",
-      "built": "2026-11-04T19:20:19.466Z",
-      "candidate": "debian-stable-11.2",
-      "source": {
-        "ref": "v11.2",
-        "commit": "15d3c0f8435814fdb7242a8a82fa5db140013d0a"
-      },
-      "validation": {
-        "run_id": "20260818054246765-0d8a45d9",
-        "generated": "2026-11-04T19:18:19Z",
-        "package_format": "deb",
-        "repository_integrity": {
-          "status": "not-tested",
-          "detail": "verified by the conductor after publication"
-        },
-        "provenance_verification": {
-          "status": "not-tested",
-          "detail": "generated and verified by the conductor after publication"
-        },
-        "checks": {
-          "install": {
-            "status": "passed"
-          },
-          "service_start": {
-            "status": "passed"
-          },
-          "volume_create_mount": {
-            "status": "passed"
-          },
-          "file_lifecycle": {
-            "status": "passed"
-          },
-          "volume_unmount_delete": {
-            "status": "passed"
-          },
-          "service_shutdown": {
-            "status": "passed"
-          }
-        },
-        "distributions": [
-          {
-            "id": "debian-bookworm",
-            "label": "Debian 12 (bookworm)",
-            "image": "debian:12-slim",
-            "package_format": "deb",
-            "package_core": {
-              "status": "passed"
-            }
-          }
-        ],
-        "metadata_version": "0.1.0",
-        "smoke_stages": {
-          "smoke1": {
-            "status": "passed"
-          },
-          "smoke2": {
-            "status": "passed",
-            "targets": [
-              "debian-bookworm"
-            ]
-          }
-        }
-      },
-      "container_validation": {
-        "run_id": "20261104191812523-724605a3",
-        "generated": "2026-11-04T19:20:13Z",
-        "repository_integrity": {
-          "status": "passed",
-          "detail": "published package metadata and image inputs verified"
-        },
-        "provenance_verification": {
-          "status": "passed",
-          "detail": "provenance generated, signed, and independently verified"
-        },
-        "checks": {
-          "install": {
-            "status": "passed"
-          },
-          "cli_available": {
-            "status": "passed"
-          },
-          "volume_create_mount": {
-            "status": "passed"
-          },
-          "file_lifecycle": {
-            "status": "passed"
-          },
-          "volume_unmount_delete": {
-            "status": "passed"
-          },
-          "service_shutdown": {
-            "status": "passed"
-          },
-          "image_labels": {
-            "status": "passed"
-          }
-        },
-        "distributions": [
-          {
-            "id": "debian-bookworm",
-            "label": "Debian 12 (bookworm)",
-            "container_core": {
-              "status": "passed",
-              "detail": "volume start: smoke: success; volume stop: smoke: success; volume delete: smoke: success"
-            },
-            "repository_integrity": {
-              "status": "passed",
-              "detail": "published package metadata and image inputs verified"
-            },
-            "provenance_verification": {
-              "status": "passed",
-              "detail": "provenance generated, signed, and independently verified"
-            }
-          }
-        ],
-        "metadata_version": "0.1.0",
-        "image_labels": {
-          "status": "passed",
-          "fields": [
-            "org.opencontainers.image.version",
-            "org.opencontainers.image.revision",
-            "org.eliware.gluster.base-image.digest",
-            "org.eliware.gluster.base-image.reference",
-            "org.eliware.gluster.source-ref",
-            "org.eliware.gluster.source-commit",
-            "org.eliware.gluster.distribution",
-            "org.eliware.gluster.package-candidate",
-            "org.eliware.gluster.package-provenance",
-            "org.eliware.gluster.deb-repository"
-          ]
-        }
-      },
-      "repository_integrity": {
-        "status": "not-tested",
-        "detail": "verified by the conductor after publication"
-      },
-      "provenance_verification": {
-        "status": "not-tested",
-        "detail": "generated and verified by the conductor after publication"
-      },
-      "provenance": {
-        "url": "/metadata/runs/20261104191812523-724605a3/debian-stable/debian/provenance.json"
-      },
-      "deb_repos": {
-        "debian": "/debian/bookworm/amd64/stable/"
-      },
-      "image": {
-        "repository": "ghcr.io/eliware/debian12-gluster",
-        "distribution": "debian",
-        "package_candidate": "debian-stable-11.2",
-        "base_image": "debian:12-slim",
-        "exact_tag": "11.2",
-        "reference": "ghcr.io/eliware/debian12-gluster:11.2",
-        "digest": "sha256:1ed0ef59e867eb2d14989ec0cf26f71cfbcf0842d26ac27a6461a02480100126",
-        "aliases": [],
-        "base": {
-          "digest": "sha256:99c0b25c46d0214d5a2091092e7908907dcaecd6a962cde0ac700acee222b6f3",
-          "short": "99c0b25c"
-        },
-        "provenance": {
-          "url": "/metadata/runs/20261104191812523-724605a3/debian-stable/debian/provenance.json"
-        },
-        "package_provenance": {
-          "url": "https://glusterfs.eliware.org/debian/bookworm/amd64/stable/provenance.json"
         }
       },
       "metadata_version": "0.1.0"
