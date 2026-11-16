@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generated": "2026-11-13T14:21:45Z",
+  "generated": "2026-11-16T14:02:11Z",
   "directories": {
     "/": {
       "path": "/",
@@ -44,7 +44,7 @@
           "name": "metadata",
           "type": "directory",
           "size": null,
-          "modified": "2026-11-13T14:21:34.723Z",
+          "modified": "2026-11-16T14:02:03.204Z",
           "href": "/metadata/"
         },
         {
@@ -31947,7 +31947,7 @@
           "name": "runs",
           "type": "directory",
           "size": null,
-          "modified": "2026-11-13T14:08:54.484Z",
+          "modified": "2026-11-16T14:01:17.511Z",
           "href": "/metadata/runs/"
         },
         {
@@ -31961,50 +31961,50 @@
         {
           "name": "catalog.json",
           "type": "file",
-          "size": 732231,
-          "modified": "2026-11-13T14:21:34.708Z",
+          "size": 748358,
+          "modified": "2026-11-16T14:02:03.189Z",
           "href": "/metadata/catalog.json",
-          "sha256": "562b6f9957eba176e796e97ddca5d9fc5f48b5953484aead31cd297ab90388ae"
+          "sha256": "b4279653da0ba1b46b2c627bf0583b84354d12a890e1126f242c0981884b27f6"
         },
         {
           "name": "conductor-state.json",
           "type": "file",
-          "size": 3410805,
-          "modified": "2026-11-13T14:20:40.429Z",
+          "size": 3612807,
+          "modified": "2026-11-16T14:01:29.838Z",
           "href": "/metadata/conductor-state.json",
-          "sha256": "324d118af3e38134630e7a28ada633d45404cc6b7731622b6a6ee6f07f190535"
+          "sha256": "e55bccde2855bccfc8650e41e5f8333e7adbb249000d021847913a552bfbafc6"
         },
         {
           "name": "latest-release-card.png",
           "type": "file",
-          "size": 312674,
-          "modified": "2026-11-12T14:02:10.320Z",
+          "size": 311954,
+          "modified": "2026-11-13T14:21:48.462Z",
           "href": "/metadata/latest-release-card.png",
-          "sha256": "afc88c9582779f5f558b47dbfc18c7f89598aac73ee2e46acb97c5a21d4bb8d1"
+          "sha256": "956088ffc27b4247dd026c481328c51eccd46cfff9878b6ec3e0b182c52f2155"
         },
         {
           "name": "latest-release-report.json",
           "type": "file",
           "size": 258,
-          "modified": "2026-11-12T14:02:10.351Z",
+          "modified": "2026-11-13T14:21:48.470Z",
           "href": "/metadata/latest-release-report.json",
-          "sha256": "48a9c3fa90fa3ed96f7eb3d37cb8d2f7a32d2916188d33d978df4853c12aa5b7"
+          "sha256": "0ed8dba90581d4445aa51635c9ae77e664bf41f253d0ec698e6310a0cd961496"
         },
         {
           "name": "packages.json",
           "type": "file",
           "size": 118566,
-          "modified": "2026-11-13T14:21:34.697Z",
+          "modified": "2026-11-16T14:02:03.174Z",
           "href": "/metadata/packages.json",
-          "sha256": "b44e12c652b57144180cdaed625b34d4115b2e530e45786bfa6eb55a33781798"
+          "sha256": "cc840df9a2c5e23701e2d0b5f3b6bb200df4a320fdd6357964af19f15297ceee"
         },
         {
           "name": "stable.json",
           "type": "file",
-          "size": 7495,
-          "modified": "2026-11-12T14:02:09.210Z",
+          "size": 4791,
+          "modified": "2026-11-16T14:01:17.899Z",
           "href": "/metadata/stable.json",
-          "sha256": "a8a28037776b12b75037f9a27d2c2097046ac3617f6f8f5b7f091de1e95a350b"
+          "sha256": "fc6361dcc966e92c4af917125b53cacc84abc5520550fa55bad5f8b13d3824c3"
         }
       ],
       "total": 9
@@ -32071,7 +32071,7 @@
           "name": "ubuntu",
           "type": "directory",
           "size": null,
-          "modified": "2026-11-13T14:08:54.846Z",
+          "modified": "2026-11-16T14:02:03.064Z",
           "href": "/metadata/records/preview/ubuntu/"
         }
       ],
@@ -32789,9 +32789,17 @@
           "modified": "2026-11-13T14:07:54.932Z",
           "href": "/metadata/records/preview/ubuntu/ubuntu-rolling-2026.11.13-13f78f06ce28-package.json",
           "sha256": "d82641de41e6dc21508d34916347c7cf9f4e058de1c897138d5330a5ad025f00"
+        },
+        {
+          "name": "ubuntu-rolling-2026.11.16-13f78f06ce28-image.json",
+          "type": "file",
+          "size": 4973,
+          "modified": "2026-11-16T14:02:03.065Z",
+          "href": "/metadata/records/preview/ubuntu/ubuntu-rolling-2026.11.16-13f78f06ce28-image.json",
+          "sha256": "7af510585691a49dec2b24c4da0ead6ab50c032947df617747a21def751c59cd"
         }
       ],
-      "total": 20
+      "total": 21
     },
     "/metadata/records/stable/": {
       "path": "/metadata/records/stable/",
@@ -32934,9 +32942,9 @@
           "name": "ubuntu-stable-11.2-image.json",
           "type": "file",
           "size": 4791,
-          "modified": "2026-11-12T14:01:19.741Z",
+          "modified": "2026-11-16T14:01:17.891Z",
           "href": "/metadata/records/stable/ubuntu/ubuntu-stable-11.2-image.json",
-          "sha256": "60d674e6ded15f4e3276104f22d6bef17d77ad46e6ae53886ef4c4e3a9cb1c9c"
+          "sha256": "fc6361dcc966e92c4af917125b53cacc84abc5520550fa55bad5f8b13d3824c3"
         },
         {
           "name": "ubuntu-stable-11.2-package.json",
@@ -33033,11 +33041,18 @@
           "name": "20261113140017955-48afccf3",
           "type": "directory",
           "size": null,
-          "modified": "2026-11-13T14:21:34.192Z",
+          "modified": "2026-11-13T14:21:48.439Z",
           "href": "/metadata/runs/20261113140017955-48afccf3/"
+        },
+        {
+          "name": "20261116140017384-7133b911",
+          "type": "directory",
+          "size": null,
+          "modified": "2026-11-16T14:02:02.714Z",
+          "href": "/metadata/runs/20261116140017384-7133b911/"
         }
       ],
-      "total": 12
+      "total": 13
     },
     "/metadata/runs/20261102234907061-b471536f/": {
       "path": "/metadata/runs/20261102234907061-b471536f/",
@@ -43838,9 +43853,33 @@
           "size": null,
           "modified": "2026-11-13T14:08:54.491Z",
           "href": "/metadata/runs/20261113140017955-48afccf3/ubuntu-rolling/"
+        },
+        {
+          "name": "release-card.html",
+          "type": "file",
+          "size": 6491,
+          "modified": "2026-11-13T14:21:47.377Z",
+          "href": "/metadata/runs/20261113140017955-48afccf3/release-card.html",
+          "sha256": "a9f5401446134e9c4b9f8f617b623bde6a1cd7d889870c98eaeb816f3a3e99ad"
+        },
+        {
+          "name": "release-card.png",
+          "type": "file",
+          "size": 311954,
+          "modified": "2026-11-13T14:21:48.366Z",
+          "href": "/metadata/runs/20261113140017955-48afccf3/release-card.png",
+          "sha256": "956088ffc27b4247dd026c481328c51eccd46cfff9878b6ec3e0b182c52f2155"
+        },
+        {
+          "name": "release-report.json",
+          "type": "file",
+          "size": 11359,
+          "modified": "2026-11-13T14:21:48.441Z",
+          "href": "/metadata/runs/20261113140017955-48afccf3/release-report.json",
+          "sha256": "3381ac8bd77eb892117c3abca49b8397386c9008d86759fb90ada7b6f3ea7612"
         }
       ],
-      "total": 3
+      "total": 6
     },
     "/metadata/runs/20261113140017955-48afccf3/debian-rolling/": {
       "path": "/metadata/runs/20261113140017955-48afccf3/debian-rolling/",
@@ -44938,6 +44977,396 @@
         }
       }
     },
+    "/metadata/runs/20261116140017384-7133b911/": {
+      "path": "/metadata/runs/20261116140017384-7133b911/",
+      "entries": [
+        {
+          "name": "ubuntu-rolling",
+          "type": "directory",
+          "size": null,
+          "modified": "2026-11-16T14:02:02.716Z",
+          "href": "/metadata/runs/20261116140017384-7133b911/ubuntu-rolling/"
+        },
+        {
+          "name": "ubuntu-stable",
+          "type": "directory",
+          "size": null,
+          "modified": "2026-11-16T14:01:17.517Z",
+          "href": "/metadata/runs/20261116140017384-7133b911/ubuntu-stable/"
+        }
+      ],
+      "total": 2
+    },
+    "/metadata/runs/20261116140017384-7133b911/ubuntu-rolling/": {
+      "path": "/metadata/runs/20261116140017384-7133b911/ubuntu-rolling/",
+      "entries": [
+        {
+          "name": "ubuntu",
+          "type": "directory",
+          "size": null,
+          "modified": "2026-11-16T14:02:03.015Z",
+          "href": "/metadata/runs/20261116140017384-7133b911/ubuntu-rolling/ubuntu/"
+        }
+      ],
+      "total": 1
+    },
+    "/metadata/runs/20261116140017384-7133b911/ubuntu-rolling/ubuntu/": {
+      "path": "/metadata/runs/20261116140017384-7133b911/ubuntu-rolling/ubuntu/",
+      "entries": [
+        {
+          "name": "assets",
+          "type": "directory",
+          "size": null,
+          "modified": "2026-11-16T14:02:02.800Z",
+          "href": "/metadata/runs/20261116140017384-7133b911/ubuntu-rolling/ubuntu/assets/"
+        },
+        {
+          "name": "checksums.sha256",
+          "type": "file",
+          "size": 189,
+          "modified": "2026-11-16T14:02:02.829Z",
+          "href": "/metadata/runs/20261116140017384-7133b911/ubuntu-rolling/ubuntu/checksums.sha256",
+          "sha256": "f828ef62fdf9fcf12f90af0a302cb50148b37fa6d21c7dffe4719512086843d3"
+        },
+        {
+          "name": "provenance.json",
+          "type": "file",
+          "size": 1890,
+          "modified": "2026-11-16T14:02:02.834Z",
+          "href": "/metadata/runs/20261116140017384-7133b911/ubuntu-rolling/ubuntu/provenance.json",
+          "sha256": "4380c101f37b2356efada83c46e75251f3947582b7c30e3f35015fc2b30e1dc5"
+        },
+        {
+          "name": "provenance.json.asc",
+          "type": "file",
+          "size": 228,
+          "modified": "2026-11-16T14:02:02.929Z",
+          "href": "/metadata/runs/20261116140017384-7133b911/ubuntu-rolling/ubuntu/provenance.json.asc",
+          "sha256": "69208db7a7626ee701fba3e7fd2eb8461570b90ebeccd040374e92427d6fe907"
+        }
+      ],
+      "total": 4,
+      "provenance": {
+        "schema": 1,
+        "generated": "2026-11-16T14:02:02Z",
+        "record": {
+          "kind": "image",
+          "run_id": "20261116140017384-7133b911",
+          "lane": "ubuntu-rolling",
+          "channel": "preview",
+          "version": "2026.11.16-13f78f06ce28",
+          "distribution": "ubuntu",
+          "image": "ghcr.io/eliware/ubuntu24-gluster:2026.11.16-13f78f06ce28",
+          "digest": "sha256:369e4c4c2a3af7b1d83938a4b15f94019a7951cc154c345d090a174264238043",
+          "package_provenance": "https://glusterfs.eliware.org/ubuntu/noble/amd64/previews/ubuntu-rolling-2026.11.13-13f78f06ce28/provenance.json",
+          "package_repository": "https://glusterfs.eliware.org/ubuntu/noble/amd64/previews/ubuntu-rolling-2026.11.13-13f78f06ce28/",
+          "package_metadata_sha256": null,
+          "source": {
+            "ref": "devel",
+            "commit": "13f78f06ce28eb0e29a0776bfc39c890c9e6e2d5"
+          },
+          "packaging_commit": "349508abbaa1bdc466fc508ed708c3d07e6d5dc9",
+          "base_image": "ubuntu:24.04",
+          "base_image_digest": "sha256:73b999393d07f2bf65a40373778a44dc9a6d54ad7718d29247d8ff9413c4d6a8",
+          "workflow": null,
+          "workflow_run_id": "20261116140017384-7133b911",
+          "build_log": "/mnt/pvc/gluster-build-workspaces/conductor/20261116140017384-7133b911/ubuntu-rolling/logs/image-ubuntu.log",
+          "workflow_url": "https://github.com/eliware/glusterfs-packaging/actions/runs/20261116140017384-7133b911"
+        },
+        "files": [
+          {
+            "label": "container-validation",
+            "path": "assets/container-validation.json",
+            "sha256": "5e2a91335cb67fd04049dd86d334507f37f411590cf7815d7e82b9529ceab145",
+            "size": 1871
+          },
+          {
+            "label": "image-build-log",
+            "path": "assets/image-ubuntu.log",
+            "sha256": "ef105be11399c2976334974e96c2e82c7c596e525c1ff165169f9c00b4e2447b",
+            "size": 47350
+          }
+        ],
+        "checksums_sha256": "f828ef62fdf9fcf12f90af0a302cb50148b37fa6d21c7dffe4719512086843d3",
+        "metadata_version": "0.1.0"
+      }
+    },
+    "/metadata/runs/20261116140017384-7133b911/ubuntu-rolling/ubuntu/assets/": {
+      "path": "/metadata/runs/20261116140017384-7133b911/ubuntu-rolling/ubuntu/assets/",
+      "entries": [
+        {
+          "name": "container-validation.json",
+          "type": "file",
+          "size": 1871,
+          "modified": "2026-11-16T14:02:02.791Z",
+          "href": "/metadata/runs/20261116140017384-7133b911/ubuntu-rolling/ubuntu/assets/container-validation.json",
+          "sha256": "5e2a91335cb67fd04049dd86d334507f37f411590cf7815d7e82b9529ceab145"
+        },
+        {
+          "name": "image-ubuntu.log",
+          "type": "file",
+          "size": 47350,
+          "modified": "2026-11-16T14:02:02.812Z",
+          "href": "/metadata/runs/20261116140017384-7133b911/ubuntu-rolling/ubuntu/assets/image-ubuntu.log",
+          "sha256": "ef105be11399c2976334974e96c2e82c7c596e525c1ff165169f9c00b4e2447b"
+        }
+      ],
+      "total": 2,
+      "container-validation": {
+        "run_id": "20261116140017384-7133b911",
+        "generated": "2026-11-16T14:01:58Z",
+        "repository_integrity": {
+          "status": "passed",
+          "detail": "published package metadata and image inputs verified"
+        },
+        "provenance_verification": {
+          "status": "passed",
+          "detail": "provenance generated, signed, and independently verified"
+        },
+        "checks": {
+          "install": {
+            "status": "passed"
+          },
+          "cli_available": {
+            "status": "passed"
+          },
+          "volume_create_mount": {
+            "status": "passed"
+          },
+          "file_lifecycle": {
+            "status": "passed"
+          },
+          "volume_unmount_delete": {
+            "status": "passed"
+          },
+          "service_shutdown": {
+            "status": "passed"
+          },
+          "image_labels": {
+            "status": "passed"
+          }
+        },
+        "distributions": [
+          {
+            "id": "ubuntu-noble",
+            "label": "Ubuntu 24.04 (noble)",
+            "container_core": {
+              "status": "passed",
+              "detail": "volume start: smoke: success; volume stop: smoke: success; volume delete: smoke: success"
+            },
+            "repository_integrity": {
+              "status": "passed",
+              "detail": "published package metadata and image inputs verified"
+            },
+            "provenance_verification": {
+              "status": "passed",
+              "detail": "provenance generated, signed, and independently verified"
+            }
+          }
+        ],
+        "metadata_version": "0.1.0",
+        "image_labels": {
+          "status": "passed",
+          "fields": [
+            "org.opencontainers.image.version",
+            "org.opencontainers.image.revision",
+            "org.eliware.gluster.base-image.digest",
+            "org.eliware.gluster.base-image.reference",
+            "org.eliware.gluster.source-ref",
+            "org.eliware.gluster.source-commit",
+            "org.eliware.gluster.distribution",
+            "org.eliware.gluster.package-candidate",
+            "org.eliware.gluster.package-provenance",
+            "org.eliware.gluster.deb-repository"
+          ]
+        }
+      }
+    },
+    "/metadata/runs/20261116140017384-7133b911/ubuntu-stable/": {
+      "path": "/metadata/runs/20261116140017384-7133b911/ubuntu-stable/",
+      "entries": [
+        {
+          "name": "ubuntu",
+          "type": "directory",
+          "size": null,
+          "modified": "2026-11-16T14:01:17.834Z",
+          "href": "/metadata/runs/20261116140017384-7133b911/ubuntu-stable/ubuntu/"
+        }
+      ],
+      "total": 1
+    },
+    "/metadata/runs/20261116140017384-7133b911/ubuntu-stable/ubuntu/": {
+      "path": "/metadata/runs/20261116140017384-7133b911/ubuntu-stable/ubuntu/",
+      "entries": [
+        {
+          "name": "assets",
+          "type": "directory",
+          "size": null,
+          "modified": "2026-11-16T14:01:17.616Z",
+          "href": "/metadata/runs/20261116140017384-7133b911/ubuntu-stable/ubuntu/assets/"
+        },
+        {
+          "name": "checksums.sha256",
+          "type": "file",
+          "size": 189,
+          "modified": "2026-11-16T14:01:17.644Z",
+          "href": "/metadata/runs/20261116140017384-7133b911/ubuntu-stable/ubuntu/checksums.sha256",
+          "sha256": "80a062143b38e3588b645203ca0684378ead7780442f0afdbb24c2d87eb214e4"
+        },
+        {
+          "name": "provenance.json",
+          "type": "file",
+          "size": 1767,
+          "modified": "2026-11-16T14:01:17.648Z",
+          "href": "/metadata/runs/20261116140017384-7133b911/ubuntu-stable/ubuntu/provenance.json",
+          "sha256": "03cdde6428fbe1b9b54d2f25f94fe1d165df73a86c0929ee271e3e8f80bf30f0"
+        },
+        {
+          "name": "provenance.json.asc",
+          "type": "file",
+          "size": 228,
+          "modified": "2026-11-16T14:01:17.748Z",
+          "href": "/metadata/runs/20261116140017384-7133b911/ubuntu-stable/ubuntu/provenance.json.asc",
+          "sha256": "c1bffc78a3b1aef0d90dd3b78b640cb16a678360f8631097548dea3dc9665006"
+        }
+      ],
+      "total": 4,
+      "provenance": {
+        "schema": 1,
+        "generated": "2026-11-16T14:01:17Z",
+        "record": {
+          "kind": "image",
+          "run_id": "20261116140017384-7133b911",
+          "lane": "ubuntu-stable",
+          "channel": "stable",
+          "version": "11.2",
+          "distribution": "ubuntu",
+          "image": "ghcr.io/eliware/ubuntu24-gluster:11.2",
+          "digest": "sha256:c4e33022926ca4715517597f058ec8982aded10472d6af1bb84cd31daa87122d",
+          "package_provenance": "https://glusterfs.eliware.org/ubuntu/noble/amd64/stable/provenance.json",
+          "package_repository": "https://glusterfs.eliware.org/ubuntu/noble/amd64/stable/",
+          "package_metadata_sha256": null,
+          "source": {
+            "ref": "v11.2",
+            "commit": "15d3c0f8435814fdb7242a8a82fa5db140013d0a"
+          },
+          "packaging_commit": "349508abbaa1bdc466fc508ed708c3d07e6d5dc9",
+          "base_image": "ubuntu:24.04",
+          "base_image_digest": "sha256:73b999393d07f2bf65a40373778a44dc9a6d54ad7718d29247d8ff9413c4d6a8",
+          "workflow": null,
+          "workflow_run_id": "20261116140017384-7133b911",
+          "build_log": "/mnt/pvc/gluster-build-workspaces/conductor/20261116140017384-7133b911/ubuntu-stable/logs/image-ubuntu.log",
+          "workflow_url": "https://github.com/eliware/glusterfs-packaging/actions/runs/20261116140017384-7133b911"
+        },
+        "files": [
+          {
+            "label": "container-validation",
+            "path": "assets/container-validation.json",
+            "sha256": "af47300fa10c72101a8113bf9c0aa74b8e7dc032747dc02d6dc72627bc6f78ba",
+            "size": 1871
+          },
+          {
+            "label": "image-build-log",
+            "path": "assets/image-ubuntu.log",
+            "sha256": "bf4a261a2b71b3f94c7e4bbcef2c0557a8bcdfb5dd6b72bbd13a7cadc302f353",
+            "size": 47968
+          }
+        ],
+        "checksums_sha256": "80a062143b38e3588b645203ca0684378ead7780442f0afdbb24c2d87eb214e4",
+        "metadata_version": "0.1.0"
+      }
+    },
+    "/metadata/runs/20261116140017384-7133b911/ubuntu-stable/ubuntu/assets/": {
+      "path": "/metadata/runs/20261116140017384-7133b911/ubuntu-stable/ubuntu/assets/",
+      "entries": [
+        {
+          "name": "container-validation.json",
+          "type": "file",
+          "size": 1871,
+          "modified": "2026-11-16T14:01:17.600Z",
+          "href": "/metadata/runs/20261116140017384-7133b911/ubuntu-stable/ubuntu/assets/container-validation.json",
+          "sha256": "af47300fa10c72101a8113bf9c0aa74b8e7dc032747dc02d6dc72627bc6f78ba"
+        },
+        {
+          "name": "image-ubuntu.log",
+          "type": "file",
+          "size": 47968,
+          "modified": "2026-11-16T14:01:17.626Z",
+          "href": "/metadata/runs/20261116140017384-7133b911/ubuntu-stable/ubuntu/assets/image-ubuntu.log",
+          "sha256": "bf4a261a2b71b3f94c7e4bbcef2c0557a8bcdfb5dd6b72bbd13a7cadc302f353"
+        }
+      ],
+      "total": 2,
+      "container-validation": {
+        "run_id": "20261116140017384-7133b911",
+        "generated": "2026-11-16T14:01:09Z",
+        "repository_integrity": {
+          "status": "passed",
+          "detail": "published package metadata and image inputs verified"
+        },
+        "provenance_verification": {
+          "status": "passed",
+          "detail": "provenance generated, signed, and independently verified"
+        },
+        "checks": {
+          "install": {
+            "status": "passed"
+          },
+          "cli_available": {
+            "status": "passed"
+          },
+          "volume_create_mount": {
+            "status": "passed"
+          },
+          "file_lifecycle": {
+            "status": "passed"
+          },
+          "volume_unmount_delete": {
+            "status": "passed"
+          },
+          "service_shutdown": {
+            "status": "passed"
+          },
+          "image_labels": {
+            "status": "passed"
+          }
+        },
+        "distributions": [
+          {
+            "id": "ubuntu-noble",
+            "label": "Ubuntu 24.04 (noble)",
+            "container_core": {
+              "status": "passed",
+              "detail": "volume start: smoke: success; volume stop: smoke: success; volume delete: smoke: success"
+            },
+            "repository_integrity": {
+              "status": "passed",
+              "detail": "published package metadata and image inputs verified"
+            },
+            "provenance_verification": {
+              "status": "passed",
+              "detail": "provenance generated, signed, and independently verified"
+            }
+          }
+        ],
+        "metadata_version": "0.1.0",
+        "image_labels": {
+          "status": "passed",
+          "fields": [
+            "org.opencontainers.image.version",
+            "org.opencontainers.image.revision",
+            "org.eliware.gluster.base-image.digest",
+            "org.eliware.gluster.base-image.reference",
+            "org.eliware.gluster.source-ref",
+            "org.eliware.gluster.source-commit",
+            "org.eliware.gluster.distribution",
+            "org.eliware.gluster.package-candidate",
+            "org.eliware.gluster.package-provenance",
+            "org.eliware.gluster.deb-repository"
+          ]
+        }
+      }
+    },
     "/ubuntu/": {
       "path": "/ubuntu/",
       "entries": [
@@ -44978,7 +45407,7 @@
           "name": "previews",
           "type": "directory",
           "size": null,
-          "modified": "2026-11-13T14:07:54.826Z",
+          "modified": "2026-11-16T14:02:03.073Z",
           "href": "/ubuntu/noble/amd64/previews/"
         },
         {
@@ -45796,9 +46225,16 @@
           "size": null,
           "modified": "2026-11-13T14:07:54.944Z",
           "href": "/ubuntu/noble/amd64/previews/ubuntu-rolling-2026.11.13-13f78f06ce28/"
+        },
+        {
+          "name": "ubuntu-rolling-2026.11.16-13f78f06ce28",
+          "type": "directory",
+          "size": null,
+          "modified": "2026-11-16T14:02:03.075Z",
+          "href": "/ubuntu/noble/amd64/previews/ubuntu-rolling-2026.11.16-13f78f06ce28/"
         }
       ],
-      "total": 10
+      "total": 11
     },
     "/ubuntu/noble/amd64/previews/ubuntu-rolling-2026.08.18-ae1d69672fe0/": {
       "path": "/ubuntu/noble/amd64/previews/ubuntu-rolling-2026.08.18-ae1d69672fe0/",
@@ -53516,6 +53952,191 @@
         }
       ],
       "total": 10
+    },
+    "/ubuntu/noble/amd64/previews/ubuntu-rolling-2026.11.16-13f78f06ce28/": {
+      "path": "/ubuntu/noble/amd64/previews/ubuntu-rolling-2026.11.16-13f78f06ce28/",
+      "entries": [
+        {
+          "name": "metadata.json",
+          "type": "file",
+          "size": 4973,
+          "modified": "2026-11-16T14:02:03.077Z",
+          "href": "/ubuntu/noble/amd64/previews/ubuntu-rolling-2026.11.16-13f78f06ce28/metadata.json",
+          "sha256": "7af510585691a49dec2b24c4da0ead6ab50c032947df617747a21def751c59cd"
+        }
+      ],
+      "total": 1,
+      "metadata": {
+        "channel": "preview",
+        "distribution": "ubuntu",
+        "version": "2026.11.16-13f78f06ce28",
+        "built": "2026-11-16T14:02:03.020Z",
+        "candidate": "ubuntu-rolling-2026.11.16-13f78f06ce28",
+        "source": {
+          "ref": "devel",
+          "commit": "13f78f06ce28eb0e29a0776bfc39c890c9e6e2d5"
+        },
+        "validation": {
+          "run_id": "20261113140017955-48afccf3",
+          "generated": "2026-11-16T14:00:26Z",
+          "package_format": "deb",
+          "repository_integrity": {
+            "status": "not-tested",
+            "detail": "verified by the conductor after publication"
+          },
+          "provenance_verification": {
+            "status": "not-tested",
+            "detail": "generated and verified by the conductor after publication"
+          },
+          "checks": {
+            "install": {
+              "status": "passed"
+            },
+            "service_start": {
+              "status": "passed"
+            },
+            "volume_create_mount": {
+              "status": "passed"
+            },
+            "file_lifecycle": {
+              "status": "passed"
+            },
+            "volume_unmount_delete": {
+              "status": "passed"
+            },
+            "service_shutdown": {
+              "status": "passed"
+            }
+          },
+          "distributions": [
+            {
+              "id": "ubuntu-noble",
+              "label": "Ubuntu 24.04 (noble)",
+              "image": "ubuntu:24.04",
+              "package_format": "deb",
+              "package_core": {
+                "status": "passed"
+              }
+            }
+          ],
+          "metadata_version": "0.1.0",
+          "smoke_stages": {
+            "smoke1": {
+              "status": "passed"
+            },
+            "smoke2": {
+              "status": "passed",
+              "targets": [
+                "ubuntu-noble"
+              ]
+            }
+          }
+        },
+        "container_validation": {
+          "run_id": "20261116140017384-7133b911",
+          "generated": "2026-11-16T14:01:58Z",
+          "repository_integrity": {
+            "status": "passed",
+            "detail": "published package metadata and image inputs verified"
+          },
+          "provenance_verification": {
+            "status": "passed",
+            "detail": "provenance generated, signed, and independently verified"
+          },
+          "checks": {
+            "install": {
+              "status": "passed"
+            },
+            "cli_available": {
+              "status": "passed"
+            },
+            "volume_create_mount": {
+              "status": "passed"
+            },
+            "file_lifecycle": {
+              "status": "passed"
+            },
+            "volume_unmount_delete": {
+              "status": "passed"
+            },
+            "service_shutdown": {
+              "status": "passed"
+            },
+            "image_labels": {
+              "status": "passed"
+            }
+          },
+          "distributions": [
+            {
+              "id": "ubuntu-noble",
+              "label": "Ubuntu 24.04 (noble)",
+              "container_core": {
+                "status": "passed",
+                "detail": "volume start: smoke: success; volume stop: smoke: success; volume delete: smoke: success"
+              },
+              "repository_integrity": {
+                "status": "passed",
+                "detail": "published package metadata and image inputs verified"
+              },
+              "provenance_verification": {
+                "status": "passed",
+                "detail": "provenance generated, signed, and independently verified"
+              }
+            }
+          ],
+          "metadata_version": "0.1.0",
+          "image_labels": {
+            "status": "passed",
+            "fields": [
+              "org.opencontainers.image.version",
+              "org.opencontainers.image.revision",
+              "org.eliware.gluster.base-image.digest",
+              "org.eliware.gluster.base-image.reference",
+              "org.eliware.gluster.source-ref",
+              "org.eliware.gluster.source-commit",
+              "org.eliware.gluster.distribution",
+              "org.eliware.gluster.package-candidate",
+              "org.eliware.gluster.package-provenance",
+              "org.eliware.gluster.deb-repository"
+            ]
+          }
+        },
+        "repository_integrity": {
+          "status": "not-tested",
+          "detail": "verified by the conductor after publication"
+        },
+        "provenance_verification": {
+          "status": "not-tested",
+          "detail": "generated and verified by the conductor after publication"
+        },
+        "provenance": {
+          "url": "/metadata/runs/20261116140017384-7133b911/ubuntu-rolling/ubuntu/provenance.json"
+        },
+        "deb_repos": {
+          "ubuntu": "/ubuntu/noble/amd64/previews/ubuntu-rolling-2026.11.16-13f78f06ce28/"
+        },
+        "image": {
+          "repository": "ghcr.io/eliware/ubuntu24-gluster",
+          "distribution": "ubuntu",
+          "package_candidate": "ubuntu-rolling-2026.11.16-13f78f06ce28",
+          "base_image": "ubuntu:24.04",
+          "exact_tag": "2026.11.16-13f78f06ce28",
+          "reference": "ghcr.io/eliware/ubuntu24-gluster:2026.11.16-13f78f06ce28",
+          "digest": "sha256:369e4c4c2a3af7b1d83938a4b15f94019a7951cc154c345d090a174264238043",
+          "aliases": [],
+          "base": {
+            "digest": "sha256:73b999393d07f2bf65a40373778a44dc9a6d54ad7718d29247d8ff9413c4d6a8",
+            "short": "73b99939"
+          },
+          "provenance": {
+            "url": "/metadata/runs/20261116140017384-7133b911/ubuntu-rolling/ubuntu/provenance.json"
+          },
+          "package_provenance": {
+            "url": "https://glusterfs.eliware.org/ubuntu/noble/amd64/previews/ubuntu-rolling-2026.11.13-13f78f06ce28/provenance.json"
+          }
+        },
+        "metadata_version": "0.1.0"
+      }
     },
     "/ubuntu/noble/amd64/stable/": {
       "path": "/ubuntu/noble/amd64/stable/",
