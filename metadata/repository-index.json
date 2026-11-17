@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generated": "2026-11-16T14:02:11Z",
+  "generated": "2026-11-17T14:06:50Z",
   "directories": {
     "/": {
       "path": "/",
@@ -44,7 +44,7 @@
           "name": "metadata",
           "type": "directory",
           "size": null,
-          "modified": "2026-11-16T14:02:03.204Z",
+          "modified": "2026-11-17T14:06:39.389Z",
           "href": "/metadata/"
         },
         {
@@ -11782,7 +11782,7 @@
           "name": "previews",
           "type": "directory",
           "size": null,
-          "modified": "2026-11-13T14:13:07.652Z",
+          "modified": "2026-11-17T14:05:11.257Z",
           "href": "/el10/x86_64/previews/"
         },
         {
@@ -13463,9 +13463,16 @@
           "size": null,
           "modified": "2026-11-13T14:13:07.735Z",
           "href": "/el10/x86_64/previews/epel10-rolling-2026.11.13-13f78f06ce28/"
+        },
+        {
+          "name": "epel10-rolling-2026.11.17-13f78f06ce28",
+          "type": "directory",
+          "size": null,
+          "modified": "2026-11-17T14:05:11.262Z",
+          "href": "/el10/x86_64/previews/epel10-rolling-2026.11.17-13f78f06ce28/"
         }
       ],
-      "total": 10
+      "total": 11
     },
     "/el10/x86_64/previews/epel10-rolling-2026.08.18-ae1d69672fe0/": {
       "path": "/el10/x86_64/previews/epel10-rolling-2026.08.18-ae1d69672fe0/",
@@ -30323,6 +30330,232 @@
       ],
       "total": 5
     },
+    "/el10/x86_64/previews/epel10-rolling-2026.11.17-13f78f06ce28/": {
+      "path": "/el10/x86_64/previews/epel10-rolling-2026.11.17-13f78f06ce28/",
+      "entries": [
+        {
+          "name": "metadata.json",
+          "type": "file",
+          "size": 6018,
+          "modified": "2026-11-17T14:06:39.222Z",
+          "href": "/el10/x86_64/previews/epel10-rolling-2026.11.17-13f78f06ce28/metadata.json",
+          "sha256": "165783170b066fddd0987c5508ed4f6cd1808b1f681f7434bbd54d59209ac1a0"
+        }
+      ],
+      "total": 1,
+      "metadata": {
+        "channel": "preview",
+        "distribution": "alma",
+        "version": "2026.11.17-13f78f06ce28",
+        "built": "2026-11-17T14:06:39.151Z",
+        "candidate": "epel10-rolling-2026.11.17-13f78f06ce28",
+        "source": {
+          "ref": "devel",
+          "commit": "13f78f06ce28eb0e29a0776bfc39c890c9e6e2d5"
+        },
+        "validation": {
+          "run_id": "20261113140017955-48afccf3",
+          "generated": "2026-11-17T14:00:28Z",
+          "package_format": "rpm",
+          "repository_integrity": {
+            "status": "not-tested",
+            "detail": "verified by the conductor after publication"
+          },
+          "provenance_verification": {
+            "status": "not-tested",
+            "detail": "generated and verified by the conductor after publication"
+          },
+          "checks": {
+            "install": {
+              "status": "passed"
+            },
+            "service_start": {
+              "status": "passed"
+            },
+            "volume_create_mount": {
+              "status": "passed"
+            },
+            "file_lifecycle": {
+              "status": "passed"
+            },
+            "volume_unmount_delete": {
+              "status": "passed"
+            },
+            "service_shutdown": {
+              "status": "passed"
+            }
+          },
+          "distributions": [
+            {
+              "id": "centos-stream-10",
+              "label": "CentOS Stream 10",
+              "image": "quay.io/centos/centos:stream10",
+              "package_core": {
+                "status": "passed"
+              },
+              "selinux": {
+                "status": "passed",
+                "detail": "module loaded; mode Disabled"
+              }
+            },
+            {
+              "id": "rocky-10",
+              "label": "Rocky Linux 10",
+              "image": "rockylinux/rockylinux:10",
+              "package_core": {
+                "status": "passed"
+              },
+              "selinux": {
+                "status": "passed",
+                "detail": "module loaded; mode Disabled"
+              }
+            },
+            {
+              "id": "almalinux-10",
+              "label": "AlmaLinux 10",
+              "image": "almalinux:10",
+              "package_core": {
+                "status": "passed"
+              },
+              "selinux": {
+                "status": "passed",
+                "detail": "module loaded; mode Disabled"
+              }
+            },
+            {
+              "id": "oracle-linux-10",
+              "label": "Oracle Linux 10",
+              "image": "oraclelinux:10",
+              "package_core": {
+                "status": "passed"
+              },
+              "selinux": {
+                "status": "passed",
+                "detail": "module loaded; mode Disabled"
+              }
+            }
+          ],
+          "metadata_version": "0.1.0",
+          "smoke_stages": {
+            "smoke1": {
+              "status": "passed"
+            },
+            "smoke2": {
+              "status": "passed",
+              "targets": [
+                "centos-stream-10",
+                "rocky-10",
+                "almalinux-10",
+                "oracle-linux-10"
+              ]
+            }
+          }
+        },
+        "container_validation": {
+          "run_id": "20261117140020648-b2f34103",
+          "generated": "2026-11-17T14:06:33Z",
+          "repository_integrity": {
+            "status": "passed",
+            "detail": "published package metadata and image inputs verified"
+          },
+          "provenance_verification": {
+            "status": "passed",
+            "detail": "provenance generated, signed, and independently verified"
+          },
+          "checks": {
+            "install": {
+              "status": "passed"
+            },
+            "cli_available": {
+              "status": "passed"
+            },
+            "volume_create_mount": {
+              "status": "passed"
+            },
+            "file_lifecycle": {
+              "status": "passed"
+            },
+            "volume_unmount_delete": {
+              "status": "passed"
+            },
+            "service_shutdown": {
+              "status": "passed"
+            },
+            "image_labels": {
+              "status": "passed"
+            }
+          },
+          "distributions": [
+            {
+              "id": "almalinux-10",
+              "label": "AlmaLinux 10",
+              "container_core": {
+                "status": "passed",
+                "detail": "updated; volume stop: smoke: success; volume delete: smoke: success"
+              },
+              "repository_integrity": {
+                "status": "passed",
+                "detail": "published package metadata and image inputs verified"
+              },
+              "provenance_verification": {
+                "status": "passed",
+                "detail": "provenance generated, signed, and independently verified"
+              }
+            }
+          ],
+          "metadata_version": "0.1.0",
+          "image_labels": {
+            "status": "passed",
+            "fields": [
+              "org.opencontainers.image.version",
+              "org.opencontainers.image.revision",
+              "org.eliware.gluster.base-image.digest",
+              "org.eliware.gluster.base-image.reference",
+              "org.eliware.gluster.source-ref",
+              "org.eliware.gluster.source-commit",
+              "org.eliware.gluster.distribution",
+              "org.eliware.gluster.package-candidate",
+              "org.eliware.gluster.package-provenance",
+              "org.eliware.gluster.rpm-repository",
+              "org.eliware.gluster.rpm-metadata-sha256"
+            ]
+          }
+        },
+        "repository_integrity": {
+          "status": "not-tested",
+          "detail": "verified by the conductor after publication"
+        },
+        "provenance_verification": {
+          "status": "not-tested",
+          "detail": "generated and verified by the conductor after publication"
+        },
+        "provenance": {
+          "url": "/metadata/runs/20261117140020648-b2f34103/epel10-rolling/alma/provenance.json"
+        },
+        "rpm_repo": "/el10/x86_64/previews/epel10-rolling-2026.11.17-13f78f06ce28/",
+        "image": {
+          "repository": "ghcr.io/eliware/alma10-gluster",
+          "distribution": "alma",
+          "package_candidate": "epel10-rolling-2026.11.17-13f78f06ce28",
+          "base_image": "almalinux:10",
+          "exact_tag": "2026.11.17-13f78f06ce28",
+          "reference": "ghcr.io/eliware/alma10-gluster:2026.11.17-13f78f06ce28",
+          "digest": "sha256:20b15e134a9f0f775a099ead8011e27b759e562992fd43727d1d0937d7ff42e1",
+          "aliases": [],
+          "base": {
+            "digest": "sha256:ccf217024b3d5e268cc208d1edb384a1edee6359370cf6ea1ecbc42254e57375",
+            "short": "ccf21702"
+          },
+          "provenance": {
+            "url": "/metadata/runs/20261117140020648-b2f34103/epel10-rolling/alma/provenance.json"
+          },
+          "package_provenance": {
+            "url": "https://glusterfs.eliware.org/el10/x86_64/previews/epel10-rolling-2026.11.13-13f78f06ce28/provenance.json"
+          }
+        },
+        "metadata_version": "0.1.0"
+      }
+    },
     "/el10/x86_64/stable/": {
       "path": "/el10/x86_64/stable/",
       "entries": [
@@ -31947,7 +32180,7 @@
           "name": "runs",
           "type": "directory",
           "size": null,
-          "modified": "2026-11-16T14:01:17.511Z",
+          "modified": "2026-11-17T14:02:04.466Z",
           "href": "/metadata/runs/"
         },
         {
@@ -31961,50 +32194,50 @@
         {
           "name": "catalog.json",
           "type": "file",
-          "size": 748358,
-          "modified": "2026-11-16T14:02:03.189Z",
+          "size": 776231,
+          "modified": "2026-11-17T14:06:39.373Z",
           "href": "/metadata/catalog.json",
-          "sha256": "b4279653da0ba1b46b2c627bf0583b84354d12a890e1126f242c0981884b27f6"
+          "sha256": "cfcbe073940a49c58de658e50448c58f32e9d42b4d949f55d7bd4c477a8a575e"
         },
         {
           "name": "conductor-state.json",
           "type": "file",
-          "size": 3612807,
-          "modified": "2026-11-16T14:01:29.838Z",
+          "size": 3813859,
+          "modified": "2026-11-17T14:04:02.858Z",
           "href": "/metadata/conductor-state.json",
-          "sha256": "e55bccde2855bccfc8650e41e5f8333e7adbb249000d021847913a552bfbafc6"
+          "sha256": "48019ee70f8f45f9f050c3547f7654a17c4c7eac48c9521f8fc34ac05ff6f7c5"
         },
         {
           "name": "latest-release-card.png",
           "type": "file",
-          "size": 311954,
-          "modified": "2026-11-13T14:21:48.462Z",
+          "size": 311409,
+          "modified": "2026-11-16T14:02:14.150Z",
           "href": "/metadata/latest-release-card.png",
-          "sha256": "956088ffc27b4247dd026c481328c51eccd46cfff9878b6ec3e0b182c52f2155"
+          "sha256": "afa9de91a305ae36dfe5e9a5d4f8d0d96e5ac1638159a98877df5ca47d5eb2b6"
         },
         {
           "name": "latest-release-report.json",
           "type": "file",
           "size": 258,
-          "modified": "2026-11-13T14:21:48.470Z",
+          "modified": "2026-11-16T14:02:14.157Z",
           "href": "/metadata/latest-release-report.json",
-          "sha256": "0ed8dba90581d4445aa51635c9ae77e664bf41f253d0ec698e6310a0cd961496"
+          "sha256": "08a912650e60caf8c50aebe56c020637ddcf0e855ff5297d82399138b9f8051e"
         },
         {
           "name": "packages.json",
           "type": "file",
           "size": 118566,
-          "modified": "2026-11-16T14:02:03.174Z",
+          "modified": "2026-11-17T14:06:39.352Z",
           "href": "/metadata/packages.json",
-          "sha256": "cc840df9a2c5e23701e2d0b5f3b6bb200df4a320fdd6357964af19f15297ceee"
+          "sha256": "eeb9bea0646a3894d4464ba13112ddbb23f90926799f92bd7f3559d855e3612b"
         },
         {
           "name": "stable.json",
           "type": "file",
-          "size": 4791,
-          "modified": "2026-11-16T14:01:17.899Z",
+          "size": 5836,
+          "modified": "2026-11-17T14:03:48.004Z",
           "href": "/metadata/stable.json",
-          "sha256": "fc6361dcc966e92c4af917125b53cacc84abc5520550fa55bad5f8b13d3824c3"
+          "sha256": "d4dfb3678bde70e522168e6043100c7cf19979e4c5e2414a10b7ffe41f8cdc3b"
         }
       ],
       "total": 9
@@ -32036,7 +32269,7 @@
           "name": "alma",
           "type": "directory",
           "size": null,
-          "modified": "2026-11-13T14:18:48.767Z",
+          "modified": "2026-11-17T14:06:39.208Z",
           "href": "/metadata/records/preview/alma/"
         },
         {
@@ -32064,7 +32297,7 @@
           "name": "rocky",
           "type": "directory",
           "size": null,
-          "modified": "2026-11-13T14:15:46.174Z",
+          "modified": "2026-11-17T14:05:11.240Z",
           "href": "/metadata/records/preview/rocky/"
         },
         {
@@ -32151,9 +32384,17 @@
           "modified": "2026-11-13T14:18:48.769Z",
           "href": "/metadata/records/preview/alma/epel10-rolling-2026.11.13-13f78f06ce28-image.json",
           "sha256": "9a8aed92756dde02b0a487095007f008a36c6dd5b8dcd3fd0db4f08f41b8789f"
+        },
+        {
+          "name": "epel10-rolling-2026.11.17-13f78f06ce28-image.json",
+          "type": "file",
+          "size": 6018,
+          "modified": "2026-11-17T14:06:39.210Z",
+          "href": "/metadata/records/preview/alma/epel10-rolling-2026.11.17-13f78f06ce28-image.json",
+          "sha256": "165783170b066fddd0987c5508ed4f6cd1808b1f681f7434bbd54d59209ac1a0"
         }
       ],
-      "total": 9
+      "total": 10
     },
     "/metadata/records/preview/centos-stream/": {
       "path": "/metadata/records/preview/centos-stream/",
@@ -32623,9 +32864,17 @@
           "modified": "2026-11-13T14:15:46.176Z",
           "href": "/metadata/records/preview/rocky/epel10-rolling-2026.11.13-13f78f06ce28-image.json",
           "sha256": "302aa33abe60a12e8be4f0cf8a21765bf80dde7a1638c6e101cf2eb75f549228"
+        },
+        {
+          "name": "epel10-rolling-2026.11.17-13f78f06ce28-image.json",
+          "type": "file",
+          "size": 6034,
+          "modified": "2026-11-17T14:05:11.242Z",
+          "href": "/metadata/records/preview/rocky/epel10-rolling-2026.11.17-13f78f06ce28-image.json",
+          "sha256": "b4ca117575c7929afbaf44c387b68be72058351397ea28b087a90536f2904273"
         }
       ],
-      "total": 9
+      "total": 10
     },
     "/metadata/records/preview/ubuntu/": {
       "path": "/metadata/records/preview/ubuntu/",
@@ -32856,9 +33105,9 @@
           "name": "epel10-stable-11.2-image.json",
           "type": "file",
           "size": 5836,
-          "modified": "2026-11-04T19:22:12.306Z",
+          "modified": "2026-11-17T14:03:47.997Z",
           "href": "/metadata/records/stable/alma/epel10-stable-11.2-image.json",
-          "sha256": "50df490c54ae820189b9dc7b6e681ed357f7cb399ffb28ec1dd9009932617eb8"
+          "sha256": "d4dfb3678bde70e522168e6043100c7cf19979e4c5e2414a10b7ffe41f8cdc3b"
         }
       ],
       "total": 1
@@ -32928,9 +33177,9 @@
           "name": "epel10-stable-11.2-image.json",
           "type": "file",
           "size": 5852,
-          "modified": "2026-11-04T19:25:25.061Z",
+          "modified": "2026-11-17T14:02:04.838Z",
           "href": "/metadata/records/stable/rocky/epel10-stable-11.2-image.json",
-          "sha256": "8db21170ca3f76c9472cc90ef9368a122222d74237185e5c74e1d9d85da242b5"
+          "sha256": "727ba507976e45d0d1bb22bd5d3ba4a4f7d91b8e49e1694e180a4aeb82624bbf"
         }
       ],
       "total": 1
@@ -33048,11 +33297,18 @@
           "name": "20261116140017384-7133b911",
           "type": "directory",
           "size": null,
-          "modified": "2026-11-16T14:02:02.714Z",
+          "modified": "2026-11-16T14:02:14.127Z",
           "href": "/metadata/runs/20261116140017384-7133b911/"
+        },
+        {
+          "name": "20261117140020648-b2f34103",
+          "type": "directory",
+          "size": null,
+          "modified": "2026-11-17T14:05:10.684Z",
+          "href": "/metadata/runs/20261117140020648-b2f34103/"
         }
       ],
-      "total": 13
+      "total": 14
     },
     "/metadata/runs/20261102234907061-b471536f/": {
       "path": "/metadata/runs/20261102234907061-b471536f/",
@@ -44993,9 +45249,33 @@
           "size": null,
           "modified": "2026-11-16T14:01:17.517Z",
           "href": "/metadata/runs/20261116140017384-7133b911/ubuntu-stable/"
+        },
+        {
+          "name": "release-card.html",
+          "type": "file",
+          "size": 6491,
+          "modified": "2026-11-16T14:02:13.108Z",
+          "href": "/metadata/runs/20261116140017384-7133b911/release-card.html",
+          "sha256": "98267751c0bbc3310eb2e1e92a73f3bcaa7dd37e4392763108deea392fc1d400"
+        },
+        {
+          "name": "release-card.png",
+          "type": "file",
+          "size": 311409,
+          "modified": "2026-11-16T14:02:14.056Z",
+          "href": "/metadata/runs/20261116140017384-7133b911/release-card.png",
+          "sha256": "afa9de91a305ae36dfe5e9a5d4f8d0d96e5ac1638159a98877df5ca47d5eb2b6"
+        },
+        {
+          "name": "release-report.json",
+          "type": "file",
+          "size": 11359,
+          "modified": "2026-11-16T14:02:14.128Z",
+          "href": "/metadata/runs/20261116140017384-7133b911/release-report.json",
+          "sha256": "ee5e34c02761fc80594aeba8461497e1c44e36b5ce523725e82cc52ee70bb29f"
         }
       ],
-      "total": 2
+      "total": 5
     },
     "/metadata/runs/20261116140017384-7133b911/ubuntu-rolling/": {
       "path": "/metadata/runs/20261116140017384-7133b911/ubuntu-rolling/",
@@ -45363,6 +45643,758 @@
             "org.eliware.gluster.package-candidate",
             "org.eliware.gluster.package-provenance",
             "org.eliware.gluster.deb-repository"
+          ]
+        }
+      }
+    },
+    "/metadata/runs/20261117140020648-b2f34103/": {
+      "path": "/metadata/runs/20261117140020648-b2f34103/",
+      "entries": [
+        {
+          "name": "epel10-rolling",
+          "type": "directory",
+          "size": null,
+          "modified": "2026-11-17T14:06:38.840Z",
+          "href": "/metadata/runs/20261117140020648-b2f34103/epel10-rolling/"
+        },
+        {
+          "name": "epel10-stable",
+          "type": "directory",
+          "size": null,
+          "modified": "2026-11-17T14:03:47.597Z",
+          "href": "/metadata/runs/20261117140020648-b2f34103/epel10-stable/"
+        }
+      ],
+      "total": 2
+    },
+    "/metadata/runs/20261117140020648-b2f34103/epel10-rolling/": {
+      "path": "/metadata/runs/20261117140020648-b2f34103/epel10-rolling/",
+      "entries": [
+        {
+          "name": "alma",
+          "type": "directory",
+          "size": null,
+          "modified": "2026-11-17T14:06:39.146Z",
+          "href": "/metadata/runs/20261117140020648-b2f34103/epel10-rolling/alma/"
+        },
+        {
+          "name": "rocky",
+          "type": "directory",
+          "size": null,
+          "modified": "2026-11-17T14:05:11.155Z",
+          "href": "/metadata/runs/20261117140020648-b2f34103/epel10-rolling/rocky/"
+        }
+      ],
+      "total": 2
+    },
+    "/metadata/runs/20261117140020648-b2f34103/epel10-rolling/alma/": {
+      "path": "/metadata/runs/20261117140020648-b2f34103/epel10-rolling/alma/",
+      "entries": [
+        {
+          "name": "assets",
+          "type": "directory",
+          "size": null,
+          "modified": "2026-11-17T14:06:38.931Z",
+          "href": "/metadata/runs/20261117140020648-b2f34103/epel10-rolling/alma/assets/"
+        },
+        {
+          "name": "checksums.sha256",
+          "type": "file",
+          "size": 187,
+          "modified": "2026-11-17T14:06:38.959Z",
+          "href": "/metadata/runs/20261117140020648-b2f34103/epel10-rolling/alma/checksums.sha256",
+          "sha256": "c24ce323277fc58e34f70718d7f677f89195746d336155ed29fa395f14f0763b"
+        },
+        {
+          "name": "provenance.json",
+          "type": "file",
+          "size": 1930,
+          "modified": "2026-11-17T14:06:38.964Z",
+          "href": "/metadata/runs/20261117140020648-b2f34103/epel10-rolling/alma/provenance.json",
+          "sha256": "75cd3699dc816a6080d4b99ee2b29e0bf65532891c9baa82c7c5d4a40b1061ff"
+        },
+        {
+          "name": "provenance.json.asc",
+          "type": "file",
+          "size": 228,
+          "modified": "2026-11-17T14:06:39.062Z",
+          "href": "/metadata/runs/20261117140020648-b2f34103/epel10-rolling/alma/provenance.json.asc",
+          "sha256": "75e11f6b66eae876a290e0505fb706b12d1001442a37c3ce8e17993be0e7b822"
+        }
+      ],
+      "total": 4,
+      "provenance": {
+        "schema": 1,
+        "generated": "2026-11-17T14:06:38Z",
+        "record": {
+          "kind": "image",
+          "run_id": "20261117140020648-b2f34103",
+          "lane": "epel10-rolling",
+          "channel": "preview",
+          "version": "2026.11.17-13f78f06ce28",
+          "distribution": "alma",
+          "image": "ghcr.io/eliware/alma10-gluster:2026.11.17-13f78f06ce28",
+          "digest": "sha256:20b15e134a9f0f775a099ead8011e27b759e562992fd43727d1d0937d7ff42e1",
+          "package_provenance": "https://glusterfs.eliware.org/el10/x86_64/previews/epel10-rolling-2026.11.13-13f78f06ce28/provenance.json",
+          "package_repository": "https://glusterfs.eliware.org/el10/x86_64/previews/epel10-rolling-2026.11.13-13f78f06ce28/",
+          "package_metadata_sha256": "832c6323811de81717e0e6af3c8e70171fad4e6507cba26e873f9e38e78dfb3d",
+          "source": {
+            "ref": "devel",
+            "commit": "13f78f06ce28eb0e29a0776bfc39c890c9e6e2d5"
+          },
+          "packaging_commit": "349508abbaa1bdc466fc508ed708c3d07e6d5dc9",
+          "base_image": "almalinux:10",
+          "base_image_digest": "sha256:ccf217024b3d5e268cc208d1edb384a1edee6359370cf6ea1ecbc42254e57375",
+          "workflow": null,
+          "workflow_run_id": "20261117140020648-b2f34103",
+          "build_log": "/mnt/pvc/gluster-build-workspaces/conductor/20261117140020648-b2f34103/epel10-rolling/logs/image-alma.log",
+          "workflow_url": "https://github.com/eliware/glusterfs-packaging/actions/runs/20261117140020648-b2f34103"
+        },
+        "files": [
+          {
+            "label": "container-validation",
+            "path": "assets/container-validation.json",
+            "sha256": "4683377783860f38c6a4d29b7d7783eb1b6ee130e8b7f2ad9c2600ea8a4a1dd6",
+            "size": 1891
+          },
+          {
+            "label": "image-build-log",
+            "path": "assets/image-alma.log",
+            "sha256": "db14b4692a0f18fc4c322fd037297a9479947a0ecd84c96d260e4677321482f5",
+            "size": 44917
+          }
+        ],
+        "checksums_sha256": "c24ce323277fc58e34f70718d7f677f89195746d336155ed29fa395f14f0763b",
+        "metadata_version": "0.1.0"
+      }
+    },
+    "/metadata/runs/20261117140020648-b2f34103/epel10-rolling/alma/assets/": {
+      "path": "/metadata/runs/20261117140020648-b2f34103/epel10-rolling/alma/assets/",
+      "entries": [
+        {
+          "name": "container-validation.json",
+          "type": "file",
+          "size": 1891,
+          "modified": "2026-11-17T14:06:38.920Z",
+          "href": "/metadata/runs/20261117140020648-b2f34103/epel10-rolling/alma/assets/container-validation.json",
+          "sha256": "4683377783860f38c6a4d29b7d7783eb1b6ee130e8b7f2ad9c2600ea8a4a1dd6"
+        },
+        {
+          "name": "image-alma.log",
+          "type": "file",
+          "size": 44917,
+          "modified": "2026-11-17T14:06:38.941Z",
+          "href": "/metadata/runs/20261117140020648-b2f34103/epel10-rolling/alma/assets/image-alma.log",
+          "sha256": "db14b4692a0f18fc4c322fd037297a9479947a0ecd84c96d260e4677321482f5"
+        }
+      ],
+      "total": 2,
+      "container-validation": {
+        "run_id": "20261117140020648-b2f34103",
+        "generated": "2026-11-17T14:06:33Z",
+        "repository_integrity": {
+          "status": "passed",
+          "detail": "published package metadata and image inputs verified"
+        },
+        "provenance_verification": {
+          "status": "passed",
+          "detail": "provenance generated, signed, and independently verified"
+        },
+        "checks": {
+          "install": {
+            "status": "passed"
+          },
+          "cli_available": {
+            "status": "passed"
+          },
+          "volume_create_mount": {
+            "status": "passed"
+          },
+          "file_lifecycle": {
+            "status": "passed"
+          },
+          "volume_unmount_delete": {
+            "status": "passed"
+          },
+          "service_shutdown": {
+            "status": "passed"
+          },
+          "image_labels": {
+            "status": "passed"
+          }
+        },
+        "distributions": [
+          {
+            "id": "almalinux-10",
+            "label": "AlmaLinux 10",
+            "container_core": {
+              "status": "passed",
+              "detail": "updated; volume stop: smoke: success; volume delete: smoke: success"
+            },
+            "repository_integrity": {
+              "status": "passed",
+              "detail": "published package metadata and image inputs verified"
+            },
+            "provenance_verification": {
+              "status": "passed",
+              "detail": "provenance generated, signed, and independently verified"
+            }
+          }
+        ],
+        "metadata_version": "0.1.0",
+        "image_labels": {
+          "status": "passed",
+          "fields": [
+            "org.opencontainers.image.version",
+            "org.opencontainers.image.revision",
+            "org.eliware.gluster.base-image.digest",
+            "org.eliware.gluster.base-image.reference",
+            "org.eliware.gluster.source-ref",
+            "org.eliware.gluster.source-commit",
+            "org.eliware.gluster.distribution",
+            "org.eliware.gluster.package-candidate",
+            "org.eliware.gluster.package-provenance",
+            "org.eliware.gluster.rpm-repository",
+            "org.eliware.gluster.rpm-metadata-sha256"
+          ]
+        }
+      }
+    },
+    "/metadata/runs/20261117140020648-b2f34103/epel10-rolling/rocky/": {
+      "path": "/metadata/runs/20261117140020648-b2f34103/epel10-rolling/rocky/",
+      "entries": [
+        {
+          "name": "assets",
+          "type": "directory",
+          "size": null,
+          "modified": "2026-11-17T14:05:10.818Z",
+          "href": "/metadata/runs/20261117140020648-b2f34103/epel10-rolling/rocky/assets/"
+        },
+        {
+          "name": "checksums.sha256",
+          "type": "file",
+          "size": 188,
+          "modified": "2026-11-17T14:05:10.853Z",
+          "href": "/metadata/runs/20261117140020648-b2f34103/epel10-rolling/rocky/checksums.sha256",
+          "sha256": "abeaeb6d268f2c48c046665775cd39033d9d2517cb047c4c85dc136a21aab7c2"
+        },
+        {
+          "name": "provenance.json",
+          "type": "file",
+          "size": 1946,
+          "modified": "2026-11-17T14:05:10.861Z",
+          "href": "/metadata/runs/20261117140020648-b2f34103/epel10-rolling/rocky/provenance.json",
+          "sha256": "031687897c7d8730ef7641cdca64f0a6cffda074785c7fd6dd4a856889a486aa"
+        },
+        {
+          "name": "provenance.json.asc",
+          "type": "file",
+          "size": 228,
+          "modified": "2026-11-17T14:05:11.002Z",
+          "href": "/metadata/runs/20261117140020648-b2f34103/epel10-rolling/rocky/provenance.json.asc",
+          "sha256": "4656ed1fac127225ed1d3198611e9b63e2196fb688ae44275a6e9c066ac2f4ab"
+        }
+      ],
+      "total": 4,
+      "provenance": {
+        "schema": 1,
+        "generated": "2026-11-17T14:05:10Z",
+        "record": {
+          "kind": "image",
+          "run_id": "20261117140020648-b2f34103",
+          "lane": "epel10-rolling",
+          "channel": "preview",
+          "version": "2026.11.17-13f78f06ce28",
+          "distribution": "rocky",
+          "image": "ghcr.io/eliware/rocky10-gluster:2026.11.17-13f78f06ce28",
+          "digest": "sha256:52ccaa0b2b94ac0ce91137e23c786e3e3b446c50196ae92cfe8f64c08e41e2e9",
+          "package_provenance": "https://glusterfs.eliware.org/el10/x86_64/previews/epel10-rolling-2026.11.13-13f78f06ce28/provenance.json",
+          "package_repository": "https://glusterfs.eliware.org/el10/x86_64/previews/epel10-rolling-2026.11.13-13f78f06ce28/",
+          "package_metadata_sha256": "832c6323811de81717e0e6af3c8e70171fad4e6507cba26e873f9e38e78dfb3d",
+          "source": {
+            "ref": "devel",
+            "commit": "13f78f06ce28eb0e29a0776bfc39c890c9e6e2d5"
+          },
+          "packaging_commit": "349508abbaa1bdc466fc508ed708c3d07e6d5dc9",
+          "base_image": "rockylinux/rockylinux:10",
+          "base_image_digest": "sha256:d24beedc58f79b9e0e9289fedaa4fcbcbe692b1438883a86f177fd7c51053ca8",
+          "workflow": null,
+          "workflow_run_id": "20261117140020648-b2f34103",
+          "build_log": "/mnt/pvc/gluster-build-workspaces/conductor/20261117140020648-b2f34103/epel10-rolling/logs/image-rocky.log",
+          "workflow_url": "https://github.com/eliware/glusterfs-packaging/actions/runs/20261117140020648-b2f34103"
+        },
+        "files": [
+          {
+            "label": "container-validation",
+            "path": "assets/container-validation.json",
+            "sha256": "2bc5b82535c9f16c4d34dc62ad3f1dd0525d7d76258f74a01d390e75e050ff17",
+            "size": 1889
+          },
+          {
+            "label": "image-build-log",
+            "path": "assets/image-rocky.log",
+            "sha256": "6cecf42b6abbeb09e5444c0f3ae8c2237eb5274d84801f395038fd2b4207e178",
+            "size": 47237
+          }
+        ],
+        "checksums_sha256": "abeaeb6d268f2c48c046665775cd39033d9d2517cb047c4c85dc136a21aab7c2",
+        "metadata_version": "0.1.0"
+      }
+    },
+    "/metadata/runs/20261117140020648-b2f34103/epel10-rolling/rocky/assets/": {
+      "path": "/metadata/runs/20261117140020648-b2f34103/epel10-rolling/rocky/assets/",
+      "entries": [
+        {
+          "name": "container-validation.json",
+          "type": "file",
+          "size": 1889,
+          "modified": "2026-11-17T14:05:10.807Z",
+          "href": "/metadata/runs/20261117140020648-b2f34103/epel10-rolling/rocky/assets/container-validation.json",
+          "sha256": "2bc5b82535c9f16c4d34dc62ad3f1dd0525d7d76258f74a01d390e75e050ff17"
+        },
+        {
+          "name": "image-rocky.log",
+          "type": "file",
+          "size": 47237,
+          "modified": "2026-11-17T14:05:10.828Z",
+          "href": "/metadata/runs/20261117140020648-b2f34103/epel10-rolling/rocky/assets/image-rocky.log",
+          "sha256": "6cecf42b6abbeb09e5444c0f3ae8c2237eb5274d84801f395038fd2b4207e178"
+        }
+      ],
+      "total": 2,
+      "container-validation": {
+        "run_id": "20261117140020648-b2f34103",
+        "generated": "2026-11-17T14:05:05Z",
+        "repository_integrity": {
+          "status": "passed",
+          "detail": "published package metadata and image inputs verified"
+        },
+        "provenance_verification": {
+          "status": "passed",
+          "detail": "provenance generated, signed, and independently verified"
+        },
+        "checks": {
+          "install": {
+            "status": "passed"
+          },
+          "cli_available": {
+            "status": "passed"
+          },
+          "volume_create_mount": {
+            "status": "passed"
+          },
+          "file_lifecycle": {
+            "status": "passed"
+          },
+          "volume_unmount_delete": {
+            "status": "passed"
+          },
+          "service_shutdown": {
+            "status": "passed"
+          },
+          "image_labels": {
+            "status": "passed"
+          }
+        },
+        "distributions": [
+          {
+            "id": "rocky-10",
+            "label": "Rocky Linux 10",
+            "container_core": {
+              "status": "passed",
+              "detail": "updated; volume stop: smoke: success; volume delete: smoke: success"
+            },
+            "repository_integrity": {
+              "status": "passed",
+              "detail": "published package metadata and image inputs verified"
+            },
+            "provenance_verification": {
+              "status": "passed",
+              "detail": "provenance generated, signed, and independently verified"
+            }
+          }
+        ],
+        "metadata_version": "0.1.0",
+        "image_labels": {
+          "status": "passed",
+          "fields": [
+            "org.opencontainers.image.version",
+            "org.opencontainers.image.revision",
+            "org.eliware.gluster.base-image.digest",
+            "org.eliware.gluster.base-image.reference",
+            "org.eliware.gluster.source-ref",
+            "org.eliware.gluster.source-commit",
+            "org.eliware.gluster.distribution",
+            "org.eliware.gluster.package-candidate",
+            "org.eliware.gluster.package-provenance",
+            "org.eliware.gluster.rpm-repository",
+            "org.eliware.gluster.rpm-metadata-sha256"
+          ]
+        }
+      }
+    },
+    "/metadata/runs/20261117140020648-b2f34103/epel10-stable/": {
+      "path": "/metadata/runs/20261117140020648-b2f34103/epel10-stable/",
+      "entries": [
+        {
+          "name": "alma",
+          "type": "directory",
+          "size": null,
+          "modified": "2026-11-17T14:03:47.927Z",
+          "href": "/metadata/runs/20261117140020648-b2f34103/epel10-stable/alma/"
+        },
+        {
+          "name": "rocky",
+          "type": "directory",
+          "size": null,
+          "modified": "2026-11-17T14:02:04.786Z",
+          "href": "/metadata/runs/20261117140020648-b2f34103/epel10-stable/rocky/"
+        }
+      ],
+      "total": 2
+    },
+    "/metadata/runs/20261117140020648-b2f34103/epel10-stable/alma/": {
+      "path": "/metadata/runs/20261117140020648-b2f34103/epel10-stable/alma/",
+      "entries": [
+        {
+          "name": "assets",
+          "type": "directory",
+          "size": null,
+          "modified": "2026-11-17T14:03:47.691Z",
+          "href": "/metadata/runs/20261117140020648-b2f34103/epel10-stable/alma/assets/"
+        },
+        {
+          "name": "checksums.sha256",
+          "type": "file",
+          "size": 187,
+          "modified": "2026-11-17T14:03:47.737Z",
+          "href": "/metadata/runs/20261117140020648-b2f34103/epel10-stable/alma/checksums.sha256",
+          "sha256": "20b17695ea70ab90d8182b8e01b5974fe13c2a2a2f124dfda55c2a432d271623"
+        },
+        {
+          "name": "provenance.json",
+          "type": "file",
+          "size": 1807,
+          "modified": "2026-11-17T14:03:47.743Z",
+          "href": "/metadata/runs/20261117140020648-b2f34103/epel10-stable/alma/provenance.json",
+          "sha256": "50eddd839877ad36f8953ab7516147c973831918dec05839c53fe985c79a409d"
+        },
+        {
+          "name": "provenance.json.asc",
+          "type": "file",
+          "size": 228,
+          "modified": "2026-11-17T14:03:47.838Z",
+          "href": "/metadata/runs/20261117140020648-b2f34103/epel10-stable/alma/provenance.json.asc",
+          "sha256": "5fe6a8973cb9d2934abe57cc935e596c885def8e4a3acb86f2cde0767b80a90d"
+        }
+      ],
+      "total": 4,
+      "provenance": {
+        "schema": 1,
+        "generated": "2026-11-17T14:03:47Z",
+        "record": {
+          "kind": "image",
+          "run_id": "20261117140020648-b2f34103",
+          "lane": "epel10-stable",
+          "channel": "stable",
+          "version": "11.2",
+          "distribution": "alma",
+          "image": "ghcr.io/eliware/alma10-gluster:11.2",
+          "digest": "sha256:6892225e3b01871f90746c5134ff0027c5fef8b272f62ac07f47fa26e70f0b78",
+          "package_provenance": "https://glusterfs.eliware.org/el10/x86_64/stable/provenance.json",
+          "package_repository": "https://glusterfs.eliware.org/el10/x86_64/stable/",
+          "package_metadata_sha256": "001e6475818c779587723f1dca5c5019eea728b8d431b11185991c533222832e",
+          "source": {
+            "ref": "v11.2",
+            "commit": "15d3c0f8435814fdb7242a8a82fa5db140013d0a"
+          },
+          "packaging_commit": "349508abbaa1bdc466fc508ed708c3d07e6d5dc9",
+          "base_image": "almalinux:10",
+          "base_image_digest": "sha256:ccf217024b3d5e268cc208d1edb384a1edee6359370cf6ea1ecbc42254e57375",
+          "workflow": null,
+          "workflow_run_id": "20261117140020648-b2f34103",
+          "build_log": "/mnt/pvc/gluster-build-workspaces/conductor/20261117140020648-b2f34103/epel10-stable/logs/image-alma.log",
+          "workflow_url": "https://github.com/eliware/glusterfs-packaging/actions/runs/20261117140020648-b2f34103"
+        },
+        "files": [
+          {
+            "label": "container-validation",
+            "path": "assets/container-validation.json",
+            "sha256": "1996f1ed242e21afa42e275359c5a6130c9bcc21a2d4cdf3d0f2fe706be90e49",
+            "size": 1891
+          },
+          {
+            "label": "image-build-log",
+            "path": "assets/image-alma.log",
+            "sha256": "7c08c3dcbb69d326e985bb11669f781ad06c69b936cacc51bf3045cc0bb6718d",
+            "size": 45996
+          }
+        ],
+        "checksums_sha256": "20b17695ea70ab90d8182b8e01b5974fe13c2a2a2f124dfda55c2a432d271623",
+        "metadata_version": "0.1.0"
+      }
+    },
+    "/metadata/runs/20261117140020648-b2f34103/epel10-stable/alma/assets/": {
+      "path": "/metadata/runs/20261117140020648-b2f34103/epel10-stable/alma/assets/",
+      "entries": [
+        {
+          "name": "container-validation.json",
+          "type": "file",
+          "size": 1891,
+          "modified": "2026-11-17T14:03:47.680Z",
+          "href": "/metadata/runs/20261117140020648-b2f34103/epel10-stable/alma/assets/container-validation.json",
+          "sha256": "1996f1ed242e21afa42e275359c5a6130c9bcc21a2d4cdf3d0f2fe706be90e49"
+        },
+        {
+          "name": "image-alma.log",
+          "type": "file",
+          "size": 45996,
+          "modified": "2026-11-17T14:03:47.704Z",
+          "href": "/metadata/runs/20261117140020648-b2f34103/epel10-stable/alma/assets/image-alma.log",
+          "sha256": "7c08c3dcbb69d326e985bb11669f781ad06c69b936cacc51bf3045cc0bb6718d"
+        }
+      ],
+      "total": 2,
+      "container-validation": {
+        "run_id": "20261117140020648-b2f34103",
+        "generated": "2026-11-17T14:03:38Z",
+        "repository_integrity": {
+          "status": "passed",
+          "detail": "published package metadata and image inputs verified"
+        },
+        "provenance_verification": {
+          "status": "passed",
+          "detail": "provenance generated, signed, and independently verified"
+        },
+        "checks": {
+          "install": {
+            "status": "passed"
+          },
+          "cli_available": {
+            "status": "passed"
+          },
+          "volume_create_mount": {
+            "status": "passed"
+          },
+          "file_lifecycle": {
+            "status": "passed"
+          },
+          "volume_unmount_delete": {
+            "status": "passed"
+          },
+          "service_shutdown": {
+            "status": "passed"
+          },
+          "image_labels": {
+            "status": "passed"
+          }
+        },
+        "distributions": [
+          {
+            "id": "almalinux-10",
+            "label": "AlmaLinux 10",
+            "container_core": {
+              "status": "passed",
+              "detail": "updated; volume stop: smoke: success; volume delete: smoke: success"
+            },
+            "repository_integrity": {
+              "status": "passed",
+              "detail": "published package metadata and image inputs verified"
+            },
+            "provenance_verification": {
+              "status": "passed",
+              "detail": "provenance generated, signed, and independently verified"
+            }
+          }
+        ],
+        "metadata_version": "0.1.0",
+        "image_labels": {
+          "status": "passed",
+          "fields": [
+            "org.opencontainers.image.version",
+            "org.opencontainers.image.revision",
+            "org.eliware.gluster.base-image.digest",
+            "org.eliware.gluster.base-image.reference",
+            "org.eliware.gluster.source-ref",
+            "org.eliware.gluster.source-commit",
+            "org.eliware.gluster.distribution",
+            "org.eliware.gluster.package-candidate",
+            "org.eliware.gluster.package-provenance",
+            "org.eliware.gluster.rpm-repository",
+            "org.eliware.gluster.rpm-metadata-sha256"
+          ]
+        }
+      }
+    },
+    "/metadata/runs/20261117140020648-b2f34103/epel10-stable/rocky/": {
+      "path": "/metadata/runs/20261117140020648-b2f34103/epel10-stable/rocky/",
+      "entries": [
+        {
+          "name": "assets",
+          "type": "directory",
+          "size": null,
+          "modified": "2026-11-17T14:02:04.569Z",
+          "href": "/metadata/runs/20261117140020648-b2f34103/epel10-stable/rocky/assets/"
+        },
+        {
+          "name": "checksums.sha256",
+          "type": "file",
+          "size": 188,
+          "modified": "2026-11-17T14:02:04.597Z",
+          "href": "/metadata/runs/20261117140020648-b2f34103/epel10-stable/rocky/checksums.sha256",
+          "sha256": "f51489a990c68f14ba6d3c158236b5edbed1aa89fb4624d1c587240d1d9522a4"
+        },
+        {
+          "name": "provenance.json",
+          "type": "file",
+          "size": 1823,
+          "modified": "2026-11-17T14:02:04.602Z",
+          "href": "/metadata/runs/20261117140020648-b2f34103/epel10-stable/rocky/provenance.json",
+          "sha256": "30b13ee7fd0a1fc9c83ae9c59f15dafe42c17739769eb1ee1093959fc1d69bb5"
+        },
+        {
+          "name": "provenance.json.asc",
+          "type": "file",
+          "size": 228,
+          "modified": "2026-11-17T14:02:04.707Z",
+          "href": "/metadata/runs/20261117140020648-b2f34103/epel10-stable/rocky/provenance.json.asc",
+          "sha256": "74c1f2f3d0df743aa1315f9808b057afad756b1613a92c96d5de4c199c4a7322"
+        }
+      ],
+      "total": 4,
+      "provenance": {
+        "schema": 1,
+        "generated": "2026-11-17T14:02:04Z",
+        "record": {
+          "kind": "image",
+          "run_id": "20261117140020648-b2f34103",
+          "lane": "epel10-stable",
+          "channel": "stable",
+          "version": "11.2",
+          "distribution": "rocky",
+          "image": "ghcr.io/eliware/rocky10-gluster:11.2",
+          "digest": "sha256:2b5a77f54d01e5820a442e2c294d4ffcdaffcff4679a8517f4106b79d52630ad",
+          "package_provenance": "https://glusterfs.eliware.org/el10/x86_64/stable/provenance.json",
+          "package_repository": "https://glusterfs.eliware.org/el10/x86_64/stable/",
+          "package_metadata_sha256": "001e6475818c779587723f1dca5c5019eea728b8d431b11185991c533222832e",
+          "source": {
+            "ref": "v11.2",
+            "commit": "15d3c0f8435814fdb7242a8a82fa5db140013d0a"
+          },
+          "packaging_commit": "349508abbaa1bdc466fc508ed708c3d07e6d5dc9",
+          "base_image": "rockylinux/rockylinux:10",
+          "base_image_digest": "sha256:d24beedc58f79b9e0e9289fedaa4fcbcbe692b1438883a86f177fd7c51053ca8",
+          "workflow": null,
+          "workflow_run_id": "20261117140020648-b2f34103",
+          "build_log": "/mnt/pvc/gluster-build-workspaces/conductor/20261117140020648-b2f34103/epel10-stable/logs/image-rocky.log",
+          "workflow_url": "https://github.com/eliware/glusterfs-packaging/actions/runs/20261117140020648-b2f34103"
+        },
+        "files": [
+          {
+            "label": "container-validation",
+            "path": "assets/container-validation.json",
+            "sha256": "42f4fb9ac3fc98a4974eeb2132f2d56c23b8e33fe4fe3044a301f4a7d6a7bb49",
+            "size": 1889
+          },
+          {
+            "label": "image-build-log",
+            "path": "assets/image-rocky.log",
+            "sha256": "78ac2975606d3b26c74b211fe3ed6601f780f31da1e1a28ac768708e437e06f5",
+            "size": 48715
+          }
+        ],
+        "checksums_sha256": "f51489a990c68f14ba6d3c158236b5edbed1aa89fb4624d1c587240d1d9522a4",
+        "metadata_version": "0.1.0"
+      }
+    },
+    "/metadata/runs/20261117140020648-b2f34103/epel10-stable/rocky/assets/": {
+      "path": "/metadata/runs/20261117140020648-b2f34103/epel10-stable/rocky/assets/",
+      "entries": [
+        {
+          "name": "container-validation.json",
+          "type": "file",
+          "size": 1889,
+          "modified": "2026-11-17T14:02:04.559Z",
+          "href": "/metadata/runs/20261117140020648-b2f34103/epel10-stable/rocky/assets/container-validation.json",
+          "sha256": "42f4fb9ac3fc98a4974eeb2132f2d56c23b8e33fe4fe3044a301f4a7d6a7bb49"
+        },
+        {
+          "name": "image-rocky.log",
+          "type": "file",
+          "size": 48715,
+          "modified": "2026-11-17T14:02:04.578Z",
+          "href": "/metadata/runs/20261117140020648-b2f34103/epel10-stable/rocky/assets/image-rocky.log",
+          "sha256": "78ac2975606d3b26c74b211fe3ed6601f780f31da1e1a28ac768708e437e06f5"
+        }
+      ],
+      "total": 2,
+      "container-validation": {
+        "run_id": "20261117140020648-b2f34103",
+        "generated": "2026-11-17T14:01:53Z",
+        "repository_integrity": {
+          "status": "passed",
+          "detail": "published package metadata and image inputs verified"
+        },
+        "provenance_verification": {
+          "status": "passed",
+          "detail": "provenance generated, signed, and independently verified"
+        },
+        "checks": {
+          "install": {
+            "status": "passed"
+          },
+          "cli_available": {
+            "status": "passed"
+          },
+          "volume_create_mount": {
+            "status": "passed"
+          },
+          "file_lifecycle": {
+            "status": "passed"
+          },
+          "volume_unmount_delete": {
+            "status": "passed"
+          },
+          "service_shutdown": {
+            "status": "passed"
+          },
+          "image_labels": {
+            "status": "passed"
+          }
+        },
+        "distributions": [
+          {
+            "id": "rocky-10",
+            "label": "Rocky Linux 10",
+            "container_core": {
+              "status": "passed",
+              "detail": "updated; volume stop: smoke: success; volume delete: smoke: success"
+            },
+            "repository_integrity": {
+              "status": "passed",
+              "detail": "published package metadata and image inputs verified"
+            },
+            "provenance_verification": {
+              "status": "passed",
+              "detail": "provenance generated, signed, and independently verified"
+            }
+          }
+        ],
+        "metadata_version": "0.1.0",
+        "image_labels": {
+          "status": "passed",
+          "fields": [
+            "org.opencontainers.image.version",
+            "org.opencontainers.image.revision",
+            "org.eliware.gluster.base-image.digest",
+            "org.eliware.gluster.base-image.reference",
+            "org.eliware.gluster.source-ref",
+            "org.eliware.gluster.source-commit",
+            "org.eliware.gluster.distribution",
+            "org.eliware.gluster.package-candidate",
+            "org.eliware.gluster.package-provenance",
+            "org.eliware.gluster.rpm-repository",
+            "org.eliware.gluster.rpm-metadata-sha256"
           ]
         }
       }

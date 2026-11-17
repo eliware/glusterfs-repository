@@ -2,7 +2,7 @@
   "channel": "stable",
   "distribution": "rocky",
   "version": "11.2",
-  "built": "2026-11-04T19:25:24.898Z",
+  "built": "2026-11-17T14:02:04.790Z",
   "candidate": "epel10-stable-11.2",
   "source": {
     "ref": "v11.2",
@@ -10,7 +10,7 @@
   },
   "validation": {
     "run_id": "20260818054246765-0d8a45d9",
-    "generated": "2026-11-04T19:18:19Z",
+    "generated": "2026-11-17T14:00:28Z",
     "package_format": "rpm",
     "repository_integrity": {
       "status": "not-tested",
@@ -107,8 +107,8 @@
     }
   },
   "container_validation": {
-    "run_id": "20261104191812523-724605a3",
-    "generated": "2026-11-04T19:24:43Z",
+    "run_id": "20261117140020648-b2f34103",
+    "generated": "2026-11-17T14:01:53Z",
     "repository_integrity": {
       "status": "passed",
       "detail": "published package metadata and image inputs verified"
@@ -185,7 +185,7 @@
     "detail": "generated and verified by the conductor after publication"
   },
   "provenance": {
-    "url": "/metadata/runs/20261104191812523-724605a3/epel10-stable/rocky/provenance.json"
+    "url": "/metadata/runs/20261117140020648-b2f34103/epel10-stable/rocky/provenance.json"
   },
   "rpm_repo": "/el10/x86_64/stable/",
   "image": {
@@ -195,14 +195,14 @@
     "base_image": "rockylinux/rockylinux:10",
     "exact_tag": "11.2",
     "reference": "ghcr.io/eliware/rocky10-gluster:11.2",
-    "digest": "sha256:6fba184a373a156e3e153e888c6d9ea01adf6ac06d0b4f2da2a00eb94cfcfcfd",
+    "digest": "sha256:2b5a77f54d01e5820a442e2c294d4ffcdaffcff4679a8517f4106b79d52630ad",
     "aliases": [],
     "base": {
-      "digest": "sha256:827d37bc128288ccf160ee318bb3cb92d591164cb217e92f8bc61e3982ae1834",
-      "short": "827d37bc"
+      "digest": "sha256:d24beedc58f79b9e0e9289fedaa4fcbcbe692b1438883a86f177fd7c51053ca8",
+      "short": "d24beedc"
     },
     "provenance": {
-      "url": "/metadata/runs/20261104191812523-724605a3/epel10-stable/rocky/provenance.json"
+      "url": "/metadata/runs/20261117140020648-b2f34103/epel10-stable/rocky/provenance.json"
     },
     "package_provenance": {
       "url": "https://glusterfs.eliware.org/el10/x86_64/stable/provenance.json"
