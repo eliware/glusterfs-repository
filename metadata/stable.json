@@ -1,16 +1,16 @@
 {
   "channel": "stable",
-  "distribution": "centos-stream",
+  "distribution": "ubuntu",
   "version": "11.2",
-  "built": "2026-11-19T14:02:24.630Z",
-  "candidate": "epel10-stable-11.2",
+  "built": "2026-11-20T14:01:09.760Z",
+  "candidate": "ubuntu-stable-11.2",
   "source": {
     "ref": "v11.2",
     "commit": "15d3c0f8435814fdb7242a8a82fa5db140013d0a"
   },
   "validation": {
     "metadata_version": "0.1.0",
-    "generated": "2026-11-19T14:04:11.819Z",
+    "generated": "2026-11-20T14:02:00.900Z",
     "package_format": "multi-platform",
     "repository_integrity": {
       "status": "passed",
@@ -138,8 +138,8 @@
     ]
   },
   "container_validation": {
-    "run_id": "20261119140018517-7997343e",
-    "generated": "2026-11-19T14:01:59Z",
+    "run_id": "20261120140017973-fdf2fc10",
+    "generated": "2026-11-20T14:01:02Z",
     "repository_integrity": {
       "status": "passed",
       "detail": "published package metadata and image inputs verified"
@@ -173,11 +173,11 @@
     },
     "distributions": [
       {
-        "id": "centos-stream-10",
-        "label": "CentOS Stream 10",
+        "id": "ubuntu-noble",
+        "label": "Ubuntu 24.04 (noble)",
         "container_core": {
           "status": "passed",
-          "detail": "updated; volume stop: smoke: success; volume delete: smoke: success"
+          "detail": "volume start: smoke: success; volume stop: smoke: success; volume delete: smoke: success"
         },
         "repository_integrity": {
           "status": "passed",
@@ -202,8 +202,7 @@
         "org.eliware.gluster.distribution",
         "org.eliware.gluster.package-candidate",
         "org.eliware.gluster.package-provenance",
-        "org.eliware.gluster.rpm-repository",
-        "org.eliware.gluster.rpm-metadata-sha256"
+        "org.eliware.gluster.deb-repository"
       ]
     }
   },
@@ -216,27 +215,29 @@
     "detail": "stable RPM and DEB provenance validations reconciled"
   },
   "provenance": {
-    "url": "/metadata/runs/20261119140018517-7997343e/epel10-stable/centos-stream/provenance.json"
+    "url": "/metadata/runs/20261120140017973-fdf2fc10/ubuntu-stable/ubuntu/provenance.json"
   },
-  "rpm_repo": "/el10/x86_64/stable/",
+  "deb_repos": {
+    "ubuntu": "/ubuntu/noble/amd64/stable/"
+  },
   "image": {
-    "repository": "ghcr.io/eliware/centos10-gluster",
-    "distribution": "centos-stream",
-    "package_candidate": "epel10-stable-11.2",
-    "base_image": "quay.io/centos/centos:stream10",
+    "repository": "ghcr.io/eliware/ubuntu24-gluster",
+    "distribution": "ubuntu",
+    "package_candidate": "ubuntu-stable-11.2",
+    "base_image": "ubuntu:24.04",
     "exact_tag": "11.2",
-    "reference": "ghcr.io/eliware/centos10-gluster:11.2",
-    "digest": "sha256:fbf012a4f2449f84c98b89a72a81f5d354b717506443ae573d881370481d532e",
+    "reference": "ghcr.io/eliware/ubuntu24-gluster:11.2",
+    "digest": "sha256:83883e0c504dafbad3555fa192a509be62cb744d730abf9eeba9c59b023bebf1",
     "aliases": [],
     "base": {
-      "digest": "sha256:a266f7ae08c4b3f5d0eaaa8a500201d40d260ecdfa81e49991fe8d27699d69e9",
-      "short": "a266f7ae"
+      "digest": "sha256:9c7f200c07e3d4a03e7249d2c16bf66a51120fb876aa2242cf31451412543289",
+      "short": "9c7f200c"
     },
     "provenance": {
-      "url": "/metadata/runs/20261119140018517-7997343e/epel10-stable/centos-stream/provenance.json"
+      "url": "/metadata/runs/20261120140017973-fdf2fc10/ubuntu-stable/ubuntu/provenance.json"
     },
     "package_provenance": {
-      "url": "https://glusterfs.eliware.org/el10/x86_64/stable/provenance.json"
+      "url": "https://glusterfs.eliware.org/ubuntu/noble/amd64/stable/provenance.json"
     }
   },
   "metadata_version": "0.1.0"
