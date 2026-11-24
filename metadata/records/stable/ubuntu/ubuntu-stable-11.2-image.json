@@ -2,7 +2,7 @@
   "channel": "stable",
   "distribution": "ubuntu",
   "version": "11.2",
-  "built": "2026-11-20T14:01:09.760Z",
+  "built": "2026-11-24T14:59:47.513Z",
   "candidate": "ubuntu-stable-11.2",
   "source": {
     "ref": "v11.2",
@@ -10,7 +10,7 @@
   },
   "validation": {
     "run_id": "20260818054246765-0d8a45d9",
-    "generated": "2026-11-20T14:00:26Z",
+    "generated": "2026-11-24T14:59:21Z",
     "package_format": "deb",
     "repository_integrity": {
       "status": "not-tested",
@@ -65,8 +65,8 @@
     }
   },
   "container_validation": {
-    "run_id": "20261120140017973-fdf2fc10",
-    "generated": "2026-11-20T14:01:02Z",
+    "run_id": "20261124145915714-197450f1",
+    "generated": "2026-11-24T14:59:41Z",
     "repository_integrity": {
       "status": "passed",
       "detail": "published package metadata and image inputs verified"
@@ -142,7 +142,7 @@
     "detail": "generated and verified by the conductor after publication"
   },
   "provenance": {
-    "url": "/metadata/runs/20261120140017973-fdf2fc10/ubuntu-stable/ubuntu/provenance.json"
+    "url": "/metadata/runs/20261124145915714-197450f1/ubuntu-stable/ubuntu/provenance.json"
   },
   "deb_repos": {
     "ubuntu": "/ubuntu/noble/amd64/stable/"
@@ -154,14 +154,14 @@
     "base_image": "ubuntu:24.04",
     "exact_tag": "11.2",
     "reference": "ghcr.io/eliware/ubuntu24-gluster:11.2",
-    "digest": "sha256:83883e0c504dafbad3555fa192a509be62cb744d730abf9eeba9c59b023bebf1",
+    "digest": "sha256:956b4138836a6ff69e46e5d0a6dd1e7c7a61ceb16744949b015144576e13246a",
     "aliases": [],
     "base": {
-      "digest": "sha256:9c7f200c07e3d4a03e7249d2c16bf66a51120fb876aa2242cf31451412543289",
-      "short": "9c7f200c"
+      "digest": "sha256:562111b88caa79c71391c0c4d3c2114a7d5c35915c20561fd893cb1e07929e6b",
+      "short": "562111b8"
     },
     "provenance": {
-      "url": "/metadata/runs/20261120140017973-fdf2fc10/ubuntu-stable/ubuntu/provenance.json"
+      "url": "/metadata/runs/20261124145915714-197450f1/ubuntu-stable/ubuntu/provenance.json"
     },
     "package_provenance": {
       "url": "https://glusterfs.eliware.org/ubuntu/noble/amd64/stable/provenance.json"

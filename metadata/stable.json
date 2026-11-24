@@ -1,16 +1,16 @@
 {
   "channel": "stable",
-  "distribution": "ubuntu",
+  "distribution": "oracle",
   "version": "11.2",
-  "built": "2026-11-20T14:01:09.760Z",
-  "candidate": "ubuntu-stable-11.2",
+  "built": "2026-11-24T15:00:35.567Z",
+  "candidate": "epel10-stable-11.2",
   "source": {
     "ref": "v11.2",
     "commit": "15d3c0f8435814fdb7242a8a82fa5db140013d0a"
   },
   "validation": {
     "metadata_version": "0.1.0",
-    "generated": "2026-11-20T14:02:00.900Z",
+    "generated": "2026-11-24T15:01:15.636Z",
     "package_format": "multi-platform",
     "repository_integrity": {
       "status": "passed",
@@ -138,8 +138,8 @@
     ]
   },
   "container_validation": {
-    "run_id": "20261120140017973-fdf2fc10",
-    "generated": "2026-11-20T14:01:02Z",
+    "run_id": "20261124145915714-197450f1",
+    "generated": "2026-11-24T15:00:24Z",
     "repository_integrity": {
       "status": "passed",
       "detail": "published package metadata and image inputs verified"
@@ -173,11 +173,11 @@
     },
     "distributions": [
       {
-        "id": "ubuntu-noble",
-        "label": "Ubuntu 24.04 (noble)",
+        "id": "oracle-linux-10",
+        "label": "Oracle Linux 10",
         "container_core": {
           "status": "passed",
-          "detail": "volume start: smoke: success; volume stop: smoke: success; volume delete: smoke: success"
+          "detail": "updated; volume stop: smoke: success; volume delete: smoke: success"
         },
         "repository_integrity": {
           "status": "passed",
@@ -202,7 +202,8 @@
         "org.eliware.gluster.distribution",
         "org.eliware.gluster.package-candidate",
         "org.eliware.gluster.package-provenance",
-        "org.eliware.gluster.deb-repository"
+        "org.eliware.gluster.rpm-repository",
+        "org.eliware.gluster.rpm-metadata-sha256"
       ]
     }
   },
@@ -215,29 +216,27 @@
     "detail": "stable RPM and DEB provenance validations reconciled"
   },
   "provenance": {
-    "url": "/metadata/runs/20261120140017973-fdf2fc10/ubuntu-stable/ubuntu/provenance.json"
+    "url": "/metadata/runs/20261124145915714-197450f1/epel10-stable/oracle/provenance.json"
   },
-  "deb_repos": {
-    "ubuntu": "/ubuntu/noble/amd64/stable/"
-  },
+  "rpm_repo": "/el10/x86_64/stable/",
   "image": {
-    "repository": "ghcr.io/eliware/ubuntu24-gluster",
-    "distribution": "ubuntu",
-    "package_candidate": "ubuntu-stable-11.2",
-    "base_image": "ubuntu:24.04",
+    "repository": "ghcr.io/eliware/oracle10-gluster",
+    "distribution": "oracle",
+    "package_candidate": "epel10-stable-11.2",
+    "base_image": "oraclelinux:10",
     "exact_tag": "11.2",
-    "reference": "ghcr.io/eliware/ubuntu24-gluster:11.2",
-    "digest": "sha256:83883e0c504dafbad3555fa192a509be62cb744d730abf9eeba9c59b023bebf1",
+    "reference": "ghcr.io/eliware/oracle10-gluster:11.2",
+    "digest": "sha256:2c6d95723041f7b1728916c57fdb3f6d75eb416f80f07252685e569b48c234cd",
     "aliases": [],
     "base": {
-      "digest": "sha256:9c7f200c07e3d4a03e7249d2c16bf66a51120fb876aa2242cf31451412543289",
-      "short": "9c7f200c"
+      "digest": "sha256:4cb79926704d177d6f4899be9f80a31589d724cc4590404b05fc76cccf65850f",
+      "short": "4cb79926"
     },
     "provenance": {
-      "url": "/metadata/runs/20261120140017973-fdf2fc10/ubuntu-stable/ubuntu/provenance.json"
+      "url": "/metadata/runs/20261124145915714-197450f1/epel10-stable/oracle/provenance.json"
     },
     "package_provenance": {
-      "url": "https://glusterfs.eliware.org/ubuntu/noble/amd64/stable/provenance.json"
+      "url": "https://glusterfs.eliware.org/el10/x86_64/stable/provenance.json"
     }
   },
   "metadata_version": "0.1.0"

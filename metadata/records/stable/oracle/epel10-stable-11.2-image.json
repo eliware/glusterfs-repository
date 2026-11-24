@@ -2,7 +2,7 @@
   "channel": "stable",
   "distribution": "oracle",
   "version": "11.2",
-  "built": "2026-11-04T19:30:26.372Z",
+  "built": "2026-11-24T15:00:35.567Z",
   "candidate": "epel10-stable-11.2",
   "source": {
     "ref": "v11.2",
@@ -10,7 +10,7 @@
   },
   "validation": {
     "run_id": "20260818054246765-0d8a45d9",
-    "generated": "2026-11-04T19:18:19Z",
+    "generated": "2026-11-24T14:59:21Z",
     "package_format": "rpm",
     "repository_integrity": {
       "status": "not-tested",
@@ -107,8 +107,8 @@
     }
   },
   "container_validation": {
-    "run_id": "20261104191812523-724605a3",
-    "generated": "2026-11-04T19:29:42Z",
+    "run_id": "20261124145915714-197450f1",
+    "generated": "2026-11-24T15:00:24Z",
     "repository_integrity": {
       "status": "passed",
       "detail": "published package metadata and image inputs verified"
@@ -185,7 +185,7 @@
     "detail": "generated and verified by the conductor after publication"
   },
   "provenance": {
-    "url": "/metadata/runs/20261104191812523-724605a3/epel10-stable/oracle/provenance.json"
+    "url": "/metadata/runs/20261124145915714-197450f1/epel10-stable/oracle/provenance.json"
   },
   "rpm_repo": "/el10/x86_64/stable/",
   "image": {
@@ -195,14 +195,14 @@
     "base_image": "oraclelinux:10",
     "exact_tag": "11.2",
     "reference": "ghcr.io/eliware/oracle10-gluster:11.2",
-    "digest": "sha256:8c9255abe50ee75a4bdefe112f801987c0556ff0b8e3f91f858beab4e40159e5",
+    "digest": "sha256:2c6d95723041f7b1728916c57fdb3f6d75eb416f80f07252685e569b48c234cd",
     "aliases": [],
     "base": {
-      "digest": "sha256:c45341d07ee8d2397656d34e3e17306bc60c92ac4243da2ecfe8cdee8f25c01e",
-      "short": "c45341d0"
+      "digest": "sha256:4cb79926704d177d6f4899be9f80a31589d724cc4590404b05fc76cccf65850f",
+      "short": "4cb79926"
     },
     "provenance": {
-      "url": "/metadata/runs/20261104191812523-724605a3/epel10-stable/oracle/provenance.json"
+      "url": "/metadata/runs/20261124145915714-197450f1/epel10-stable/oracle/provenance.json"
     },
     "package_provenance": {
       "url": "https://glusterfs.eliware.org/el10/x86_64/stable/provenance.json"
