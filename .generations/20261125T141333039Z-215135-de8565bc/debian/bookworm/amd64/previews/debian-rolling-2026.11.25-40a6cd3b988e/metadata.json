@@ -1,0 +1,179 @@
+{
+  "channel": "preview",
+  "distribution": "debian",
+  "version": "2026.11.25-40a6cd3b988e",
+  "built": "2026-11-25T14:19:04.493Z",
+  "candidate": "debian-rolling-2026.11.25-40a6cd3b988e",
+  "source": {
+    "ref": "devel",
+    "commit": "40a6cd3b988eac276d5fbb1bcc2f00eb800a6c73"
+  },
+  "validation": {
+    "run_id": "20261125140014402-2da5c01f",
+    "generated": "2026-11-25T14:13:28Z",
+    "package_format": "deb",
+    "repository_integrity": {
+      "status": "passed",
+      "detail": "candidate package metadata, checksums, and signatures verified"
+    },
+    "provenance_verification": {
+      "status": "passed",
+      "detail": "provenance generated, signed, and independently verified"
+    },
+    "checks": {
+      "install": {
+        "status": "passed"
+      },
+      "service_start": {
+        "status": "passed"
+      },
+      "volume_create_mount": {
+        "status": "passed"
+      },
+      "file_lifecycle": {
+        "status": "passed"
+      },
+      "volume_unmount_delete": {
+        "status": "passed"
+      },
+      "service_shutdown": {
+        "status": "passed"
+      }
+    },
+    "distributions": [
+      {
+        "id": "debian-bookworm",
+        "label": "Debian 12 (bookworm)",
+        "image": "debian:12-slim",
+        "package_format": "deb",
+        "package_core": {
+          "status": "passed"
+        },
+        "repository_integrity": {
+          "status": "passed",
+          "detail": "candidate package metadata, checksums, and signatures verified"
+        },
+        "provenance_verification": {
+          "status": "passed",
+          "detail": "provenance generated, signed, and independently verified"
+        }
+      }
+    ],
+    "metadata_version": "0.1.0",
+    "smoke_stages": {
+      "smoke1": {
+        "status": "passed"
+      },
+      "smoke2": {
+        "status": "passed",
+        "targets": [
+          "debian-bookworm"
+        ]
+      }
+    }
+  },
+  "container_validation": {
+    "run_id": "20261125140014402-2da5c01f",
+    "generated": "2026-11-25T14:18:59Z",
+    "repository_integrity": {
+      "status": "passed",
+      "detail": "published package metadata and image inputs verified"
+    },
+    "provenance_verification": {
+      "status": "passed",
+      "detail": "provenance generated, signed, and independently verified"
+    },
+    "checks": {
+      "install": {
+        "status": "passed"
+      },
+      "cli_available": {
+        "status": "passed"
+      },
+      "volume_create_mount": {
+        "status": "passed"
+      },
+      "file_lifecycle": {
+        "status": "passed"
+      },
+      "volume_unmount_delete": {
+        "status": "passed"
+      },
+      "service_shutdown": {
+        "status": "passed"
+      },
+      "image_labels": {
+        "status": "passed"
+      }
+    },
+    "distributions": [
+      {
+        "id": "debian-bookworm",
+        "label": "Debian 12 (bookworm)",
+        "container_core": {
+          "status": "passed",
+          "detail": "volume start: smoke: success; volume stop: smoke: success; volume delete: smoke: success"
+        },
+        "repository_integrity": {
+          "status": "passed",
+          "detail": "published package metadata and image inputs verified"
+        },
+        "provenance_verification": {
+          "status": "passed",
+          "detail": "provenance generated, signed, and independently verified"
+        }
+      }
+    ],
+    "metadata_version": "0.1.0",
+    "image_labels": {
+      "status": "passed",
+      "fields": [
+        "org.opencontainers.image.version",
+        "org.opencontainers.image.revision",
+        "org.eliware.gluster.base-image.digest",
+        "org.eliware.gluster.base-image.reference",
+        "org.eliware.gluster.source-ref",
+        "org.eliware.gluster.source-commit",
+        "org.eliware.gluster.distribution",
+        "org.eliware.gluster.package-candidate",
+        "org.eliware.gluster.package-provenance",
+        "org.eliware.gluster.deb-repository"
+      ]
+    }
+  },
+  "repository_integrity": {
+    "status": "passed",
+    "detail": "candidate package metadata, checksums, and signatures verified"
+  },
+  "provenance_verification": {
+    "status": "passed",
+    "detail": "provenance generated, signed, and independently verified"
+  },
+  "provenance": {
+    "url": "/metadata/runs/20261125140014402-2da5c01f/debian-rolling/debian/provenance.json"
+  },
+  "deb_repos": {
+    "debian": "/debian/bookworm/amd64/previews/debian-rolling-2026.11.25-40a6cd3b988e/"
+  },
+  "image": {
+    "repository": "ghcr.io/eliware/debian12-gluster",
+    "distribution": "debian",
+    "package_candidate": "debian-rolling-2026.11.25-40a6cd3b988e",
+    "base_image": "debian:12-slim",
+    "exact_tag": "2026.11.25-40a6cd3b988e",
+    "reference": "ghcr.io/eliware/debian12-gluster:2026.11.25-40a6cd3b988e",
+    "digest": "sha256:db01426d6968d26ab9ccad62e22f2d045f4fc942e5828821f19480c0421850ee",
+    "aliases": [],
+    "base": {
+      "digest": "sha256:e67eeead736ff7bbe258ef088bff683635c561b1fcfefad0806c1df4ab49ce0e",
+      "short": "e67eeead"
+    },
+    "provenance": {
+      "url": "/metadata/runs/20261125140014402-2da5c01f/debian-rolling/debian/provenance.json"
+    },
+    "package_provenance": {
+      "url": "https://glusterfs.eliware.org/debian/bookworm/amd64/previews/debian-rolling-2026.11.25-40a6cd3b988e/provenance.json"
+    }
+  },
+  "metadata_version": "0.1.0"
+}

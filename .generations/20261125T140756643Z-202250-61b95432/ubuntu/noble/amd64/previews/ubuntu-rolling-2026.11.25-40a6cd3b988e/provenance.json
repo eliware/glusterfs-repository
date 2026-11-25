@@ -1,0 +1,258 @@
+{
+  "schema": 1,
+  "generated": "2026-11-25T14:07:56Z",
+  "record": {
+    "kind": "package",
+    "run_id": "20261125140014402-2da5c01f",
+    "lane": "ubuntu-rolling",
+    "channel": "preview",
+    "version": "2026.11.25-40a6cd3b988e",
+    "package_version": "2026.11.25~rolling.g40a6cd3b988e-1",
+    "candidate": "/mnt/pvc/gluster-build-workspaces/conductor/20261125140014402-2da5c01f/ubuntu-rolling",
+    "candidate_id": "ubuntu-rolling-2026.11.25-40a6cd3b988e",
+    "repository": "/ubuntu/noble/amd64/previews/ubuntu-rolling-2026.11.25-40a6cd3b988e/",
+    "provenance": "/ubuntu/noble/amd64/previews/ubuntu-rolling-2026.11.25-40a6cd3b988e/provenance.json",
+    "source": {
+      "ref": "devel",
+      "commit": "40a6cd3b988eac276d5fbb1bcc2f00eb800a6c73"
+    },
+    "packaging_commit": "349508abbaa1bdc466fc508ed708c3d07e6d5dc9",
+    "workflow": "deb-package-build.yml",
+    "workflow_run_id": 45629362591,
+    "workflow_url": "https://github.com/eliware/glusterfs-packaging/actions/runs/45629362591",
+    "validation": {
+      "run_id": "20261125140014402-2da5c01f",
+      "generated": "2026-11-25T14:07:55Z",
+      "package_format": "deb",
+      "repository_integrity": {
+        "status": "passed",
+        "detail": "candidate package metadata, checksums, and signatures verified"
+      },
+      "provenance_verification": {
+        "status": "passed",
+        "detail": "provenance generated, signed, and independently verified"
+      },
+      "checks": {
+        "install": {
+          "status": "passed"
+        },
+        "service_start": {
+          "status": "passed"
+        },
+        "volume_create_mount": {
+          "status": "passed"
+        },
+        "file_lifecycle": {
+          "status": "passed"
+        },
+        "volume_unmount_delete": {
+          "status": "passed"
+        },
+        "service_shutdown": {
+          "status": "passed"
+        }
+      },
+      "distributions": [
+        {
+          "id": "ubuntu-noble",
+          "label": "Ubuntu 24.04 (noble)",
+          "image": "ubuntu:24.04",
+          "package_format": "deb",
+          "package_core": {
+            "status": "passed"
+          },
+          "repository_integrity": {
+            "status": "passed",
+            "detail": "candidate package metadata, checksums, and signatures verified"
+          },
+          "provenance_verification": {
+            "status": "passed",
+            "detail": "provenance generated, signed, and independently verified"
+          }
+        }
+      ],
+      "metadata_version": "0.1.0",
+      "smoke_stages": {
+        "smoke1": {
+          "status": "passed"
+        },
+        "smoke2": {
+          "status": "passed",
+          "targets": [
+            "ubuntu-noble"
+          ]
+        }
+      }
+    },
+    "smoke2": [
+      {
+        "target_os": "ubuntu-noble",
+        "validation": {
+          "run_id": "20261125140014402-2da5c01f",
+          "generated": "2026-11-25T14:07:55.506Z",
+          "package_format": "deb",
+          "repository_integrity": {
+            "status": "not-tested",
+            "detail": "verified by the conductor after publication"
+          },
+          "provenance_verification": {
+            "status": "not-tested",
+            "detail": "generated and verified by the conductor after publication"
+          },
+          "checks": {
+            "install": {
+              "status": "passed"
+            },
+            "service_start": {
+              "status": "passed"
+            },
+            "volume_create_mount": {
+              "status": "passed"
+            },
+            "file_lifecycle": {
+              "status": "passed"
+            },
+            "volume_unmount_delete": {
+              "status": "passed"
+            },
+            "service_shutdown": {
+              "status": "passed"
+            }
+          },
+          "distributions": [
+            {
+              "id": "ubuntu-noble",
+              "label": "Ubuntu 24.04 (noble)",
+              "image": "ubuntu:24.04",
+              "package_format": "deb",
+              "package_core": {
+                "status": "passed"
+              }
+            }
+          ],
+          "metadata_version": "0.1.0"
+        },
+        "workflow": "local-docker",
+        "run_id": "20261125140014402-2da5c01f"
+      }
+    ]
+  },
+  "files": [
+    {
+      "label": "build-log",
+      "path": "assets/45629362591-1-ubuntu-rolling-2026.11.25-40a6cd3b988e.log",
+      "sha256": "efc1f1deab2001f842359d0c097b46d97280b09ed8fe8a3eafb1e94a9203957a",
+      "size": 1774304
+    },
+    {
+      "label": "package-smoke-2",
+      "path": "assets/smoke-2.json",
+      "sha256": "4d929cef28b94a109b4d94a3232344497d2472b9c72122a3cdba1f5c6d5932e1",
+      "size": 1306
+    },
+    {
+      "label": "package-validation",
+      "path": "assets/validation.json",
+      "sha256": "8582724c3758116e6f5dd0c2bf2ca6b10ca0cdb2e965ae34d9bc93d61f4832e2",
+      "size": 1469
+    },
+    {
+      "label": "dists/stable/InRelease",
+      "path": "dists/stable/InRelease",
+      "sha256": "a0aeb23e62457d3aff46f77a1c43a92f80aedcaeb8fc1102a1660dc05a7dff85",
+      "size": 1782
+    },
+    {
+      "label": "dists/stable/main/binary-amd64/Packages",
+      "path": "dists/stable/main/binary-amd64/Packages",
+      "sha256": "c8467183aa61cb948b27ef494aebb9d92577bb853a6e0195cde0611b2aa950e8",
+      "size": 13353
+    },
+    {
+      "label": "dists/stable/main/binary-amd64/Packages.gz",
+      "path": "dists/stable/main/binary-amd64/Packages.gz",
+      "sha256": "8f98825370dbfd1465ef2b5ca71862b7da609b14a1f4104f4504e515e3375b6e",
+      "size": 2431
+    },
+    {
+      "label": "dists/stable/main/binary-amd64/Packages.xz",
+      "path": "dists/stable/main/binary-amd64/Packages.xz",
+      "sha256": "3085a1fec01618c703fb096bcdd6c86498a23fd0441a9097f87dfcded44ba92e",
+      "size": 2352
+    },
+    {
+      "label": "dists/stable/Release",
+      "path": "dists/stable/Release",
+      "sha256": "ae8312958e494eca5d8f59cd90e45c3618078aa05eda1fc95b7f091ea5e9a528",
+      "size": 1505
+    },
+    {
+      "label": "dists/stable/Release.gpg",
+      "path": "dists/stable/Release.gpg",
+      "sha256": "f6ea66a2566291b66f0e624aed02a57ab208c3647891acb9b03e0ece715c6e1f",
+      "size": 228
+    },
+    {
+      "label": "pool/main/g/glusterfs/glusterfs-cli_2026.11.25~rolling.g40a6cd3b988e-1_amd64.deb",
+      "path": "pool/main/g/glusterfs/glusterfs-cli_2026.11.25~rolling.g40a6cd3b988e-1_amd64.deb",
+      "sha256": "9bf7c3d23f2e6a42f2a576ef1ca5259f6d27cce3d8b9d4673929b358cc854f15",
+      "size": 179306
+    },
+    {
+      "label": "pool/main/g/glusterfs/glusterfs-client_2026.11.25~rolling.g40a6cd3b988e-1_amd64.deb",
+      "path": "pool/main/g/glusterfs/glusterfs-client_2026.11.25~rolling.g40a6cd3b988e-1_amd64.deb",
+      "sha256": "481cfb21562e5903a81918b335b0330fbe8df8a8b469c0a9de60bb990058259f",
+      "size": 30528
+    },
+    {
+      "label": "pool/main/g/glusterfs/glusterfs-common_2026.11.25~rolling.g40a6cd3b988e-1_amd64.deb",
+      "path": "pool/main/g/glusterfs/glusterfs-common_2026.11.25~rolling.g40a6cd3b988e-1_amd64.deb",
+      "sha256": "bca20eddac94fe90a5bc2d1356f69e3b690f96e7437df8d117a1e8e3ee611529",
+      "size": 2556154
+    },
+    {
+      "label": "pool/main/g/glusterfs/glusterfs-server_2026.11.25~rolling.g40a6cd3b988e-1_amd64.deb",
+      "path": "pool/main/g/glusterfs/glusterfs-server_2026.11.25~rolling.g40a6cd3b988e-1_amd64.deb",
+      "sha256": "9a5646131a64f90a62c76f33b220fc46c7672dd8b3ded0af33780c359df46ba8",
+      "size": 26902
+    },
+    {
+      "label": "pool/main/g/glusterfs/libgfapi0_2026.11.25~rolling.g40a6cd3b988e-1_amd64.deb",
+      "path": "pool/main/g/glusterfs/libgfapi0_2026.11.25~rolling.g40a6cd3b988e-1_amd64.deb",
+      "sha256": "a2cff75280e000182b7ed21719e85d54a55857e6d546f7bad7185f609f9d1259",
+      "size": 83708
+    },
+    {
+      "label": "pool/main/g/glusterfs/libgfchangelog0_2026.11.25~rolling.g40a6cd3b988e-1_amd64.deb",
+      "path": "pool/main/g/glusterfs/libgfchangelog0_2026.11.25~rolling.g40a6cd3b988e-1_amd64.deb",
+      "sha256": "43adf1484adc5f10ebd179b10bf490120ce9eeeb66ff17cd39733631413b2661",
+      "size": 29714
+    },
+    {
+      "label": "pool/main/g/glusterfs/libgfrpc0_2026.11.25~rolling.g40a6cd3b988e-1_amd64.deb",
+      "path": "pool/main/g/glusterfs/libgfrpc0_2026.11.25~rolling.g40a6cd3b988e-1_amd64.deb",
+      "sha256": "8d2416a539a2a4f39155a85273d25d73af7d46bd7ecf9ba45b04f9e01b95d62c",
+      "size": 44832
+    },
+    {
+      "label": "pool/main/g/glusterfs/libgfxdr0_2026.11.25~rolling.g40a6cd3b988e-1_amd64.deb",
+      "path": "pool/main/g/glusterfs/libgfxdr0_2026.11.25~rolling.g40a6cd3b988e-1_amd64.deb",
+      "sha256": "f2430b6a0bf8bc8cc320f98b9af34a35ea2458b0a3414fb96b314da8b65eecb0",
+      "size": 20198
+    },
+    {
+      "label": "pool/main/g/glusterfs/libglusterfs-dev_2026.11.25~rolling.g40a6cd3b988e-1_amd64.deb",
+      "path": "pool/main/g/glusterfs/libglusterfs-dev_2026.11.25~rolling.g40a6cd3b988e-1_amd64.deb",
+      "sha256": "2d8816a7cc208d00d67b2fe4239ec5b746e5e4eb3718e386c264bc6ceff7a303",
+      "size": 147202
+    },
+    {
+      "label": "pool/main/g/glusterfs/libglusterfs0_2026.11.25~rolling.g40a6cd3b988e-1_amd64.deb",
+      "path": "pool/main/g/glusterfs/libglusterfs0_2026.11.25~rolling.g40a6cd3b988e-1_amd64.deb",
+      "sha256": "39d5d8f036ed968dc103a4ab6b5fda180bf4602c7668b7abf48f602fdbb84cad",
+      "size": 268846
+    }
+  ],
+  "checksums_sha256": "a7563cbf6c5556c9397141a81d95220d46ed82f05c74b67c2823fa305bcac605",
+  "metadata_version": "0.1.0"
+}

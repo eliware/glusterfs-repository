@@ -1,0 +1,102 @@
+{
+  "channel": "preview",
+  "distribution": "debian",
+  "version": "2026.11.25-40a6cd3b988e",
+  "built": "2026-11-25T14:13:34.119Z",
+  "candidate": "debian-rolling-2026.11.25-40a6cd3b988e",
+  "source": {
+    "ref": "devel",
+    "commit": "40a6cd3b988eac276d5fbb1bcc2f00eb800a6c73"
+  },
+  "validation": {
+    "run_id": "20261125140014402-2da5c01f",
+    "generated": "2026-11-25T14:13:28Z",
+    "package_format": "deb",
+    "repository_integrity": {
+      "status": "passed",
+      "detail": "candidate package metadata, checksums, and signatures verified"
+    },
+    "provenance_verification": {
+      "status": "passed",
+      "detail": "provenance generated, signed, and independently verified"
+    },
+    "checks": {
+      "install": {
+        "status": "passed"
+      },
+      "service_start": {
+        "status": "passed"
+      },
+      "volume_create_mount": {
+        "status": "passed"
+      },
+      "file_lifecycle": {
+        "status": "passed"
+      },
+      "volume_unmount_delete": {
+        "status": "passed"
+      },
+      "service_shutdown": {
+        "status": "passed"
+      }
+    },
+    "distributions": [
+      {
+        "id": "debian-bookworm",
+        "label": "Debian 12 (bookworm)",
+        "image": "debian:12-slim",
+        "package_format": "deb",
+        "package_core": {
+          "status": "passed"
+        },
+        "repository_integrity": {
+          "status": "passed",
+          "detail": "candidate package metadata, checksums, and signatures verified"
+        },
+        "provenance_verification": {
+          "status": "passed",
+          "detail": "provenance generated, signed, and independently verified"
+        }
+      }
+    ],
+    "metadata_version": "0.1.0",
+    "smoke_stages": {
+      "smoke1": {
+        "status": "passed"
+      },
+      "smoke2": {
+        "status": "passed",
+        "targets": [
+          "debian-bookworm"
+        ]
+      }
+    }
+  },
+  "repository_integrity": {
+    "status": "passed",
+    "detail": "candidate package metadata, checksums, and signatures verified"
+  },
+  "provenance_verification": {
+    "status": "passed",
+    "detail": "provenance generated, signed, and independently verified"
+  },
+  "provenance": {
+    "url": "/debian/bookworm/amd64/previews/debian-rolling-2026.11.25-40a6cd3b988e/provenance.json"
+  },
+  "deb_repos": {
+    "debian": "/debian/bookworm/amd64/previews/debian-rolling-2026.11.25-40a6cd3b988e/"
+  },
+  "package": {
+    "format": "deb",
+    "distribution": "debian",
+    "suite": "bookworm",
+    "version": "2026.11.25~rolling.g40a6cd3b988e-1",
+    "repositories": {
+      "deb": "/debian/bookworm/amd64/previews/debian-rolling-2026.11.25-40a6cd3b988e/"
+    },
+    "provenance": {
+      "url": "/debian/bookworm/amd64/previews/debian-rolling-2026.11.25-40a6cd3b988e/provenance.json"
+    }
+  },
+  "metadata_version": "0.1.0"
+}

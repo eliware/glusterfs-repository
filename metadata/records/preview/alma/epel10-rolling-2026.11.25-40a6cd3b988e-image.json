@@ -1,0 +1,244 @@
+{
+  "channel": "preview",
+  "distribution": "alma",
+  "version": "2026.11.25-40a6cd3b988e",
+  "built": "2026-11-25T14:14:44.361Z",
+  "candidate": "epel10-rolling-2026.11.25-40a6cd3b988e",
+  "source": {
+    "ref": "devel",
+    "commit": "40a6cd3b988eac276d5fbb1bcc2f00eb800a6c73"
+  },
+  "validation": {
+    "run_id": "20261125140014402-2da5c01f",
+    "generated": "2026-11-25T14:13:09Z",
+    "package_format": "rpm",
+    "repository_integrity": {
+      "status": "passed",
+      "detail": "candidate package metadata, checksums, and signatures verified"
+    },
+    "provenance_verification": {
+      "status": "passed",
+      "detail": "provenance generated, signed, and independently verified"
+    },
+    "checks": {
+      "install": {
+        "status": "passed"
+      },
+      "service_start": {
+        "status": "passed"
+      },
+      "volume_create_mount": {
+        "status": "passed"
+      },
+      "file_lifecycle": {
+        "status": "passed"
+      },
+      "volume_unmount_delete": {
+        "status": "passed"
+      },
+      "service_shutdown": {
+        "status": "passed"
+      }
+    },
+    "distributions": [
+      {
+        "id": "centos-stream-10",
+        "label": "CentOS Stream 10",
+        "image": "quay.io/centos/centos:stream10",
+        "package_core": {
+          "status": "passed"
+        },
+        "selinux": {
+          "status": "passed",
+          "detail": "module loaded; mode Disabled"
+        },
+        "repository_integrity": {
+          "status": "passed",
+          "detail": "candidate package metadata, checksums, and signatures verified"
+        },
+        "provenance_verification": {
+          "status": "passed",
+          "detail": "provenance generated, signed, and independently verified"
+        }
+      },
+      {
+        "id": "rocky-10",
+        "label": "Rocky Linux 10",
+        "image": "rockylinux/rockylinux:10",
+        "package_core": {
+          "status": "passed"
+        },
+        "selinux": {
+          "status": "passed",
+          "detail": "module loaded; mode Disabled"
+        },
+        "repository_integrity": {
+          "status": "passed",
+          "detail": "candidate package metadata, checksums, and signatures verified"
+        },
+        "provenance_verification": {
+          "status": "passed",
+          "detail": "provenance generated, signed, and independently verified"
+        }
+      },
+      {
+        "id": "almalinux-10",
+        "label": "AlmaLinux 10",
+        "image": "almalinux:10",
+        "package_core": {
+          "status": "passed"
+        },
+        "selinux": {
+          "status": "passed",
+          "detail": "module loaded; mode Disabled"
+        },
+        "repository_integrity": {
+          "status": "passed",
+          "detail": "candidate package metadata, checksums, and signatures verified"
+        },
+        "provenance_verification": {
+          "status": "passed",
+          "detail": "provenance generated, signed, and independently verified"
+        }
+      },
+      {
+        "id": "oracle-linux-10",
+        "label": "Oracle Linux 10",
+        "image": "oraclelinux:10",
+        "package_core": {
+          "status": "passed"
+        },
+        "selinux": {
+          "status": "passed",
+          "detail": "module loaded; mode Disabled"
+        },
+        "repository_integrity": {
+          "status": "passed",
+          "detail": "candidate package metadata, checksums, and signatures verified"
+        },
+        "provenance_verification": {
+          "status": "passed",
+          "detail": "provenance generated, signed, and independently verified"
+        }
+      }
+    ],
+    "metadata_version": "0.1.0",
+    "smoke_stages": {
+      "smoke1": {
+        "status": "passed"
+      },
+      "smoke2": {
+        "status": "passed",
+        "targets": [
+          "centos-stream-10",
+          "rocky-10",
+          "almalinux-10",
+          "oracle-linux-10"
+        ]
+      }
+    }
+  },
+  "container_validation": {
+    "run_id": "20261125140014402-2da5c01f",
+    "generated": "2026-11-25T14:14:37Z",
+    "repository_integrity": {
+      "status": "passed",
+      "detail": "published package metadata and image inputs verified"
+    },
+    "provenance_verification": {
+      "status": "passed",
+      "detail": "provenance generated, signed, and independently verified"
+    },
+    "checks": {
+      "install": {
+        "status": "passed"
+      },
+      "cli_available": {
+        "status": "passed"
+      },
+      "volume_create_mount": {
+        "status": "passed"
+      },
+      "file_lifecycle": {
+        "status": "passed"
+      },
+      "volume_unmount_delete": {
+        "status": "passed"
+      },
+      "service_shutdown": {
+        "status": "passed"
+      },
+      "image_labels": {
+        "status": "passed"
+      }
+    },
+    "distributions": [
+      {
+        "id": "almalinux-10",
+        "label": "AlmaLinux 10",
+        "container_core": {
+          "status": "passed",
+          "detail": "updated; volume stop: smoke: success; volume delete: smoke: success"
+        },
+        "repository_integrity": {
+          "status": "passed",
+          "detail": "published package metadata and image inputs verified"
+        },
+        "provenance_verification": {
+          "status": "passed",
+          "detail": "provenance generated, signed, and independently verified"
+        }
+      }
+    ],
+    "metadata_version": "0.1.0",
+    "image_labels": {
+      "status": "passed",
+      "fields": [
+        "org.opencontainers.image.version",
+        "org.opencontainers.image.revision",
+        "org.eliware.gluster.base-image.digest",
+        "org.eliware.gluster.base-image.reference",
+        "org.eliware.gluster.source-ref",
+        "org.eliware.gluster.source-commit",
+        "org.eliware.gluster.distribution",
+        "org.eliware.gluster.package-candidate",
+        "org.eliware.gluster.package-provenance",
+        "org.eliware.gluster.rpm-repository",
+        "org.eliware.gluster.rpm-metadata-sha256"
+      ]
+    }
+  },
+  "repository_integrity": {
+    "status": "passed",
+    "detail": "candidate package metadata, checksums, and signatures verified"
+  },
+  "provenance_verification": {
+    "status": "passed",
+    "detail": "provenance generated, signed, and independently verified"
+  },
+  "provenance": {
+    "url": "/metadata/runs/20261125140014402-2da5c01f/epel10-rolling/alma/provenance.json"
+  },
+  "rpm_repo": "/el10/x86_64/previews/epel10-rolling-2026.11.25-40a6cd3b988e/",
+  "image": {
+    "repository": "ghcr.io/eliware/alma10-gluster",
+    "distribution": "alma",
+    "package_candidate": "epel10-rolling-2026.11.25-40a6cd3b988e",
+    "base_image": "almalinux:10",
+    "exact_tag": "2026.11.25-40a6cd3b988e",
+    "reference": "ghcr.io/eliware/alma10-gluster:2026.11.25-40a6cd3b988e",
+    "digest": "sha256:aa3ec98fff30a8347a68e46b240f7aee2774d849a53220379cd72de530cc7704",
+    "aliases": [],
+    "base": {
+      "digest": "sha256:ccf217024b3d5e268cc208d1edb384a1edee6359370cf6ea1ecbc42254e57375",
+      "short": "ccf21702"
+    },
+    "provenance": {
+      "url": "/metadata/runs/20261125140014402-2da5c01f/epel10-rolling/alma/provenance.json"
+    },
+    "package_provenance": {
+      "url": "https://glusterfs.eliware.org/el10/x86_64/previews/epel10-rolling-2026.11.25-40a6cd3b988e/provenance.json"
+    }
+  },
+  "metadata_version": "0.1.0"
+}

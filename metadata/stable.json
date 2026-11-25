@@ -1,8 +1,8 @@
 {
   "channel": "stable",
-  "distribution": "oracle",
+  "distribution": "centos-stream",
   "version": "11.2",
-  "built": "2026-11-24T15:00:35.567Z",
+  "built": "2026-11-25T14:02:22.597Z",
   "candidate": "epel10-stable-11.2",
   "source": {
     "ref": "v11.2",
@@ -10,7 +10,7 @@
   },
   "validation": {
     "metadata_version": "0.1.0",
-    "generated": "2026-11-24T15:01:15.636Z",
+    "generated": "2026-11-25T14:19:17.563Z",
     "package_format": "multi-platform",
     "repository_integrity": {
       "status": "passed",
@@ -138,8 +138,8 @@
     ]
   },
   "container_validation": {
-    "run_id": "20261124145915714-197450f1",
-    "generated": "2026-11-24T15:00:24Z",
+    "run_id": "20261125140014402-2da5c01f",
+    "generated": "2026-11-25T14:01:52Z",
     "repository_integrity": {
       "status": "passed",
       "detail": "published package metadata and image inputs verified"
@@ -173,8 +173,8 @@
     },
     "distributions": [
       {
-        "id": "oracle-linux-10",
-        "label": "Oracle Linux 10",
+        "id": "centos-stream-10",
+        "label": "CentOS Stream 10",
         "container_core": {
           "status": "passed",
           "detail": "updated; volume stop: smoke: success; volume delete: smoke: success"
@@ -216,24 +216,24 @@
     "detail": "stable RPM and DEB provenance validations reconciled"
   },
   "provenance": {
-    "url": "/metadata/runs/20261124145915714-197450f1/epel10-stable/oracle/provenance.json"
+    "url": "/metadata/runs/20261125140014402-2da5c01f/epel10-stable/centos-stream/provenance.json"
   },
   "rpm_repo": "/el10/x86_64/stable/",
   "image": {
-    "repository": "ghcr.io/eliware/oracle10-gluster",
-    "distribution": "oracle",
+    "repository": "ghcr.io/eliware/centos10-gluster",
+    "distribution": "centos-stream",
     "package_candidate": "epel10-stable-11.2",
-    "base_image": "oraclelinux:10",
+    "base_image": "quay.io/centos/centos:stream10",
     "exact_tag": "11.2",
-    "reference": "ghcr.io/eliware/oracle10-gluster:11.2",
-    "digest": "sha256:2c6d95723041f7b1728916c57fdb3f6d75eb416f80f07252685e569b48c234cd",
+    "reference": "ghcr.io/eliware/centos10-gluster:11.2",
+    "digest": "sha256:7e0199dbcf41a3589df649e747dc2270534130a2bbb5b396664d9ff87e876070",
     "aliases": [],
     "base": {
-      "digest": "sha256:4cb79926704d177d6f4899be9f80a31589d724cc4590404b05fc76cccf65850f",
-      "short": "4cb79926"
+      "digest": "sha256:b042adb7687b322f80765277b552dcdd9c5f98bd3ca64e2f46175d2ae55fc82b",
+      "short": "b042adb7"
     },
     "provenance": {
-      "url": "/metadata/runs/20261124145915714-197450f1/epel10-stable/oracle/provenance.json"
+      "url": "/metadata/runs/20261125140014402-2da5c01f/epel10-stable/centos-stream/provenance.json"
     },
     "package_provenance": {
       "url": "https://glusterfs.eliware.org/el10/x86_64/stable/provenance.json"
